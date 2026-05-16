@@ -55,8 +55,8 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
         align="center"
         gap={6}
         p={10}
-        bg="#0b110b"
-        border="1px solid rgba(0, 230, 118, 0.12)"
+        bg="#080c08"
+        border="1px solid rgba(0, 200, 120, 0.10)"
         borderRadius="lg"
         textAlign="center"
       >
@@ -117,8 +117,8 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
 
       <VStack
         p={6}
-        bg="#0b110b"
-        border="1px solid rgba(0, 230, 118, 0.12)"
+        bg="#080c08"
+        border="1px solid rgba(0, 200, 120, 0.10)"
         borderRadius="lg"
         gap={5}
         align="stretch"
@@ -131,8 +131,8 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
             placeholder="Tu nombre completo"
-            bg="#060a06"
-            borderColor="rgba(0, 230, 118, 0.12)"
+            bg="#050705"
+            borderColor="rgba(0, 200, 120, 0.10)"
             color="white"
             borderRadius="12px"
             _focus={{ borderColor: "#00e676", boxShadow: "0 0 8px rgba(0, 230, 118, 0.2)" }}
@@ -148,8 +148,8 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             value={celular}
             onChange={(e) => setCelular(e.target.value)}
             placeholder="+591 7XXXXXXX"
-            bg="#060a06"
-            borderColor="rgba(0, 230, 118, 0.12)"
+            bg="#050705"
+            borderColor="rgba(0, 200, 120, 0.10)"
             color="white"
             borderRadius="12px"
             _focus={{ borderColor: "#00e676", boxShadow: "0 0 8px rgba(0, 230, 118, 0.2)" }}
@@ -165,8 +165,8 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             value={ciudad}
             onChange={(e) => setCiudad(e.target.value)}
             placeholder="Ej: La Paz"
-            bg="#060a06"
-            borderColor="rgba(0, 230, 118, 0.12)"
+            bg="#050705"
+            borderColor="rgba(0, 200, 120, 0.10)"
             color="white"
             borderRadius="12px"
             _focus={{ borderColor: "#00e676", boxShadow: "0 0 8px rgba(0, 230, 118, 0.2)" }}
@@ -181,8 +181,8 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
           <NativeSelectField
             value={producto}
             onChange={(e) => setProducto(e.target.value)}
-            bg="#060a06"
-            borderColor="rgba(0, 230, 118, 0.12)"
+            bg="#050705"
+            borderColor="rgba(0, 200, 120, 0.10)"
             color="white"
             borderRadius="12px"
             _focus={{ borderColor: "#00e676", boxShadow: "0 0 8px rgba(0, 230, 118, 0.2)" }}

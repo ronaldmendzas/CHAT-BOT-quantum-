@@ -109,9 +109,9 @@ export default function Home() {
       {/* left half — chat card centered */}
       <Flex
         flex={1}
+        h="100%"
         align="center"
         justify="center"
-        px={6}
         position="relative"
         zIndex={1}
       >

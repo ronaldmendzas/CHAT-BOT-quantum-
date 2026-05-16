@@ -37,8 +37,8 @@ function NeonCard({ children }: { children: React.ReactNode }) {
   return (
     <Box
       p={5}
-      bg="#0b110b"
-      border="1px solid rgba(0, 230, 118, 0.12)"
+      bg="#080c08"
+      border="1px solid rgba(0, 200, 120, 0.10)"
       borderRadius="lg"
       _hover={{
         borderColor: "#00e676",
@@ -73,11 +73,11 @@ export default function ShowroomPanel({
     return (
       <Flex flex={1} align="center" justify="center" minH="100dvh">
         <Box
-          bg="rgba(12, 12, 12, 0.5)"
-          border="1px solid rgba(0, 230, 118, 0.10)"
-          borderRadius="48px"
-          px={12}
-          py={6}
+          bg="rgba(15, 15, 15, 0.65)"
+          border="1px solid rgba(0, 230, 118, 0.13)"
+          borderRadius="50px"
+          px={14}
+          py={7}
         >
           <Heading size="lg" color="white" fontWeight="bold" fontSize="28px">
             Bienvenido a Quantum Motors
@@ -265,8 +265,8 @@ export default function ShowroomPanel({
               <Button
                 key={p.id}
                 variant="outline"
-                borderColor="rgba(0, 200, 120, 0.12)"
-                bg="#0b110b"
+                borderColor="rgba(0, 200, 120, 0.10)"
+                bg="#080c08"
                 p={5}
                 justifyContent="flex-start"
                 flexDirection="column"

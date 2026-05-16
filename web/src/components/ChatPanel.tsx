@@ -44,11 +44,10 @@ export default function ChatPanel({
 
   return (
     <VStack
-      bg="#0b110b"
+      bg="#080c08"
       borderRadius="16px"
-      boxShadow="0 0 40px rgba(0, 230, 118, 0.06), 0 0 80px rgba(0, 230, 118, 0.03)"
+      boxShadow="0 0 40px rgba(0, 230, 118, 0.04), 0 0 80px rgba(0, 230, 118, 0.02)"
       w="100%"
-      maxW="500px"
       h="75vh"
       maxH="750px"
       overflow="hidden"
@@ -120,9 +119,10 @@ export default function ChatPanel({
       </VStack>
 
       {/* input */}
-      <Flex align="flex-end" gap={2.5} px={5} py={4} w="100%">
+      <Flex align="center" gap={2.5} px={5} py={4} w="100%">
         <Textarea
           flex={1}
+          w="100%"
           rows={1}
           value={input}
           onChange={(e) => onInputChange(e.target.value)}
