@@ -29,12 +29,20 @@ Quantum Guide es un **showroom conversacional**: una experiencia web que combina
    - Captura datos mínimos.
    - Genera una lista de citas para operación de Quantum.
 
+5. **Persistencia + Auth (opcional, costo 0)**
+   - Supabase Auth (OTP/magic link).
+   - Historial de chat en Postgres.
+   - Permite que el usuario vuelva y retome la conversacion.
+
 ## Flujo principal (texto)
-1) Usuario escribe una consulta.
-2) Motor identifica intención + consulta dataset.
-3) Motor responde al usuario + devuelve una instrucción de UI (mostrar modelo/tabla/CTA).
-4) UI actualiza el panel visual.
-5) Si el usuario acepta: se registra Test Drive.
+1) Usuario inicia sesion (opcional) y se carga la ultima conversacion.
+2) Usuario escribe una consulta.
+3) Mensaje se guarda en la persistencia (si aplica).
+4) Motor identifica intención + consulta dataset.
+5) Motor responde al usuario + devuelve una instrucción de UI (mostrar modelo/tabla/CTA).
+6) Respuesta se guarda en la persistencia (si aplica).
+7) UI actualiza el panel visual.
+8) Si el usuario acepta: se registra Test Drive.
 
 ## Contrato de salida (UI-driven)
 La UI no debe "adivinar" qué mostrar. El motor debe entregar una salida estructurada, por ejemplo:

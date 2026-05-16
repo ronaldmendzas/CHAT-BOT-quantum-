@@ -22,3 +22,4 @@ Los canales sociales (WhatsApp/Instagram/TikTok) se consideran extensión natura
 - Recomendaciones basadas en datos.
 - Visualización de modelos y resumen técnico.
 - Registro de Test Drive para operación.
+- Memoria de chat (opcional con Supabase).

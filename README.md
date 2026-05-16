@@ -41,6 +41,11 @@ Para cumplir "stock en tiempo real" se define un contrato de datos mínimo.
 
 Detalle: ver [docs/DATA_CONTRACT.md](docs/DATA_CONTRACT.md).
 
+## Memoria del chat (persistencia + IA)
+La demo puede guardar el historial del chat para que el usuario retome la conversacion en otro momento.
+
+Detalle: ver [docs/MEMORIA_IA_SUPABASE.md](docs/MEMORIA_IA_SUPABASE.md).
+
 ## Estándar de commits
 Usamos Conventional Commits.
 

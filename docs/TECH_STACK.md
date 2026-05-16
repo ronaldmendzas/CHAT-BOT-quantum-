@@ -4,8 +4,8 @@ Este documento define el stack recomendado para **demo (costo 0)** y el stack pa
 
 ## Stack recomendado para la demo (costo 0)
 ### Interfaz
-- Web (HTML/CSS/JS) o framework web ligero.
-- Estilos: Tailwind (CDN) u hojas CSS simples.
+- Web: Next.js (App Router) como base de la demo.
+- UI: Chakra UI (o CSS simple si se quiere minimalista).
 
 ### Motor conversacional
 - Modo A (seguro para demo): **Mock inteligente** (intenciones + dataset).
@@ -14,6 +14,10 @@ Este documento define el stack recomendado para **demo (costo 0)** y el stack pa
 ### Datos
 - Dataset estructurado (JSON local o spreadsheet exportada).
 - Multimedia (fotos/videos) referenciados por URL o archivos locales.
+
+### Persistencia (opcional)
+- Supabase (Auth + Postgres) en free tier para historial de chat.
+- Alternativa demo: localStorage/IndexedDB (sin login).
 
 ### Agendamiento
 - Registro simple (archivo local/hoja) para demostrar flujo de negocio.
