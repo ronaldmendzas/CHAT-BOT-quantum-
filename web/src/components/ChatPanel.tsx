@@ -19,6 +19,7 @@ type Props = {
   onInputChange: (v: string) => void;
   onSend: () => void;
   onClear: () => void;
+  isTyping?: boolean;
 };
 
 export default function ChatPanel({
@@ -27,6 +28,7 @@ export default function ChatPanel({
   onInputChange,
   onSend,
   onClear,
+  isTyping,
 }: Props) {
   const bottomRef = useRef<HTMLDivElement>(null);
 
@@ -115,6 +117,28 @@ export default function ChatPanel({
             {m.content}
           </Box>
         ))}
+        {isTyping && (
+          <Flex
+            alignSelf="flex-start"
+            align="center"
+            gap={2}
+            px={4}
+            py={2}
+            borderRadius="12px"
+            bg="quantum.bot"
+            fontSize="13px"
+            color="quantum.textMuted"
+          >
+            <Box
+              w="6px"
+              h="6px"
+              borderRadius="full"
+              bg="quantum.dark"
+              animation="pulseDot 1.2s ease-in-out infinite"
+            />
+            <Text>Bot Quantum está escribiendo...</Text>
+          </Flex>
+        )}
         <div ref={bottomRef} />
       </VStack>
 

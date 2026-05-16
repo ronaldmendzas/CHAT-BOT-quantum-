@@ -20,6 +20,7 @@ export default function Home() {
   const [input, setInput] = useState("");
   const [intent, setIntent] = useState<Intent>("WELCOME");
   const [selectedProductId, setSelectedProductId] = useState<string | undefined>();
+  const [isTyping, setIsTyping] = useState(false);
 
   // Chat no persiste — siempre inicia limpio con solo el welcome
 
@@ -34,17 +35,22 @@ export default function Home() {
       timestamp: Date.now(),
     };
 
-    const result = resolveIntent(text, dataset);
-    const botMsg: ChatMessage = {
-      role: "assistant",
-      content: result.reply,
-      timestamp: Date.now(),
-    };
+    setMessages((prev) => [...prev, userMsg]);
+    setIsTyping(true);
 
-    setMessages((prev) => [...prev, userMsg, botMsg]);
-    setIntent(result.intent);
-    if (result.productId) setSelectedProductId(result.productId);
-    else if (result.intent !== "STOCK") setSelectedProductId(undefined);
+    setTimeout(() => {
+      const result = resolveIntent(text, dataset);
+      const botMsg: ChatMessage = {
+        role: "assistant",
+        content: result.reply,
+        timestamp: Date.now(),
+      };
+      setMessages((prev) => [...prev, botMsg]);
+      setIntent(result.intent);
+      if (result.productId) setSelectedProductId(result.productId);
+      else if (result.intent !== "STOCK") setSelectedProductId(undefined);
+      setIsTyping(false);
+    }, 800);
   }, [input]);
 
   const handleClear = useCallback(() => {
@@ -127,6 +133,7 @@ export default function Home() {
           onInputChange={setInput}
           onSend={handleSend}
           onClear={handleClear}
+          isTyping={isTyping}
         />
       </Flex>
 
