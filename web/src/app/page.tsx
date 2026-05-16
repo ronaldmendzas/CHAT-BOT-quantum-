@@ -4,7 +4,6 @@ import { useCallback, useEffect, useState } from "react";
 import type { ChatMessage, Intent } from "@/lib/types";
 import { dataset } from "@/lib/dataset";
 import { resolveIntent } from "@/lib/intent-engine";
-import { clearMessages } from "@/lib/memory";
 import ChatPanel from "@/components/ChatPanel";
 import ShowroomPanel from "@/components/ShowroomPanel";
 import { Flex, Box, Image } from "@chakra-ui/react";
@@ -49,7 +48,6 @@ export default function Home() {
   }, [input]);
 
   const handleClear = useCallback(() => {
-    clearMessages();
     setMessages([WELCOME_MSG]);
     setIntent("WELCOME");
     setSelectedProductId(undefined);
