@@ -12,7 +12,7 @@ import { Flex } from "@chakra-ui/react";
 const WELCOME_MSG: ChatMessage = {
   role: "assistant",
   content:
-    "¡Hola! Soy Bot Quantum, tu asesor de electromovilidad. Puedo mostrarte nuestros modelos, sucursales o agendar un Test Drive. ¿En qué te ayudo?",
+    "¡Hola! Soy Bot Quantum, tu asesor de electromovilidad. Puedo mostrarte nuestros modelos, sucursales o agendar un Test Drive.",
   timestamp: Date.now(),
 };
 
@@ -80,7 +80,7 @@ export default function Home() {
   );
 
   return (
-    <Flex h="100dvh" bg="bg.primary">
+    <Flex h="100dvh" bg="bg.root">
       <ChatPanel
         messages={messages}
         input={input}

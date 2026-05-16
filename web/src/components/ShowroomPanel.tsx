@@ -34,23 +34,49 @@ type Props = Readonly<{
 }>;
 
 const stockColor = (estado: string) => {
-  if (estado === "DISPONIBLE") return "neon";
+  if (estado === "DISPONIBLE") return "green.primary";
   if (estado === "BAJO_STOCK") return "warning";
   return "danger";
 };
 
-function NeonCard({ children, glow }: { children: React.ReactNode; glow?: boolean }) {
+function Glow() {
+  return (
+    <>
+      <Box
+        position="absolute"
+        w="400px"
+        h="400px"
+        borderRadius="full"
+        bg="radial-gradient(circle, rgba(0,230,118,0.07) 0%, transparent 70%)"
+        top="30%"
+        left="20%"
+        pointerEvents="none"
+      />
+      <Box
+        position="absolute"
+        w="300px"
+        h="300px"
+        borderRadius="full"
+        bg="radial-gradient(circle, rgba(0,230,118,0.05) 0%, transparent 70%)"
+        bottom="20%"
+        right="25%"
+        pointerEvents="none"
+      />
+    </>
+  );
+}
+
+function NeonCard({ children }: { children: React.ReactNode }) {
   return (
     <Box
       p={5}
       bg="bg.card"
       border="1px solid"
-      borderColor={glow ? "neon" : "border.neon"}
-      borderRadius="xl"
-      boxShadow={glow ? "neon-sm" : "none"}
+      borderColor="green.border"
+      borderRadius="lg"
       _hover={{
-        borderColor: "neon",
-        boxShadow: "neon-md",
+        borderColor: "green.primary",
+        boxShadow: "card-hover",
         transform: "translateY(-2px)",
       }}
       transition="all 0.2s"
@@ -81,124 +107,71 @@ export default function ShowroomPanel({
     : stock;
 
   return (
-    <Box flex={1} overflowY="auto" p={8} bg="bg.raised">
-      {/* header */}
-      <Flex align="center" justify="space-between" mb={8}>
-        <HStack gap={3}>
-          <Image src="/logo.png" alt="Quantum" h="24px" w="auto" objectFit="contain" />
-          <Heading size="md" color="text.primary" fontWeight="bold">
-            Web Showroom
-          </Heading>
-        </HStack>
-        <Badge
-          bg="neon-soft"
-          color="neon"
-          border="1px solid"
-          borderColor="neon-border"
-          borderRadius="full"
-          px={3}
-          py={1}
-          fontSize="xs"
-          fontWeight="bold"
-          textTransform="uppercase"
-          letterSpacing="wide"
-        >
-          Demo
-        </Badge>
-      </Flex>
+    <Box flex={1} overflowY="auto" bg="bg.root" position="relative">
+      <Glow />
 
-      {/* WELCOME */}
+      {/* WELCOME — minimal pill badge centered */}
       {intent === "WELCOME" && (
-        <VStack align="center" justify="center" flex={1} gap={6} textAlign="center" minH="60vh" position="relative">
+        <Flex align="center" justify="center" minH="100dvh">
           <Box
-            position="absolute"
-            w="320px"
-            h="320px"
-            borderRadius="full"
-            bg="radial-gradient(circle, rgba(0,255,170,0.08) 0%, transparent 70%)"
-            top="50%"
-            left="50%"
-            transform="translate(-50%, -60%)"
-            pointerEvents="none"
-          />
-          <Image
-            src="/logo.png"
-            alt="Quantum Motors"
-            w="280px"
-            h="auto"
-            objectFit="contain"
-            filter="drop-shadow(0 0 20px rgba(0, 255, 170, 0.2))"
-          />
-          <Heading size="lg" color="text.primary" fontWeight="bold">
-            Bienvenido a Quantum Motors
-          </Heading>
-          <Text color="text.secondary" fontSize="sm" maxW="400px">
-            Escribe en el chat: &quot;modelos&quot;, &quot;sucursales&quot; o &quot;agendar test drive&quot;.
-          </Text>
-          <SimpleGrid columns={{ base: 1, md: 2 }} gap={3} w="full" maxW="720px">
-            {products.map((p) => {
-              const thumb = media.find((m) => m.product_id === p.id && m.type === "IMAGE");
-              return (
-              <Button
-                key={p.id}
-                variant="outline"
-                borderColor="border.neon"
-                bg="bg.card"
-                p={5}
-                justifyContent="flex-start"
-                flexDirection="column"
-                alignItems="flex-start"
-                borderRadius="xl"
-                _hover={{
-                  borderColor: "neon",
-                  boxShadow: "neon-md",
-                  transform: "translateY(-2px)",
-                }}
-                _active={{ transform: "scale(0.98)" }}
-                transition="all 0.2s"
-                onClick={() => onSelectProduct(p.id)}
-                h="auto"
-                overflow="hidden"
-              >
-                {thumb?.url && (
-                  <Image
-                    src={thumb.url}
-                    alt={p.nombre}
-                    w="100%"
-                    h="120px"
-                    objectFit="contain"
-                    borderRadius="md"
-                    mb={2}
-                    bg="bg.primary"
-                  />
-                )}
-                <Text fontWeight="bold" fontSize="sm" color="text.primary">
-                  {p.nombre}
-                </Text>
-                <Text fontSize="xs" color="neon" fontWeight="bold" mt={1}>
-                  {formatBs(p.precio.monto)}
-                </Text>
-              </Button>
-            );
-            })}
-          </SimpleGrid>
-        </VStack>
+            bg="rgba(17, 17, 17, 0.55)"
+            border="1px solid"
+            borderColor="green.border"
+            borderRadius="xl"
+            px={10}
+            py={5}
+            boxShadow="card-shadow"
+          >
+            <Heading size="lg" color="text.primary" fontWeight="bold" fontSize="28px">
+              Bienvenido a Quantum Motors
+            </Heading>
+          </Box>
+        </Flex>
+      )}
+
+      {/* VEHICLE list */}
+      {intent !== "WELCOME" && (
+        <Box p={8}>
+          {/* header */}
+          <Flex align="center" justify="space-between" mb={8}>
+            <HStack gap={3}>
+              <Image src="/logo.png" alt="Quantum" h="22px" w="auto" objectFit="contain" />
+              <Heading size="md" color="text.primary" fontWeight="bold">
+                Catálogo
+              </Heading>
+            </HStack>
+            <Badge
+              bg="green.soft"
+              color="green.primary"
+              border="1px solid"
+              borderColor="green.border"
+              borderRadius="full"
+              px={3}
+              py={1}
+              fontSize="xs"
+              fontWeight="bold"
+              textTransform="uppercase"
+            >
+              Demo
+            </Badge>
+          </Flex>
+        </Box>
       )}
 
       {/* VEHICLE detail */}
       {intent === "VEHICLE" && selected && (
-        <SimpleGrid columns={{ base: 1, md: 2 }} gap={6}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} gap={6} px={8} pb={8}>
           <Box
             display="flex"
             alignItems="center"
             justifyContent="center"
             minH="320px"
-            borderRadius="xl"
+            borderRadius="lg"
             overflow="hidden"
-            bg="bg.primary"
+            bg="bg.root"
             border="1px solid"
-            borderColor="border.neon"
-            boxShadow="neon-sm"
+            borderColor="green.border"
+            boxShadow="card-shadow"
             position="relative"
             p={4}
           >
@@ -210,7 +183,7 @@ export default function ShowroomPanel({
               objectFit="contain"
             />
             <Text
-              fontSize="lg"
+              fontSize="md"
               color="text.primary"
               fontWeight="bold"
               position="absolute"
@@ -229,16 +202,16 @@ export default function ShowroomPanel({
             <Heading size="md" color="text.primary" fontWeight="bold">
               {selected.nombre}
             </Heading>
-            <Text color="text.secondary" fontSize="sm">
+            <Text color="text.subtitle" fontSize="sm">
               {selected.descripcion_corta}
             </Text>
 
             <HStack gap={2} flexWrap="wrap">
               <Badge
-                bg="neon-soft"
-                color="neon"
+                bg="green.soft"
+                color="green.primary"
                 border="1px solid"
-                borderColor="neon-border"
+                borderColor="green.border"
                 borderRadius="full"
                 px={3}
                 py={1}
@@ -248,10 +221,10 @@ export default function ShowroomPanel({
                 {selected.categoria}
               </Badge>
               <Badge
-                bg="neon-soft"
-                color="neon"
+                bg="green.soft"
+                color="green.primary"
                 border="1px solid"
-                borderColor="neon-border"
+                borderColor="green.border"
                 borderRadius="full"
                 px={3}
                 py={1}
@@ -269,8 +242,8 @@ export default function ShowroomPanel({
               </Text>
               <VStack gap={2} align="stretch">
                 {Object.entries(selected.especificaciones).map(([k, v]) => (
-                  <Flex key={k} justify="space-between" fontSize="sm" py={1} borderBottom="1px solid" borderColor="border.subtle">
-                    <Text color="text.secondary" textTransform="capitalize">
+                  <Flex key={k} justify="space-between" fontSize="sm" py={1} borderBottom="1px solid" borderColor="green.border">
+                    <Text color="text.subtitle" textTransform="capitalize">
                       {k.replaceAll("_", " ")}
                     </Text>
                     <Text color="text.primary" fontWeight="bold">
@@ -283,14 +256,14 @@ export default function ShowroomPanel({
 
             {/* colors */}
             <HStack gap={2} flexWrap="wrap">
-              <Text fontSize="xs" color="text.secondary" fontWeight="bold">Colores:</Text>
+              <Text fontSize="xs" color="text.subtitle" fontWeight="bold">Colores:</Text>
               {selected.colores.map((c) => (
                 <Badge
                   key={c}
-                  bg="neon-soft"
-                  color="neon"
+                  bg="green.soft"
+                  color="green.primary"
                   border="1px solid"
-                  borderColor="neon-border"
+                  borderColor="green.border"
                   borderRadius="full"
                   px={3}
                   py={1}
@@ -305,12 +278,12 @@ export default function ShowroomPanel({
             {/* stock mini */}
             <NeonCard>
               <Text fontSize="xs" color="text.dim" textTransform="uppercase" letterSpacing="wide" mb={3} fontWeight="bold">
-                Stock
+                Disponibilidad
               </Text>
               <VStack gap={2} align="stretch">
                 {productStock.map((s) => (
-                  <Flex key={s.sucursal_id} justify="space-between" align="center" fontSize="sm" py={1} borderBottom="1px solid" borderColor="border.subtle">
-                    <Text color="text.secondary">{s.region}</Text>
+                  <Flex key={s.sucursal_id} justify="space-between" align="center" fontSize="sm" py={1} borderBottom="1px solid" borderColor="green.border">
+                    <Text color="text.subtitle">{s.region}</Text>
                     <Badge
                       color={stockColor(s.estado)}
                       bg={`${stockColor(s.estado)}15`}
@@ -322,7 +295,7 @@ export default function ShowroomPanel({
                       fontSize="xs"
                       fontWeight="bold"
                     >
-                      {s.cantidad} — {s.estado}
+                      {s.estado}
                     </Badge>
                   </Flex>
                 ))}
@@ -332,25 +305,25 @@ export default function ShowroomPanel({
         </SimpleGrid>
       )}
 
-      {/* VEHICLE list (no specific product) */}
-      {intent === "VEHICLE" && !selected && (
-        <SimpleGrid columns={{ base: 1, md: 2 }} gap={3} maxW="720px">
+      {/* VEHICLE list + STOCK fallback */}
+      {(intent === "VEHICLE" && !selected || intent === "STOCK") && (
+        <SimpleGrid columns={{ base: 1, md: 2 }} gap={3} maxW="720px" px={8} pb={8}>
           {products.map((p) => {
             const thumb = media.find((m) => m.product_id === p.id && m.type === "IMAGE");
             return (
             <Button
               key={p.id}
               variant="outline"
-              borderColor="border.neon"
+              borderColor="green.border"
               bg="bg.card"
               p={5}
               justifyContent="flex-start"
               flexDirection="column"
               alignItems="flex-start"
-              borderRadius="xl"
+              borderRadius="lg"
               _hover={{
-                borderColor: "neon",
-                boxShadow: "neon-md",
+                borderColor: "green.primary",
+                boxShadow: "card-hover",
                 transform: "translateY(-2px)",
               }}
               _active={{ transform: "scale(0.98)" }}
@@ -365,71 +338,19 @@ export default function ShowroomPanel({
                   alt={p.nombre}
                   w="100%"
                   h="120px"
-                  objectFit="cover"
+                  objectFit="contain"
                   borderRadius="md"
                   mb={2}
+                  bg="bg.root"
                 />
               )}
               <Text fontWeight="bold" fontSize="sm" color="text.primary">
                 {p.nombre}
               </Text>
-              <Text fontSize="xs" color="neon" fontWeight="bold" mt={1}>
+              <Text fontSize="xs" color="green.primary" fontWeight="bold" mt={1}>
                 {formatBs(p.precio.monto)}
               </Text>
-              <Text fontSize="xs" color="text.secondary" mt={2}>
-                {p.descripcion_corta}
-              </Text>
-            </Button>
-          );
-          })}
-        </SimpleGrid>
-      )}
-
-      {/* STOCK — redirigido a catálogo */}
-      {intent === "STOCK" && (
-        <SimpleGrid columns={{ base: 1, md: 2 }} gap={3} maxW="720px">
-          {products.map((p) => {
-            const thumb = media.find((m) => m.product_id === p.id && m.type === "IMAGE");
-            return (
-            <Button
-              key={p.id}
-              variant="outline"
-              borderColor="border.neon"
-              bg="bg.card"
-              p={5}
-              justifyContent="flex-start"
-              flexDirection="column"
-              alignItems="flex-start"
-              borderRadius="xl"
-              _hover={{
-                borderColor: "neon",
-                boxShadow: "neon-md",
-                transform: "translateY(-2px)",
-              }}
-              _active={{ transform: "scale(0.98)" }}
-              transition="all 0.2s"
-              onClick={() => onSelectProduct(p.id)}
-              h="auto"
-              overflow="hidden"
-            >
-              {thumb?.url && (
-                <Image
-                  src={thumb.url}
-                  alt={p.nombre}
-                  w="100%"
-                  h="120px"
-                  objectFit="cover"
-                  borderRadius="md"
-                  mb={2}
-                />
-              )}
-              <Text fontWeight="bold" fontSize="sm" color="text.primary">
-                {p.nombre}
-              </Text>
-              <Text fontSize="xs" color="neon" fontWeight="bold" mt={1}>
-                {formatBs(p.precio.monto)}
-              </Text>
-              <Text fontSize="xs" color="text.secondary" mt={2}>
+              <Text fontSize="xs" color="text.subtitle" mt={2}>
                 {p.descripcion_corta}
               </Text>
             </Button>
@@ -440,56 +361,61 @@ export default function ShowroomPanel({
 
       {/* SUCURSALES */}
       {intent === "SUCURSALES" && (
-        <VStack gap={4} align="stretch">
-          <Heading size="md" color="text.primary" fontWeight="bold">
-            Sucursales
-          </Heading>
-          <SimpleGrid columns={{ base: 1, md: 2 }} gap={3}>
-            {sucursales.map((s) => (
-              <NeonCard key={s.id}>
-                <Heading size="sm" color="neon" mb={2} fontWeight="bold">
-                  {s.ciudad}
-                </Heading>
-                <Text fontSize="sm" color="text.secondary" mb={1}>
-                  {s.direccion}
-                </Text>
-                <Text fontSize="xs" color="text.dim">
-                  🕐 {s.horario}
-                </Text>
-                <Text fontSize="xs" color="text.dim" mt={0.5}>
-                  📞 {s.telefono}
-                </Text>
-              </NeonCard>
-            ))}
-          </SimpleGrid>
-        </VStack>
+        <Box px={8} pb={8}>
+          <VStack gap={4} align="stretch">
+            <Heading size="md" color="text.primary" fontWeight="bold">
+              Sucursales
+            </Heading>
+            <SimpleGrid columns={{ base: 1, md: 2 }} gap={3}>
+              {sucursales.map((s) => (
+                <NeonCard key={s.id}>
+                  <Heading size="sm" color="green.primary" mb={2} fontWeight="bold">
+                    {s.ciudad}
+                  </Heading>
+                  <Text fontSize="sm" color="text.subtitle" mb={1}>
+                    {s.direccion}
+                  </Text>
+                  <Text fontSize="xs" color="text.dim">
+                    🕐 {s.horario}
+                  </Text>
+                  <Text fontSize="xs" color="text.dim" mt={0.5}>
+                    📞 {s.telefono}
+                  </Text>
+                </NeonCard>
+              ))}
+            </SimpleGrid>
+          </VStack>
+        </Box>
       )}
 
       {/* TEST DRIVE */}
       {intent === "TEST_DRIVE" && (
-        <TestDriveForm
-          products={products}
-          slots={testDrive}
-          onSubmit={onTestDriveSubmit}
-        />
+        <Box px={8} pb={8}>
+          <TestDriveForm
+            products={products}
+            slots={testDrive}
+            onSubmit={onTestDriveSubmit}
+          />
+        </Box>
       )}
 
       {/* UNKNOWN */}
       {intent === "UNKNOWN" && (
-        <VStack align="center" justify="center" gap={6} textAlign="center" minH="60vh">
-          <Image
-            src="/logo.png"
-            alt="Quantum"
-            w="120px"
-            h="auto"
-            objectFit="contain"
-            opacity={0.2}
-          />
-          <Text color="text.secondary" fontSize="sm">
-            Prueba escribir: &quot;modelos&quot;, &quot;sucursales&quot; o
-            &quot;agendar test drive&quot;.
-          </Text>
-        </VStack>
+        <Box px={8} pb={8}>
+          <VStack align="center" justify="center" gap={6} textAlign="center" minH="60vh">
+            <Image
+              src="/logo.png"
+              alt="Quantum"
+              w="100px"
+              h="auto"
+              objectFit="contain"
+              opacity={0.15}
+            />
+            <Text color="text.subtitle" fontSize="sm">
+              Prueba escribir: &quot;modelos&quot;, &quot;sucursales&quot; o &quot;agendar test drive&quot;.
+            </Text>
+          </VStack>
+        </Box>
       )}
     </Box>
   );

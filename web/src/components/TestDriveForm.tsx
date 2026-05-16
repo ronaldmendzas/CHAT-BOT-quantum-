@@ -57,48 +57,39 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
         p={10}
         bg="bg.card"
         border="1px solid"
-        borderColor="neon-border"
-        borderRadius="xl"
-        boxShadow="neon-sm"
+        borderColor="green.border"
+        borderRadius="lg"
+        boxShadow="card-shadow"
         textAlign="center"
       >
-        <Image
-          src="/logo.png"
-          alt="Quantum"
-          w="80px"
-          h="auto"
-          objectFit="contain"
-          filter="drop-shadow(0 0 12px rgba(0, 255, 170, 0.2))"
-        />
+        <Image src="/logo.png" alt="Quantum" w="80px" h="auto" objectFit="contain" opacity={0.5} />
         <Box
           w="64px"
           h="64px"
           borderRadius="full"
-          bg="neon-soft"
+          bg="green.soft"
           border="2px solid"
-          borderColor="neon"
+          borderColor="green.primary"
           display="flex"
           alignItems="center"
           justifyContent="center"
-          boxShadow="neon-md"
+          boxShadow="dot-glow"
         >
-          <Text fontSize="3xl" color="neon" fontWeight="bold">✓</Text>
+          <Text fontSize="3xl" color="green.primary" fontWeight="bold">✓</Text>
         </Box>
         <Heading size="md" color="text.primary" fontWeight="bold">
           ¡Solicitud registrada!
         </Heading>
-        <Text color="text.secondary" fontSize="sm">
+        <Text color="text.subtitle" fontSize="sm">
           Un asesor te contactará por WhatsApp para confirmar tu Test Drive.
         </Text>
         <Button
-          bg="neon"
-          color="bg.primary"
+          bg="green.button"
+          color="bg.root"
           fontWeight="bold"
-          borderRadius="lg"
+          borderRadius="md"
           px={6}
-          _hover={{ boxShadow: "neon-md", transform: "scale(1.05)" }}
-          _active={{ transform: "scale(0.95)" }}
-          transition="all 0.15s"
+          _hover={{ boxShadow: "btn-glow" }}
           onClick={() => setSent(false)}
         >
           Agendar otro
@@ -110,17 +101,17 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
   return (
     <VStack align="stretch" gap={5} maxW="480px">
       <HStack gap={3}>
-        <Image src="/logo.png" alt="Quantum" h="24px" w="auto" objectFit="contain" />
+        <Image src="/logo.png" alt="Quantum" h="22px" w="auto" objectFit="contain" />
         <Heading size="md" color="text.primary" fontWeight="bold">
           Agendar Test Drive
         </Heading>
       </HStack>
       {slots.length > 0 && (
         <Badge
-          bg="neon-soft"
-          color="neon"
+          bg="green.soft"
+          color="green.primary"
           border="1px solid"
-          borderColor="neon-border"
+          borderColor="green.border"
           borderRadius="full"
           px={4}
           py={2}
@@ -135,8 +126,8 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
         p={6}
         bg="bg.card"
         border="1px solid"
-        borderColor="border.neon"
-        borderRadius="xl"
+        borderColor="green.border"
+        borderRadius="lg"
         gap={5}
         align="stretch"
       >
@@ -148,11 +139,11 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
             placeholder="Tu nombre completo"
-            bg="bg.raised"
-            borderColor="border.subtle"
+            bg="bg.root"
+            borderColor="green.border"
             color="text.primary"
-            borderRadius="lg"
-            _focus={{ borderColor: "neon", boxShadow: "neon-sm" }}
+            borderRadius="md"
+            _focus={{ borderColor: "green.dot", boxShadow: "0 0 8px rgba(0, 255, 136, 0.2)" }}
             _placeholder={{ color: "text.dim" }}
           />
         </VStack>
@@ -165,11 +156,11 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             value={celular}
             onChange={(e) => setCelular(e.target.value)}
             placeholder="+591 7XXXXXXX"
-            bg="bg.raised"
-            borderColor="border.subtle"
+            bg="bg.root"
+            borderColor="green.border"
             color="text.primary"
-            borderRadius="lg"
-            _focus={{ borderColor: "neon", boxShadow: "neon-sm" }}
+            borderRadius="md"
+            _focus={{ borderColor: "green.dot", boxShadow: "0 0 8px rgba(0, 255, 136, 0.2)" }}
             _placeholder={{ color: "text.dim" }}
           />
         </VStack>
@@ -182,11 +173,11 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             value={ciudad}
             onChange={(e) => setCiudad(e.target.value)}
             placeholder="Ej: La Paz"
-            bg="bg.raised"
-            borderColor="border.subtle"
+            bg="bg.root"
+            borderColor="green.border"
             color="text.primary"
-            borderRadius="lg"
-            _focus={{ borderColor: "neon", boxShadow: "neon-sm" }}
+            borderRadius="md"
+            _focus={{ borderColor: "green.dot", boxShadow: "0 0 8px rgba(0, 255, 136, 0.2)" }}
             _placeholder={{ color: "text.dim" }}
           />
         </VStack>
@@ -198,11 +189,11 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
           <NativeSelectField
             value={producto}
             onChange={(e) => setProducto(e.target.value)}
-            bg="bg.raised"
-            borderColor="border.subtle"
+            bg="bg.root"
+            borderColor="green.border"
             color="text.primary"
-            borderRadius="lg"
-            _focus={{ borderColor: "neon", boxShadow: "neon-sm" }}
+            borderRadius="md"
+            _focus={{ borderColor: "green.dot", boxShadow: "0 0 8px rgba(0, 255, 136, 0.2)" }}
           >
             {products.map((p) => (
               <option key={p.id} value={p.id}>
@@ -213,16 +204,14 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
         </VStack>
 
         <Button
-          bg="neon"
-          color="bg.primary"
+          bg="green.button"
+          color="bg.root"
           fontWeight="bold"
           py={3}
-          borderRadius="lg"
+          borderRadius="md"
           fontSize="sm"
-          _hover={{ boxShadow: "neon-md", transform: "scale(1.02)" }}
-          _active={{ transform: "scale(0.98)" }}
+          _hover={{ boxShadow: "btn-glow" }}
           _disabled={{ opacity: 0.3, cursor: "not-allowed" }}
-          transition="all 0.15s"
           onClick={handleSubmit}
           disabled={!canSubmit}
         >
