@@ -16,6 +16,24 @@ Este repositorio documenta y prepara una **demo** del concepto:
 - Resumen visual (fotos/colores/tabla) según la conversación.
 - Registro simple de Test Drive.
 
+## Preparación local (sin desarrollar)
+1) Instalar dependencias
+- `cd web`
+- `npm install`
+
+2) Levantar el entorno local
+- `npm run dev`
+- Abrir: http://localhost:3000
+
+## Configuración (opcional)
+- Archivo de ejemplo: [.env.example](.env.example)
+- Copiar a `.env` y completar si se usa Supabase (no subir a Git).
+- `NEXT_PUBLIC_MEMORY_MODE=local` para demo simple, o `supabase` si se habilita Auth.
+
+## Dataset demo
+- Dataset base: [data/demo/dataset.json](data/demo/dataset.json)
+- Estructura alineada a [docs/DATA_CONTRACT.md](docs/DATA_CONTRACT.md).
+
 ## Alcance (demo)
 - Incluye: experiencia web + dataset estructurado + flujo de Test Drive.
 - No incluye (demo): omnicanalidad oficial completa (WhatsApp/IG/TikTok) ni pagos/financiamiento.
