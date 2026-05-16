@@ -78,6 +78,7 @@ export default function Home() {
       w="100vw"
       position="relative"
       overflow="hidden"
+      direction={{ base: "column", md: "row" }}
     >
       {/* base */}
       <Box position="absolute" inset={0} bg="#020302" />
@@ -102,24 +103,25 @@ export default function Home() {
       <Image
         src="/logo.png"
         alt="Quantum"
-        h="44px"
+        h={{ base: "32px", md: "44px" }}
         w="auto"
         objectFit="contain"
         position="absolute"
-        top="36px"
-        left="40px"
+        top={{ base: "12px", md: "36px" }}
+        left={{ base: "16px", md: "40px" }}
         zIndex={10}
         filter="drop-shadow(0 0 14px rgba(47, 182, 118, 0.25))"
       />
 
-      {/* left half — 45% */}
+      {/* left half — chat */}
       <Flex
-        w="45%"
-        h="100%"
+        w={{ base: "100%", md: "45%" }}
+        h={{ base: "60%", md: "100%" }}
         align="center"
         justify="center"
         position="relative"
         zIndex={1}
+        py={{ base: 2, md: 0 }}
       >
         <ChatPanel
           messages={messages}
@@ -130,10 +132,10 @@ export default function Home() {
         />
       </Flex>
 
-      {/* right half — 55% */}
+      {/* right half — showroom */}
       <Flex
-        w="55%"
-        h="100%"
+        w={{ base: "100%", md: "55%" }}
+        h={{ base: "40%", md: "100%" }}
         align="center"
         justify="center"
         position="relative"
