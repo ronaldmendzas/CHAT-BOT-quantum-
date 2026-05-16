@@ -93,7 +93,7 @@ export default function Home() {
       <Box
         position="absolute"
         inset={0}
-        bg="radial-gradient(ellipse at 25% 50%, rgba(0, 255, 136, 0.10) 0%, transparent 60%)"
+        bg="radial-gradient(ellipse at 25% 50%, rgba(47, 182, 118, 0.10) 0%, transparent 60%)"
         pointerEvents="none"
       />
       
@@ -101,7 +101,7 @@ export default function Home() {
       <Box
         position="absolute"
         inset={0}
-        bg="radial-gradient(ellipse at 75% 50%, rgba(0, 255, 136, 0.07) 0%, transparent 55%)"
+        bg="radial-gradient(ellipse at 75% 50%, rgba(47, 182, 118, 0.07) 0%, transparent 55%)"
         pointerEvents="none"
       />
 
@@ -116,7 +116,7 @@ export default function Home() {
         top="36px"
         left="40px"
         zIndex={10}
-        filter="drop-shadow(0 0 14px rgba(0, 255, 136, 0.25))"
+        filter="drop-shadow(0 0 14px rgba(47, 182, 118, 0.25))"
       />
 
       {/* left half — 45% */}
