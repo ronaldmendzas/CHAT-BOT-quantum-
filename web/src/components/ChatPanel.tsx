@@ -43,7 +43,7 @@ export default function ChatPanel({
 
   return (
     <VStack
-      bg="#0e5c48"
+      bg="#0c1610"
       border="1px solid rgba(47, 182, 118, 0.08)"
       borderRadius="16px"
       boxShadow="0 0 40px rgba(47, 182, 118, 0.06), inset 0 0 40px rgba(0, 0, 0, 0.2)"

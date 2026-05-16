@@ -37,7 +37,7 @@ function Card({ children }: { children: React.ReactNode }) {
   return (
     <Box
       p={5}
-      bg="#0e5c48"
+      bg="#0c1610"
       border="1px solid rgba(47, 182, 118, 0.08)"
       borderRadius="12px"
       _hover={{
@@ -267,7 +267,7 @@ export default function ShowroomPanel({
                 key={p.id}
                 variant="outline"
                 borderColor="rgba(47, 182, 118, 0.08)"
-                bg="#0e5c48"
+                bg="#0c1610"
                 p={5}
                 justifyContent="flex-start"
                 flexDirection="column"
