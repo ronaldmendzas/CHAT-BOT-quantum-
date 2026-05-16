@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { readJsonFile, writeJsonFile } from "@/lib/db";
+import { TestDriveLeadSchema } from "@/lib/schema";
 import { randomUUID } from "crypto";
 
 const RATE_LIMIT_MAP = new Map<string, number[]>();
@@ -25,22 +26,24 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json();
-    const { nombre, celular, ciudad, producto } = body;
+    const parsed = TestDriveLeadSchema.safeParse(body);
 
-    if (!nombre || !celular || !ciudad || !producto) {
+    if (!parsed.success) {
       return NextResponse.json(
-        { error: "Missing required fields" },
+        { error: "Validation failed", issues: parsed.error.issues },
         { status: 400 }
       );
     }
 
+    const { nombre, celular, ciudad, producto } = parsed.data;
     const file = await readJsonFile<{ leads: unknown[] }>("leads.json");
+
     const lead = {
       id: randomUUID(),
-      nombre: String(nombre).trim(),
-      celular: String(celular).trim(),
-      ciudad: String(ciudad).trim(),
-      producto: String(producto).trim(),
+      nombre,
+      celular,
+      ciudad,
+      producto,
       canal_origen: "WEB",
       timestamp: new Date().toISOString(),
       estado: "PENDIENTE",

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Product, TestDriveSlot } from "@/lib/types";
+import { useTestDrive } from "@/hooks/useTestDrive";
 import {
   Box,
   VStack,
@@ -32,6 +33,7 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
   const [producto, setProducto] = useState(products[0]?.id ?? "");
   const [sent, setSent] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const { submit, submitting, error: apiError } = useTestDrive();
 
   function validateNombre(v: string) {
     const trimmed = v.trim();
@@ -60,7 +62,7 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
   const ciudadError = validateCiudad(ciudad);
   const canSubmit = !nombreError && !celularError && !ciudadError && nombre && celular && ciudad;
 
-  function handleSubmit() {
+  async function handleSubmit() {
     if (!canSubmit) {
       setErrors({
         nombre: nombreError,
@@ -69,13 +71,19 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
       });
       return;
     }
-    onSubmit({
+    const data = {
       nombre: nombre.trim(),
       celular: celular.trim().replace(/\s/g, ""),
       ciudad: ciudad.trim(),
       producto: producto.trim(),
-    });
-    setSent(true);
+    };
+    try {
+      await submit(data);
+      onSubmit(data);
+      setSent(true);
+    } catch {
+      // error ya está en apiError
+    }
   }
 
   function handleReset() {
@@ -266,6 +274,12 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
           </select>
         </VStack>
 
+        {apiError && (
+          <Text fontSize="xs" color="#ff4d6a" textAlign="center">
+            {apiError}
+          </Text>
+        )}
+
         <Button
           bg="#0e5c48"
           color="white"
@@ -276,9 +290,9 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
           _hover={{ boxShadow: "0 0 6px rgba(0, 230, 180, 0.03)" }}
           _disabled={{ opacity: 0.3, cursor: "not-allowed" }}
           onClick={handleSubmit}
-          disabled={!canSubmit}
+          disabled={!canSubmit || submitting}
         >
-          Registrar Test Drive
+          {submitting ? "Registrando..." : "Registrar Test Drive"}
         </Button>
       </VStack>
     </VStack>

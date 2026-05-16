@@ -47,6 +47,13 @@ export const MediaItemSchema = z.object({
   product_id: z.string().min(1),
 });
 
+export const TestDriveLeadSchema = z.object({
+  nombre: z.string().min(2, "Nombre muy corto"),
+  celular: z.string().regex(/^(\+591)?[67]\d{7}$/, "Celular inválido"),
+  ciudad: z.string().min(2, "Ciudad requerida"),
+  producto: z.string().min(1, "Producto requerido"),
+});
+
 export const DatasetSchema = z.object({
   products: z.array(ProductSchema),
   stock: z.array(StockEntrySchema),
