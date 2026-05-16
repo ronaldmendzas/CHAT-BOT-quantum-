@@ -12,7 +12,7 @@ import { Flex } from "@chakra-ui/react";
 const WELCOME_MSG: ChatMessage = {
   role: "assistant",
   content:
-    "¡Hola! Soy Bot Quantum, tu asesor de electromovilidad. ¿En qué puedo ayudarte? Puedo mostrarte modelos, stock, sucursales o agendar un Test Drive.",
+    "¡Hola! Soy Bot Quantum, tu asesor de electromovilidad. Puedo mostrarte nuestros modelos, sucursales o agendar un Test Drive. ¿En qué te ayudo?",
   timestamp: Date.now(),
 };
 
@@ -94,6 +94,7 @@ export default function Home() {
         stock={dataset.stock}
         sucursales={dataset.sucursales}
         testDrive={dataset.test_drive}
+        media={dataset.media}
         selectedProductId={selectedProductId}
         onSelectProduct={handleSelectProduct}
         onTestDriveSubmit={handleTestDrive}

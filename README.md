@@ -31,7 +31,7 @@ Este repositorio documenta y prepara una **demo** del concepto:
 - `NEXT_PUBLIC_MEMORY_MODE=local` para demo simple, o `supabase` si se habilita Auth.
 
 ## Dataset demo
-- Dataset base: [data/demo/dataset.json](data/demo/dataset.json)
+- Dataset base: [web/src/data/dataset.json](web/src/data/dataset.json)
 - Estructura alineada a [docs/DATA_CONTRACT.md](docs/DATA_CONTRACT.md).
 
 ## Alcance (demo)

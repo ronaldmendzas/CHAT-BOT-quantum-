@@ -44,5 +44,4 @@ tmp/
 .cache/
 
 # --- Large local datasets ---
-data/raw/
-cerebro_quantum_completo.json
+data/

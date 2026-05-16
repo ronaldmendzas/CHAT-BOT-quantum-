@@ -1,6 +1,6 @@
 "use client";
 
-import type { Intent, Product, StockEntry, Sucursal, TestDriveSlot } from "@/lib/types";
+import type { Intent, Product, StockEntry, Sucursal, TestDriveSlot, MediaItem } from "@/lib/types";
 import { formatBs } from "@/lib/dataset";
 import TestDriveForm from "./TestDriveForm";
 import {
@@ -22,6 +22,7 @@ type Props = Readonly<{
   stock: StockEntry[];
   sucursales: Sucursal[];
   testDrive: TestDriveSlot[];
+  media: MediaItem[];
   selectedProductId?: string;
   onSelectProduct: (id: string) => void;
   onTestDriveSubmit: (data: {
@@ -65,11 +66,16 @@ export default function ShowroomPanel({
   stock,
   sucursales,
   testDrive,
+  media,
   selectedProductId,
   onSelectProduct,
   onTestDriveSubmit,
 }: Props) {
   const selected = products.find((p) => p.id === selectedProductId);
+  const selectedMedia = selected
+    ? media.filter((m) => m.product_id === selected.id && m.type === "IMAGE")
+    : [];
+  const mainImage = selectedMedia[0]?.url || "/logo.png";
   const productStock = selected
     ? stock.filter((s) => s.product_id === selected.id)
     : stock;
@@ -127,11 +133,12 @@ export default function ShowroomPanel({
             Bienvenido a Quantum Motors
           </Heading>
           <Text color="text.secondary" fontSize="sm" maxW="400px">
-            Escribe en el chat: &quot;modelos&quot;, &quot;stock&quot;,
-            &quot;sucursales&quot; o &quot;agendar test drive&quot;.
+            Escribe en el chat: &quot;modelos&quot;, &quot;sucursales&quot; o &quot;agendar test drive&quot;.
           </Text>
           <SimpleGrid columns={{ base: 1, md: 2 }} gap={3} w="full" maxW="720px">
-            {products.map((p) => (
+            {products.map((p) => {
+              const thumb = media.find((m) => m.product_id === p.id && m.type === "IMAGE");
+              return (
               <Button
                 key={p.id}
                 variant="outline"
@@ -151,7 +158,19 @@ export default function ShowroomPanel({
                 transition="all 0.2s"
                 onClick={() => onSelectProduct(p.id)}
                 h="auto"
+                overflow="hidden"
               >
+                {thumb?.url && (
+                  <Image
+                    src={thumb.url}
+                    alt={p.nombre}
+                    w="100%"
+                    h="120px"
+                    objectFit="cover"
+                    borderRadius="md"
+                    mb={2}
+                  />
+                )}
                 <Text fontWeight="bold" fontSize="sm" color="text.primary">
                   {p.nombre}
                 </Text>
@@ -159,7 +178,8 @@ export default function ShowroomPanel({
                   {formatBs(p.precio.monto)}
                 </Text>
               </Button>
-            ))}
+            );
+            })}
           </SimpleGrid>
         </VStack>
       )}
@@ -181,13 +201,14 @@ export default function ShowroomPanel({
             position="relative"
           >
             <Image
-              src="/logo.png"
+              src={mainImage}
               alt={selected.nombre}
-              w="180px"
-              h="auto"
-              objectFit="contain"
-              opacity={0.25}
-              filter="drop-shadow(0 0 12px rgba(0, 255, 170, 0.15))"
+              w="100%"
+              h="100%"
+              objectFit="cover"
+              position="absolute"
+              top={0}
+              left={0}
             />
             <Text
               fontSize="lg"
@@ -198,6 +219,8 @@ export default function ShowroomPanel({
               left={0}
               right={0}
               textAlign="center"
+              bg="rgba(0,0,0,0.6)"
+              py={2}
             >
               {selected.nombre}
             </Text>
@@ -313,7 +336,9 @@ export default function ShowroomPanel({
       {/* VEHICLE list (no specific product) */}
       {intent === "VEHICLE" && !selected && (
         <SimpleGrid columns={{ base: 1, md: 2 }} gap={3} maxW="720px">
-          {products.map((p) => (
+          {products.map((p) => {
+            const thumb = media.find((m) => m.product_id === p.id && m.type === "IMAGE");
+            return (
             <Button
               key={p.id}
               variant="outline"
@@ -333,7 +358,19 @@ export default function ShowroomPanel({
               transition="all 0.2s"
               onClick={() => onSelectProduct(p.id)}
               h="auto"
+              overflow="hidden"
             >
+              {thumb?.url && (
+                <Image
+                  src={thumb.url}
+                  alt={p.nombre}
+                  w="100%"
+                  h="120px"
+                  objectFit="cover"
+                  borderRadius="md"
+                  mb={2}
+                />
+              )}
               <Text fontWeight="bold" fontSize="sm" color="text.primary">
                 {p.nombre}
               </Text>
@@ -344,52 +381,62 @@ export default function ShowroomPanel({
                 {p.descripcion_corta}
               </Text>
             </Button>
-          ))}
+          );
+          })}
         </SimpleGrid>
       )}
 
-      {/* STOCK */}
+      {/* STOCK — redirigido a catálogo */}
       {intent === "STOCK" && (
-        <VStack gap={4} align="stretch">
-          <Heading size="md" color="text.primary" fontWeight="bold">
-            Stock {selected ? `— ${selected.nombre}` : "general"}
-          </Heading>
-          <SimpleGrid columns={{ base: 1, md: 2 }} gap={3}>
-            {(selected
-              ? stock.filter((s) => s.product_id === selected.id)
-              : stock
-            ).map((s) => {
-              const prod = products.find((p) => p.id === s.product_id);
-              const suc = sucursales.find((su) => su.id === s.sucursal_id);
-              return (
-                <NeonCard key={`${s.product_id}-${s.sucursal_id}`}>
-                  <Flex justify="space-between" align="center" mb={2}>
-                    <Text fontWeight="bold" fontSize="sm" color="text.primary">
-                      {prod?.nombre ?? s.product_id}
-                    </Text>
-                    <Badge
-                      color={stockColor(s.estado)}
-                      bg={`${stockColor(s.estado)}15`}
-                      border="1px solid"
-                      borderColor={`${stockColor(s.estado)}40`}
-                      borderRadius="full"
-                      px={3}
-                      py={0.5}
-                      fontSize="xs"
-                      fontWeight="bold"
-                    >
-                      {s.estado}
-                    </Badge>
-                  </Flex>
-                  <Flex justify="space-between" fontSize="xs" color="text.secondary">
-                    <Text>📍 {suc?.ciudad ?? s.region}</Text>
-                    <Text fontWeight="bold">Cantidad: {s.cantidad}</Text>
-                  </Flex>
-                </NeonCard>
-              );
-            })}
-          </SimpleGrid>
-        </VStack>
+        <SimpleGrid columns={{ base: 1, md: 2 }} gap={3} maxW="720px">
+          {products.map((p) => {
+            const thumb = media.find((m) => m.product_id === p.id && m.type === "IMAGE");
+            return (
+            <Button
+              key={p.id}
+              variant="outline"
+              borderColor="border.neon"
+              bg="bg.card"
+              p={5}
+              justifyContent="flex-start"
+              flexDirection="column"
+              alignItems="flex-start"
+              borderRadius="xl"
+              _hover={{
+                borderColor: "neon",
+                boxShadow: "neon-md",
+                transform: "translateY(-2px)",
+              }}
+              _active={{ transform: "scale(0.98)" }}
+              transition="all 0.2s"
+              onClick={() => onSelectProduct(p.id)}
+              h="auto"
+              overflow="hidden"
+            >
+              {thumb?.url && (
+                <Image
+                  src={thumb.url}
+                  alt={p.nombre}
+                  w="100%"
+                  h="120px"
+                  objectFit="cover"
+                  borderRadius="md"
+                  mb={2}
+                />
+              )}
+              <Text fontWeight="bold" fontSize="sm" color="text.primary">
+                {p.nombre}
+              </Text>
+              <Text fontSize="xs" color="neon" fontWeight="bold" mt={1}>
+                {formatBs(p.precio.monto)}
+              </Text>
+              <Text fontSize="xs" color="text.secondary" mt={2}>
+                {p.descripcion_corta}
+              </Text>
+            </Button>
+          );
+          })}
+        </SimpleGrid>
       )}
 
       {/* SUCURSALES */}
@@ -440,7 +487,7 @@ export default function ShowroomPanel({
             opacity={0.2}
           />
           <Text color="text.secondary" fontSize="sm">
-            Prueba escribir: &quot;modelos&quot;, &quot;stock del S1&quot; o
+            Prueba escribir: &quot;modelos&quot;, &quot;sucursales&quot; o
             &quot;agendar test drive&quot;.
           </Text>
         </VStack>

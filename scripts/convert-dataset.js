@@ -1,13 +1,39 @@
 const fs = require("fs");
 const path = require("path");
 
-const VISUAL_PATH = path.join(__dirname, "..", "catalogo_visual.json");
-const RAW_PATH = path.join(__dirname, "..", "data", "raw", "cerebro.json");
+const CATALOGO_PATH = path.join(__dirname, "..", "catalogo_visual.json");
 const OUTPUT_PATH = path.join(__dirname, "..", "web", "src", "data", "dataset.json");
 
-const visual = JSON.parse(fs.readFileSync(VISUAL_PATH, "utf-8"));
-const raw = JSON.parse(fs.readFileSync(RAW_PATH, "utf-8"));
-const rawItems = raw.productos_tienda || [];
+const catalogo = JSON.parse(fs.readFileSync(CATALOGO_PATH, "utf-8"));
+
+const PRICES = {
+  "trooper": 27000,
+  "urban": 27400,
+  "ion-pro": 264600,
+  "ion-plus": 223000,
+  "ion": 192100,
+  "kaiyi-equte": 205800,
+  "nexus-plus": 142100,
+  "colibri": 72500,
+  "a5": 7300,
+  "ara": 6800,
+  "starto": 6800,
+  "enchufe-smart-plug": 150,
+  "mochila-delivery": 250,
+  "cajuela-de-motocicleta": 170,
+  "casco-blanco": 160,
+  "casco-urbano": 160,
+  "candado-tipo-cadena": 35,
+  "casco-con-visera": 95,
+  "nexus": 127400,
+  "e4-montanero": 75500,
+  "luna-pro": 12500,
+  "flashride": 21900,
+  "ts-street-hunter": 41300,
+  "ts-street-hunter-pro": 45600,
+  "tc-wanderer-pro": 42500,
+  "tc": 32600,
+};
 
 function slugify(name) {
   return name
@@ -147,20 +173,11 @@ function getColores(text) {
   return found.length > 0 ? found : ["Por definir"];
 }
 
-const priceMap = {};
-for (const item of rawItems) {
-  const slug = slugify(item.nombre);
-  const precio = parseInt(item.precio_raw, 10);
-  if (!isNaN(precio)) {
-    priceMap[slug] = { monto: precio, moneda: item.moneda || "BOB" };
-  }
-}
-
 const seenNames = new Set();
 const seenAccesorios = new Set();
 const products = [];
 
-for (const item of visual) {
+for (const item of catalogo) {
   const nombre = item.titulo.trim();
   const slug = slugify(nombre);
 
@@ -172,7 +189,7 @@ for (const item of visual) {
   if (seenNames.has(slug)) continue;
   seenNames.add(slug);
 
-  const precio = priceMap[slug] || { monto: 0, moneda: "BOB" };
+  const precio = PRICES[slug] ? { monto: PRICES[slug], moneda: "BOB" } : { monto: 0, moneda: "BOB" };
   const categoria = mapCategory(item.categoria);
   const desc = cleanDescription(item.descripcion || item.descripcion_corta);
   const specs = extractSpecs(item.descripcion);
@@ -244,9 +261,9 @@ const testDrive = ciudades.slice(0, 4).map((c) => ({
 }));
 
 const allMedia = products.flatMap((p) => {
-  const visualItem = visual.find((v) => slugify(v.titulo) === p.id);
-  const fotos = visualItem ? (visualItem.fotos || []) : [];
-  const videos = visualItem ? (visualItem.videos || []) : [];
+  const catItem = catalogo.find((v) => slugify(v.titulo) === p.id);
+  const fotos = catItem ? (catItem.fotos || []) : [];
+  const videos = catItem ? (catItem.videos || []) : [];
   return [
     ...fotos.map((url, i) => ({
       id: `media_${p.id}_${i}`,

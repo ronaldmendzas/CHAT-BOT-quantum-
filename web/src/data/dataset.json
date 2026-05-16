@@ -538,27 +538,19 @@
   "stock": [
     {
       "product_id": "trooper",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "trooper",
-      "region": "TJA",
-      "sucursal_id": "TJA-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "trooper",
       "region": "ORU",
       "sucursal_id": "ORU-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "trooper",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
       "cantidad": 1,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "trooper",
@@ -566,311 +558,311 @@
       "sucursal_id": "EAL-01",
       "cantidad": 4,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
-      "product_id": "urban",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "urban",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "urban",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "urban",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion-pro",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion-pro",
-      "region": "TJA",
-      "sucursal_id": "TJA-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion-pro",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion-pro",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion-plus",
-      "region": "TJA",
-      "sucursal_id": "TJA-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion-plus",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion-plus",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion-plus",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ion",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "kaiyi-equte",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "kaiyi-equte",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "kaiyi-equte",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "kaiyi-equte",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "nexus-plus",
-      "region": "TJA",
-      "sucursal_id": "TJA-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "nexus-plus",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "nexus-plus",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "nexus-plus",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "colibri",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "colibri",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "colibri",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "colibri",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "a5",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "a5",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "a5",
+      "product_id": "trooper",
       "region": "SCZ",
       "sucursal_id": "SCZ-01",
       "cantidad": 2,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "urban",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "urban",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "urban",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "urban",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion-pro",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion-pro",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion-pro",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion-pro",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion-plus",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion-plus",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion-plus",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion-plus",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ion",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "kaiyi-equte",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "kaiyi-equte",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "kaiyi-equte",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "kaiyi-equte",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "nexus-plus",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "nexus-plus",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "nexus-plus",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "nexus-plus",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "colibri",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "colibri",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "colibri",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "colibri",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "a5",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "a5",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "a5",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "a5",
       "region": "SUC",
       "sucursal_id": "SUC-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ara",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 2,
+      "cantidad": 1,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ara",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "ara",
       "region": "CBB",
       "sucursal_id": "CBB-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "ara",
       "region": "TJA",
       "sucursal_id": "TJA-01",
-      "cantidad": 5,
+      "cantidad": 3,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ara",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ara",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "starto",
       "region": "LPZ",
       "sucursal_id": "LPZ-01",
-      "cantidad": 4,
+      "cantidad": 3,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "starto",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "starto",
@@ -878,87 +870,87 @@
       "sucursal_id": "TJA-01",
       "cantidad": 4,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "starto",
       "region": "SUC",
       "sucursal_id": "SUC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "starto",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "enchufe-smart-plug",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "enchufe-smart-plug",
-      "region": "TJA",
-      "sucursal_id": "TJA-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "mochila-delivery",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "mochila-delivery",
       "region": "LPZ",
       "sucursal_id": "LPZ-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "cajuela-de-motocicleta",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "cajuela-de-motocicleta",
-      "region": "TJA",
-      "sucursal_id": "TJA-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "casco-blanco",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "casco-blanco",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
       "cantidad": 2,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
-      "product_id": "casco-urbano",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
+      "product_id": "mochila-delivery",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
       "cantidad": 3,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "cajuela-de-motocicleta",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "cajuela-de-motocicleta",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "casco-blanco",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "casco-blanco",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "casco-urbano",
@@ -966,39 +958,71 @@
       "sucursal_id": "EAL-01",
       "cantidad": 3,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "casco-urbano",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "candado-tipo-cadena",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "candado-tipo-cadena",
       "region": "CBB",
       "sucursal_id": "CBB-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "casco-con-visera",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "casco-con-visera",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
       "cantidad": 5,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "casco-con-visera",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "nexus",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "nexus",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "nexus",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "nexus",
@@ -1006,119 +1030,87 @@
       "sucursal_id": "SUC-01",
       "cantidad": 5,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
-      "product_id": "nexus",
+      "product_id": "e4-montanero",
       "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "nexus",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
+      "sucursal_id": "LPZ-01",
       "cantidad": 1,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
-      "product_id": "nexus",
+      "product_id": "e4-montanero",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "e4-montanero",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "e4-montanero",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "luna-pro",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "luna-pro",
       "region": "CBB",
       "sucursal_id": "CBB-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "e4-montanero",
-      "region": "TJA",
-      "sucursal_id": "TJA-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "e4-montanero",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
       "cantidad": 1,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "e4-montanero",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "e4-montanero",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "luna-pro",
       "region": "SCZ",
       "sucursal_id": "SCZ-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "luna-pro",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
       "cantidad": 1,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "luna-pro",
       "region": "LPZ",
       "sucursal_id": "EAL-01",
-      "cantidad": 3,
+      "cantidad": 4,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "luna-pro",
-      "region": "TJA",
-      "sucursal_id": "TJA-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "flashride",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "flashride",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "flashride",
-      "region": "TJA",
-      "sucursal_id": "TJA-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "flashride",
@@ -1126,127 +1118,111 @@
       "sucursal_id": "SCZ-01",
       "cantidad": 4,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "flashride",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "ts-street-hunter",
       "region": "SUC",
       "sucursal_id": "SUC-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "ts-street-hunter",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 4,
+      "cantidad": 3,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "ts-street-hunter",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
       "cantidad": 5,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "ts-street-hunter",
       "region": "CBB",
       "sucursal_id": "CBB-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
-      "product_id": "ts-street-hunter-pro",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
+      "product_id": "ts-street-hunter",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
       "cantidad": 4,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "ts-street-hunter-pro",
       "region": "SCZ",
       "sucursal_id": "SCZ-01",
-      "cantidad": 3,
+      "cantidad": 4,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "ts-street-hunter-pro",
       "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 5,
+      "sucursal_id": "TJA-01",
+      "cantidad": 3,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "ts-street-hunter-pro",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "ts-street-hunter-pro",
       "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "sucursal_id": "LPZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "tc-wanderer-pro",
       "region": "LPZ",
-      "sucursal_id": "EAL-01",
+      "sucursal_id": "LPZ-01",
       "cantidad": 3,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "tc-wanderer-pro",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "tc-wanderer-pro",
       "region": "ORU",
       "sucursal_id": "ORU-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "tc-wanderer-pro",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "tc-wanderer-pro",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
       "cantidad": 2,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "tc",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "tc",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
-    },
-    {
-      "product_id": "tc",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     },
     {
       "product_id": "tc",
@@ -1254,7 +1230,31 @@
       "sucursal_id": "TJA-01",
       "cantidad": 1,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T20:03:46.459Z"
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "tc",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "tc",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
+    },
+    {
+      "product_id": "tc",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T20:08:36.017Z"
     }
   ],
   "sucursales": [

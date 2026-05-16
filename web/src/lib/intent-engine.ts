@@ -24,7 +24,7 @@ export function resolveIntent(
     return {
       intent: "TEST_DRIVE",
       reply:
-        "¡Genial! Puedes agendar tu Test Drive en el panel de la derecha. Solo necesitas licencia vigente y CI.",
+        "¡Genial! Puedes agendar tu Test Drive en el panel. Solo necesitas licencia vigente y CI.",
     };
   }
 
@@ -39,16 +39,9 @@ export function resolveIntent(
     return {
       intent: "SUCURSALES",
       reply:
-        "Te muestro nuestras sucursales disponibles en el panel derecho.",
+        "Tenemos 8 sucursales en Bolivia. Te las muestro en el panel.",
     };
   }
-
-  /* Stock */
-  const wantsStock =
-    t.includes("stock") ||
-    t.includes("disponible") ||
-    t.includes("disponibilidad") ||
-    t.includes("hay");
 
   /* Product match */
   const matched = data.products.find((p) => {
@@ -56,14 +49,6 @@ export function resolveIntent(
     const idLow = norm(p.id);
     return t.includes(slug) || t.includes(idLow) || slug.includes(t);
   });
-
-  if (matched && wantsStock) {
-    return {
-      intent: "STOCK",
-      reply: `Aquí tienes el stock disponible de ${matched.nombre}.`,
-      productId: matched.id,
-    };
-  }
 
   if (matched) {
     return {
@@ -73,19 +58,16 @@ export function resolveIntent(
     };
   }
 
-  if (wantsStock) {
-    return {
-      intent: "STOCK",
-      reply: "Te muestro el stock de todos nuestros productos.",
-    };
-  }
-
-  /* Keyword product search */
+  /* Vehicle keywords */
   if (
     t.includes("scooter") ||
     t.includes("moto") ||
     t.includes("vehiculo") ||
-    t.includes("modelo")
+    t.includes("modelo") ||
+    t.includes("auto") ||
+    t.includes("camion") ||
+    t.includes("bicicleta") ||
+    t.includes("trimoto")
   ) {
     return {
       intent: "VEHICLE",
@@ -94,16 +76,20 @@ export function resolveIntent(
     };
   }
 
+  /* Accesorios */
   if (
     t.includes("bateria") ||
     t.includes("repuesto") ||
-    t.includes("accesorio")
+    t.includes("accesorio") ||
+    t.includes("casco") ||
+    t.includes("mochila") ||
+    t.includes("candado") ||
+    t.includes("cajuela")
   ) {
-    const bat = data.products.find((p) => p.categoria === "BATERIA");
     return {
       intent: "VEHICLE",
-      reply: "Te muestro nuestras baterías y accesorios disponibles.",
-      productId: bat?.id,
+      reply: "Te muestro nuestros accesorios disponibles.",
+      productId: data.products.find((p) => p.categoria === "ACCESORIO")?.id,
     };
   }
 
@@ -118,7 +104,20 @@ export function resolveIntent(
     return {
       intent: "WELCOME",
       reply:
-        "¡Hola! Soy Bot Quantum, tu asesor de electromovilidad. ¿En qué puedo ayudarte? Puedo mostrarte modelos, stock, sucursales o agendar un Test Drive.",
+        "¡Hola! Soy Bot Quantum, tu asesor de electromovilidad. Puedo mostrarte nuestros modelos, sucursales o agendar un Test Drive. ¿En qué te ayudo?",
+    };
+  }
+
+  /* Redirigir "stock" a vehículos */
+  if (
+    t.includes("stock") ||
+    t.includes("disponible") ||
+    t.includes("disponibilidad") ||
+    t.includes("hay")
+  ) {
+    return {
+      intent: "VEHICLE",
+      reply: "Todos nuestros modelos están disponibles en Quantum. Te muestro el catálogo completo.",
     };
   }
 
@@ -126,6 +125,6 @@ export function resolveIntent(
   return {
     intent: "UNKNOWN",
     reply:
-      "No estoy seguro de entender. Puedo ayudarte con: modelos, stock, sucursales y Test Drive. ¿Qué te interesa?",
+      "No estoy seguro de entender. Puedo ayudarte con: catálogo de vehículos, sucursales y Test Drive. ¿Qué te interesa?",
   };
 }
