@@ -123,19 +123,22 @@ export default function ChatPanel({
       <Flex align="flex-end" gap={2.5} px={5} py={4} w="100%">
         <Textarea
           flex={1}
-          rows={2}
+          rows={1}
           value={input}
           onChange={(e) => onInputChange(e.target.value)}
           onKeyDown={handleKey}
           placeholder="Escribe tu consulta..."
           bg="transparent"
-          border="1.5px solid #00e676"
+          border="1px solid #00e676"
           color="white"
           fontSize="sm"
-          borderRadius="12px"
-          _focus={{ boxShadow: "0 0 8px rgba(0, 230, 118, 0.2)" }}
+          borderRadius="8px"
+          minH="42px"
+          py={2.5}
+          _focus={{ boxShadow: "0 0 6px rgba(0, 230, 118, 0.15)" }}
           _placeholder={{ color: "#5d705d" }}
           resize="none"
+          overflow="hidden"
         />
         <Button
           bg="#00c853"
@@ -143,13 +146,14 @@ export default function ChatPanel({
           w="42px"
           h="42px"
           minW="42px"
-          fontSize="md"
-          borderRadius="12px"
+          fontSize="lg"
+          borderRadius="8px"
           fontWeight="bold"
           p={0}
           display="flex"
           alignItems="center"
           justifyContent="center"
+          lineHeight={1}
           _hover={{ boxShadow: "0 0 16px rgba(0, 200, 83, 0.35)" }}
           _disabled={{ opacity: 0.25, cursor: "not-allowed" }}
           onClick={onSend}
