@@ -42,17 +42,35 @@ export default function ChatPanel({
   }
 
   return (
-    <VStack
-      bg="#0c1610"
-      border="1px solid rgba(0, 230, 180, 0.05)"
-      borderRadius="16px"
-      boxShadow="0 0 3px rgba(0, 230, 180, 0.06), inset 0 0 40px rgba(0, 0, 0, 0.2)"
+    <Box
+      position="relative"
       w="100%"
       maxW="480px"
       h="75vh"
       overflow="hidden"
-      gap={0}
+      borderRadius="16px"
     >
+      <Box
+        position="absolute"
+        top="-50%"
+        left="-50%"
+        w="200%"
+        h="200%"
+        bg="conic-gradient(from 0deg, transparent 0%, rgba(0, 230, 180, 0.15) 6%, transparent 12%)"
+        animation="rotate 5s linear infinite"
+      />
+      <VStack
+        position="relative"
+        zIndex={1}
+        bg="#0c1610"
+        borderRadius="15px"
+        m="1px"
+        boxShadow="inset 0 0 40px rgba(0, 0, 0, 0.2)"
+        w="calc(100% - 2px)"
+        h="calc(100% - 2px)"
+        overflow="hidden"
+        gap={0}
+      >
       {/* header */}
       <Flex align="center" justify="space-between" px={6} pt={6} pb={3} w="100%">
         <Flex align="center" gap={2.5}>
@@ -183,5 +201,6 @@ export default function ChatPanel({
         </Button>
       </Flex>
     </VStack>
+    </Box>
   );
 }
