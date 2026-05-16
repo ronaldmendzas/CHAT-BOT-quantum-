@@ -55,11 +55,9 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
         align="center"
         gap={6}
         p={10}
-        bg="bg.card"
-        border="1px solid"
-        borderColor="green.border"
+        bg="#0f1a0f"
+        border="1px solid rgba(0, 230, 118, 0.22)"
         borderRadius="lg"
-        boxShadow="card-shadow"
         textAlign="center"
       >
         <Image src="/logo.png" alt="Quantum" w="80px" h="auto" objectFit="contain" opacity={0.5} />
@@ -67,29 +65,28 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
           w="64px"
           h="64px"
           borderRadius="full"
-          bg="green.soft"
-          border="2px solid"
-          borderColor="green.primary"
+          bg="rgba(0, 230, 118, 0.06)"
+          border="2px solid #00e676"
           display="flex"
           alignItems="center"
           justifyContent="center"
-          boxShadow="dot-glow"
+          boxShadow="0 0 14px rgba(0, 230, 118, 0.2)"
         >
-          <Text fontSize="3xl" color="green.primary" fontWeight="bold">✓</Text>
+          <Text fontSize="3xl" color="#00e676" fontWeight="bold">✓</Text>
         </Box>
-        <Heading size="md" color="text.primary" fontWeight="bold">
+        <Heading size="md" color="white" fontWeight="bold">
           ¡Solicitud registrada!
         </Heading>
-        <Text color="text.subtitle" fontSize="sm">
+        <Text color="#8a9e8a" fontSize="sm">
           Un asesor te contactará por WhatsApp para confirmar tu Test Drive.
         </Text>
         <Button
-          bg="green.button"
-          color="bg.root"
+          bg="#00c853"
+          color="white"
           fontWeight="bold"
-          borderRadius="md"
+          borderRadius="12px"
           px={6}
-          _hover={{ boxShadow: "btn-glow" }}
+          _hover={{ boxShadow: "0 0 16px rgba(0, 200, 83, 0.35)" }}
           onClick={() => setSent(false)}
         >
           Agendar otro
@@ -100,18 +97,14 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
 
   return (
     <VStack align="stretch" gap={5} maxW="480px">
-      <HStack gap={3}>
-        <Image src="/logo.png" alt="Quantum" h="22px" w="auto" objectFit="contain" />
-        <Heading size="md" color="text.primary" fontWeight="bold">
-          Agendar Test Drive
-        </Heading>
-      </HStack>
+      <Heading size="md" color="white" fontWeight="bold">
+        Agendar Test Drive
+      </Heading>
       {slots.length > 0 && (
         <Badge
-          bg="green.soft"
-          color="green.primary"
-          border="1px solid"
-          borderColor="green.border"
+          bg="rgba(0, 230, 118, 0.06)"
+          color="#00e676"
+          border="1px solid rgba(0, 230, 118, 0.22)"
           borderRadius="full"
           px={4}
           py={2}
@@ -124,76 +117,75 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
 
       <VStack
         p={6}
-        bg="bg.card"
-        border="1px solid"
-        borderColor="green.border"
+        bg="#0f1a0f"
+        border="1px solid rgba(0, 230, 118, 0.22)"
         borderRadius="lg"
         gap={5}
         align="stretch"
       >
         <VStack gap={1.5} align="stretch">
-          <Text fontSize="xs" fontWeight="bold" color="text.dim" textTransform="uppercase" letterSpacing="wide">
+          <Text fontSize="xs" fontWeight="bold" color="#5d705d" textTransform="uppercase" letterSpacing="wide">
             Nombre
           </Text>
           <Input
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
             placeholder="Tu nombre completo"
-            bg="bg.root"
-            borderColor="green.border"
-            color="text.primary"
-            borderRadius="md"
-            _focus={{ borderColor: "green.dot", boxShadow: "0 0 8px rgba(0, 255, 136, 0.2)" }}
-            _placeholder={{ color: "text.dim" }}
+            bg="#080d08"
+            borderColor="rgba(0, 230, 118, 0.22)"
+            color="white"
+            borderRadius="12px"
+            _focus={{ borderColor: "#00e676", boxShadow: "0 0 8px rgba(0, 230, 118, 0.2)" }}
+            _placeholder={{ color: "#5d705d" }}
           />
         </VStack>
 
         <VStack gap={1.5} align="stretch">
-          <Text fontSize="xs" fontWeight="bold" color="text.dim" textTransform="uppercase" letterSpacing="wide">
+          <Text fontSize="xs" fontWeight="bold" color="#5d705d" textTransform="uppercase" letterSpacing="wide">
             Celular / WhatsApp
           </Text>
           <Input
             value={celular}
             onChange={(e) => setCelular(e.target.value)}
             placeholder="+591 7XXXXXXX"
-            bg="bg.root"
-            borderColor="green.border"
-            color="text.primary"
-            borderRadius="md"
-            _focus={{ borderColor: "green.dot", boxShadow: "0 0 8px rgba(0, 255, 136, 0.2)" }}
-            _placeholder={{ color: "text.dim" }}
+            bg="#080d08"
+            borderColor="rgba(0, 230, 118, 0.22)"
+            color="white"
+            borderRadius="12px"
+            _focus={{ borderColor: "#00e676", boxShadow: "0 0 8px rgba(0, 230, 118, 0.2)" }}
+            _placeholder={{ color: "#5d705d" }}
           />
         </VStack>
 
         <VStack gap={1.5} align="stretch">
-          <Text fontSize="xs" fontWeight="bold" color="text.dim" textTransform="uppercase" letterSpacing="wide">
+          <Text fontSize="xs" fontWeight="bold" color="#5d705d" textTransform="uppercase" letterSpacing="wide">
             Ciudad
           </Text>
           <Input
             value={ciudad}
             onChange={(e) => setCiudad(e.target.value)}
             placeholder="Ej: La Paz"
-            bg="bg.root"
-            borderColor="green.border"
-            color="text.primary"
-            borderRadius="md"
-            _focus={{ borderColor: "green.dot", boxShadow: "0 0 8px rgba(0, 255, 136, 0.2)" }}
-            _placeholder={{ color: "text.dim" }}
+            bg="#080d08"
+            borderColor="rgba(0, 230, 118, 0.22)"
+            color="white"
+            borderRadius="12px"
+            _focus={{ borderColor: "#00e676", boxShadow: "0 0 8px rgba(0, 230, 118, 0.2)" }}
+            _placeholder={{ color: "#5d705d" }}
           />
         </VStack>
 
         <VStack gap={1.5} align="stretch">
-          <Text fontSize="xs" fontWeight="bold" color="text.dim" textTransform="uppercase" letterSpacing="wide">
+          <Text fontSize="xs" fontWeight="bold" color="#5d705d" textTransform="uppercase" letterSpacing="wide">
             Modelo de interés
           </Text>
           <NativeSelectField
             value={producto}
             onChange={(e) => setProducto(e.target.value)}
-            bg="bg.root"
-            borderColor="green.border"
-            color="text.primary"
-            borderRadius="md"
-            _focus={{ borderColor: "green.dot", boxShadow: "0 0 8px rgba(0, 255, 136, 0.2)" }}
+            bg="#080d08"
+            borderColor="rgba(0, 230, 118, 0.22)"
+            color="white"
+            borderRadius="12px"
+            _focus={{ borderColor: "#00e676", boxShadow: "0 0 8px rgba(0, 230, 118, 0.2)" }}
           >
             {products.map((p) => (
               <option key={p.id} value={p.id}>
@@ -204,13 +196,13 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
         </VStack>
 
         <Button
-          bg="green.button"
-          color="bg.root"
+          bg="#00c853"
+          color="white"
           fontWeight="bold"
           py={3}
-          borderRadius="md"
+          borderRadius="12px"
           fontSize="sm"
-          _hover={{ boxShadow: "btn-glow" }}
+          _hover={{ boxShadow: "0 0 16px rgba(0, 200, 83, 0.35)" }}
           _disabled={{ opacity: 0.3, cursor: "not-allowed" }}
           onClick={handleSubmit}
           disabled={!canSubmit}

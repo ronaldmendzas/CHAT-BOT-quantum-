@@ -7,7 +7,7 @@ import { resolveIntent } from "@/lib/intent-engine";
 import { loadMessages, saveMessages, clearMessages } from "@/lib/memory";
 import ChatPanel from "@/components/ChatPanel";
 import ShowroomPanel from "@/components/ShowroomPanel";
-import { Flex } from "@chakra-ui/react";
+import { Flex, Box, Image } from "@chakra-ui/react";
 
 const WELCOME_MSG: ChatMessage = {
   role: "assistant",
@@ -80,25 +80,68 @@ export default function Home() {
   );
 
   return (
-    <Flex h="100dvh" bg="bg.root">
-      <ChatPanel
-        messages={messages}
-        input={input}
-        onInputChange={setInput}
-        onSend={handleSend}
-        onClear={handleClear}
+    <Flex
+      h="100dvh"
+      w="100vw"
+      position="relative"
+      bg="radial-gradient(ellipse at 30% 50%, #0a2a0a 0%, #050805 60%)"
+      overflow="hidden"
+    >
+      <Box
+        position="absolute"
+        inset={0}
+        bg="radial-gradient(ellipse at 80% 50%, #0a2a0a 0%, transparent 50%)"
+        pointerEvents="none"
       />
-      <ShowroomPanel
-        intent={intent}
-        products={dataset.products}
-        stock={dataset.stock}
-        sucursales={dataset.sucursales}
-        testDrive={dataset.test_drive}
-        media={dataset.media}
-        selectedProductId={selectedProductId}
-        onSelectProduct={handleSelectProduct}
-        onTestDriveSubmit={handleTestDrive}
+      {/* logo top-left */}
+      <Image
+        src="/logo.png"
+        alt="Quantum"
+        h="32px"
+        w="auto"
+        objectFit="contain"
+        position="absolute"
+        top="40px"
+        left="40px"
+        zIndex={10}
       />
+
+      {/* left half — chat card centered */}
+      <Flex
+        flex={1}
+        align="center"
+        justify="center"
+        px={6}
+        position="relative"
+        zIndex={1}
+      >
+        <ChatPanel
+          messages={messages}
+          input={input}
+          onInputChange={setInput}
+          onSend={handleSend}
+          onClear={handleClear}
+        />
+      </Flex>
+
+      {/* right half — showroom */}
+      <Flex
+        flex={1}
+        position="relative"
+        zIndex={1}
+      >
+        <ShowroomPanel
+          intent={intent}
+          products={dataset.products}
+          stock={dataset.stock}
+          sucursales={dataset.sucursales}
+          testDrive={dataset.test_drive}
+          media={dataset.media}
+          selectedProductId={selectedProductId}
+          onSelectProduct={handleSelectProduct}
+          onTestDriveSubmit={handleTestDrive}
+        />
+      </Flex>
     </Flex>
   );
 }

@@ -12,7 +12,6 @@ import {
   VStack,
   HStack,
   IconButton,
-  Image,
 } from "@chakra-ui/react";
 
 type Props = {
@@ -44,146 +43,121 @@ export default function ChatPanel({
   }
 
   return (
-    <Box
-      w="45vw"
-      minW="380px"
-      maxW="520px"
-      flexShrink={0}
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      h="100dvh"
-      py={10}
+    <VStack
+      bg="#0f1a0f"
+      borderRadius="16px"
+      boxShadow="0 0 40px rgba(0, 230, 118, 0.06), 0 0 80px rgba(0, 230, 118, 0.03)"
+      w="100%"
+      maxW="500px"
+      h="75vh"
+      maxH="750px"
+      overflow="hidden"
+      gap={0}
     >
-      <VStack
-        bg="bg.card"
-        borderRadius="lg"
-        boxShadow="card-shadow"
-        w="100%"
-        h="75vh"
-        maxH="750px"
-        overflow="hidden"
-        gap={0}
-      >
-        {/* header */}
-        <Flex
-          align="center"
-          justify="space-between"
-          px={6}
-          pt={6}
-          pb={4}
-          w="100%"
-        >
-          <HStack gap={3}>
-            <Image src="/logo.png" alt="Quantum" h="24px" w="auto" objectFit="contain" />
-          </HStack>
-          <IconButton
-            aria-label="Limpiar chat"
-            variant="ghost"
-            size="xs"
-            color="text.dim"
-            _hover={{ color: "danger" }}
-            borderRadius="md"
-            onClick={onClear}
-          >
-            ✕
-          </IconButton>
-        </Flex>
-
-        {/* online indicator */}
-        <Flex align="center" gap={2} px={6} pb={5} w="100%">
+      {/* header */}
+      <Flex align="center" justify="space-between" px={6} pt={6} pb={3} w="100%">
+        <HStack gap={2.5}>
           <Box
             w="8px"
             h="8px"
             borderRadius="full"
-            bg="green.dot"
-            boxShadow="dot-glow"
+            bg="#00ff88"
+            boxShadow="0 0 10px rgba(0, 255, 136, 0.7)"
             animation="pulseDot 2.5s ease-in-out infinite"
           />
-          <Heading size="sm" color="text.primary" fontWeight="bold" fontSize="15px">
-            Bot Quantum
-          </Heading>
-          <Text fontSize="xs" color="text.subtitle" ml={1}>
-            Asesor de electromovilidad
-          </Text>
-        </Flex>
-
-        {/* messages */}
-        <VStack
-          flex={1}
-          overflowY="auto"
-          px={5}
-          py={3}
-          gap={3}
-          align="stretch"
-          w="100%"
+          <VStack gap={0} align="start">
+            <Heading size="sm" color="white" fontWeight="bold" fontSize="15px">
+              Bot Quantum
+            </Heading>
+            <Text fontSize="11px" color="#8a9e8a">
+              Asesor de electromovilidad
+            </Text>
+          </VStack>
+        </HStack>
+        <IconButton
+          aria-label="Limpiar chat"
+          variant="ghost"
+          size="xs"
+          color="#8a9e8a"
+          _hover={{ color: "#ff4d6a" }}
+          borderRadius="md"
+          onClick={onClear}
         >
-          {messages.map((m, i) => (
-            <Box
-              key={i}
-              maxW="85%"
-              px={4}
-              py={3}
-              borderRadius="md"
-              fontSize="14px"
-              lineHeight="1.55"
-              alignSelf={m.role === "user" ? "flex-end" : "flex-start"}
-              bg={m.role === "user" ? "green.user" : "bg.bubble"}
-              border={m.role === "user" ? "1px solid" : "none"}
-              borderColor={m.role === "user" ? "green.border" : "transparent"}
-              color={m.role === "user" ? "green.primary" : "text.primary"}
-              whiteSpace="pre-wrap"
-              wordBreak="break-word"
-            >
-              {m.content}
-            </Box>
-          ))}
-          <div ref={bottomRef} />
-        </VStack>
+          ✕
+        </IconButton>
+      </Flex>
 
-        {/* input */}
-        <Flex
-          align="flex-end"
-          gap={2.5}
-          px={5}
-          py={4}
-          w="100%"
-        >
-          <Textarea
-            flex={1}
-            rows={2}
-            value={input}
-            onChange={(e) => onInputChange(e.target.value)}
-            onKeyDown={handleKey}
-            placeholder="Escribe tu consulta..."
-            bg="transparent"
-            border="1.5px solid"
-            borderColor="green.glow"
-            color="text.primary"
-            fontSize="sm"
-            borderRadius="md"
-            _focus={{ borderColor: "green.dot", boxShadow: "0 0 8px rgba(0, 255, 136, 0.2)" }}
-            _placeholder={{ color: "text.dim" }}
-            resize="none"
-          />
-          <Button
-            bg="green.button"
-            color="bg.root"
-            w="42px"
-            h="42px"
-            fontSize="md"
-            borderRadius="md"
-            fontWeight="bold"
-            _hover={{ boxShadow: "btn-glow" }}
-            _disabled={{ opacity: 0.25, cursor: "not-allowed" }}
-            onClick={onSend}
-            disabled={!input.trim()}
+      {/* messages */}
+      <VStack
+        flex={1}
+        overflowY="auto"
+        px={5}
+        py={3}
+        gap={3}
+        align="stretch"
+        w="100%"
+      >
+        {messages.map((m, i) => (
+          <Box
+            key={i}
+            maxW="85%"
+            px={4}
+            py={3}
+            borderRadius="12px"
+            fontSize="14px"
+            lineHeight="1.55"
+            alignSelf={m.role === "user" ? "flex-end" : "flex-start"}
+            bg={m.role === "user" ? "rgba(0, 230, 118, 0.08)" : "#162416"}
+            border={m.role === "user" ? "1px solid rgba(0, 230, 118, 0.22)" : "none"}
+            color={m.role === "user" ? "#00e676" : "white"}
+            whiteSpace="pre-wrap"
+            wordBreak="break-word"
           >
-            ▶
-          </Button>
-        </Flex>
+            {m.content}
+          </Box>
+        ))}
+        <div ref={bottomRef} />
       </VStack>
-    </Box>
+
+      {/* input */}
+      <Flex align="flex-end" gap={2.5} px={5} py={4} w="100%">
+        <Textarea
+          flex={1}
+          rows={2}
+          value={input}
+          onChange={(e) => onInputChange(e.target.value)}
+          onKeyDown={handleKey}
+          placeholder="Escribe tu consulta..."
+          bg="transparent"
+          border="1.5px solid #00e676"
+          color="white"
+          fontSize="sm"
+          borderRadius="12px"
+          _focus={{ boxShadow: "0 0 8px rgba(0, 230, 118, 0.2)" }}
+          _placeholder={{ color: "#5d705d" }}
+          resize="none"
+        />
+        <Button
+          bg="#00c853"
+          color="white"
+          w="42px"
+          h="42px"
+          minW="42px"
+          fontSize="md"
+          borderRadius="12px"
+          fontWeight="bold"
+          p={0}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          _hover={{ boxShadow: "0 0 16px rgba(0, 200, 83, 0.35)" }}
+          _disabled={{ opacity: 0.25, cursor: "not-allowed" }}
+          onClick={onSend}
+          disabled={!input.trim()}
+        >
+          ▶
+        </Button>
+      </Flex>
+    </VStack>
   );
 }
