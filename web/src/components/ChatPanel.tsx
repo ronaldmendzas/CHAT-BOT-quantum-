@@ -44,9 +44,9 @@ export default function ChatPanel({
   return (
     <VStack
       bg="#0c1610"
-      border="1px solid rgba(0, 230, 180, 0.28)"
+      border="1px solid rgba(0, 230, 180, 0.05)"
       borderRadius="16px"
-      boxShadow="0 0 40px rgba(0, 230, 180, 0.32), inset 0 0 40px rgba(0, 0, 0, 0.2)"
+      boxShadow="0 0 3px rgba(0, 230, 180, 0.06), inset 0 0 40px rgba(0, 0, 0, 0.2)"
       w="100%"
       maxW="480px"
       h="75vh"
@@ -61,7 +61,7 @@ export default function ChatPanel({
             h="8px"
             borderRadius="full"
             bg="#0e5c48"
-            boxShadow="0 0 10px rgba(0, 230, 180, 0.95)"
+            boxShadow="0 0 4px rgba(0, 230, 180, 0.20)"
             animation="pulseDot 2.5s ease-in-out infinite"
           />
           <VStack gap={0} align="start">
@@ -107,7 +107,7 @@ export default function ChatPanel({
             lineHeight="1.55"
             alignSelf={m.role === "user" ? "flex-end" : "flex-start"}
             bg={m.role === "user" ? "#0e5c48" : "#080f0a"}
-            border={m.role === "user" ? "1px solid rgba(0, 230, 180, 0.32)" : "none"}
+            border={m.role === "user" ? "1px solid rgba(0, 230, 180, 0.06)" : "none"}
             color={m.role === "user" ? "white" : "white"}
             whiteSpace="pre-wrap"
             wordBreak="break-word"
@@ -129,13 +129,13 @@ export default function ChatPanel({
           onKeyDown={handleKey}
           placeholder="Escribe tu consulta..."
           bg="rgba(0, 0, 0, 0.2)"
-          border="1px solid rgba(0, 230, 180, 0.28)"
+          border="1px solid rgba(0, 230, 180, 0.05)"
           color="white"
           fontSize="sm"
           borderRadius="8px"
           minH="42px"
           py={2.5}
-          _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 8px rgba(0, 230, 180, 0.28)" }}
+          _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
           _placeholder={{ color: "#5d705d" }}
           resize="none"
           overflow="hidden"
@@ -153,7 +153,7 @@ export default function ChatPanel({
           alignItems="center"
           justifyContent="center"
           lineHeight={1}
-          _hover={{ boxShadow: "0 0 16px rgba(0, 230, 180, 0.50)" }}
+          _hover={{ boxShadow: "0 0 6px rgba(0, 230, 180, 0.03)" }}
           _disabled={{ opacity: 0.25, cursor: "not-allowed" }}
           onClick={onSend}
           disabled={!input.trim()}

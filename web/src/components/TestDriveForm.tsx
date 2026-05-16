@@ -56,7 +56,7 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
         gap={6}
         p={10}
         bg="#080c08"
-        border="1px solid rgba(0, 230, 180, 0.18)"
+        border="1px solid rgba(0, 230, 180, 0.04)"
         borderRadius="lg"
         textAlign="center"
       >
@@ -65,12 +65,12 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
           w="64px"
           h="64px"
           borderRadius="full"
-          bg="rgba(0, 230, 180, 0.32)"
+          bg="rgba(0, 230, 180, 0.06)"
           border="2px solid #0e5c48"
           display="flex"
           alignItems="center"
           justifyContent="center"
-          boxShadow="0 0 14px rgba(0, 230, 180, 0.30)"
+          boxShadow="0 0 5px rgba(0, 230, 180, 0.05)"
         >
           <Text fontSize="3xl" color="#0e5c48" fontWeight="bold">✓</Text>
         </Box>
@@ -86,7 +86,7 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
           fontWeight="bold"
           borderRadius="12px"
           px={6}
-          _hover={{ boxShadow: "0 0 16px rgba(0, 230, 180, 0.50)" }}
+          _hover={{ boxShadow: "0 0 6px rgba(0, 230, 180, 0.03)" }}
           onClick={() => setSent(false)}
         >
           Agendar otro
@@ -102,9 +102,9 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
       </Heading>
       {slots.length > 0 && (
         <Badge
-          bg="rgba(0, 230, 180, 0.32)"
+          bg="rgba(0, 230, 180, 0.06)"
           color="#0e5c48"
-          border="1px solid rgba(0, 230, 180, 0.32)"
+          border="1px solid rgba(0, 230, 180, 0.06)"
           borderRadius="full"
           px={4}
           py={2}
@@ -118,7 +118,7 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
       <VStack
         p={6}
         bg="#080c08"
-        border="1px solid rgba(0, 230, 180, 0.18)"
+        border="1px solid rgba(0, 230, 180, 0.04)"
         borderRadius="lg"
         gap={5}
         align="stretch"
@@ -132,10 +132,10 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             onChange={(e) => setNombre(e.target.value)}
             placeholder="Tu nombre completo"
             bg="#050705"
-            borderColor="rgba(0, 230, 180, 0.18)"
+            borderColor="rgba(0, 230, 180, 0.04)"
             color="white"
             borderRadius="12px"
-            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 8px rgba(0, 230, 180, 0.30)" }}
+            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
             _placeholder={{ color: "#5d705d" }}
           />
         </VStack>
@@ -149,10 +149,10 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             onChange={(e) => setCelular(e.target.value)}
             placeholder="+591 7XXXXXXX"
             bg="#050705"
-            borderColor="rgba(0, 230, 180, 0.18)"
+            borderColor="rgba(0, 230, 180, 0.04)"
             color="white"
             borderRadius="12px"
-            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 8px rgba(0, 230, 180, 0.30)" }}
+            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
             _placeholder={{ color: "#5d705d" }}
           />
         </VStack>
@@ -166,10 +166,10 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             onChange={(e) => setCiudad(e.target.value)}
             placeholder="Ej: La Paz"
             bg="#050705"
-            borderColor="rgba(0, 230, 180, 0.18)"
+            borderColor="rgba(0, 230, 180, 0.04)"
             color="white"
             borderRadius="12px"
-            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 8px rgba(0, 230, 180, 0.30)" }}
+            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
             _placeholder={{ color: "#5d705d" }}
           />
         </VStack>
@@ -182,10 +182,10 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             value={producto}
             onChange={(e) => setProducto(e.target.value)}
             bg="#050705"
-            borderColor="rgba(0, 230, 180, 0.18)"
+            borderColor="rgba(0, 230, 180, 0.04)"
             color="white"
             borderRadius="12px"
-            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 8px rgba(0, 230, 180, 0.30)" }}
+            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
           >
             {products.map((p) => (
               <option key={p.id} value={p.id}>
@@ -202,7 +202,7 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
           py={3}
           borderRadius="12px"
           fontSize="sm"
-          _hover={{ boxShadow: "0 0 16px rgba(0, 230, 180, 0.50)" }}
+          _hover={{ boxShadow: "0 0 6px rgba(0, 230, 180, 0.03)" }}
           _disabled={{ opacity: 0.3, cursor: "not-allowed" }}
           onClick={handleSubmit}
           disabled={!canSubmit}
