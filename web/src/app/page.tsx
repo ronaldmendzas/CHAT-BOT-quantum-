@@ -23,7 +23,7 @@ export default function Home() {
   const [isTyping, setIsTyping] = useState(false);
   const { data: dataset, loading, error } = useDataset();
 
-  const handleSend = useCallback(() => {
+  const handleSend = useCallback(async () => {
     const text = input.trim();
     if (!text || !dataset) return;
     setInput("");
@@ -37,8 +37,10 @@ export default function Home() {
     setMessages((prev) => [...prev, userMsg]);
     setIsTyping(true);
 
-    setTimeout(() => {
-      const result = resolveIntent(text, dataset);
+    await new Promise((r) => setTimeout(r, 800));
+
+    try {
+      const result = await resolveIntent(text);
       const botMsg: ChatMessage = {
         role: "assistant",
         content: result.reply,
@@ -48,8 +50,16 @@ export default function Home() {
       setIntent(result.intent);
       if (result.productId) setSelectedProductId(result.productId);
       else if (result.intent !== "STOCK") setSelectedProductId(undefined);
+    } catch {
+      const botMsg: ChatMessage = {
+        role: "assistant",
+        content: "Lo siento, tuve un problema consultando la información. Intenta de nuevo.",
+        timestamp: Date.now(),
+      };
+      setMessages((prev) => [...prev, botMsg]);
+    } finally {
       setIsTyping(false);
-    }, 800);
+    }
   }, [input, dataset]);
 
   const handleClear = useCallback(() => {

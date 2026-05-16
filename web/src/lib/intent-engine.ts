@@ -1,4 +1,5 @@
-import type { IntentResult, Dataset } from "./types";
+import type { IntentResult, Product } from "./types";
+import { getProducts, getStock } from "./api";
 
 function norm(text: string) {
   return text
@@ -8,10 +9,16 @@ function norm(text: string) {
     .replace(/\p{Diacritic}/gu, "");
 }
 
-export function resolveIntent(
-  input: string,
-  data: Dataset,
-): IntentResult {
+let productCache: Product[] | null = null;
+
+async function fetchProducts(): Promise<Product[]> {
+  if (productCache) return productCache;
+  const res = await getProducts();
+  productCache = res.data;
+  return res.data;
+}
+
+export async function resolveIntent(input: string): Promise<IntentResult> {
   const t = norm(input);
 
   /* Test Drive */
@@ -38,22 +45,27 @@ export function resolveIntent(
   ) {
     return {
       intent: "SUCURSALES",
-      reply:
-        "Tenemos 8 sucursales en Bolivia. Te las muestro en el panel.",
+      reply: "Tenemos sucursales en Bolivia. Te las muestro en el panel.",
     };
   }
 
-  /* Product match */
-  const matched = data.products.find((p) => {
+  /* Product match — consulta API fresca */
+  const products = await fetchProducts();
+  const matched = products.find((p) => {
     const slug = norm(p.nombre);
     const idLow = norm(p.id);
     return t.includes(slug) || t.includes(idLow) || slug.includes(t);
   });
 
   if (matched) {
+    const stockRes = await getStock({ product_id: matched.id });
+    const hasStock = stockRes.data.some((s) => s.estado === "DISPONIBLE");
+    const stockMsg = hasStock
+      ? " Hay stock disponible en varias sucursales."
+      : "";
     return {
       intent: "VEHICLE",
-      reply: `Te presento el ${matched.nombre}. Revisa sus especificaciones en el panel.`,
+      reply: `Te presento el ${matched.nombre}. Revisa sus especificaciones en el panel.${stockMsg}`,
       productId: matched.id,
     };
   }
@@ -86,10 +98,11 @@ export function resolveIntent(
     t.includes("candado") ||
     t.includes("cajuela")
   ) {
+    const accessory = products.find((p) => p.categoria === "ACCESORIO");
     return {
       intent: "VEHICLE",
       reply: "Te muestro nuestros accesorios disponibles.",
-      productId: data.products.find((p) => p.categoria === "ACCESORIO")?.id,
+      productId: accessory?.id,
     };
   }
 
