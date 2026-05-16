@@ -86,7 +86,7 @@ export default function Home() {
       <Box
         position="absolute"
         inset={0}
-        bg="radial-gradient(ellipse at 25% 50%, rgba(14, 92, 72, 0.10) 0%, transparent 60%)"
+        bg="radial-gradient(ellipse at 25% 50%, rgba(0, 230, 180, 0.18) 0%, transparent 60%)"
         pointerEvents="none"
       />
       
@@ -94,7 +94,7 @@ export default function Home() {
       <Box
         position="absolute"
         inset={0}
-        bg="radial-gradient(ellipse at 75% 50%, rgba(14, 92, 72, 0.07) 0%, transparent 55%)"
+        bg="radial-gradient(ellipse at 75% 50%, rgba(0, 230, 180, 0.32) 0%, transparent 55%)"
         pointerEvents="none"
       />
 
