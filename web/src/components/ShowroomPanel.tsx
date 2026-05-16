@@ -166,9 +166,10 @@ export default function ShowroomPanel({
                     alt={p.nombre}
                     w="100%"
                     h="120px"
-                    objectFit="cover"
+                    objectFit="contain"
                     borderRadius="md"
                     mb={2}
+                    bg="bg.primary"
                   />
                 )}
                 <Text fontWeight="bold" fontSize="sm" color="text.primary">
@@ -191,24 +192,22 @@ export default function ShowroomPanel({
             display="flex"
             alignItems="center"
             justifyContent="center"
-            minH="280px"
+            minH="320px"
             borderRadius="xl"
             overflow="hidden"
-            bg="bg.card"
+            bg="bg.primary"
             border="1px solid"
             borderColor="border.neon"
             boxShadow="neon-sm"
             position="relative"
+            p={4}
           >
             <Image
               src={mainImage}
               alt={selected.nombre}
-              w="100%"
-              h="100%"
-              objectFit="cover"
-              position="absolute"
-              top={0}
-              left={0}
+              maxW="100%"
+              maxH="320px"
+              objectFit="contain"
             />
             <Text
               fontSize="lg"
