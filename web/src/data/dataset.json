@@ -110,7 +110,7 @@
         "monto": 142100,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía del Quantum Nexus Plus es de hasta205 km de recorrido con una carga de la batería de Litio.Permite desplazarse a una velocidad máxima de hasta120 km/hCircula por la ciudad con confianza, superando el tráfico con facilidad y seguridad .El motor eléctrico tiene una potencia de 25.000 Wattsque permite trasladar al conductor y pasajeros con facilidad y eficiencia.La transmisión es automáticade una sola velocidad que funciona correctamente para la entrega efectiva de potencia.La capacidad máxima de cargaque puede soportar es de500 kg, lo que garantiza un uso seguro y eficiente. dentro de este límite.",
+      "descripcion_corta": "La autonomía del Quantum Nexus Plus es de hasta 205 km de recorrido con un a carga de la batería de Litio. Permite desplazarse a una velocidad máxima de hasta 120 km/h.",
       "especificaciones": {
         "autonomia_km": 205,
         "velocidad_max_kmh": 120,
@@ -136,7 +136,7 @@
         "monto": 72500,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía del Quantum Colibrí es de hasta120 km de recorrido con una carga de la batería de Litio.Permite desplazarse a una velocidad máxima de hasta55 km/hCircula por la ciudad con confianza, superando el tráfico con facilidad y seguridad .El motor eléctrico tiene una potencia de 4.000 Wattsque permite trasladar al conductor y pasajeros con facilidad y eficiencia.La transmisión es automáticade una sola velocidad que funciona correctamente para la entrega efectiva de potencia.La capacidad máxima de cargaque puede soportar es de250 kg, lo que garantiza un uso seguro y eficiente. dentro de este límite.",
+      "descripcion_corta": "La autonomía del Quantum Colibrí es de hasta 120 km de recorrido con un a carga de la batería de Litio. Permite desplazarse a una velocidad máxima de hasta 55 km/h.",
       "especificaciones": {
         "autonomia_km": 120,
         "velocidad_max_kmh": 55,
@@ -164,7 +164,7 @@
         "monto": 7300,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía de la bicicleta eléctrica Quantum A5 es de hasta 25 km de recorrido con una carga de la batería de Litio.Permite desplazarse a una velocidad máxima de hasta 25 km/hTambién tienevelocímetro, trip y odómetrodel tipo LCD Multifunción para medir de mejor manera y controlar el manejo seguro y eficiente. de la bicicleta.El motor eléctricotiene una potencia estándar de 250 Watts que junto al pedaleo normal te hará cómoda el manejo de la bicicleta.Es de una sola velocidad(single-speed) la bicicleta eléctrica por lo tanto la transferencia de energía del pedaleo es simple.La capacidad máxima de cargaque puede soportar es de 80 kg, lo que garantiza un uso seguro y eficiente.",
+      "descripcion_corta": "La autonomía del la bicicleta eléctrica Quantum A 5 es de hasta 25 km de recorrido con un a carga de la batería de Litio. Permite desplazarse a una velocidad máxima de hasta 25 km/hTambién tienevelocímetro, trip y odómetrodel tipo LCD Multifunción para medir de mejor manera y controlar el manejo seguro y eficiente.",
       "especificaciones": {
         "autonomia_km": 25,
         "velocidad_max_kmh": 25,
@@ -188,7 +188,7 @@
         "monto": 6800,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía de la bicicleta eléctrica Quantum Ara es de hasta 25 km de recorrido con una carga de la batería de Litio.Permite desplazarse a una velocidad máxima de hasta 25 Km/Hr.También tienevelocímetro, trip y odómetrodel tipo LCD Multifunción para medir de mejor manera y controlar el manejo seguro y eficiente. de la bicicleta.El motor eléctricotiene una potencia estándar de 250 Watts que junto al pedaleo normal te hará cómoda el manejo de la bicicleta.Es de una sola velocidad(single-speed) la bicicleta eléctrica por lo tanto la transferencia de energía del pedaleo es simple.La capacidad máxima de cargaque puede soportar es de 80 kg, lo que garantiza un uso seguro y eficiente.",
+      "descripcion_corta": "La autonomía del la bicicleta eléctrica Quantum Ara es de hasta 25 km de recorrido con un a carga de la batería de Litio. Permite desplazarse a una velocidad máxima de hasta 25 Km/Hr.También tienevelocímetro, trip y odómetrodel tipo LCD Multifunción para medir de mejor manera y controlar el manejo seguro y eficiente.",
       "especificaciones": {
         "autonomia_km": 25,
         "velocidad_max_kmh": 25,
@@ -297,7 +297,7 @@
         "monto": 160,
         "moneda": "BOB"
       },
-      "descripcion_corta": "rs_eslider.style.display = \"none\";",
+      "descripcion_corta": ".",
       "especificaciones": {},
       "colores": [
         "Por definir"
@@ -348,7 +348,7 @@
         "monto": 127400,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía del Quantum Nexus es de hasta205 km de recorrido con una carga de la batería de Litio.Permite desplazarse a una velocidad máxima de hasta100 km/hCircula por la ciudad con confianza, superando el tráfico con facilidad y seguridad .El motor eléctrico tiene una potencia de 15.000 Wattsque permite trasladar al conductor y pasajeros con facilidad y eficiencia.La transmisión es automáticade una sola velocidad que funciona correctamente para la entrega efectiva de potencia.La capacidad máxima de cargaque puede soportar es de500 kg, lo que garantiza un uso seguro y eficiente. dentro de este límite.",
+      "descripcion_corta": "La autonomía del Quantum Nexus es de hasta 205 km de recorrido con un a carga de la batería de Litio. Permite desplazarse a una velocidad máxima de hasta 100 km/h.",
       "especificaciones": {
         "autonomia_km": 205,
         "velocidad_max_kmh": 100,
@@ -374,7 +374,7 @@
         "monto": 75500,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía del Quantum E4 Montañero es de hasta80 km de recorrido con una carga de la batería de Litio.Permite desplazarse a una velocidad máxima de hasta55 km/hCircula por la ciudad con confianza, superando el tráfico con facilidad y seguridad .El motor eléctrico tiene una potencia de 4.000 Wattsy el vehículo cuenta con una corona de montañaque le permite tener mayor torque.La transmisión es automáticade una sola velocidad que funciona correctamente para la entrega efectiva de potencia.La capacidad máxima de cargaque puede soportar es de250 kg, lo que garantiza un uso seguro y eficiente. dentro de este límite.",
+      "descripcion_corta": "La autonomía del Quantum E 4 Montañero es de hasta 80 km de recorrido con un a carga de la batería de Litio. Permite desplazarse a una velocidad máxima de hasta 55 km/h.",
       "especificaciones": {
         "autonomia_km": 80,
         "velocidad_max_kmh": 55,
@@ -398,7 +398,7 @@
         "monto": 12500,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía de la moto eléctrica Yadea Luna Pro es de hasta55 km de recorrido con una carga de la batería de Grafeno.Permite desplazarse a una velocidad máxima de hasta50 km/hEl motor eléctrico central tiene una potencia de 1.500 Wattsque te permite recorrer por las pendientes con facilidad y eficiencia.La pantalla digitalcuenta con tecnología que te permite monitorear la velocidad, kilometraje recorrido y el nivel de la batería.La capacidad máxima de cargaque puede soportar es de150 kg, lo que garantiza un uso seguro y eficiente. dentro de este límite.",
+      "descripcion_corta": "La autonomía del la moto eléctrica Yadea Luna Pro es de hasta 55 km de recorrido con un a carga de la batería de Grafeno. Permite desplazarse a una velocidad máxima de hasta 50 km/h.",
       "especificaciones": {
         "autonomia_km": 55,
         "velocidad_max_kmh": 50,
@@ -422,7 +422,7 @@
         "monto": 21900,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía de la moto eléctrica Quantum Flashride es de hasta120 km de recorrido con una carga de la batería de Litio.Permite desplazarse a una velocidad máxima de hasta75 km/hEl motor eléctrico central tiene una potencia de 2.000 Wattsque te permite recorrer por las pendientes con facilidad y eficiencia.La pantalla digitalcuenta con tecnología que te permite monitorear la velocidad, kilometraje recorrido y el nivel de la batería.La capacidad máxima de cargaque puede soportar es de200 kg, lo que garantiza un uso seguro y eficiente. dentro de este límite.",
+      "descripcion_corta": "La autonomía del la moto eléctrica Quantum Flashride es de hasta 120 km de recorrido con un a carga de la batería de Litio. Permite desplazarse a una velocidad máxima de hasta 75 km/h.",
       "especificaciones": {
         "autonomia_km": 120,
         "velocidad_max_kmh": 75,
@@ -446,7 +446,7 @@
         "monto": 41300,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía de la moto eléctrica Super Soco TS Street Hunter es de hasta60 km de recorrido con una carga de la batería de Litio.Permite desplazarse a una velocidad máxima de hasta75 km/hCircula por la ciudad con confianza, superando el tráfico con facilidad y seguridad .El motor eléctrico tiene una potencia de 3.000 Wattsque te permite recorrer por las pendientes con facilidad y eficiencia.La pantalla digitalcuenta con tecnología que te permite monitorear la velocidad, kilometraje recorrido y el nivel de la batería.La capacidad máxima de cargaque puede soportar es de150 kg, lo que garantiza un uso seguro y eficiente. dentro de este límite.",
+      "descripcion_corta": "La autonomía del la moto eléctrica Super Soco TS Street Hunter es de hasta 60 km de recorrido con un a carga de la batería de Litio. Permite desplazarse a una velocidad máxima de hasta 75 km/h.",
       "especificaciones": {
         "autonomia_km": 60,
         "velocidad_max_kmh": 75,
@@ -470,7 +470,7 @@
         "monto": 45600,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía de la moto eléctrica Super Soco TS Street Hunter Pro es de hasta60 km de recorrido con una carga de la batería de Litio.Permite desplazarse a una velocidad máxima de hasta90 km/hCircula por la ciudad con confianza, superando el tráfico con facilidad y seguridad .El motor eléctrico tiene una potencia de 4.100 Wattsque te permite recorrer por las pendientes con facilidad y eficiencia.La pantalla digitalcuenta con tecnología que te permite monitorear la velocidad, kilometraje recorrido y el nivel de la batería.La capacidad máxima de cargaque puede soportar es de150 kg, lo que garantiza un uso seguro y eficiente. dentro de este límite.",
+      "descripcion_corta": "La autonomía del la moto eléctrica Super Soco TS Street Hunter Pro es de hasta 60 km de recorrido con un a carga de la batería de Litio. Permite desplazarse a una velocidad máxima de hasta 90 km/h.",
       "especificaciones": {
         "autonomia_km": 60,
         "velocidad_max_kmh": 90,
@@ -494,7 +494,7 @@
         "monto": 42500,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía de la moto eléctrica Super Soco TC Wanderer Pro es de hasta60 km de recorrido con una carga de la batería de Litio.Permite desplazarse a una velocidad máxima de hasta90 km/hCircula por la ciudad con confianza, superando el tráfico con facilidad y seguridad .El motor eléctrico tiene una potencia de 4.100 Wattsque te permite recorrer por las pendientes con facilidad y eficiencia.La pantalla digitalcuenta con tecnología que te permite monitorear la velocidad, kilometraje recorrido y el nivel de la batería.La capacidad máxima de cargaque puede soportar es de150 kg, lo que garantiza un uso seguro y eficiente. dentro de este límite.",
+      "descripcion_corta": "La autonomía del la moto eléctrica Super Soco TC Wanderer Pro es de hasta 60 km de recorrido con un a carga de la batería de Litio. Permite desplazarse a una velocidad máxima de hasta 90 km/h.",
       "especificaciones": {
         "autonomia_km": 60,
         "velocidad_max_kmh": 90,
@@ -518,7 +518,7 @@
         "monto": 32600,
         "moneda": "BOB"
       },
-      "descripcion_corta": "La autonomía de la moto eléctrica Super Soco TC es de hasta60 km de recorrido con una carga de la batería de Litio.Permite desplazarse a una velocidad máxima de hasta60 km/hCircula por la ciudad con confianza, superando el tráfico con facilidad y seguridad .El motor eléctrico tiene una potencia de 2.100 Wattsque te permite recorrer por las pendientes con facilidad y eficiencia.La pantalla digitalcuenta con tecnología que te permite monitorear la velocidad, kilometraje recorrido y el nivel de la batería.La capacidad máxima de cargaque puede soportar es de150 kg, lo que garantiza un uso seguro y eficiente. dentro de este límite.",
+      "descripcion_corta": "La autonomía del la moto eléctrica Super Soco TC es de hasta 60 km de recorrido con un a carga de la batería de Litio. Permite desplazarse a una velocidad máxima de hasta 60 km/h.",
       "especificaciones": {
         "autonomia_km": 60,
         "velocidad_max_kmh": 60,
@@ -538,179 +538,187 @@
   "stock": [
     {
       "product_id": "trooper",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "trooper",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "trooper",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "trooper",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "urban",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "urban",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "urban",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "urban",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion-pro",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion-pro",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion-pro",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion-pro",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion-plus",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion-plus",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion-plus",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion-plus",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ion",
       "region": "TJA",
       "sucursal_id": "TJA-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "trooper",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "trooper",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "trooper",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "urban",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "urban",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
       "cantidad": 5,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "urban",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "urban",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion-pro",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion-pro",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion-pro",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion-pro",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion-plus",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion-plus",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion-plus",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion-plus",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ion",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "kaiyi-equte",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "kaiyi-equte",
       "region": "SCZ",
       "sucursal_id": "SCZ-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "kaiyi-equte",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
       "cantidad": 4,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "kaiyi-equte",
@@ -718,543 +726,535 @@
       "sucursal_id": "YAC-01",
       "cantidad": 3,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
-      "product_id": "kaiyi-equte",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "product_id": "nexus-plus",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "nexus-plus",
       "region": "TJA",
       "sucursal_id": "YAC-01",
-      "cantidad": 3,
+      "cantidad": 4,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "nexus-plus",
       "region": "LPZ",
       "sucursal_id": "EAL-01",
-      "cantidad": 3,
+      "cantidad": 5,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "nexus-plus",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "nexus-plus",
       "region": "CBB",
       "sucursal_id": "CBB-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "colibri",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
       "cantidad": 2,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "colibri",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "colibri",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "colibri",
       "region": "TJA",
       "sucursal_id": "YAC-01",
-      "cantidad": 4,
+      "cantidad": 5,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
-      "product_id": "colibri",
+      "product_id": "a5",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "a5",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "a5",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "a5",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ara",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ara",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ara",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ara",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "starto",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "starto",
       "region": "CBB",
       "sucursal_id": "CBB-01",
       "cantidad": 5,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
-      "product_id": "colibri",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "colibri",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "a5",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "a5",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "a5",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "a5",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ara",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ara",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ara",
+      "product_id": "starto",
       "region": "TJA",
       "sucursal_id": "YAC-01",
       "cantidad": 2,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ara",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "starto",
       "region": "ORU",
       "sucursal_id": "ORU-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "starto",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "starto",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "starto",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
       "cantidad": 5,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "enchufe-smart-plug",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "enchufe-smart-plug",
       "region": "TJA",
       "sucursal_id": "YAC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "enchufe-smart-plug",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
       "cantidad": 5,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "mochila-delivery",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "mochila-delivery",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "cajuela-de-motocicleta",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "cajuela-de-motocicleta",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "casco-blanco",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "casco-blanco",
       "region": "SCZ",
       "sucursal_id": "SCZ-01",
       "cantidad": 2,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
-      "product_id": "casco-urbano",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "casco-urbano",
+      "product_id": "mochila-delivery",
       "region": "SUC",
       "sucursal_id": "SUC-01",
       "cantidad": 3,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
-      "product_id": "candado-tipo-cadena",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
+      "product_id": "cajuela-de-motocicleta",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
       "cantidad": 4,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
-      "product_id": "candado-tipo-cadena",
+      "product_id": "cajuela-de-motocicleta",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "casco-blanco",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "casco-blanco",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "casco-urbano",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "casco-urbano",
       "region": "SCZ",
       "sucursal_id": "SCZ-01",
       "cantidad": 4,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "candado-tipo-cadena",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "candado-tipo-cadena",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "casco-con-visera",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "casco-con-visera",
       "region": "CBB",
       "sucursal_id": "CBB-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "casco-con-visera",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
       "cantidad": 3,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "nexus",
       "region": "LPZ",
       "sucursal_id": "EAL-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
       "product_id": "nexus",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "nexus",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "nexus",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "e4-montanero",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "e4-montanero",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "e4-montanero",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "e4-montanero",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "luna-pro",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "luna-pro",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "luna-pro",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "luna-pro",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "flashride",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "flashride",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "flashride",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "flashride",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ts-street-hunter",
+      "region": "TJA",
+      "sucursal_id": "YAC-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ts-street-hunter",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ts-street-hunter",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ts-street-hunter",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ts-street-hunter-pro",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ts-street-hunter-pro",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ts-street-hunter-pro",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "ts-street-hunter-pro",
+      "region": "SUC",
+      "sucursal_id": "SUC-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "tc-wanderer-pro",
+      "region": "ORU",
+      "sucursal_id": "ORU-01",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "tc-wanderer-pro",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "tc-wanderer-pro",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "tc-wanderer-pro",
+      "region": "TJA",
+      "sucursal_id": "TJA-01",
+      "cantidad": 2,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "tc",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "tc",
+      "region": "LPZ",
+      "sucursal_id": "EAL-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
+    },
+    {
+      "product_id": "tc",
       "region": "TJA",
       "sucursal_id": "TJA-01",
       "cantidad": 1,
       "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     },
     {
-      "product_id": "nexus",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "nexus",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "e4-montanero",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "e4-montanero",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "e4-montanero",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "e4-montanero",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "luna-pro",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "luna-pro",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "luna-pro",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "luna-pro",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "flashride",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "flashride",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "flashride",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "flashride",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ts-street-hunter",
-      "region": "LPZ",
-      "sucursal_id": "EAL-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ts-street-hunter",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ts-street-hunter",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ts-street-hunter",
+      "product_id": "tc",
       "region": "SCZ",
       "sucursal_id": "SCZ-01",
       "cantidad": 5,
       "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ts-street-hunter-pro",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ts-street-hunter-pro",
-      "region": "SCZ",
-      "sucursal_id": "SCZ-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ts-street-hunter-pro",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "ts-street-hunter-pro",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "tc-wanderer-pro",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "tc-wanderer-pro",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "tc-wanderer-pro",
-      "region": "LPZ",
-      "sucursal_id": "LPZ-01",
-      "cantidad": 5,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "tc-wanderer-pro",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 2,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "tc",
-      "region": "ORU",
-      "sucursal_id": "ORU-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "tc",
-      "region": "SUC",
-      "sucursal_id": "SUC-01",
-      "cantidad": 3,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "tc",
-      "region": "TJA",
-      "sucursal_id": "YAC-01",
-      "cantidad": 4,
-      "estado": "DISPONIBLE",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
-    },
-    {
-      "product_id": "tc",
-      "region": "CBB",
-      "sucursal_id": "CBB-01",
-      "cantidad": 1,
-      "estado": "BAJO_STOCK",
-      "ultima_actualizacion": "2026-05-16T21:22:08.243Z"
+      "ultima_actualizacion": "2026-05-16T21:32:59.394Z"
     }
   ],
   "sucursales": [

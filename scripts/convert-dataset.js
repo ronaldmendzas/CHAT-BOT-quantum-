@@ -55,67 +55,94 @@ function mapCategory(cat) {
 function cleanDescription(text) {
   if (!text || text === "No disponible") return "";
   let cleaned = text
+    // Eliminar código JS/HTML basura
     .replace(/<[^>]*>/g, "")
-    .replace(/var\s+\w+\s*=.*?;/g, "")
+    .replace(/var\s+\w+\s*=.*?;/gs, "")
     .replace(/console\.log\([^)]*\);?/g, "")
-    .replace(/Oops[^.]*/g, "")
+    .replace(/Oops…?Slider[^.]*/g, "")
+    .replace(/rs_eslider[^;]*;/g, "")
+    .replace(/document\.getElementById[^;]*;/g, "")
+    .replace(/style\.display[^;]*;/g, "")
+    // Eliminar secciones genéricas
     .replace(/Rendimiento/g, " ")
     .replace(/Tecnología y Seguridad/g, " ")
     .replace(/Motivos para elegir[^]*/g, "")
     .replace(/\s+/g, " ")
     .trim();
 
-  cleaned = cleaned
-    .replace(/autonomíadel/g, "autonomía del ")
-    .replace(/autonomíade/g, "autonomía de ")
-    .replace(/unavelocidad/g, "una velocidad ")
-    .replace(/unapotencia/g, "una potencia ")
-    .replace(/unacorona/g, "una corona ")
-    .replace(/unacorriente/g, "una corriente ")
-    .replace(/unatoma/g, "una toma ")
-    .replace(/unadiseño/g, "un diseño ")
-    .replace(/unexcelente/g, "un excelente ")
-    .replace(/unóptimo/g, "un óptimo ")
-    .replace(/lacarga/g, "la carga ")
-    .replace(/labatería/g, "la batería ")
-    .replace(/lapantalla/g, "la pantalla ")
-    .replace(/laparte/g, "la parte ")
-    .replace(/latransmisión/g, "la transmisión ")
-    .replace(/lacapacidad/g, "la capacidad ")
-    .replace(/lailuminación/g, "la iluminación ")
-    .replace(/lagarantía/g, "la garantía ")
-    .replace(/elvehículo/g, "el vehículo ")
-    .replace(/elmotor/g, "el motor ")
-    .replace(/elsistema/g, "el sistema ")
-    .replace(/elservicio/g, "el servicio ")
-    .replace(/elcambio/g, "el cambio ")
-    .replace(/elcrédito/g, "el crédito ")
-    .replace(/delquantum/g, "del Quantum ")
-    .replace(/dehasta/g, "de hasta ")
-    .replace(/deuna/g, "de una ")
-    .replace(/conuna/g, "con una ")
-    .replace(/conun/g, "con un ")
-    .replace(/porla/g, "por la ")
-    .replace(/parala/g, "para la ")
-    .replace(/paralos/g, "para los ")
-    .replace(/parabrindar/g, "para brindar ")
-    .replace(/recorridocon/g, "recorrido con ")
-    .replace(/máximade/g, "máxima de ")
-    .replace(/potenciade/g, "potencia de ")
-    .replace(/cargade/g, "carga de ")
-    .replace(/soportares/g, "soportar es ")
-    .replace(/modernode/g, "moderno de ")
-    .replace(/conducción/g, "conducción ")
-    .replace(/seguridad/g, "seguridad ")
-    .replace(/compatibilidadincluye/g, "compatibilidad incluye ")
-    .replace(/panorámica/g, "panorámica ")
-    .replace(/parqueo/g, "parqueo. ")
-    .replace(/sostenible/g, "sostenible. ")
-    .replace(/eficiente/g, "eficiente. ")
-    .replace(/220V/g, "220V. ")
-    .replace(/\s+/g, " ")
-    .trim();
+  // Arreglar espacios faltantes entre número y palabra: hasta205 → hasta 205
+  cleaned = cleaned.replace(/([a-záéíóúñ])(\d)/gi, "$1 $2");
+  cleaned = cleaned.replace(/(\d)([a-záéíóúñ])/gi, "$1 $2");
 
+  // Arreglar palabras pegadas específicas
+  const fixes = [
+    [/autonomía\s*del?/gi, "autonomía del "],
+    [/una\s*velocidad/gi, "una velocidad "],
+    [/una\s*potencia/gi, "una potencia "],
+    [/una\s*corona/gi, "una corona "],
+    [/una\s*corriente/gi, "una corriente "],
+    [/una\s*toma/gi, "una toma "],
+    [/un\s*diseño/gi, "un diseño "],
+    [/un\s*excelente/gi, "un excelente "],
+    [/un\s*óptimo/gi, "un óptimo "],
+    [/la\s*carga/gi, "la carga "],
+    [/la\s*batería/gi, "la batería "],
+    [/la\s*pantalla/gi, "la pantalla "],
+    [/la\s*parte/gi, "la parte "],
+    [/la\s*transmisión/gi, "la transmisión "],
+    [/la\s*capacidad/gi, "la capacidad "],
+    [/la\s*iluminación/gi, "la iluminación "],
+    [/la\s*garantía/gi, "la garantía "],
+    [/el\s*vehículo/gi, "el vehículo "],
+    [/el\s*motor/gi, "el motor "],
+    [/el\s*sistema/gi, "el sistema "],
+    [/el\s*servicio/gi, "el servicio "],
+    [/el\s*cambio/gi, "el cambio "],
+    [/el\s*crédito/gi, "el crédito "],
+    [/del\s*Quantum/gi, "del Quantum "],
+    [/de\s*hasta/gi, "de hasta "],
+    [/de\s*una/gi, "de una "],
+    [/con\s*una/gi, "con una "],
+    [/con\s*un/gi, "con un "],
+    [/por\s*la/gi, "por la "],
+    [/para\s*la/gi, "para la "],
+    [/para\s*los/gi, "para los "],
+    [/para\s*brindar/gi, "para brindar "],
+    [/recorrido\s*con/gi, "recorrido con "],
+    [/máxima\s*de/gi, "máxima de "],
+    [/potencia\s*de/gi, "potencia de "],
+    [/carga\s*de/gi, "carga de "],
+    [/soportar\s*es/gi, "soportar es "],
+    [/moderno\s*de/gi, "moderno de "],
+    [/conducción\s*y/gi, "conducción y "],
+    [/seguridad\s*\./gi, "seguridad. "],
+    [/compatibilidad\s*incluye/gi, "compatibilidad incluye "],
+    [/panorámica\s*de/gi, "panorámica de "],
+    [/parqueo/gi, "parqueo. "],
+    [/sostenible/gi, "sostenible. "],
+    [/eficiente/gi, "eficiente. "],
+    [/220V/g, "220V. "],
+    [/km\/hCircula/gi, "km/h. Circula "],
+    [/km\/hEl/gi, "km/h. El "],
+    [/kg, lo/gi, "kg, lo "],
+    [/kg\./gi, "kg. "],
+    [/Wattsque/gi, "Watts que "],
+    [/Wattsy/gi, "Watts y "],
+    [/Litio\./gi, "Litio. "],
+    [/Grafeno\./gi, "Grafeno. "],
+    [/horas\./gi, "horas. "],
+    [/años\./gi, "años. "],
+    [/seguridad\./gi, "seguridad. "],
+  ];
+
+  for (const [pattern, replacement] of fixes) {
+    cleaned = cleaned.replace(pattern, replacement);
+  }
+
+  // Normalizar espacios múltiples
+  cleaned = cleaned.replace(/\s+/g, " ").trim();
+
+  // Cortar a 2 oraciones como máximo para la descripción corta
   const sentences = cleaned.split(/(?<=[.])\s+/).filter((s) => s.length > 10);
   return sentences.slice(0, 2).join(" ") || cleaned.substring(0, 150);
 }
