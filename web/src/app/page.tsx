@@ -2,11 +2,11 @@
 
 import { useCallback, useEffect, useState } from "react";
 import type { ChatMessage, Intent } from "@/lib/types";
-import { dataset } from "@/lib/dataset";
 import { resolveIntent } from "@/lib/intent-engine";
+import { useDataset } from "@/hooks/useDataset";
 import ChatPanel from "@/components/ChatPanel";
 import ShowroomPanel from "@/components/ShowroomPanel";
-import { Flex, Box, Image } from "@chakra-ui/react";
+import { Flex, Box, Image, Spinner, Text } from "@chakra-ui/react";
 
 const WELCOME_MSG: ChatMessage = {
   role: "assistant",
@@ -21,12 +21,11 @@ export default function Home() {
   const [intent, setIntent] = useState<Intent>("WELCOME");
   const [selectedProductId, setSelectedProductId] = useState<string | undefined>();
   const [isTyping, setIsTyping] = useState(false);
-
-  // Chat no persiste — siempre inicia limpio con solo el welcome
+  const { data: dataset, loading, error } = useDataset();
 
   const handleSend = useCallback(() => {
     const text = input.trim();
-    if (!text) return;
+    if (!text || !dataset) return;
     setInput("");
 
     const userMsg: ChatMessage = {
@@ -51,7 +50,7 @@ export default function Home() {
       else if (result.intent !== "STOCK") setSelectedProductId(undefined);
       setIsTyping(false);
     }, 800);
-  }, [input]);
+  }, [input, dataset]);
 
   const handleClear = useCallback(() => {
     setMessages([WELCOME_MSG]);
@@ -75,6 +74,24 @@ export default function Home() {
     },
     [],
   );
+
+  if (loading) {
+    return (
+      <Flex h="100dvh" w="100vw" align="center" justify="center" bg="#020302" direction="column" gap={4}>
+        <Spinner size="xl" color="#0e5c48" />
+        <Text color="#8a9e8a" fontSize="sm">Cargando showroom...</Text>
+      </Flex>
+    );
+  }
+
+  if (error || !dataset) {
+    return (
+      <Flex h="100dvh" w="100vw" align="center" justify="center" bg="#020302" direction="column" gap={4}>
+        <Text color="#ff4d6a" fontSize="lg" fontWeight="bold">Error al cargar datos</Text>
+        <Text color="#8a9e8a" fontSize="sm">{error || "Dataset no disponible"}</Text>
+      </Flex>
+    );
+  }
 
   return (
     <Flex
