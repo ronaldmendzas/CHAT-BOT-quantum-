@@ -43,5 +43,6 @@ venv/
 tmp/
 .cache/
 
-# --- Large local datasets (optional) ---
-# data/raw/
+# --- Large local datasets ---
+data/raw/
+cerebro_quantum_completo.json
