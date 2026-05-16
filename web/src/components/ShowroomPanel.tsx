@@ -37,8 +37,8 @@ function NeonCard({ children }: { children: React.ReactNode }) {
   return (
     <Box
       p={5}
-      bg="#0f1a0f"
-      border="1px solid rgba(0, 230, 118, 0.22)"
+      bg="#0b110b"
+      border="1px solid rgba(0, 230, 118, 0.12)"
       borderRadius="lg"
       _hover={{
         borderColor: "#00e676",
@@ -73,8 +73,8 @@ export default function ShowroomPanel({
     return (
       <Flex flex={1} align="center" justify="center" minH="100dvh">
         <Box
-          bg="rgba(17, 17, 17, 0.6)"
-          border="1px solid rgba(0, 230, 118, 0.22)"
+          bg="rgba(12, 12, 12, 0.5)"
+          border="1px solid rgba(0, 230, 118, 0.10)"
           borderRadius="48px"
           px={12}
           py={6}
@@ -120,8 +120,8 @@ export default function ShowroomPanel({
             minH="320px"
             borderRadius="lg"
             overflow="hidden"
-            bg="#0b110b"
-            border="1px solid rgba(0, 230, 118, 0.22)"
+            bg="#060a06"
+            border="1px solid rgba(0, 230, 118, 0.12)"
             position="relative"
             p={4}
           >
@@ -265,15 +265,15 @@ export default function ShowroomPanel({
               <Button
                 key={p.id}
                 variant="outline"
-                borderColor="rgba(0, 230, 118, 0.22)"
-                bg="#0f1a0f"
+                borderColor="rgba(0, 200, 120, 0.12)"
+                bg="#0b110b"
                 p={5}
                 justifyContent="flex-start"
                 flexDirection="column"
                 alignItems="flex-start"
                 borderRadius="lg"
                 _hover={{
-                  borderColor: "#00e676",
+        borderColor: "#00c853",
                   boxShadow: "0 0 24px rgba(0, 230, 118, 0.12)",
                   transform: "translateY(-2px)",
                 }}
@@ -292,7 +292,7 @@ export default function ShowroomPanel({
                     objectFit="contain"
                     borderRadius="md"
                     mb={2}
-                    bg="#080d08"
+                    bg="#050705"
                   />
                 )}
                 <Text fontWeight="bold" fontSize="sm" color="white">

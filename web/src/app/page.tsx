@@ -84,13 +84,13 @@ export default function Home() {
       h="100dvh"
       w="100vw"
       position="relative"
-      bg="radial-gradient(ellipse at 30% 50%, #0a2a0a 0%, #050805 60%)"
+      bg="radial-gradient(ellipse at 30% 50%, #051005 0%, #020302 60%)"
       overflow="hidden"
     >
       <Box
         position="absolute"
         inset={0}
-        bg="radial-gradient(ellipse at 80% 50%, #0a2a0a 0%, transparent 50%)"
+        bg="radial-gradient(ellipse at 80% 50%, #051005 0%, transparent 50%)"
         pointerEvents="none"
       />
       {/* logo top-left */}

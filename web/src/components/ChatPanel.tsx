@@ -44,7 +44,7 @@ export default function ChatPanel({
 
   return (
     <VStack
-      bg="#0f1a0f"
+      bg="#0b110b"
       borderRadius="16px"
       boxShadow="0 0 40px rgba(0, 230, 118, 0.06), 0 0 80px rgba(0, 230, 118, 0.03)"
       w="100%"
@@ -107,9 +107,9 @@ export default function ChatPanel({
             fontSize="14px"
             lineHeight="1.55"
             alignSelf={m.role === "user" ? "flex-end" : "flex-start"}
-            bg={m.role === "user" ? "rgba(0, 230, 118, 0.08)" : "#162416"}
-            border={m.role === "user" ? "1px solid rgba(0, 230, 118, 0.22)" : "none"}
-            color={m.role === "user" ? "#00e676" : "white"}
+            bg={m.role === "user" ? "rgba(0, 200, 120, 0.05)" : "#162416"}
+            border={m.role === "user" ? "1px solid rgba(0, 200, 120, 0.12)" : "none"}
+            color={m.role === "user" ? "#00c853" : "white"}
             whiteSpace="pre-wrap"
             wordBreak="break-word"
           >
