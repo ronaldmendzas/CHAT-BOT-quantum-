@@ -74,5 +74,19 @@ Usamos Conventional Commits.
 
 Detalle: ver [docs/COMMITS.md](docs/COMMITS.md).
 
+## Reglas de código (equipo)
+
+- **Idioma:** Todo el código fuente (variables, funciones, clases, archivos) en inglés. Texto visible al usuario en español.
+- **Sin comentarios:** El código debe ser autoexplicativo. Si necesitas un comentario, renombra la variable o extrae una función.
+- **Funciones cortas:** Máximo 20-30 líneas. Si crece, extrae subfunciones.
+- **Componentes/React:** Máximo 100 líneas por archivo. Si crece, divide en subcomponentes.
+- **Nombres descriptivos:** `handleSubmit` en vez de `click`, `getProductById` en vez de `getData`.
+- **Una responsabilidad por función:** Una función hace una sola cosa y la hace bien.
+- **No magic numbers/strings:** Usa constantes con nombre.
+- **Early returns:** Evita anidación profunda. Retorna temprano en validaciones.
+- **Tipado estricto:** `strict: true` en TypeScript. Sin `any`. Sin casts `as unknown as`.
+- **Zod para validaciones:** Todo input de API o formulario pasa por schema zod.
+- **No abreviaturas crípticas:** `product` en vez de `prd`, `sucursal` en vez de `suc`.
+
 ## Documento resumen para jurado
 El documento resumen (orientado a jurado) vive en [README_VISION.md](README_VISION.md).
