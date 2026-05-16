@@ -44,9 +44,9 @@ export default function ChatPanel({
   return (
     <VStack
       bg="#0c1610"
-      border="1px solid rgba(47, 182, 118, 0.08)"
+      border="1px solid rgba(14, 92, 72, 0.08)"
       borderRadius="16px"
-      boxShadow="0 0 40px rgba(47, 182, 118, 0.06), inset 0 0 40px rgba(0, 0, 0, 0.2)"
+      boxShadow="0 0 40px rgba(14, 92, 72, 0.06), inset 0 0 40px rgba(0, 0, 0, 0.2)"
       w="100%"
       maxW="480px"
       h="75vh"
@@ -60,8 +60,8 @@ export default function ChatPanel({
             w="8px"
             h="8px"
             borderRadius="full"
-            bg="#2fb676"
-            boxShadow="0 0 10px rgba(47, 182, 118, 0.7)"
+            bg="#0e5c48"
+            boxShadow="0 0 10px rgba(14, 92, 72, 0.7)"
             animation="pulseDot 2.5s ease-in-out infinite"
           />
           <VStack gap={0} align="start">
@@ -106,9 +106,9 @@ export default function ChatPanel({
             fontSize="14px"
             lineHeight="1.55"
             alignSelf={m.role === "user" ? "flex-end" : "flex-start"}
-            bg={m.role === "user" ? "rgba(47, 182, 118, 0.06)" : "#0e5c48"}
-            border={m.role === "user" ? "1px solid rgba(47, 182, 118, 0.12)" : "none"}
-            color={m.role === "user" ? "#2fb676" : "white"}
+            bg={m.role === "user" ? "#0e5c48" : "#080f0a"}
+            border={m.role === "user" ? "1px solid rgba(14, 92, 72, 0.12)" : "none"}
+            color={m.role === "user" ? "white" : "white"}
             whiteSpace="pre-wrap"
             wordBreak="break-word"
           >
@@ -129,19 +129,19 @@ export default function ChatPanel({
           onKeyDown={handleKey}
           placeholder="Escribe tu consulta..."
           bg="rgba(0, 0, 0, 0.2)"
-          border="1px solid rgba(47, 182, 118, 0.15)"
+          border="1px solid rgba(14, 92, 72, 0.15)"
           color="white"
           fontSize="sm"
           borderRadius="8px"
           minH="42px"
           py={2.5}
-          _focus={{ borderColor: "#2fb676", boxShadow: "0 0 8px rgba(47, 182, 118, 0.15)" }}
+          _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 8px rgba(14, 92, 72, 0.15)" }}
           _placeholder={{ color: "#5d705d" }}
           resize="none"
           overflow="hidden"
         />
         <Button
-          bg="#2fb676"
+          bg="#0e5c48"
           color="white"
           w="42px"
           h="42px"
@@ -153,7 +153,7 @@ export default function ChatPanel({
           alignItems="center"
           justifyContent="center"
           lineHeight={1}
-          _hover={{ boxShadow: "0 0 16px rgba(47, 182, 118, 0.35)" }}
+          _hover={{ boxShadow: "0 0 16px rgba(14, 92, 72, 0.35)" }}
           _disabled={{ opacity: 0.25, cursor: "not-allowed" }}
           onClick={onSend}
           disabled={!input.trim()}

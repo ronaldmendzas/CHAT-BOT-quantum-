@@ -6,8 +6,8 @@ const system = createSystem(defaultConfig, {
   theme: {
     keyframes: {
       pulseDot: {
-        "0%, 100%": { boxShadow: "0 0 8px rgba(47, 182, 118, 0.5)" },
-        "50%": { boxShadow: "0 0 18px rgba(47, 182, 118, 0.85)" },
+        "0%, 100%": { boxShadow: "0 0 8px rgba(14, 92, 72, 0.5)" },
+        "50%": { boxShadow: "0 0 18px rgba(14, 92, 72, 0.85)" },
       },
     },
   },

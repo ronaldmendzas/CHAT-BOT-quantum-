@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { ChatMessage, Intent } from "@/lib/types";
 import { dataset } from "@/lib/dataset";
 import { resolveIntent } from "@/lib/intent-engine";
-import { loadMessages, saveMessages, clearMessages } from "@/lib/memory";
+import { clearMessages } from "@/lib/memory";
 import ChatPanel from "@/components/ChatPanel";
 import ShowroomPanel from "@/components/ShowroomPanel";
 import { Flex, Box, Image } from "@chakra-ui/react";
@@ -22,14 +22,7 @@ export default function Home() {
   const [intent, setIntent] = useState<Intent>("WELCOME");
   const [selectedProductId, setSelectedProductId] = useState<string | undefined>();
 
-  useEffect(() => {
-    const saved = loadMessages();
-    if (saved.length > 0) setMessages(saved);
-  }, []);
-
-  useEffect(() => {
-    if (messages.length > 1) saveMessages(messages);
-  }, [messages]);
+  // Chat no persiste — siempre inicia limpio con solo el welcome
 
   const handleSend = useCallback(() => {
     const text = input.trim();
@@ -93,7 +86,7 @@ export default function Home() {
       <Box
         position="absolute"
         inset={0}
-        bg="radial-gradient(ellipse at 25% 50%, rgba(47, 182, 118, 0.10) 0%, transparent 60%)"
+        bg="radial-gradient(ellipse at 25% 50%, rgba(14, 92, 72, 0.10) 0%, transparent 60%)"
         pointerEvents="none"
       />
       
@@ -101,7 +94,7 @@ export default function Home() {
       <Box
         position="absolute"
         inset={0}
-        bg="radial-gradient(ellipse at 75% 50%, rgba(47, 182, 118, 0.07) 0%, transparent 55%)"
+        bg="radial-gradient(ellipse at 75% 50%, rgba(14, 92, 72, 0.07) 0%, transparent 55%)"
         pointerEvents="none"
       />
 

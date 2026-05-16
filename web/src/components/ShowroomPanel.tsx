@@ -38,11 +38,11 @@ function Card({ children }: { children: React.ReactNode }) {
     <Box
       p={5}
       bg="#0c1610"
-      border="1px solid rgba(47, 182, 118, 0.08)"
+      border="1px solid rgba(14, 92, 72, 0.08)"
       borderRadius="12px"
       _hover={{
-        borderColor: "rgba(47, 182, 118, 0.15)",
-        boxShadow: "0 0 20px rgba(47, 182, 118, 0.05)",
+        borderColor: "rgba(14, 92, 72, 0.15)",
+        boxShadow: "0 0 20px rgba(14, 92, 72, 0.05)",
       }}
       transition="all 0.2s"
     >
@@ -74,11 +74,11 @@ export default function ShowroomPanel({
       <Flex w="100%" h="100%" align="center" justify="center">
         <Box
           bg="rgba(15, 26, 15, 0.7)"
-          border="1px solid rgba(47, 182, 118, 0.12)"
+          border="1px solid rgba(14, 92, 72, 0.12)"
           borderRadius="50px"
           px={14}
           py={7}
-          boxShadow="0 0 40px rgba(47, 182, 118, 0.04)"
+          boxShadow="0 0 40px rgba(14, 92, 72, 0.04)"
         >
           <Heading size="lg" color="white" fontWeight="bold" fontSize="28px">
             Bienvenido a Quantum Motors
@@ -97,9 +97,9 @@ export default function ShowroomPanel({
           Catálogo
         </Heading>
         <Badge
-          bg="rgba(47, 182, 118, 0.05)"
-          color="#2fb676"
-          border="1px solid rgba(47, 182, 118, 0.12)"
+          bg="rgba(14, 92, 72, 0.05)"
+          color="#0e5c48"
+          border="1px solid rgba(14, 92, 72, 0.12)"
           borderRadius="full"
           px={3}
           py={1}
@@ -122,7 +122,7 @@ export default function ShowroomPanel({
             borderRadius="12px"
             overflow="hidden"
             bg="#060906"
-            border="1px solid rgba(47, 182, 118, 0.08)"
+            border="1px solid rgba(14, 92, 72, 0.08)"
             position="relative"
             p={4}
           >
@@ -163,9 +163,9 @@ export default function ShowroomPanel({
 
             <HStack gap={2} flexWrap="wrap">
               <Badge
-                bg="rgba(47, 182, 118, 0.05)"
-                color="#2fb676"
-                border="1px solid rgba(47, 182, 118, 0.12)"
+                bg="rgba(14, 92, 72, 0.05)"
+                color="#0e5c48"
+                border="1px solid rgba(14, 92, 72, 0.12)"
                 borderRadius="full"
                 px={3}
                 py={1}
@@ -175,9 +175,9 @@ export default function ShowroomPanel({
                 {selected.categoria}
               </Badge>
               <Badge
-                bg="rgba(47, 182, 118, 0.05)"
-                color="#2fb676"
-                border="1px solid rgba(47, 182, 118, 0.12)"
+                bg="rgba(14, 92, 72, 0.05)"
+                color="#0e5c48"
+                border="1px solid rgba(14, 92, 72, 0.12)"
                 borderRadius="full"
                 px={3}
                 py={1}
@@ -195,7 +195,7 @@ export default function ShowroomPanel({
                 </Text>
                 <VStack gap={2} align="stretch">
                   {Object.entries(selected.especificaciones).map(([k, v]) => (
-                    <Flex key={k} justify="space-between" fontSize="sm" py={1} borderBottom="1px solid rgba(47, 182, 118, 0.06)">
+                    <Flex key={k} justify="space-between" fontSize="sm" py={1} borderBottom="1px solid rgba(14, 92, 72, 0.06)">
                       <Text color="#8a9e8a" textTransform="capitalize">
                         {k.replaceAll("_", " ")}
                       </Text>
@@ -213,9 +213,9 @@ export default function ShowroomPanel({
               {selected.colores.map((c) => (
                 <Badge
                   key={c}
-                  bg="rgba(47, 182, 118, 0.05)"
-                  color="#2fb676"
-                  border="1px solid rgba(47, 182, 118, 0.12)"
+                  bg="rgba(14, 92, 72, 0.05)"
+                  color="#0e5c48"
+                  border="1px solid rgba(14, 92, 72, 0.12)"
                   borderRadius="full"
                   px={3}
                   py={1}
@@ -235,12 +235,12 @@ export default function ShowroomPanel({
                 {stock
                   .filter((s) => s.product_id === selected.id)
                   .map((s) => (
-                    <Flex key={s.sucursal_id} justify="space-between" align="center" fontSize="sm" py={1} borderBottom="1px solid rgba(47, 182, 118, 0.06)">
+                    <Flex key={s.sucursal_id} justify="space-between" align="center" fontSize="sm" py={1} borderBottom="1px solid rgba(14, 92, 72, 0.06)">
                       <Text color="#8a9e8a">{s.region}</Text>
                       <Badge
-                        color="#2fb676"
-                        bg="rgba(47, 182, 118, 0.05)"
-                        border="1px solid rgba(47, 182, 118, 0.12)"
+                        color="#0e5c48"
+                        bg="rgba(14, 92, 72, 0.05)"
+                        border="1px solid rgba(14, 92, 72, 0.12)"
                         borderRadius="full"
                         px={3}
                         py={0.5}
@@ -266,7 +266,7 @@ export default function ShowroomPanel({
               <Button
                 key={p.id}
                 variant="outline"
-                borderColor="rgba(47, 182, 118, 0.08)"
+                borderColor="rgba(14, 92, 72, 0.08)"
                 bg="#0c1610"
                 p={5}
                 justifyContent="flex-start"
@@ -274,8 +274,8 @@ export default function ShowroomPanel({
                 alignItems="flex-start"
                 borderRadius="12px"
                 _hover={{
-                  borderColor: "rgba(47, 182, 118, 0.15)",
-                  boxShadow: "0 0 20px rgba(47, 182, 118, 0.05)",
+                  borderColor: "rgba(14, 92, 72, 0.15)",
+                  boxShadow: "0 0 20px rgba(14, 92, 72, 0.05)",
                   transform: "translateY(-2px)",
                 }}
                 _active={{ transform: "scale(0.98)" }}
@@ -299,7 +299,7 @@ export default function ShowroomPanel({
                 <Text fontWeight="bold" fontSize="sm" color="white">
                   {p.nombre}
                 </Text>
-                <Text fontSize="xs" color="#2fb676" fontWeight="bold" mt={1}>
+                <Text fontSize="xs" color="#0e5c48" fontWeight="bold" mt={1}>
                   {formatBs(p.precio.monto)}
                 </Text>
               </Button>
@@ -317,7 +317,7 @@ export default function ShowroomPanel({
           <SimpleGrid columns={{ base: 1, md: 2 }} gap={3}>
             {sucursales.map((s) => (
               <Card key={s.id}>
-                <Heading size="sm" color="#2fb676" mb={2} fontWeight="bold">
+                <Heading size="sm" color="#0e5c48" mb={2} fontWeight="bold">
                   {s.ciudad}
                 </Heading>
                 <Text fontSize="sm" color="#8a9e8a" mb={1}>
