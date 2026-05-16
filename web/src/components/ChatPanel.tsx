@@ -43,7 +43,7 @@ export default function ChatPanel({
 
   return (
     <VStack
-      bg="#0c1610"
+      bg="quantum.card"
       border="1px solid rgba(0, 230, 180, 0.05)"
       borderRadius="16px"
       boxShadow="0 0 3px rgba(0, 230, 180, 0.06), inset 0 0 40px rgba(0, 0, 0, 0.2)"
@@ -60,7 +60,7 @@ export default function ChatPanel({
             w="8px"
             h="8px"
             borderRadius="full"
-            bg="#0e5c48"
+            bg="quantum.dark"
             boxShadow="0 0 4px rgba(0, 230, 180, 0.20)"
             animation="pulseDot 2.5s ease-in-out infinite"
           />
@@ -68,7 +68,7 @@ export default function ChatPanel({
             <Heading size="sm" color="white" fontWeight="bold" fontSize="15px">
               Bot Quantum
             </Heading>
-            <Text fontSize="11px" color="#8a9e8a">
+            <Text fontSize="11px" color="quantum.textMuted">
               Asesor de electromovilidad
             </Text>
           </VStack>
@@ -77,8 +77,8 @@ export default function ChatPanel({
           aria-label="Limpiar chat"
           variant="ghost"
           size="xs"
-          color="#8a9e8a"
-          _hover={{ color: "#ff4d6a" }}
+          color="quantum.textMuted"
+          _hover={{ color: "quantum.error" }}
           borderRadius="md"
           onClick={onClear}
         >
@@ -106,7 +106,7 @@ export default function ChatPanel({
             fontSize="14px"
             lineHeight="1.55"
             alignSelf={m.role === "user" ? "flex-end" : "flex-start"}
-            bg={m.role === "user" ? "#0e5c48" : "#080f0a"}
+            bg={m.role === "user" ? "quantum.dark" : "quantum.bot"}
             border={m.role === "user" ? "1px solid rgba(0, 230, 180, 0.06)" : "none"}
             color={m.role === "user" ? "white" : "white"}
             whiteSpace="pre-wrap"
@@ -135,13 +135,13 @@ export default function ChatPanel({
           borderRadius="8px"
           minH="42px"
           py={2.5}
-          _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
-          _placeholder={{ color: "#5d705d" }}
+          _focus={{ borderColor: "quantum.dark", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
+          _placeholder={{ color: "quantum.label" }}
           resize="none"
           overflow="hidden"
         />
         <Button
-          bg="#0e5c48"
+          bg="quantum.dark"
           color="white"
           w="42px"
           h="42px"
