@@ -32,21 +32,60 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
   const [ciudad, setCiudad] = useState("");
   const [producto, setProducto] = useState(products[0]?.id ?? "");
   const [sent, setSent] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const canSubmit =
-    nombre.trim().length > 1 &&
-    celular.trim().length > 5 &&
-    ciudad.trim().length > 1;
+  function validateNombre(v: string) {
+    const trimmed = v.trim();
+    if (trimmed.length < 2) return "El nombre debe tener al menos 2 caracteres.";
+    if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(trimmed)) return "Solo letras y espacios.";
+    return "";
+  }
+
+  function validateCelular(v: string) {
+    const trimmed = v.trim().replace(/\s/g, "");
+    // Bolivia: +591 7XXXXXXXX o +591 6XXXXXXXX o 7XXXXXXXX o 6XXXXXXXX
+    if (!/^(\+591)?[67]\d{7}$/.test(trimmed)) {
+      return "Formato: +591 7XXXXXXX o 7XXXXXXX (8 dígitos).";
+    }
+    return "";
+  }
+
+  function validateCiudad(v: string) {
+    const trimmed = v.trim();
+    if (trimmed.length < 2) return "La ciudad debe tener al menos 2 caracteres.";
+    return "";
+  }
+
+  const nombreError = validateNombre(nombre);
+  const celularError = validateCelular(celular);
+  const ciudadError = validateCiudad(ciudad);
+  const canSubmit = !nombreError && !celularError && !ciudadError && nombre && celular && ciudad;
 
   function handleSubmit() {
-    if (!canSubmit) return;
+    if (!canSubmit) {
+      setErrors({
+        nombre: nombreError,
+        celular: celularError,
+        ciudad: ciudadError,
+      });
+      return;
+    }
     onSubmit({
       nombre: nombre.trim(),
-      celular: celular.trim(),
+      celular: celular.trim().replace(/\s/g, ""),
       ciudad: ciudad.trim(),
       producto: producto.trim(),
     });
     setSent(true);
+  }
+
+  function handleReset() {
+    setNombre("");
+    setCelular("");
+    setCiudad("");
+    setProducto(products[0]?.id ?? "");
+    setErrors({});
+    setSent(false);
   }
 
   if (sent) {
@@ -87,7 +126,7 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
           borderRadius="12px"
           px={6}
           _hover={{ boxShadow: "0 0 6px rgba(0, 230, 180, 0.03)" }}
-          onClick={() => setSent(false)}
+          onClick={handleReset}
         >
           Agendar otro
         </Button>
@@ -138,6 +177,11 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
             _placeholder={{ color: "#5d705d" }}
           />
+          {(errors.nombre || nombreError) && nombre.length > 0 && (
+            <Text fontSize="xs" color="#ff4d6a" mt={1}>
+              {errors.nombre || nombreError}
+            </Text>
+          )}
         </VStack>
 
         <VStack gap={1.5} align="stretch">
@@ -155,6 +199,11 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
             _placeholder={{ color: "#5d705d" }}
           />
+          {(errors.celular || celularError) && celular.length > 0 && (
+            <Text fontSize="xs" color="#ff4d6a" mt={1}>
+              {errors.celular || celularError}
+            </Text>
+          )}
         </VStack>
 
         <VStack gap={1.5} align="stretch">
@@ -172,6 +221,11 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
             _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
             _placeholder={{ color: "#5d705d" }}
           />
+          {(errors.ciudad || ciudadError) && ciudad.length > 0 && (
+            <Text fontSize="xs" color="#ff4d6a" mt={1}>
+              {errors.ciudad || ciudadError}
+            </Text>
+          )}
         </VStack>
 
         <VStack gap={1.5} align="stretch">
