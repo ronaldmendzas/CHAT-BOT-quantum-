@@ -33,16 +33,16 @@ type Props = Readonly<{
   }) => void;
 }>;
 
-function NeonCard({ children }: { children: React.ReactNode }) {
+function Card({ children }: { children: React.ReactNode }) {
   return (
     <Box
       p={5}
-      bg="#080c08"
-      border="1px solid rgba(0, 200, 120, 0.10)"
-      borderRadius="lg"
+      bg="#0a0f0a"
+      border="1px solid rgba(0, 255, 136, 0.10)"
+      borderRadius="12px"
       _hover={{
-        borderColor: "#00e676",
-        boxShadow: "0 0 24px rgba(0, 230, 118, 0.12)",
+        borderColor: "rgba(0, 255, 136, 0.18)",
+        boxShadow: "0 0 20px rgba(0, 255, 136, 0.06)",
       }}
       transition="all 0.2s"
     >
@@ -71,10 +71,10 @@ export default function ShowroomPanel({
   /* ========== WELCOME ========== */
   if (intent === "WELCOME") {
     return (
-      <Flex flex={1} align="center" justify="center" minH="100dvh">
+      <Flex w="100%" h="100%" align="center" justify="center">
         <Box
-          bg="rgba(15, 15, 15, 0.65)"
-          border="1px solid rgba(0, 230, 118, 0.13)"
+          bg="rgba(10, 10, 10, 0.55)"
+          border="1px solid rgba(0, 255, 136, 0.10)"
           borderRadius="50px"
           px={14}
           py={7}
@@ -89,16 +89,16 @@ export default function ShowroomPanel({
 
   /* ========== CONTENT VIEWS ========== */
   return (
-    <Box flex={1} overflowY="auto" px={8} py={6}>
-      {/* header */}
+    <Box w="100%" h="100%" overflowY="auto" px={10} py={8}>
+      {/* header — only on content views */}
       <Flex align="center" justify="space-between" mb={8}>
         <Heading size="md" color="white" fontWeight="bold">
           Catálogo
         </Heading>
         <Badge
-          bg="rgba(0, 230, 118, 0.06)"
-          color="#00e676"
-          border="1px solid rgba(0, 230, 118, 0.22)"
+          bg="rgba(0, 255, 136, 0.05)"
+          color="#00ff88"
+          border="1px solid rgba(0, 255, 136, 0.12)"
           borderRadius="full"
           px={3}
           py={1}
@@ -118,10 +118,10 @@ export default function ShowroomPanel({
             alignItems="center"
             justifyContent="center"
             minH="320px"
-            borderRadius="lg"
+            borderRadius="12px"
             overflow="hidden"
-            bg="#060a06"
-            border="1px solid rgba(0, 230, 118, 0.12)"
+            bg="#060906"
+            border="1px solid rgba(0, 255, 136, 0.10)"
             position="relative"
             p={4}
           >
@@ -143,7 +143,7 @@ export default function ShowroomPanel({
               left={0}
               right={0}
               textAlign="center"
-              bg="rgba(0,0,0,0.65)"
+              bg="rgba(0,0,0,0.6)"
               py={2}
             >
               {selected.nombre}
@@ -162,9 +162,9 @@ export default function ShowroomPanel({
 
             <HStack gap={2} flexWrap="wrap">
               <Badge
-                bg="rgba(0, 230, 118, 0.06)"
-                color="#00e676"
-                border="1px solid rgba(0, 230, 118, 0.22)"
+                bg="rgba(0, 255, 136, 0.05)"
+                color="#00ff88"
+                border="1px solid rgba(0, 255, 136, 0.12)"
                 borderRadius="full"
                 px={3}
                 py={1}
@@ -174,9 +174,9 @@ export default function ShowroomPanel({
                 {selected.categoria}
               </Badge>
               <Badge
-                bg="rgba(0, 230, 118, 0.06)"
-                color="#00e676"
-                border="1px solid rgba(0, 230, 118, 0.22)"
+                bg="rgba(0, 255, 136, 0.05)"
+                color="#00ff88"
+                border="1px solid rgba(0, 255, 136, 0.12)"
                 borderRadius="full"
                 px={3}
                 py={1}
@@ -188,13 +188,13 @@ export default function ShowroomPanel({
             </HStack>
 
             {Object.keys(selected.especificaciones).length > 0 && (
-              <NeonCard>
+              <Card>
                 <Text fontSize="xs" color="#5d705d" textTransform="uppercase" letterSpacing="wide" mb={3} fontWeight="bold">
                   Especificaciones
                 </Text>
                 <VStack gap={2} align="stretch">
                   {Object.entries(selected.especificaciones).map(([k, v]) => (
-                    <Flex key={k} justify="space-between" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 230, 118, 0.12)">
+                    <Flex key={k} justify="space-between" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 255, 136, 0.08)">
                       <Text color="#8a9e8a" textTransform="capitalize">
                         {k.replaceAll("_", " ")}
                       </Text>
@@ -204,7 +204,7 @@ export default function ShowroomPanel({
                     </Flex>
                   ))}
                 </VStack>
-              </NeonCard>
+              </Card>
             )}
 
             <HStack gap={2} flexWrap="wrap">
@@ -212,9 +212,9 @@ export default function ShowroomPanel({
               {selected.colores.map((c) => (
                 <Badge
                   key={c}
-                  bg="rgba(0, 230, 118, 0.06)"
-                  color="#00e676"
-                  border="1px solid rgba(0, 230, 118, 0.22)"
+                  bg="rgba(0, 255, 136, 0.05)"
+                  color="#00ff88"
+                  border="1px solid rgba(0, 255, 136, 0.12)"
                   borderRadius="full"
                   px={3}
                   py={1}
@@ -226,7 +226,7 @@ export default function ShowroomPanel({
               ))}
             </HStack>
 
-            <NeonCard>
+            <Card>
               <Text fontSize="xs" color="#5d705d" textTransform="uppercase" letterSpacing="wide" mb={3} fontWeight="bold">
                 Disponibilidad
               </Text>
@@ -234,12 +234,12 @@ export default function ShowroomPanel({
                 {stock
                   .filter((s) => s.product_id === selected.id)
                   .map((s) => (
-                    <Flex key={s.sucursal_id} justify="space-between" align="center" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 230, 118, 0.12)">
+                    <Flex key={s.sucursal_id} justify="space-between" align="center" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 255, 136, 0.08)">
                       <Text color="#8a9e8a">{s.region}</Text>
                       <Badge
-                        color="#00e676"
-                        bg="rgba(0, 230, 118, 0.08)"
-                        border="1px solid rgba(0, 230, 118, 0.25)"
+                        color="#00ff88"
+                        bg="rgba(0, 255, 136, 0.05)"
+                        border="1px solid rgba(0, 255, 136, 0.12)"
                         borderRadius="full"
                         px={3}
                         py={0.5}
@@ -251,7 +251,7 @@ export default function ShowroomPanel({
                     </Flex>
                   ))}
               </VStack>
-            </NeonCard>
+            </Card>
           </VStack>
         </SimpleGrid>
       )}
@@ -265,16 +265,16 @@ export default function ShowroomPanel({
               <Button
                 key={p.id}
                 variant="outline"
-                borderColor="rgba(0, 200, 120, 0.10)"
-                bg="#080c08"
+                borderColor="rgba(0, 255, 136, 0.10)"
+                bg="#0a0f0a"
                 p={5}
                 justifyContent="flex-start"
                 flexDirection="column"
                 alignItems="flex-start"
-                borderRadius="lg"
+                borderRadius="12px"
                 _hover={{
-        borderColor: "#00c853",
-                  boxShadow: "0 0 24px rgba(0, 230, 118, 0.12)",
+                  borderColor: "rgba(0, 255, 136, 0.18)",
+                  boxShadow: "0 0 20px rgba(0, 255, 136, 0.06)",
                   transform: "translateY(-2px)",
                 }}
                 _active={{ transform: "scale(0.98)" }}
@@ -292,13 +292,13 @@ export default function ShowroomPanel({
                     objectFit="contain"
                     borderRadius="md"
                     mb={2}
-                    bg="#050705"
+                    bg="#040604"
                   />
                 )}
                 <Text fontWeight="bold" fontSize="sm" color="white">
                   {p.nombre}
                 </Text>
-                <Text fontSize="xs" color="#00e676" fontWeight="bold" mt={1}>
+                <Text fontSize="xs" color="#00ff88" fontWeight="bold" mt={1}>
                   {formatBs(p.precio.monto)}
                 </Text>
               </Button>
@@ -315,8 +315,8 @@ export default function ShowroomPanel({
           </Heading>
           <SimpleGrid columns={{ base: 1, md: 2 }} gap={3}>
             {sucursales.map((s) => (
-              <NeonCard key={s.id}>
-                <Heading size="sm" color="#00e676" mb={2} fontWeight="bold">
+              <Card key={s.id}>
+                <Heading size="sm" color="#00ff88" mb={2} fontWeight="bold">
                   {s.ciudad}
                 </Heading>
                 <Text fontSize="sm" color="#8a9e8a" mb={1}>
@@ -328,7 +328,7 @@ export default function ShowroomPanel({
                 <Text fontSize="xs" color="#5d705d" mt={0.5}>
                   📞 {s.telefono}
                 </Text>
-              </NeonCard>
+              </Card>
             ))}
           </SimpleGrid>
         </VStack>

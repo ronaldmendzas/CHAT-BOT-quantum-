@@ -84,31 +84,44 @@ export default function Home() {
       h="100dvh"
       w="100vw"
       position="relative"
-      bg="radial-gradient(ellipse at 30% 50%, #051005 0%, #020302 60%)"
       overflow="hidden"
     >
+      {/* background layers */}
       <Box
         position="absolute"
         inset={0}
-        bg="radial-gradient(ellipse at 80% 50%, #051005 0%, transparent 50%)"
+        bg="#050805"
+      />
+      <Box
+        position="absolute"
+        inset={0}
+        bg="radial-gradient(ellipse at 25% 50%, rgba(0, 255, 136, 0.06) 0%, transparent 55%)"
         pointerEvents="none"
       />
+      <Box
+        position="absolute"
+        inset={0}
+        bg="radial-gradient(ellipse at 75% 50%, rgba(0, 255, 136, 0.04) 0%, transparent 50%)"
+        pointerEvents="none"
+      />
+
       {/* logo top-left */}
       <Image
         src="/logo.png"
         alt="Quantum"
-        h="32px"
+        h="44px"
         w="auto"
         objectFit="contain"
         position="absolute"
-        top="40px"
+        top="36px"
         left="40px"
         zIndex={10}
+        filter="drop-shadow(0 0 14px rgba(0, 255, 136, 0.25))"
       />
 
-      {/* left half — chat card centered */}
+      {/* left half — 45% */}
       <Flex
-        flex={1}
+        w="45%"
         h="100%"
         align="center"
         justify="center"
@@ -124,9 +137,12 @@ export default function Home() {
         />
       </Flex>
 
-      {/* right half — showroom */}
+      {/* right half — 55% */}
       <Flex
-        flex={1}
+        w="55%"
+        h="100%"
+        align="center"
+        justify="center"
         position="relative"
         zIndex={1}
       >

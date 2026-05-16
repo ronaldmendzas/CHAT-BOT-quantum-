@@ -10,7 +10,6 @@ import {
   Textarea,
   Button,
   VStack,
-  HStack,
   IconButton,
 } from "@chakra-ui/react";
 
@@ -44,18 +43,18 @@ export default function ChatPanel({
 
   return (
     <VStack
-      bg="#080c08"
+      bg="#0a0f0a"
       borderRadius="16px"
-      boxShadow="0 0 40px rgba(0, 230, 118, 0.04), 0 0 80px rgba(0, 230, 118, 0.02)"
+      boxShadow="0 0 40px rgba(0, 255, 136, 0.05)"
       w="100%"
+      maxW="480px"
       h="75vh"
-      maxH="750px"
       overflow="hidden"
       gap={0}
     >
       {/* header */}
       <Flex align="center" justify="space-between" px={6} pt={6} pb={3} w="100%">
-        <HStack gap={2.5}>
+        <Flex align="center" gap={2.5}>
           <Box
             w="8px"
             h="8px"
@@ -72,7 +71,7 @@ export default function ChatPanel({
               Asesor de electromovilidad
             </Text>
           </VStack>
-        </HStack>
+        </Flex>
         <IconButton
           aria-label="Limpiar chat"
           variant="ghost"
@@ -107,7 +106,7 @@ export default function ChatPanel({
             lineHeight="1.55"
             alignSelf={m.role === "user" ? "flex-end" : "flex-start"}
             bg={m.role === "user" ? "rgba(0, 200, 120, 0.05)" : "#162416"}
-            border={m.role === "user" ? "1px solid rgba(0, 200, 120, 0.12)" : "none"}
+            border={m.role === "user" ? "1px solid rgba(0, 200, 120, 0.10)" : "none"}
             color={m.role === "user" ? "#00c853" : "white"}
             whiteSpace="pre-wrap"
             wordBreak="break-word"
