@@ -1,11 +1,13 @@
 const fs = require("fs");
 const path = require("path");
 
+const VISUAL_PATH = path.join(__dirname, "..", "catalogo_visual.json");
 const RAW_PATH = path.join(__dirname, "..", "data", "raw", "cerebro.json");
 const OUTPUT_PATH = path.join(__dirname, "..", "web", "src", "data", "dataset.json");
 
+const visual = JSON.parse(fs.readFileSync(VISUAL_PATH, "utf-8"));
 const raw = JSON.parse(fs.readFileSync(RAW_PATH, "utf-8"));
-const items = raw.productos_tienda || [];
+const rawItems = raw.productos_tienda || [];
 
 function slugify(name) {
   return name
@@ -14,6 +16,14 @@ function slugify(name) {
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
+}
+
+function mapCategory(cat) {
+  if (!cat || cat === "Sin Categoría" || cat === "Accesorios") {
+    if (cat === "Accesorios") return "ACCESORIO";
+    return "VEHICULO";
+  }
+  return "VEHICULO";
 }
 
 function cleanDescription(text) {
@@ -63,7 +73,6 @@ function cleanDescription(text) {
     .replace(/parala/g, "para la ")
     .replace(/paralos/g, "para los ")
     .replace(/parabrindar/g, "para brindar ")
-    .replace(/reduciendo/g, "reduciendo ")
     .replace(/recorridocon/g, "recorrido con ")
     .replace(/máximade/g, "máxima de ")
     .replace(/potenciade/g, "potencia de ")
@@ -119,18 +128,6 @@ function extractSpecs(text) {
   return specs;
 }
 
-function mapCategory(categorias) {
-  if (!categorias || categorias.length === 0) return "VEHICULO";
-  const cats = categorias.map((c) => c.toLowerCase());
-  if (cats.includes("accesorios")) return "ACCESORIO";
-  if (cats.includes("camiones")) return "VEHICULO";
-  if (cats.includes("trimotos")) return "VEHICULO";
-  if (cats.includes("motocicletas")) return "VEHICULO";
-  if (cats.includes("bicimotos y bicicletas") || cats.includes("yadea")) return "VEHICULO";
-  if (cats.includes("autos")) return "VEHICULO";
-  return "VEHICULO";
-}
-
 function getColores(text) {
   if (!text) return ["Por definir"];
   const found = [];
@@ -150,43 +147,53 @@ function getColores(text) {
   return found.length > 0 ? found : ["Por definir"];
 }
 
-const seenNames = new Set();
-const products = [];
-const seenAccesorios = new Set();
+const priceMap = {};
+for (const item of rawItems) {
+  const slug = slugify(item.nombre);
+  const precio = parseInt(item.precio_raw, 10);
+  if (!isNaN(precio)) {
+    priceMap[slug] = { monto: precio, moneda: item.moneda || "BOB" };
+  }
+}
 
-for (const item of items) {
-  const nombre = item.nombre.trim();
+const seenNames = new Set();
+const seenAccesorios = new Set();
+const products = [];
+
+for (const item of visual) {
+  const nombre = item.titulo.trim();
   const slug = slugify(nombre);
 
   if (slug === "cajuela-de-motocicleta" && seenAccesorios.has("cajuela")) continue;
   if (slug === "casco-con-visera" && seenAccesorios.has("casco-visera")) continue;
-  if (slug === "casco-con-visera") {
-    seenAccesorios.add("casco-visera");
-  }
-  if (slug === "cajuela-de-motocicleta") {
-    seenAccesorios.add("cajuela");
-  }
+  if (slug === "casco-con-visera") seenAccesorios.add("casco-visera");
+  if (slug === "cajuela-de-motocicleta") seenAccesorios.add("cajuela");
 
   if (seenNames.has(slug)) continue;
   seenNames.add(slug);
 
-  const precio = parseInt(item.precio_raw, 10);
-  if (isNaN(precio)) continue;
-
-  const categoria = mapCategory(item.categorias);
-  const desc = cleanDescription(item.descripcion);
+  const precio = priceMap[slug] || { monto: 0, moneda: "BOB" };
+  const categoria = mapCategory(item.categoria);
+  const desc = cleanDescription(item.descripcion || item.descripcion_corta);
   const specs = extractSpecs(item.descripcion);
   const colores = getColores(item.descripcion);
 
+  const fotos = (item.fotos || []).filter(Boolean);
+  const videos = (item.videos || []).filter(Boolean);
+  const mediaIds = [
+    ...fotos.map((_, i) => `media_${slug}_${i}`),
+    ...videos.map((_, i) => `media_${slug}_v${i}`),
+  ];
+
   products.push({
     id: slug,
-    nombre: nombre,
-    categoria: categoria,
-    precio: { monto: precio, moneda: item.moneda || "BOB" },
+    nombre,
+    categoria,
+    precio,
     descripcion_corta: desc,
     especificaciones: specs,
-    colores: colores,
-    media: [],
+    colores,
+    media: mediaIds,
   });
 }
 
@@ -214,7 +221,7 @@ for (const prod of products) {
       region: suc.region,
       sucursal_id: suc.id,
       cantidad: estado === "SIN_STOCK" ? 0 : cantidad,
-      estado: estado,
+      estado,
       ultima_actualizacion: now,
     });
   }
@@ -236,28 +243,34 @@ const testDrive = ciudades.slice(0, 4).map((c) => ({
   requisitos: "Licencia vigente y CI.",
 }));
 
-const media = products
-  .filter((p) => p.categoria === "VEHICULO")
-  .map((p) => ({
-    id: `media_${p.id}_1`,
-    type: "IMAGE",
-    url: "",
-    title: `${p.nombre} - Vista frontal`,
-    product_id: p.id,
-  }));
+const allMedia = products.flatMap((p) => {
+  const visualItem = visual.find((v) => slugify(v.titulo) === p.id);
+  const fotos = visualItem ? (visualItem.fotos || []) : [];
+  const videos = visualItem ? (visualItem.videos || []) : [];
+  return [
+    ...fotos.map((url, i) => ({
+      id: `media_${p.id}_${i}`,
+      type: "IMAGE",
+      url: typeof url === "string" ? url : "",
+      title: `${p.nombre} - Foto ${i + 1}`,
+      product_id: p.id,
+    })),
+    ...videos.map((url, i) => ({
+      id: `media_${p.id}_v${i}`,
+      type: "VIDEO",
+      url: typeof url === "string" ? url : "",
+      title: `${p.nombre} - Video ${i + 1}`,
+      product_id: p.id,
+    })),
+  ];
+});
 
-const dataset = {
-  products,
-  stock,
-  sucursales,
-  test_drive: testDrive,
-  media,
-};
+const dataset = { products, stock, sucursales, test_drive: testDrive, media: allMedia };
 
 fs.writeFileSync(OUTPUT_PATH, JSON.stringify(dataset, null, 2), "utf-8");
 
-console.log(`✅ Dataset generado: ${products.length} productos, ${stock.length} registros de stock`);
+console.log(`✅ Dataset generado: ${products.length} productos, ${stock.length} stock, ${allMedia.length} media`);
 console.log(` Vehículos: ${products.filter((p) => p.categoria === "VEHICULO").length}`);
-console.log(`🔧 Accesorios: ${products.filter((p) => p.categoria === "ACCESORIO").length}`);
-console.log(`🏪 Sucursales: ${sucursales.length}`);
+console.log(` Accesorios: ${products.filter((p) => p.categoria === "ACCESORIO").length}`);
+console.log(` Sucursales: ${sucursales.length}`);
 console.log(` Test Drive: ${testDrive.length} regiones`);
