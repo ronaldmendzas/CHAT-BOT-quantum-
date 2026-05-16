@@ -37,7 +37,7 @@ function Card({ children }: { children: React.ReactNode }) {
   return (
     <Box
       p={5}
-      bg="quantum.card"
+      bg="#0c1610"
       border="1px solid rgba(0, 230, 180, 0.05)"
       borderRadius="12px"
       _hover={{
@@ -98,7 +98,7 @@ export default function ShowroomPanel({
         </Heading>
         <Badge
           bg="rgba(0, 230, 180, 0.04)"
-          color="quantum.dark"
+          color="#0e5c48"
           border="1px solid rgba(0, 230, 180, 0.06)"
           borderRadius="full"
           px={3}
@@ -121,7 +121,7 @@ export default function ShowroomPanel({
             minH="320px"
             borderRadius="12px"
             overflow="hidden"
-            bg="quantum.img"
+            bg="#060906"
             border="1px solid rgba(0, 230, 180, 0.05)"
             position="relative"
             p={4}
@@ -156,7 +156,7 @@ export default function ShowroomPanel({
               {selected.nombre}
             </Heading>
             {selected.descripcion_corta && (
-              <Text color="quantum.textMuted" fontSize="sm">
+              <Text color="#8a9e8a" fontSize="sm">
                 {selected.descripcion_corta}
               </Text>
             )}
@@ -164,7 +164,7 @@ export default function ShowroomPanel({
             <HStack gap={2} flexWrap="wrap">
               <Badge
                 bg="rgba(0, 230, 180, 0.04)"
-                color="quantum.dark"
+                color="#0e5c48"
                 border="1px solid rgba(0, 230, 180, 0.06)"
                 borderRadius="full"
                 px={3}
@@ -176,7 +176,7 @@ export default function ShowroomPanel({
               </Badge>
               <Badge
                 bg="rgba(0, 230, 180, 0.04)"
-                color="quantum.dark"
+                color="#0e5c48"
                 border="1px solid rgba(0, 230, 180, 0.06)"
                 borderRadius="full"
                 px={3}
@@ -190,13 +190,13 @@ export default function ShowroomPanel({
 
             {Object.keys(selected.especificaciones).length > 0 && (
               <Card>
-                <Text fontSize="xs" color="quantum.label" textTransform="uppercase" letterSpacing="wide" mb={3} fontWeight="bold">
+                <Text fontSize="xs" color="#5d705d" textTransform="uppercase" letterSpacing="wide" mb={3} fontWeight="bold">
                   Especificaciones
                 </Text>
                 <VStack gap={2} align="stretch">
                   {Object.entries(selected.especificaciones).map(([k, v]) => (
                     <Flex key={k} justify="space-between" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 230, 180, 0.06)">
-                      <Text color="quantum.textMuted" textTransform="capitalize">
+                      <Text color="#8a9e8a" textTransform="capitalize">
                         {k.replaceAll("_", " ")}
                       </Text>
                       <Text color="white" fontWeight="bold">
@@ -209,12 +209,12 @@ export default function ShowroomPanel({
             )}
 
             <HStack gap={2} flexWrap="wrap">
-              <Text fontSize="xs" color="quantum.textMuted" fontWeight="bold">Colores:</Text>
+              <Text fontSize="xs" color="#8a9e8a" fontWeight="bold">Colores:</Text>
               {selected.colores.map((c) => (
                 <Badge
                   key={c}
                   bg="rgba(0, 230, 180, 0.04)"
-                  color="quantum.dark"
+                  color="#0e5c48"
                   border="1px solid rgba(0, 230, 180, 0.06)"
                   borderRadius="full"
                   px={3}
@@ -228,7 +228,7 @@ export default function ShowroomPanel({
             </HStack>
 
             <Card>
-              <Text fontSize="xs" color="quantum.label" textTransform="uppercase" letterSpacing="wide" mb={3} fontWeight="bold">
+              <Text fontSize="xs" color="#5d705d" textTransform="uppercase" letterSpacing="wide" mb={3} fontWeight="bold">
                 Disponibilidad
               </Text>
               <VStack gap={2} align="stretch">
@@ -236,9 +236,9 @@ export default function ShowroomPanel({
                   .filter((s) => s.product_id === selected.id)
                   .map((s) => (
                     <Flex key={s.sucursal_id} justify="space-between" align="center" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 230, 180, 0.06)">
-                      <Text color="quantum.textMuted">{s.region}</Text>
+                      <Text color="#8a9e8a">{s.region}</Text>
                       <Badge
-                        color="quantum.dark"
+                        color="#0e5c48"
                         bg="rgba(0, 230, 180, 0.04)"
                         border="1px solid rgba(0, 230, 180, 0.06)"
                         borderRadius="full"
@@ -267,7 +267,7 @@ export default function ShowroomPanel({
                 key={p.id}
                 variant="outline"
                 borderColor="rgba(0, 230, 180, 0.05)"
-                bg="quantum.card"
+                bg="#0c1610"
                 p={5}
                 justifyContent="flex-start"
                 flexDirection="column"
@@ -299,7 +299,7 @@ export default function ShowroomPanel({
                 <Text fontWeight="bold" fontSize="sm" color="white">
                   {p.nombre}
                 </Text>
-                <Text fontSize="xs" color="quantum.dark" fontWeight="bold" mt={1}>
+                <Text fontSize="xs" color="#0e5c48" fontWeight="bold" mt={1}>
                   {formatBs(p.precio.monto)}
                 </Text>
               </Button>
@@ -317,16 +317,16 @@ export default function ShowroomPanel({
           <SimpleGrid columns={{ base: 1, md: 2 }} gap={3}>
             {sucursales.map((s) => (
               <Card key={s.id}>
-                <Heading size="sm" color="quantum.dark" mb={2} fontWeight="bold">
+                <Heading size="sm" color="#0e5c48" mb={2} fontWeight="bold">
                   {s.ciudad}
                 </Heading>
-                <Text fontSize="sm" color="quantum.textMuted" mb={1}>
+                <Text fontSize="sm" color="#8a9e8a" mb={1}>
                   {s.direccion}
                 </Text>
-                <Text fontSize="xs" color="quantum.label">
+                <Text fontSize="xs" color="#5d705d">
                   🕐 {s.horario}
                 </Text>
-                <Text fontSize="xs" color="quantum.label" mt={0.5}>
+                <Text fontSize="xs" color="#5d705d" mt={0.5}>
                   📞 {s.telefono}
                 </Text>
               </Card>
@@ -347,7 +347,7 @@ export default function ShowroomPanel({
       {/* UNKNOWN */}
       {intent === "UNKNOWN" && (
         <VStack align="center" justify="center" gap={6} textAlign="center" minH="60vh">
-          <Text color="quantum.textMuted" fontSize="sm">
+          <Text color="#8a9e8a" fontSize="sm">
             Prueba escribir: &quot;modelos&quot;, &quot;sucursales&quot; o &quot;agendar test drive&quot;.
           </Text>
         </VStack>

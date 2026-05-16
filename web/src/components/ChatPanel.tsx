@@ -45,7 +45,7 @@ export default function ChatPanel({
 
   return (
     <VStack
-      bg="quantum.card"
+      bg="#0c1610"
       border="1px solid rgba(0, 230, 180, 0.05)"
       borderRadius="16px"
       boxShadow="0 0 3px rgba(0, 230, 180, 0.06), inset 0 0 40px rgba(0, 0, 0, 0.2)"
@@ -62,7 +62,7 @@ export default function ChatPanel({
             w="8px"
             h="8px"
             borderRadius="full"
-            bg="quantum.dark"
+            bg="#0e5c48"
             boxShadow="0 0 4px rgba(0, 230, 180, 0.20)"
             animation="pulseDot 2.5s ease-in-out infinite"
           />
@@ -70,7 +70,7 @@ export default function ChatPanel({
             <Heading size="sm" color="white" fontWeight="bold" fontSize="15px">
               Bot Quantum
             </Heading>
-            <Text fontSize="11px" color="quantum.textMuted">
+            <Text fontSize="11px" color="#8a9e8a">
               Asesor de electromovilidad
             </Text>
           </VStack>
@@ -79,8 +79,8 @@ export default function ChatPanel({
           aria-label="Limpiar chat"
           variant="ghost"
           size="xs"
-          color="quantum.textMuted"
-          _hover={{ color: "quantum.error" }}
+          color="#8a9e8a"
+          _hover={{ color: "#ff4d6a" }}
           borderRadius="md"
           onClick={onClear}
         >
@@ -108,7 +108,7 @@ export default function ChatPanel({
             fontSize="14px"
             lineHeight="1.55"
             alignSelf={m.role === "user" ? "flex-end" : "flex-start"}
-            bg={m.role === "user" ? "quantum.dark" : "quantum.bot"}
+            bg={m.role === "user" ? "#0e5c48" : "#080f0a"}
             border={m.role === "user" ? "1px solid rgba(0, 230, 180, 0.06)" : "none"}
             color={m.role === "user" ? "white" : "white"}
             whiteSpace="pre-wrap"
@@ -125,15 +125,15 @@ export default function ChatPanel({
             px={4}
             py={2}
             borderRadius="12px"
-            bg="quantum.bot"
+            bg="#080f0a"
             fontSize="13px"
-            color="quantum.textMuted"
+            color="#8a9e8a"
           >
             <Box
               w="6px"
               h="6px"
               borderRadius="full"
-              bg="quantum.dark"
+              bg="#0e5c48"
               animation="pulseDot 1.2s ease-in-out infinite"
             />
             <Text>Bot Quantum está escribiendo...</Text>
@@ -159,13 +159,13 @@ export default function ChatPanel({
           borderRadius="8px"
           minH="42px"
           py={2.5}
-          _focus={{ borderColor: "quantum.dark", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
-          _placeholder={{ color: "quantum.label" }}
+          _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
+          _placeholder={{ color: "#5d705d" }}
           resize="none"
           overflow="hidden"
         />
         <Button
-          bg="quantum.dark"
+          bg="#0e5c48"
           color="white"
           w="42px"
           h="42px"

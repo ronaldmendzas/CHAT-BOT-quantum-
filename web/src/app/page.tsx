@@ -85,7 +85,7 @@ export default function Home() {
       direction={{ base: "column", md: "row" }}
     >
       {/* base */}
-      <Box position="absolute" inset={0} bg="quantum.bg" />
+      <Box position="absolute" inset={0} bg="#020302" />
       
       {/* left glow */}
       <Box

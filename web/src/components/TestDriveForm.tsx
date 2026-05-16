@@ -94,7 +94,7 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
         align="center"
         gap={6}
         p={10}
-        bg="quantum.surface"
+        bg="#080c08"
         border="1px solid rgba(0, 230, 180, 0.04)"
         borderRadius="lg"
         textAlign="center"
@@ -111,16 +111,16 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
           justifyContent="center"
           boxShadow="0 0 5px rgba(0, 230, 180, 0.05)"
         >
-          <Text fontSize="3xl" color="quantum.dark" fontWeight="bold">✓</Text>
+          <Text fontSize="3xl" color="#0e5c48" fontWeight="bold">✓</Text>
         </Box>
         <Heading size="md" color="white" fontWeight="bold">
           ¡Solicitud registrada!
         </Heading>
-        <Text color="quantum.textMuted" fontSize="sm">
+        <Text color="#8a9e8a" fontSize="sm">
           Un asesor te contactará por WhatsApp para confirmar tu Test Drive.
         </Text>
         <Button
-          bg="quantum.dark"
+          bg="#0e5c48"
           color="white"
           fontWeight="bold"
           borderRadius="12px"
@@ -142,7 +142,7 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
       {slots.length > 0 && (
         <Badge
           bg="rgba(0, 230, 180, 0.06)"
-          color="quantum.dark"
+          color="#0e5c48"
           border="1px solid rgba(0, 230, 180, 0.06)"
           borderRadius="full"
           px={4}
@@ -156,90 +156,90 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
 
       <VStack
         p={6}
-        bg="quantum.surface"
+        bg="#080c08"
         border="1px solid rgba(0, 230, 180, 0.04)"
         borderRadius="lg"
         gap={5}
         align="stretch"
       >
         <VStack gap={1.5} align="stretch">
-          <Text fontSize="xs" fontWeight="bold" color="quantum.label" textTransform="uppercase" letterSpacing="wide">
+          <Text fontSize="xs" fontWeight="bold" color="#5d705d" textTransform="uppercase" letterSpacing="wide">
             Nombre
           </Text>
           <Input
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
             placeholder="Tu nombre completo"
-            bg="quantum.input"
+            bg="#050705"
             borderColor="rgba(0, 230, 180, 0.04)"
             color="white"
             borderRadius="12px"
-            _focus={{ borderColor: "quantum.dark", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
-            _placeholder={{ color: "quantum.label" }}
+            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
+            _placeholder={{ color: "#5d705d" }}
           />
           {(errors.nombre || nombreError) && nombre.length > 0 && (
-            <Text fontSize="xs" color="quantum.error" mt={1}>
+            <Text fontSize="xs" color="#ff4d6a" mt={1}>
               {errors.nombre || nombreError}
             </Text>
           )}
         </VStack>
 
         <VStack gap={1.5} align="stretch">
-          <Text fontSize="xs" fontWeight="bold" color="quantum.label" textTransform="uppercase" letterSpacing="wide">
+          <Text fontSize="xs" fontWeight="bold" color="#5d705d" textTransform="uppercase" letterSpacing="wide">
             Celular / WhatsApp
           </Text>
           <Input
             value={celular}
             onChange={(e) => setCelular(e.target.value)}
             placeholder="+591 7XXXXXXX"
-            bg="quantum.input"
+            bg="#050705"
             borderColor="rgba(0, 230, 180, 0.04)"
             color="white"
             borderRadius="12px"
-            _focus={{ borderColor: "quantum.dark", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
-            _placeholder={{ color: "quantum.label" }}
+            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
+            _placeholder={{ color: "#5d705d" }}
           />
           {(errors.celular || celularError) && celular.length > 0 && (
-            <Text fontSize="xs" color="quantum.error" mt={1}>
+            <Text fontSize="xs" color="#ff4d6a" mt={1}>
               {errors.celular || celularError}
             </Text>
           )}
         </VStack>
 
         <VStack gap={1.5} align="stretch">
-          <Text fontSize="xs" fontWeight="bold" color="quantum.label" textTransform="uppercase" letterSpacing="wide">
+          <Text fontSize="xs" fontWeight="bold" color="#5d705d" textTransform="uppercase" letterSpacing="wide">
             Ciudad
           </Text>
           <Input
             value={ciudad}
             onChange={(e) => setCiudad(e.target.value)}
             placeholder="Ej: La Paz"
-            bg="quantum.input"
+            bg="#050705"
             borderColor="rgba(0, 230, 180, 0.04)"
             color="white"
             borderRadius="12px"
-            _focus={{ borderColor: "quantum.dark", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
-            _placeholder={{ color: "quantum.label" }}
+            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
+            _placeholder={{ color: "#5d705d" }}
           />
           {(errors.ciudad || ciudadError) && ciudad.length > 0 && (
-            <Text fontSize="xs" color="quantum.error" mt={1}>
+            <Text fontSize="xs" color="#ff4d6a" mt={1}>
               {errors.ciudad || ciudadError}
             </Text>
           )}
         </VStack>
 
         <VStack gap={1.5} align="stretch">
-          <Text fontSize="xs" fontWeight="bold" color="quantum.label" textTransform="uppercase" letterSpacing="wide">
+          <Text fontSize="xs" fontWeight="bold" color="#5d705d" textTransform="uppercase" letterSpacing="wide">
             Modelo de interés
           </Text>
           <NativeSelectField
             value={producto}
             onChange={(e) => setProducto(e.target.value)}
-            bg="quantum.input"
+            bg="#050705"
             borderColor="rgba(0, 230, 180, 0.04)"
             color="white"
             borderRadius="12px"
-            _focus={{ borderColor: "quantum.dark", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
+            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
           >
             {products.map((p) => (
               <option key={p.id} value={p.id}>
@@ -250,7 +250,7 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
         </VStack>
 
         <Button
-          bg="quantum.dark"
+          bg="#0e5c48"
           color="white"
           fontWeight="bold"
           py={3}
