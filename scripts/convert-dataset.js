@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const CATALOGO_PATH = path.join(__dirname, "..", "catalogo_visual.json");
+const CATALOGO_PATH = path.join(__dirname, "..", "web", "src", "data", "catalogo_visual.json");
 const OUTPUT_PATH = path.join(__dirname, "..", "web", "src", "data", "dataset.json");
 
 const catalogo = JSON.parse(fs.readFileSync(CATALOGO_PATH, "utf-8"));
