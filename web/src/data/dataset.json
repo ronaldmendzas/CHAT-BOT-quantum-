@@ -1,0 +1,143 @@
+{
+  "products": [
+    {
+      "id": "S1",
+      "nombre": "Scooter Electrico Quantum S1",
+      "categoria": "VEHICULO",
+      "precio": {
+        "monto": 7900,
+        "moneda": "BOB"
+      },
+      "descripcion_corta": "Scooter urbano para trayectos diarios.",
+      "especificaciones": {
+        "autonomia_km": 60,
+        "carga_horas": 5,
+        "velocidad_max_kmh": 45
+      },
+      "colores": ["Rojo", "Negro"],
+      "media": ["media_s1_1", "media_s1_2"]
+    },
+    {
+      "id": "M2",
+      "nombre": "Moto Electrica Quantum M2",
+      "categoria": "VEHICULO",
+      "precio": {
+        "monto": 14900,
+        "moneda": "BOB"
+      },
+      "descripcion_corta": "Moto electrica para recorridos mixtos.",
+      "especificaciones": {
+        "autonomia_km": 90,
+        "carga_horas": 6,
+        "velocidad_max_kmh": 65
+      },
+      "colores": ["Blanco", "Gris"],
+      "media": ["media_m2_1"]
+    },
+    {
+      "id": "BAT",
+      "nombre": "Bateria de repuesto (demo)",
+      "categoria": "BATERIA",
+      "precio": {
+        "monto": 1200,
+        "moneda": "BOB"
+      },
+      "descripcion_corta": "Bateria adicional compatible con modelos demo.",
+      "especificaciones": {
+        "capacidad_kwh": 1.2
+      },
+      "colores": ["Negro"],
+      "media": ["media_bat_1"]
+    }
+  ],
+  "stock": [
+    {
+      "product_id": "S1",
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T12:00:00Z"
+    },
+    {
+      "product_id": "M2",
+      "region": "SCZ",
+      "sucursal_id": "SCZ-01",
+      "cantidad": 1,
+      "estado": "BAJO_STOCK",
+      "ultima_actualizacion": "2026-05-16T12:00:00Z"
+    },
+    {
+      "product_id": "BAT",
+      "region": "CBB",
+      "sucursal_id": "CBB-01",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-16T12:00:00Z"
+    }
+  ],
+  "sucursales": [
+    {
+      "id": "LPZ-01",
+      "ciudad": "La Paz",
+      "direccion": "Av. Demo 123",
+      "horario": "Lun-Vie 09:00-18:00",
+      "telefono": "+591 70000000",
+      "maps_url": "https://maps.example.com/lpz-demo"
+    },
+    {
+      "id": "SCZ-01",
+      "ciudad": "Santa Cruz",
+      "direccion": "Av. Demo 456",
+      "horario": "Lun-Vie 09:00-18:00",
+      "telefono": "+591 70000001",
+      "maps_url": "https://maps.example.com/scz-demo"
+    },
+    {
+      "id": "CBB-01",
+      "ciudad": "Cochabamba",
+      "direccion": "Av. Demo 789",
+      "horario": "Lun-Sab 09:00-14:00",
+      "telefono": "+591 70000002",
+      "maps_url": "https://maps.example.com/cbb-demo"
+    }
+  ],
+  "test_drive": [
+    {
+      "region": "LPZ",
+      "sucursal_id": "LPZ-01",
+      "dias_horarios": "Lun-Sab 10:00-17:00",
+      "requisitos": "Licencia vigente y CI."
+    }
+  ],
+  "media": [
+    {
+      "id": "media_s1_1",
+      "type": "IMAGE",
+      "url": "https://example.com/s1-1.jpg",
+      "title": "S1 frontal",
+      "product_id": "S1"
+    },
+    {
+      "id": "media_s1_2",
+      "type": "IMAGE",
+      "url": "https://example.com/s1-2.jpg",
+      "title": "S1 lateral",
+      "product_id": "S1"
+    },
+    {
+      "id": "media_m2_1",
+      "type": "IMAGE",
+      "url": "https://example.com/m2-1.jpg",
+      "title": "M2 estudio",
+      "product_id": "M2"
+    },
+    {
+      "id": "media_bat_1",
+      "type": "IMAGE",
+      "url": "https://example.com/bat-1.jpg",
+      "title": "Bateria demo",
+      "product_id": "BAT"
+    }
+  ]
+}

@@ -64,6 +64,11 @@ La demo puede guardar el historial del chat para que el usuario retome la conver
 
 Detalle: ver [docs/MEMORIA_IA_SUPABASE.md](docs/MEMORIA_IA_SUPABASE.md).
 
+## Plan de sprints
+Plan de trabajo por fases (UI primero, backend cuando llegue la base de datos).
+
+Detalle: ver [docs/SPRINTS.md](docs/SPRINTS.md).
+
 ## Estándar de commits
 Usamos Conventional Commits.
 
