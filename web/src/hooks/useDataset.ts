@@ -1,12 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Dataset } from "@/lib/types";
-import { getProducts, getStock, getSucursales, getTestDriveSlots } from "@/lib/api";
-
-async function getMedia() {
-  const res = await fetch("/api/media");
-  if (!res.ok) throw new Error("Failed to load media");
-  return res.json();
-}
+import { getProducts, getStock, getSucursales, getTestDriveSlots, getMedia } from "@/lib/api";
 
 export function useDataset() {
   const [data, setData] = useState<Dataset | null>(null);

@@ -29,6 +29,10 @@ export async function getTestDriveSlots() {
   return request<{ data: import("./types").TestDriveSlot[] }>("/test-drive/slots");
 }
 
+export async function getMedia() {
+  return request<{ data: import("./types").MediaItem[] }>("/media");
+}
+
 export async function createTestDriveLead(data: {
   nombre: string;
   celular: string;
