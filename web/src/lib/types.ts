@@ -75,3 +75,37 @@ export type IntentResult = {
   reply: string;
   productId?: string;
 };
+
+/* ===== Conversation engine ===== */
+export type ConversationStep =
+  | "WELCOME"
+  | "ASKING_TYPE"
+  | "ASKING_USE"
+  | "ASKING_BUDGET"
+  | "SHOWING_RESULTS"
+  | "VEHICLE_DETAIL"
+  | "SUCURSALES"
+  | "TEST_DRIVE"
+  | "UNKNOWN";
+
+export type UserFilters = {
+  type?: string;      // auto | moto | bici | camion | bus | accesorio | bateria
+  use?: string;       // ciudad | delivery | carga | turismo | familia
+  budget?: number;    // en BOB
+  currency?: string;
+};
+
+export type ConversationContext = {
+  step: ConversationStep;
+  filters: UserFilters;
+  lastProductId?: string;
+  results?: string[]; // IDs de productos mostrados en el último paso
+};
+
+export type ConversationResult = {
+  reply: string;
+  context: ConversationContext;
+  intent: Intent;
+  productId?: string;
+  productIds?: string[]; // para mostrar grid de resultados
+};

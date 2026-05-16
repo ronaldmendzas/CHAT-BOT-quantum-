@@ -1,8 +1,8 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
-import type { ChatMessage, Intent } from "@/lib/types";
-import { resolveIntent } from "@/lib/intent-engine";
+import { useCallback, useState } from "react";
+import type { ChatMessage, ConversationContext, Intent } from "@/lib/types";
+import { processMessage } from "@/lib/conversation";
 import { useDataset } from "@/hooks/useDataset";
 import ChatPanel from "@/components/ChatPanel";
 import ShowroomPanel from "@/components/ShowroomPanel";
@@ -11,15 +11,22 @@ import { Flex, Box, Image, Spinner, Text } from "@chakra-ui/react";
 const WELCOME_MSG: ChatMessage = {
   role: "assistant",
   content:
-    "¡Hola! Soy Bot Quantum, tu asesor de electromovilidad. Puedo mostrarte nuestros modelos, sucursales o agendar un Test Drive.",
+    "¡Hola! Soy Bot Quantum, tu asesor de electromovilidad. ¿Qué tipo de vehículo te interesa? Auto, moto, bici, camión, bus o accesorio.",
   timestamp: Date.now(),
+};
+
+const INITIAL_CONTEXT: ConversationContext = {
+  step: "WELCOME",
+  filters: {},
 };
 
 export default function Home() {
   const [messages, setMessages] = useState<ChatMessage[]>([WELCOME_MSG]);
   const [input, setInput] = useState("");
+  const [conversation, setConversation] = useState<ConversationContext>(INITIAL_CONTEXT);
   const [intent, setIntent] = useState<Intent>("WELCOME");
   const [selectedProductId, setSelectedProductId] = useState<string | undefined>();
+  const [resultProductIds, setResultProductIds] = useState<string[] | undefined>();
   const [isTyping, setIsTyping] = useState(false);
   const { data: dataset, loading, error } = useDataset();
 
@@ -40,16 +47,40 @@ export default function Home() {
     await new Promise((r) => setTimeout(r, 800));
 
     try {
-      const result = await resolveIntent(text);
+      const history = messages.map((m) => ({
+        role: m.role as "user" | "assistant",
+        content: m.content,
+      }));
+
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: text, context: conversation, history }),
+      });
+
+      if (!res.ok) throw new Error("API error");
+
+      const result = await res.json();
+
       const botMsg: ChatMessage = {
         role: "assistant",
         content: result.reply,
         timestamp: Date.now(),
       };
       setMessages((prev) => [...prev, botMsg]);
-      setIntent(result.intent);
-      if (result.productId) setSelectedProductId(result.productId);
-      else if (result.intent !== "STOCK") setSelectedProductId(undefined);
+
+      if (result.context) setConversation(result.context);
+      if (result.intent) setIntent(result.intent);
+      if (result.productId) {
+        setSelectedProductId(result.productId);
+        setResultProductIds(undefined);
+      } else if (result.productIds) {
+        setResultProductIds(result.productIds);
+        setSelectedProductId(undefined);
+      } else if (result.intent !== "STOCK") {
+        setSelectedProductId(undefined);
+        setResultProductIds(undefined);
+      }
     } catch {
       const botMsg: ChatMessage = {
         role: "assistant",
@@ -60,17 +91,20 @@ export default function Home() {
     } finally {
       setIsTyping(false);
     }
-  }, [input, dataset]);
+  }, [input, dataset, conversation]);
 
   const handleClear = useCallback(() => {
     setMessages([WELCOME_MSG]);
+    setConversation(INITIAL_CONTEXT);
     setIntent("WELCOME");
     setSelectedProductId(undefined);
+    setResultProductIds(undefined);
   }, []);
 
   const handleSelectProduct = useCallback((id: string) => {
     setSelectedProductId(id);
     setIntent("VEHICLE");
+    setResultProductIds(undefined);
   }, []);
 
   const handleTestDrive = useCallback(
@@ -181,6 +215,7 @@ export default function Home() {
           testDrive={dataset.test_drive}
           media={dataset.media}
           selectedProductId={selectedProductId}
+          productIds={resultProductIds}
           onSelectProduct={handleSelectProduct}
           onTestDriveSubmit={handleTestDrive}
         />

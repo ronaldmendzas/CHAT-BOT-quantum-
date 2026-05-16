@@ -23,6 +23,7 @@ type Props = Readonly<{
   testDrive: TestDriveSlot[];
   media: MediaItem[];
   selectedProductId?: string;
+  productIds?: string[];
   onSelectProduct: (id: string) => void;
   onTestDriveSubmit: (data: {
     nombre: string;
@@ -63,10 +64,14 @@ export default function ShowroomPanel({
   testDrive,
   media,
   selectedProductId,
+  productIds,
   onSelectProduct,
   onTestDriveSubmit,
 }: Props) {
   const selected = products.find((p) => p.id === selectedProductId);
+  const gridProducts = productIds
+    ? products.filter((p) => productIds.includes(p.id))
+    : products;
 
   if (intent === "WELCOME") return <WelcomeView />;
 
@@ -80,7 +85,7 @@ export default function ShowroomPanel({
 
       {(intent === "VEHICLE" && !selected) || intent === "STOCK" ? (
         <SimpleGrid columns={{ base: 1, md: 2 }} gap={3} maxW="720px">
-          {products.map((p) => (
+          {gridProducts.map((p) => (
             <ProductCard
               key={p.id}
               product={p}
