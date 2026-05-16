@@ -86,22 +86,22 @@ export default function Home() {
       position="relative"
       overflow="hidden"
     >
-      {/* background layers */}
+      {/* base */}
+      <Box position="absolute" inset={0} bg="#020302" />
+      
+      {/* left glow */}
       <Box
         position="absolute"
         inset={0}
-        bg="#050805"
-      />
-      <Box
-        position="absolute"
-        inset={0}
-        bg="radial-gradient(ellipse at 25% 50%, rgba(0, 255, 136, 0.06) 0%, transparent 55%)"
+        bg="radial-gradient(ellipse at 25% 50%, rgba(0, 255, 136, 0.10) 0%, transparent 60%)"
         pointerEvents="none"
       />
+      
+      {/* right glow */}
       <Box
         position="absolute"
         inset={0}
-        bg="radial-gradient(ellipse at 75% 50%, rgba(0, 255, 136, 0.04) 0%, transparent 50%)"
+        bg="radial-gradient(ellipse at 75% 50%, rgba(0, 255, 136, 0.07) 0%, transparent 55%)"
         pointerEvents="none"
       />
 

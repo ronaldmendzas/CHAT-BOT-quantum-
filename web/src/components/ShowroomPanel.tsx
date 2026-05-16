@@ -37,12 +37,12 @@ function Card({ children }: { children: React.ReactNode }) {
   return (
     <Box
       p={5}
-      bg="#0a0f0a"
-      border="1px solid rgba(0, 255, 136, 0.10)"
+      bg="#0f1a0f"
+      border="1px solid rgba(0, 255, 136, 0.08)"
       borderRadius="12px"
       _hover={{
-        borderColor: "rgba(0, 255, 136, 0.18)",
-        boxShadow: "0 0 20px rgba(0, 255, 136, 0.06)",
+        borderColor: "rgba(0, 255, 136, 0.15)",
+        boxShadow: "0 0 20px rgba(0, 255, 136, 0.05)",
       }}
       transition="all 0.2s"
     >
@@ -73,11 +73,12 @@ export default function ShowroomPanel({
     return (
       <Flex w="100%" h="100%" align="center" justify="center">
         <Box
-          bg="rgba(10, 10, 10, 0.55)"
-          border="1px solid rgba(0, 255, 136, 0.10)"
+          bg="rgba(15, 26, 15, 0.7)"
+          border="1px solid rgba(0, 255, 136, 0.12)"
           borderRadius="50px"
           px={14}
           py={7}
+          boxShadow="0 0 40px rgba(0, 255, 136, 0.04)"
         >
           <Heading size="lg" color="white" fontWeight="bold" fontSize="28px">
             Bienvenido a Quantum Motors
@@ -90,7 +91,7 @@ export default function ShowroomPanel({
   /* ========== CONTENT VIEWS ========== */
   return (
     <Box w="100%" h="100%" overflowY="auto" px={10} py={8}>
-      {/* header — only on content views */}
+      {/* header */}
       <Flex align="center" justify="space-between" mb={8}>
         <Heading size="md" color="white" fontWeight="bold">
           Catálogo
@@ -121,7 +122,7 @@ export default function ShowroomPanel({
             borderRadius="12px"
             overflow="hidden"
             bg="#060906"
-            border="1px solid rgba(0, 255, 136, 0.10)"
+            border="1px solid rgba(0, 255, 136, 0.08)"
             position="relative"
             p={4}
           >
@@ -194,7 +195,7 @@ export default function ShowroomPanel({
                 </Text>
                 <VStack gap={2} align="stretch">
                   {Object.entries(selected.especificaciones).map(([k, v]) => (
-                    <Flex key={k} justify="space-between" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 255, 136, 0.08)">
+                    <Flex key={k} justify="space-between" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 255, 136, 0.06)">
                       <Text color="#8a9e8a" textTransform="capitalize">
                         {k.replaceAll("_", " ")}
                       </Text>
@@ -234,7 +235,7 @@ export default function ShowroomPanel({
                 {stock
                   .filter((s) => s.product_id === selected.id)
                   .map((s) => (
-                    <Flex key={s.sucursal_id} justify="space-between" align="center" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 255, 136, 0.08)">
+                    <Flex key={s.sucursal_id} justify="space-between" align="center" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 255, 136, 0.06)">
                       <Text color="#8a9e8a">{s.region}</Text>
                       <Badge
                         color="#00ff88"
@@ -265,16 +266,16 @@ export default function ShowroomPanel({
               <Button
                 key={p.id}
                 variant="outline"
-                borderColor="rgba(0, 255, 136, 0.10)"
-                bg="#0a0f0a"
+                borderColor="rgba(0, 255, 136, 0.08)"
+                bg="#0f1a0f"
                 p={5}
                 justifyContent="flex-start"
                 flexDirection="column"
                 alignItems="flex-start"
                 borderRadius="12px"
                 _hover={{
-                  borderColor: "rgba(0, 255, 136, 0.18)",
-                  boxShadow: "0 0 20px rgba(0, 255, 136, 0.06)",
+                  borderColor: "rgba(0, 255, 136, 0.15)",
+                  boxShadow: "0 0 20px rgba(0, 255, 136, 0.05)",
                   transform: "translateY(-2px)",
                 }}
                 _active={{ transform: "scale(0.98)" }}
