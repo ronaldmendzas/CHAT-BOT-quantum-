@@ -9,7 +9,6 @@ import {
   Text,
   Heading,
   Input,
-  NativeSelectField,
   Button,
   Badge,
   Image,
@@ -232,21 +231,39 @@ export default function TestDriveForm({ products, slots, onSubmit }: Props) {
           <Text fontSize="xs" fontWeight="bold" color="#5d705d" textTransform="uppercase" letterSpacing="wide">
             Modelo de interés
           </Text>
-          <NativeSelectField
+          <select
             value={producto}
             onChange={(e) => setProducto(e.target.value)}
-            bg="#050705"
-            borderColor="rgba(0, 230, 180, 0.04)"
-            color="white"
-            borderRadius="12px"
-            _focus={{ borderColor: "#0e5c48", boxShadow: "0 0 3px rgba(0, 230, 180, 0.05)" }}
+            style={{
+              background: "#050705",
+              border: "1px solid rgba(0, 230, 180, 0.04)",
+              color: "white",
+              borderRadius: "12px",
+              padding: "10px 36px 10px 12px",
+              fontSize: "14px",
+              outline: "none",
+              width: "100%",
+              appearance: "none",
+              WebkitAppearance: "none",
+              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a9e8a' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "right 12px center",
+            }}
+            onFocus={(e) => {
+              e.currentTarget.style.borderColor = "#0e5c48";
+              e.currentTarget.style.boxShadow = "0 0 3px rgba(0, 230, 180, 0.05)";
+            }}
+            onBlur={(e) => {
+              e.currentTarget.style.borderColor = "rgba(0, 230, 180, 0.04)";
+              e.currentTarget.style.boxShadow = "none";
+            }}
           >
             {products.map((p) => (
-              <option key={p.id} value={p.id}>
+              <option key={p.id} value={p.id} style={{ background: "#050705", color: "white" }}>
                 {p.nombre}
               </option>
             ))}
-          </NativeSelectField>
+          </select>
         </VStack>
 
         <Button
