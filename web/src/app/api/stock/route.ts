@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { readJsonFile } from "@/lib/db";
-import type { StockEntry } from "@/lib/types";
+import { getStock } from "@/lib/db";
 
 export async function GET(request: Request) {
   try {
@@ -8,7 +7,7 @@ export async function GET(request: Request) {
     const productId = searchParams.get("product_id");
     const region = searchParams.get("region");
 
-    const stock = await readJsonFile<StockEntry[]>("stock.json");
+    const stock = await getStock();
     let filtered = stock;
 
     if (productId) {

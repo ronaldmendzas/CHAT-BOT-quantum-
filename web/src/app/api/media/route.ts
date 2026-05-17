@@ -1,10 +1,9 @@
 import { NextResponse } from "next/server";
-import { readJsonFile } from "@/lib/db";
-import type { MediaItem } from "@/lib/types";
+import { getMedia } from "@/lib/db";
 
 export async function GET() {
   try {
-    const media = await readJsonFile<MediaItem[]>("media.json");
+    const media = await getMedia();
     return NextResponse.json({ data: media });
   } catch {
     return NextResponse.json({ error: "Failed to load media" }, { status: 500 });

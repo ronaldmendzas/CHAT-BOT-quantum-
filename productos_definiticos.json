@@ -1,0 +1,1736 @@
+{
+  "catalogo": {
+    "marca": "Quantum Motors",
+    "sitio_web": "www.tuquantum.com",
+    "contact_center": "76488888",
+    "sucursales": {
+      "Cochabamba": "Av. Juan de la Rosa # 1108 esq. Gabriel Rene Moreno | Tel: 76964711 - 77926888",
+      "La Paz": "Calle 17 de Obrajes, esq. 14 de Septiembre (Planta Baja Surtidor CARSUR) | Tel: 76579330",
+      "El Alto": "Teleférico Morado Estación Faro Murillo, Piso 1 | Tel: 77243907",
+      "Oruro": "Calle 6 de Octubre entre Aldana y San Felipe #6520 | Tel: 77155000 - 76131792",
+      "Santa Cruz": "4to anillo, Av. Nueva Jerusalén (Entre radial 26 y 27) E.S. Full Energy | Tel: 76005521 - 76423349",
+      "Yacuiba": "Calle Yatebute entre Avaroa II y Av. Libertadores | Tel: 75176956"
+    },
+    "productos": [
+
+      {
+        "id": "ts_street_hunter_pro",
+        "titulo": "TS STREET HUNTER PRO",
+        "categoria": "Motocicletas",
+        "subcategoria": "Super Soco",
+        "marca_origen": "VMOTO / Super Soco",
+        "tipo_vehiculo": "Motocicleta Eléctrica Deportiva de Alta Gama",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/ts-street-hunter-pro.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/ts-street-hunter-pro.png"
+        ],
+        "descripcion_corta": "La moto eléctrica de alto rendimiento con 4.100 W de potencia, velocidad máxima de 90 km/h y diseño deportivo urbano de primera línea.",
+        "precio_referencial_usd": 2800,
+        "datos_generales": {
+          "nro_asientos": "1 (Ergonómico)",
+          "suspension_delantera": "Horquilla Telescópica Invertida",
+          "suspension_trasera": "Mono-Shock Central Regulable",
+          "aros": "D: 2.5-17 | T: 3.5-17",
+          "neumaticos": "D: 100/70-17 | T: 120/80-17",
+          "cantidad_neumaticos": 2,
+          "sistema_frenos": "CBS Delantero y Trasero",
+          "frenos_delanteros": "Disco Hidráulico (240 mm)",
+          "frenos_posteriores": "Disco Hidráulico (180 mm)"
+        },
+        "dimensiones_y_peso": {
+          "largo_mm": 2024,
+          "ancho_mm": 788,
+          "alto_mm": 1014,
+          "distancia_entre_ejes_mm": 1322,
+          "peso_neto_kg": "89 (sin batería)",
+          "capacidad_carga_kg": 150
+        },
+        "prestaciones": {
+          "encendido": "Eléctrico (Control)",
+          "velocimetro": "Digital",
+          "espejos_retrovisores": "Sí (Regulables)",
+          "alarma": "Sí",
+          "sensor_bloqueo": "Doble: Llave Manubrio y Control",
+          "autonomia_maxima": "1 batería: 75 km | 2 baterías: 150 km",
+          "velocidad_maxima_kmh": {
+            "vel1": 60,
+            "vel2": 75,
+            "vel3": 90
+          },
+          "pendiente_maxima": "14°"
+        },
+        "motor": {
+          "potencia_nominal_w": 4100,
+          "ubicacion": "Llanta Trasera",
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "cambio": "Manual con Botón",
+          "nro_velocidades": 3
+        },
+        "bateria": {
+          "tipo": "Litio Removible",
+          "capacidad_ah": 32,
+          "voltaje_v": 60,
+          "tiempo_carga_horas": 4,
+          "durabilidad_ciclos": 2000,
+          "conector": "220V",
+          "consumo_por_carga_kwh": 2,
+          "costo_carga_bs": 2,
+          "luces": "100% LED",
+          "pantalla": "Digital"
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Rojo", "Negro"],
+        "garantia": {
+          "vehiculo": "1 año por desperfectos de fábrica o 10.000 km (lo primero que ocurra)",
+          "bateria": "1 año",
+          "servicio_tecnico": "Disponible en 14 talleres autorizados",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado_5_años": {
+          "combustible": "-66.5%",
+          "mantenimientos": "-42.3%",
+          "impuestos": "-46.6%"
+        },
+        "impacto_ambiental": {
+          "ahorro_co2_por_año_10000km": "825 kg CO2",
+          "equivalencia_arboles": 85
+        },
+        "recomendaciones_bateria": [
+          "Asegúrate de que el cargador esté bien conectado para evitar interrupciones y sobrecalentamientos.",
+          "Guarda el cable correctamente para prevenir daños.",
+          "Si detectas desperfectos, contacta a nuestro servicio postventa.",
+          "Primer mantenimiento a los 1500 km, luego a los 5000 km y posteriores.",
+          "Pide tu manual de uso para más detalles."
+        ]
+      },
+
+      {
+        "id": "ts_street_hunter",
+        "titulo": "TS STREET HUNTER",
+        "categoria": "Motocicletas",
+        "subcategoria": "Super Soco",
+        "marca_origen": "VMOTO / Super Soco",
+        "tipo_vehiculo": "Motocicleta Eléctrica Naked Deportiva / Urbana",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/ts-street-hunter.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/ts-street-hunter.png"
+        ],
+        "descripcion_corta": "Moto eléctrica urbana con potencia de 2.500 W, velocidad máxima de 75 km/h, autonomía de hasta 80 km y diseño naked deportivo agresivo.",
+        "precio_referencial_usd": 2400,
+        "datos_generales": {
+          "nro_asientos": "1 (Ergonómico)",
+          "suspension_delantera": "Horquilla Telescópica Invertida de Alto Rendimiento",
+          "suspension_trasera": "Monoamortiguador Central Hidráulico Ajustable",
+          "aros": "D: 2.5-17 | T: 3.5-17",
+          "neumaticos": "D: 100/80-17 | T: 120/70-17",
+          "cantidad_neumaticos": 2,
+          "sistema_frenos": "CBS Hidráulico Delantero y Trasero",
+          "frenos_delanteros": "Disco Hidráulico Doble Pistón (240 mm)",
+          "frenos_posteriores": "Disco Hidráulico (180 mm)"
+        },
+        "dimensiones_y_peso": {
+          "largo_mm": 2034,
+          "ancho_mm": 780,
+          "alto_mm": 1100,
+          "distancia_entre_ejes_mm": 1322,
+          "peso_neto_kg": "89 (sin batería)",
+          "capacidad_carga_kg": 160
+        },
+        "prestaciones": {
+          "encendido": "Eléctrico (Control / Keyless)",
+          "velocimetro": "Digital LCD Panorámico (velocidad, odómetro, temperatura, reloj, batería)",
+          "espejos_retrovisores": "Sí (Regulables)",
+          "alarma": "Sí (Antirrobo con bloqueo de rueda posterior y sensor de movimiento)",
+          "sensor_bloqueo": "Doble: Llave Manubrio y Control",
+          "autonomia_maxima": "1 batería: 75-80 km | 2 baterías: 150-160 km",
+          "velocidad_maxima_kmh": {
+            "vel1": 45,
+            "vel2": 60,
+            "vel3": 75
+          },
+          "pendiente_maxima": "19°"
+        },
+        "motor": {
+          "potencia_nominal_w": 2500,
+          "potencia_maxima_w": 3500,
+          "ubicacion": "Llanta Trasera",
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "cambio": "Manual con Botón",
+          "nro_velocidades": 3
+        },
+        "bateria": {
+          "tipo": "Litio Removible ATL",
+          "capacidad_ah": 32,
+          "voltaje_v": 60,
+          "capacidad_doble_bateria": "Sí (compatible con segunda batería)",
+          "tiempo_carga_horas": "3.5 - 4 (Carga Rápida)",
+          "durabilidad_ciclos": 2000,
+          "conector": "220V",
+          "consumo_por_carga_kwh": 2,
+          "costo_carga_bs": 2,
+          "luces": "100% LED Nueva Generación",
+          "pantalla": "Digital"
+        },
+        "tecnologia_seguridad": {
+          "sistema_optico": "100% LED de nueva generación con firma lumínica agresiva",
+          "aerodinamica": "Aletas laterales deportivas para mayor estabilidad"
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Rojo", "Negro", "Blanco"],
+        "garantia": {
+          "vehiculo": "1 año o 10.000 km (lo primero que ocurra)",
+          "bateria": "1 año",
+          "servicio_tecnico": "Disponible en 14 talleres autorizados",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado_5_años": {
+          "combustible": "-66.5%",
+          "mantenimientos": "-42.3%",
+          "impuestos": "-46.6%"
+        },
+        "impacto_ambiental": {
+          "ahorro_co2_por_año_10000km": "825 kg CO2",
+          "equivalencia_arboles": 85
+        },
+        "recomendaciones_bateria": [
+          "Asegúrate de que el cargador esté bien conectado para evitar interrupciones y sobrecalentamientos.",
+          "Guarda el cable correctamente para prevenir daños.",
+          "Si detectas desperfectos, contacta a nuestro servicio postventa.",
+          "Primer mantenimiento a los 1500 km, luego a los 5000 km.",
+          "Pide tu manual de uso para más detalles."
+        ]
+      },
+
+      {
+        "id": "tc_wanderer_pro",
+        "titulo": "TC WANDERER PRO",
+        "categoria": "Motocicletas",
+        "subcategoria": "Super Soco",
+        "marca_origen": "VMOTO / Super Soco",
+        "tipo_vehiculo": "Motocicleta Eléctrica Deportiva Urbana",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/tc-wanderer-pro.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/tc-wanderer-pro.png"
+        ],
+        "descripcion_corta": "Moto eléctrica con 4.100 W, velocidad máxima de 90 km/h, frenos CBS, iluminación 100% LED y batería litio removible de 60V/32Ah.",
+        "precio_referencial_usd": 2650,
+        "datos_generales": {
+          "nro_asientos": "1 (Ergonómico)",
+          "suspension_delantera": "Amortiguador / Telescopio Hidráulico",
+          "suspension_trasera": "Monoamortiguador Central Ajustable",
+          "aros": "D: 2.5-17 | T: 3.5-17",
+          "neumaticos": "D: 100/80-17 | T: 120/70-17",
+          "cantidad_neumaticos": 2,
+          "sistema_frenos": "CBS Hidráulico Delantero y Trasero",
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Disco"
+        },
+        "dimensiones_y_peso": {
+          "largo_mm": 1978,
+          "ancho_mm": 788,
+          "alto_mm": 1094,
+          "distancia_entre_ejes_mm": 1325,
+          "peso_neto_kg": "89 (sin batería)",
+          "capacidad_carga_kg": 150
+        },
+        "prestaciones": {
+          "encendido": "Eléctrico (Control)",
+          "velocimetro": "Digital",
+          "espejos_retrovisores": "Sí (Regulables)",
+          "alarma": "Sí",
+          "sensor_bloqueo": "Doble: Llave Manubrio y Control",
+          "autonomia_maxima_km": 60,
+          "velocidad_maxima_kmh": {
+            "vel1": 60,
+            "vel2": 75,
+            "vel3": 90
+          },
+          "pendiente_maxima": "14°"
+        },
+        "motor": {
+          "potencia_nominal_w": 4100,
+          "ubicacion": "Llanta Trasera",
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "cambio": "Manual con Botón",
+          "nro_velocidades": 3
+        },
+        "bateria": {
+          "tipo": "Litio Removible",
+          "capacidad_ah": 32,
+          "voltaje_v": 60,
+          "tiempo_carga_horas": "4 - 6",
+          "durabilidad_ciclos": 2000,
+          "conector": "220V",
+          "consumo_por_carga_kwh": 2,
+          "costo_carga_bs": 2,
+          "luces": "100% LED"
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Negro", "Blanco", "Rojo"],
+        "garantia": {
+          "vehiculo": "1 año o 10.000 km (lo primero que ocurra)",
+          "bateria": "1 año",
+          "servicio_tecnico": "Disponible en 14 talleres autorizados",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado_5_años": {
+          "combustible": "-66.5%",
+          "mantenimientos": "-42.3%",
+          "impuestos": "-46.6%"
+        },
+        "impacto_ambiental": {
+          "ahorro_co2_por_año_10000km": "825 kg CO2",
+          "equivalencia_arboles": 85
+        }
+      },
+
+      {
+        "id": "tc",
+        "titulo": "TC",
+        "categoria": "Motocicletas",
+        "subcategoria": "Super Soco",
+        "marca_origen": "VMOTO / Super Soco",
+        "nombre_comercial_local": "Quantum Dukebike (TC)",
+        "tipo_vehiculo": "Motocicleta Eléctrica de Alta Gama / Deportiva",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/tc.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/tc.png",
+          "https://drive.google.com/file/d/1vahWTdWOCFSO1ZbGlA2EnWVNPWlhrUDI/view?usp=drive_link"
+        ],
+        "descripcion_corta": "Motocicleta eléctrica deportiva con 2.100 W nominales, 3 velocidades, 60 km de autonomía, frenos de disco y sistema antirrobo con keyless.",
+        "precio_referencial_usd": 2100,
+        "datos_generales": {
+          "nro_asientos": "1 (Ergonómico)",
+          "suspension_delantera": "Horquilla Telescópica Invertida",
+          "suspension_trasera": "Monoamortiguador Central Ajustable",
+          "aros": "D: 2.15-17 | T: 3-17",
+          "neumaticos": "D: 90/80-17 | T: 110/70-17",
+          "cantidad_neumaticos": 2,
+          "sistema_frenos": "Hidráulico",
+          "frenos_delanteros": "Disco Hidráulico Doble Pistón (240 mm)",
+          "frenos_posteriores": "Disco Hidráulico (180 mm)"
+        },
+        "dimensiones_y_peso": {
+          "largo_mm": 1924,
+          "ancho_mm": 710,
+          "alto_mm": 1098,
+          "distancia_entre_ejes_mm": 1307,
+          "peso_neto_kg": "72 (sin batería)",
+          "capacidad_carga_kg": 150
+        },
+        "prestaciones": {
+          "encendido": "Eléctrico (Llave y Botón / Keyless)",
+          "velocimetro": "Digital LCD Alta Resolución con ajuste automático de brillo",
+          "espejos_retrovisores": "Sí (Regulables)",
+          "alarma": "Sí (Sistema antirrobo electrónico integrado)",
+          "sensor_bloqueo": "Doble: Llave Manubrio y Control",
+          "autonomia_maxima_km": "65 - 70",
+          "velocidad_maxima_kmh": {
+            "vel1": 45,
+            "vel2": 55,
+            "vel3": 65
+          },
+          "pendiente_maxima": "17°"
+        },
+        "motor": {
+          "potencia_nominal_w": 1900,
+          "potencia_maxima_w": 3000,
+          "ubicacion": "Llanta Trasera",
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "cambio": "Manual con Botón",
+          "nro_velocidades": 3
+        },
+        "bateria": {
+          "tipo": "Litio Removible",
+          "capacidad_ah": 30,
+          "voltaje_v": 60,
+          "tiempo_carga_horas": "4 - 6",
+          "durabilidad_ciclos": 2000,
+          "conector": "220V",
+          "consumo_por_carga_kwh": 1.8,
+          "costo_carga_bs": 1.8,
+          "luces": "100% LED Inteligente con sensor de luz diurna"
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Negro", "Blanco", "Rojo", "Azul"],
+        "garantia": {
+          "vehiculo": "1 año o 10.000 km (lo primero que ocurra)",
+          "bateria": "1 año",
+          "servicio_tecnico": "Garantía oficial, servicio posventa especializado en baterías LITIO (Quantum Batteries) y repuestos originales",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado_5_años": {
+          "combustible": "-66.5%",
+          "mantenimientos": "-42.3%",
+          "impuestos": "-46.6%"
+        },
+        "impacto_ambiental": {
+          "ahorro_co2_por_año_10000km": "825 kg CO2",
+          "equivalencia_arboles": 85
+        }
+      },
+
+      {
+        "id": "flashride",
+        "titulo": "FLASHRIDE",
+        "categoria": "Motocicletas",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors",
+        "tipo_vehiculo": "Motocicleta Eléctrica Urbana Deportiva",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/flashride.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/flashride.png"
+        ],
+        "descripcion_corta": "Moto eléctrica con 2.000 W, hasta 120 km de autonomía, velocidad máxima de 75 km/h, batería litio 72V/32Ah y frenos de disco.",
+        "precio_referencial_usd": 1800,
+        "datos_generales": {
+          "nro_asientos": 1,
+          "aros": "N° 10",
+          "neumaticos": "D/T: 120/70-12",
+          "cantidad_neumaticos": 2,
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Disco",
+          "suspension": "Hidráulica"
+        },
+        "dimensiones_y_peso": {
+          "largo_mm": 1780,
+          "ancho_mm": 560,
+          "alto_mm": 860,
+          "distancia_entre_ejes_mm": 1370,
+          "peso_neto_kg": "97 (sin batería)",
+          "capacidad_carga_kg": 200
+        },
+        "prestaciones": {
+          "encendido": "Eléctrico Llave",
+          "velocimetro": "Sí (Digital)",
+          "espejos_retrovisores": "Sí",
+          "iluminacion": "100% LED",
+          "autonomia_maxima_km": 120,
+          "velocidad_maxima_kmh": "70 - 75",
+          "pendiente_maxima": "25°"
+        },
+        "motor": {
+          "potencia_nominal_w": 2000,
+          "ubicacion": "Llanta Trasera",
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "nro_velocidades": 3
+        },
+        "bateria": {
+          "tipo": "Litio",
+          "capacidad_ah": 32,
+          "voltaje_v": 72,
+          "tiempo_carga_horas": "4 - 6",
+          "conector": "220V",
+          "consumo_por_carga_kwh": 3.5,
+          "costo_carga_bs": 3.5
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Negro", "Rojo", "Blanco"],
+        "garantia": {
+          "vehiculo": "1 año o 10.000 km (lo primero que ocurra)",
+          "bateria": "1 año",
+          "servicio_tecnico": "Disponible en talleres autorizados Quantum",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado_5_años": {
+          "combustible": "-66.5%",
+          "mantenimientos": "-42.3%",
+          "impuestos": "-46.6%"
+        }
+      },
+
+      {
+        "id": "luna_pro",
+        "titulo": "LUNA PRO",
+        "categoria": "Motocicletas",
+        "subcategoria": "Yadea",
+        "marca_origen": "Yadea",
+        "tipo_vehiculo": "Motocicleta Eléctrica Sport",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/luna-pro.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/luna-pro.png"
+        ],
+        "descripcion_corta": "Moto eléctrica Yadea con motor de 1.500 W, hasta 55 km de autonomía, velocidad de 50 km/h, batería de grafeno 72V/20Ah y 3 velocidades.",
+        "precio_referencial_usd": 1400,
+        "datos_generales": {
+          "nro_asientos": 2,
+          "aros": "12\"",
+          "neumaticos": "D/T: 90/90-12",
+          "cantidad_neumaticos": 2,
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Tambor",
+          "suspension": "Hidráulica delantera / Resorte trasero"
+        },
+        "dimensiones_y_peso": {
+          "largo_mm": 1750,
+          "ancho_mm": 735,
+          "alto_mm": 1060,
+          "distancia_entre_ejes_mm": 1300,
+          "peso_neto_kg": "90 (sin batería)",
+          "capacidad_carga_kg": 150
+        },
+        "prestaciones": {
+          "encendido": "Eléctrico Llave",
+          "velocimetro": "Digital / LED",
+          "espejos_retrovisores": "Sí (Regulables)",
+          "alarma": "Sí (Sensor de bloqueo)",
+          "puerto_usb": "Sí",
+          "iluminacion": "100% LED",
+          "autonomia_maxima_km": 55,
+          "velocidad_maxima_kmh": 50,
+          "pendiente_maxima": "12°"
+        },
+        "motor": {
+          "tipo": "D/C Brushless",
+          "potencia_nominal_w": 1500,
+          "ubicacion": "Llanta Trasera",
+          "traccion": "Posterior",
+          "tipo_caja": "Directa / Single-Speed",
+          "nro_velocidades": 3
+        },
+        "bateria": {
+          "tipo": "Grafeno (opcional Litio)",
+          "capacidad_ah": 20,
+          "voltaje_v": 72,
+          "tiempo_carga_horas": 4,
+          "vida_util_años": 3
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Negro", "Blanco", "Rojo"],
+        "garantia": {
+          "vehiculo": "1 año o 10.000 km (lo primero que ocurra)",
+          "bateria": "1 año",
+          "servicio_tecnico": "Disponible en instalaciones Quantum",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado_5_años": {
+          "combustible": "-80%",
+          "mantenimientos": "-40%",
+          "impuestos": "-46%"
+        }
+      },
+
+      {
+        "id": "trooper",
+        "titulo": "TROOPER",
+        "categoria": "Motocicletas",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors",
+        "tipo_vehiculo": "Motocicleta Eléctrica Urbana",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2026/01/foto-de-perfil-Trooper-1.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2026/01/foto-de-perfil-Trooper-1.png"
+        ],
+        "descripcion_corta": "Motocicleta eléctrica robusta para uso urbano y periurbano, con diseño estilizado y tecnología de cero emisiones.",
+        "precio_referencial_usd": 1600,
+        "datos_generales": {
+          "nro_asientos": 2,
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Disco",
+          "iluminacion": "100% LED"
+        },
+        "prestaciones": {
+          "autonomia_maxima_km": 80,
+          "velocidad_maxima_kmh": 70,
+          "pendiente_maxima": "15°"
+        },
+        "motor": {
+          "potencia_nominal_w": 2000,
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "nro_velocidades": 3
+        },
+        "bateria": {
+          "tipo": "Litio Removible",
+          "voltaje_v": 60,
+          "tiempo_carga_horas": "4 - 6",
+          "durabilidad_ciclos": 2000
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Negro", "Gris", "Rojo"],
+        "garantia": {
+          "vehiculo": "1 año o 10.000 km (lo primero que ocurra)",
+          "bateria": "1 año",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "urban",
+        "titulo": "URBAN",
+        "categoria": "Motocicletas",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors",
+        "tipo_vehiculo": "Motocicleta Eléctrica Urbana Compacta",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2026/01/foto-de-perfil-Urban-1.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2026/01/foto-de-perfil-Urban-1.png"
+        ],
+        "descripcion_corta": "Moto eléctrica urbana ligera, ideal para el día a día en ciudad con bajo costo operativo y cero emisiones.",
+        "precio_referencial_usd": 1350,
+        "datos_generales": {
+          "nro_asientos": 2,
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Tambor",
+          "iluminacion": "100% LED"
+        },
+        "prestaciones": {
+          "autonomia_maxima_km": 60,
+          "velocidad_maxima_kmh": 60,
+          "pendiente_maxima": "12°"
+        },
+        "motor": {
+          "potencia_nominal_w": 1500,
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "nro_velocidades": 3
+        },
+        "bateria": {
+          "tipo": "Litio",
+          "voltaje_v": 60,
+          "tiempo_carga_horas": "4 - 6",
+          "durabilidad_ciclos": 1500
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Blanco", "Negro", "Rojo"],
+        "garantia": {
+          "vehiculo": "1 año o 10.000 km (lo primero que ocurra)",
+          "bateria": "1 año",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "nexus_plus",
+        "titulo": "NEXUS PLUS",
+        "categoria": "Automóviles",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors",
+        "tipo_vehiculo": "Automóvil Eléctrico 5 Puertas",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/nexus-plus.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/nexus-plus.png"
+        ],
+        "descripcion_corta": "Auto eléctrico con 25 kW nominales, autonomía de 205 km, velocidad máxima de 110 km/h, 5 puertas, 4 asientos, pantalla flotante de 9\", cámara 360° y frenos CBS.",
+        "precio_referencial_usd": 15500,
+        "datos_generales": {
+          "nro_asientos": 4,
+          "nro_puertas": 5
+        },
+        "cabina_equipamiento": {
+          "cinturon_seguridad": "Sí (3 Puntos)",
+          "luz_alta_baja": "Sí (LED)",
+          "parabrisas": "Vidrio Laminado de Seguridad",
+          "lunas_laterales": "Vidrio Laminado de Seguridad",
+          "luna_posterior": "Vidrio Laminado de Seguridad",
+          "tacografo": "Sí",
+          "espejos_retrovisores": "Sí (Puertas Delanteras) Eléctrico",
+          "camara": "Sí (Imagen Panorámica 360°) con sensores de parqueo",
+          "radar_marcha_atras": "Sí (Delantero / Posterior)",
+          "radio_bluetooth_mp3": "Sí",
+          "velocimetro": "Digital",
+          "encendido": "Con Botón",
+          "cierre_centralizado": "Sí",
+          "ventilacion": "Sí",
+          "ac": "Sí",
+          "multimedia": "1 Pantalla Flotante de 9\"",
+          "compatible": "Android Auto y Apple CarPlay mediante Carbitlink",
+          "direccion_asistida": "Incluida"
+        },
+        "carroceria_chasis": {
+          "carroceria_externa": "Chapa Metálica (excepto parachoque delantero)",
+          "carroceria_interna": "Plástico Polipropileno",
+          "suspension_delantera": "Independiente tipo Mac-Pherson",
+          "suspension_posterior": "Eje Trasero Integral",
+          "aros": "Aleación 14\"",
+          "neumaticos": "165/60 R14",
+          "cantidad_neumaticos": 4,
+          "direccion": "Tipo Cremallera con Asistencia Eléctrica",
+          "sistema_frenos": "Hidráulico",
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Tambor",
+          "freno_motor": "Sí"
+        },
+        "dimensiones_y_peso": {
+          "largo_mm": 3475,
+          "ancho_mm": 1585,
+          "alto_mm": 1575,
+          "distancia_entre_ejes_mm": 2240,
+          "peso_neto_kg": 1130,
+          "capacidad_carga_kg": 500
+        },
+        "motor": {
+          "tipo": "Síncrono de Imán Permanente",
+          "potencia_nominal_kw": 25,
+          "potencia_maxima_kw": 30,
+          "par_maximo_nm": 200,
+          "refrigeracion": "Aire (Hidráulico para el Altiplano)",
+          "freno_motor": "Sí (Regenerativo)"
+        },
+        "bateria": {
+          "tipo": "Fosfato de Hierro-Litio (LFP)",
+          "capacidad_ah": 148,
+          "voltaje_v": 115,
+          "tiempo_carga_horas": "6 - 8"
+        },
+        "transmision": {
+          "traccion": "Trasera",
+          "tipo_caja": "Automática Simple",
+          "velocidades": "ECO y SPORT",
+          "formula_rodante": "4x2"
+        },
+        "prestaciones": {
+          "velocidad_maxima_kmh": 110,
+          "autonomia_maxima_km": 205,
+          "consumo_por_carga_kwh": 18,
+          "costo_carga_bs": 18,
+          "pendiente_maxima": "25°",
+          "radio_giro_m": 4.8
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Blanco", "Arena", "Plateado"],
+        "garantia": {
+          "vehiculo": "2 años o 100.000 km (lo primero que ocurra)",
+          "bateria": "5 años o 125.000 km (lo primero que ocurra)",
+          "servicio_tecnico": "Disponible en 14 talleres autorizados",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado_5_años": {
+          "combustible": "-80.5%",
+          "mantenimientos": "-50%",
+          "impuestos": "-50%"
+        },
+        "impacto_ambiental": {
+          "ahorro_co2_por_año_10000km": "1.471 Tn CO2",
+          "equivalencia_arboles": 152
+        },
+        "financiamiento": "Crédito Uni Auto Verde del Banco Unión",
+        "recomendaciones_bateria": [
+          "No permitas que la batería baje del 20%. Si ocurre, carga el vehículo de inmediato.",
+          "Evita dejar el auto sin carga por más de dos semanas; si lo harás, asegura una carga completa del 100%.",
+          "No cargues tu vehículo bajo la lluvia.",
+          "No conectes el cargador si el cable está dañado o húmedo.",
+          "Pide tu manual de uso audiovisual para más detalles."
+        ]
+      },
+
+      {
+        "id": "nexus",
+        "titulo": "NEXUS",
+        "categoria": "Automóviles",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors",
+        "tipo_vehiculo": "Automóvil Eléctrico L7e - 5 Puertas",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/nexus.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/nexus.png"
+        ],
+        "descripcion_corta": "Auto eléctrico tipo L7e con 15 kW nominales (30 kW máx), autonomía de hasta 205 km, velocidad de 100 km/h en modo Sport, 5 puertas y 4 asientos.",
+        "precio_referencial_usd": 12800,
+        "datos_generales": {
+          "nro_asientos": 4,
+          "nro_puertas": 5,
+          "tipo_vehiculo": "L7e"
+        },
+        "cabina_equipamiento": {
+          "cinturon_seguridad": "Sí (3 Puntos)",
+          "luz_alta_baja": "Sí",
+          "parabrisas": "Vidrio Laminado de Seguridad",
+          "lunas_laterales": "Vidrio Laminado de Seguridad",
+          "luna_posterior": "Vidrio Laminado de Seguridad",
+          "tacografo": "Sí",
+          "espejos_retrovisores": "Sí (2 Puertas Delanteras)",
+          "camara": "Sí (Imagen Panorámica 360°) con sensores de parqueo",
+          "radar_marcha_atras": "Sí (Delantero / Posterior)",
+          "radio_bluetooth_mp3": "Sí",
+          "velocimetro": "Digital",
+          "encendido_boton": "No",
+          "cierre_centralizado": "Sí",
+          "ventilacion": "Sí",
+          "ac": "Sí",
+          "multimedia": "2 Pantallas Táctiles de 10\"",
+          "compatible": "Android Auto y Apple CarPlay mediante Carbitlink",
+          "direccion_asistida": "Incluida"
+        },
+        "carroceria_chasis": {
+          "chasis": "Tubo de Acero",
+          "carroceria_externa": "Chapa Metálica (excepto parachoque delantero)",
+          "carroceria_interna": "Plástico Polipropileno",
+          "suspension_delantera": "Mac-Pherson",
+          "suspension_posterior": "Rígida",
+          "aros": "Aleación 13\"",
+          "neumaticos": "155/65 R13",
+          "cantidad_neumaticos": 4,
+          "direccion": "Tipo Cremallera con Asistencia Eléctrica",
+          "sistema_frenos": "Hidráulico",
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Tambor",
+          "freno_motor": "Sí"
+        },
+        "dimensiones_y_peso": {
+          "largo_mm": 3532,
+          "ancho_mm": 1498,
+          "alto_mm": 1605,
+          "distancia_entre_ejes_mm": 2275,
+          "peso_neto_kg": 810,
+          "capacidad_carga_kg": 500
+        },
+        "motor": {
+          "tipo": "Imán Permanente Síncrono",
+          "potencia_nominal_kw": 15,
+          "potencia_maxima_kw": 30,
+          "par_maximo_nm": 200,
+          "refrigeracion": "Aire (Hidráulico para el Altiplano)",
+          "freno_motor": "Sí (Regenerativo)"
+        },
+        "bateria": {
+          "tipo": "LFP (Litio Fosfato de Hierro)",
+          "capacidad_ah": 148,
+          "voltaje_v": 115,
+          "tiempo_carga_horas": 8
+        },
+        "transmision": {
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "nro_velocidades": 1,
+          "formula_rodante": "4x2"
+        },
+        "prestaciones": {
+          "velocidad_maxima_kmh": { "eco": 80, "sport": 100 },
+          "autonomia_maxima_km": "150 - 205",
+          "consumo_por_carga_kwh": 15,
+          "costo_carga_bs": 15,
+          "pendiente_maxima": "25°",
+          "radio_giro_m": 4.5
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Blanco", "Gris", "Celeste Claro"],
+        "garantia": {
+          "vehiculo": "2 años o 100.000 km (lo primero que ocurra)",
+          "bateria": "5 años o 125.000 km (lo primero que ocurra)",
+          "servicio_tecnico": "Disponible en 14 talleres autorizados",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado_5_años": {
+          "combustible": "-80.5%",
+          "mantenimientos": "-50%",
+          "impuestos": "-50%"
+        },
+        "impacto_ambiental": {
+          "ahorro_co2_por_año_10000km": "1.471 Tn CO2",
+          "equivalencia_arboles": 152
+        },
+        "financiamiento": "Crédito Eco-Sostenible del Banco Ecofuturo",
+        "recomendaciones_bateria": [
+          "No permitas que la batería baje del 20%. Si ocurre, carga el vehículo de inmediato.",
+          "Evita dejar el auto sin carga por más de dos semanas; si lo harás, asegura una carga completa del 100%.",
+          "No cargues tu vehículo bajo la lluvia.",
+          "No conectes el cargador si el cable está dañado o húmedo.",
+          "Pide tu manual de uso audiovisual para más detalles."
+        ]
+      },
+
+      {
+        "id": "e4_corona_montaña",
+        "titulo": "E4 CORONA DE MONTAÑA",
+        "categoria": "Automóviles",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors",
+        "tipo_vehiculo": "Cuadriciclo Eléctrico L6e - 2 Puertas",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/e4-montanero.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/e4-montanero.png"
+        ],
+        "descripcion_corta": "Cuadriciclo eléctrico compacto tipo L6e para 2 personas, con motor de 4 kW, autonomía de 80-100 km, velocidad máxima de 55 km/h y certificación SAE.",
+        "precio_referencial_usd": 7200,
+        "datos_generales": {
+          "nro_asientos": 2,
+          "nro_puertas": 2,
+          "tipo_vehiculo": "L6e"
+        },
+        "carroceria_chasis": {
+          "chasis": "Tubo de Acero",
+          "carroceria_externa": "Plástico ABS",
+          "carroceria_interna": "Plástico Polipropileno",
+          "suspension_delantera": "Mac-Pherson",
+          "suspension_posterior": "Rígida",
+          "aros": "Aleación 12\"",
+          "neumaticos": "135/70 R12",
+          "cantidad_neumaticos": 4,
+          "direccion": "Piñón Cremallera Sin Asistencia",
+          "sistema_frenos": "Hidráulico",
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Disco",
+          "freno_motor": "Sí (Regenerativo)",
+          "freno_estacionamiento": "Sí (Chicotillo)"
+        },
+        "cabina_equipamiento": {
+          "cinturon_seguridad": "Sí (3 Puntos, solo delantero)",
+          "cabezal_seguridad": "Sí (Regulable, solo delantero)",
+          "luz_alta": "Sí",
+          "parachoques_delantero": "Sí (ABS)",
+          "parachoques_trasero": "Sí (ABS)",
+          "parabrisas": "Vidrio Laminado de Seguridad",
+          "lunas_laterales": "Vidrio Laminado de Seguridad",
+          "luna_posterior": "Vidrio Laminado de Seguridad",
+          "tacografo": "Sí",
+          "espejos_retrovisores": "Sí (Puertas Delanteras)",
+          "camara": "Sí (Retroceso)",
+          "radio_bluetooth_mp3": "Sí",
+          "velocimetro": "Digital",
+          "encendido_boton": "Sí",
+          "cierre_centralizado": "Sí",
+          "ventilacion": "Sí",
+          "ac": "No",
+          "multimedia": "Pantalla Digital",
+          "compatible": "USB",
+          "sistema_sonido": "Mejorado",
+          "opcionales": ["Cinturones de dos puntos parte trasera", "Parrilla y/o Llanta de Auxilio"]
+        },
+        "dimensiones_y_peso": {
+          "largo_mm": 2500,
+          "ancho_mm": 1100,
+          "alto_mm": 1500,
+          "distancia_entre_ejes_cm": 177,
+          "peso_neto_kg": 390,
+          "capacidad_carga_kg": 250,
+          "radio_giro_m": 4
+        },
+        "motor": {
+          "tipo": "Imán Permanente Síncrono",
+          "potencia_nominal_kw": 4,
+          "potencia_maxima_kw": 9,
+          "par_maximo_nm": 60,
+          "refrigeracion": "Aire"
+        },
+        "transmision": {
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "nro_velocidades": 1,
+          "relacion_corona": "1:10",
+          "formula_rodante": "4x2"
+        },
+        "bateria": {
+          "tipo": "LFP (Litio Fosfato de Hierro)",
+          "capacidad_ah": 105,
+          "voltaje_v": 60,
+          "tiempo_carga_horas": "6 - 8",
+          "vida_util_años": "6 - 8",
+          "luces": "LED"
+        },
+        "prestaciones": {
+          "velocidad_maxima_kmh": 55,
+          "autonomia_maxima_km": "80 - 100",
+          "consumo_por_carga_kwh": 6,
+          "costo_carga_bs": 6,
+          "pendiente_maxima": "25°"
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Rojo", "Gris Claro", "Blanco", "Negro"],
+        "garantia": {
+          "vehiculo": "2 años o 20.000 km (lo primero que ocurra)",
+          "bateria": "2 años",
+          "servicio_tecnico": "Disponible en 14 talleres autorizados",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado_5_años": {
+          "combustible": "-80.7%",
+          "mantenimientos": "-43.2%",
+          "impuestos": "-70%"
+        },
+        "impacto_ambiental": {
+          "ahorro_co2_por_año_10000km": "964 kg CO2",
+          "equivalencia_arboles": 99
+        },
+        "financiamiento": "Crédito Eco-Sostenible del Banco Ecofuturo",
+        "recomendaciones_bateria": [
+          "Asegúrate de que el cargador esté bien conectado para evitar interrupciones y sobrecalentamientos.",
+          "Guarda el cable correctamente para prevenir daños.",
+          "Si detectas desperfectos, contacta a nuestro servicio postventa.",
+          "Primer mantenimiento a los 1500 km, luego a los 5000 km.",
+          "Pide tu manual de uso audiovisual para más detalles."
+        ]
+      },
+
+      {
+        "id": "kaiyi_equte",
+        "titulo": "E-QUTE (KAIYI EQUTE)",
+        "categoria": "Automóviles",
+        "subcategoria": "Kaiyi / Quantum",
+        "marca_origen": "Kaiyi / Quantum Motors",
+        "tipo_vehiculo": "Automóvil Eléctrico Hatchback 5 Puertas",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/Kaiyi-Equte.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/Kaiyi-Equte.png"
+        ],
+        "descripcion_corta": "Hatchback eléctrico de 5 asientos con motor de 40 kW, autonomía de 300 km (CLTC), carga rápida en 46 min, tapicería de cuero ecológico, Android Auto y Apple CarPlay.",
+        "precio_referencial_usd": 18500,
+        "datos_generales": {
+          "nro_asientos": 5,
+          "nro_puertas": 5,
+          "chasis": "Unibody",
+          "tipo_carroceria": "Hatchback"
+        },
+        "carroceria_chasis": {
+          "suspension_delantera": "McPherson Independiente",
+          "suspension_posterior": "Multi Link",
+          "aros": "Aleación 17\"",
+          "neumaticos": "215/60 R17",
+          "cantidad_neumaticos": 4,
+          "direccion": "Electroasistida",
+          "sistema_frenos": "ABS + EBD",
+          "frenos_delanteros": "Discos Ventilados",
+          "frenos_posteriores": "Discos Sólidos",
+          "freno_estacionamiento": "Eléctrico con Auto Hold"
+        },
+        "seguridad": {
+          "airbags": 2,
+          "isofix": "Incluido",
+          "detector_punto_ciego": "Incluido",
+          "sensor_proximidad_trasero": "Incluido",
+          "cierre_seguridad_niños": "Incluido",
+          "asistencia_conduccion": "Radar de reversa, asistencia de frenado, cámara de reversa, control de crucero"
+        },
+        "cabina_equipamiento": {
+          "pantalla_digital": "10.25\"",
+          "conectividad": "Bluetooth, Wi-Fi, Android Auto y Apple CarPlay",
+          "interaccion_voz": "Incluida",
+          "encendido_sin_llave": "Incluido",
+          "cierre_centralizado": "Incluido",
+          "volante_multifuncion": "Incluido",
+          "entradas_usb_usbc": "Incluido",
+          "tapiceria": "Cuero Ecológico",
+          "ajuste_asientos": "Manual"
+        },
+        "luces": {
+          "faros": "Halógenos con DRL",
+          "luces_altas": "Automáticas",
+          "luces_traseras": "LED"
+        },
+        "dimensiones_y_peso": {
+          "largo_mm": 3695,
+          "ancho_mm": 1685,
+          "alto_mm": 1615,
+          "distancia_entre_ejes_mm": 2500,
+          "peso_en_vacio_kg": 954
+        },
+        "equipamiento_exterior": {
+          "tipo_llantas": "Run Flat",
+          "cargadores": "L1, L2 y L3 (Carga media y rápida) Tipo GBT",
+          "retrovisores": "Plegables y con cámaras",
+          "volumen_carga_litros": 237
+        },
+        "motor": {
+          "tipo": "Motor Eléctrico Síncrono de Imán Permanente",
+          "potencia_maxima_kw": 40,
+          "potencia_maxima_hp": 53,
+          "par_maximo_nm": 110,
+          "refrigeracion": "Por Líquido"
+        },
+        "transmision": {
+          "traccion": "Delantera (FWD)",
+          "tipo_caja": "Automática Single-Speed",
+          "velocidad_maxima_kmh": 100,
+          "formula_rodante": "4x2"
+        },
+        "bateria": {
+          "tipo": "CATL",
+          "capacidad_kwh": 28.08,
+          "autonomia_cltc_km": 300,
+          "tiempo_carga_normal_horas": 8,
+          "tiempo_carga_media_horas": 4,
+          "tiempo_carga_rapida_minutos": 46,
+          "incluye_cargador_domestico": "Sí"
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Blanco Perla", "Gris Plata", "Azul Marino", "Negro"],
+        "garantia": {
+          "vehiculo": "2 años o 50.000 km (lo primero que ocurra)",
+          "bateria": "5 años o 150.000 km (lo primero que ocurra)",
+          "servicio_tecnico": "Disponible en talleres autorizados Quantum",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado_5_años": {
+          "combustible": "-80%",
+          "mantenimientos": "-50%",
+          "impuestos": "-50%"
+        },
+        "impacto_ambiental": {
+          "ahorro_co2_por_año_10000km": "1.500 Tn CO2",
+          "equivalencia_arboles": 155
+        },
+        "recomendaciones_bateria": [
+          "No permitas que la batería baje del 20%.",
+          "Evita dejar el auto sin carga por más de dos semanas.",
+          "No cargues tu vehículo bajo la lluvia.",
+          "No conectes el cargador si el cable está dañado o húmedo.",
+          "Pide tu manual de uso para más detalles."
+        ]
+      },
+
+      {
+        "id": "ion_pro",
+        "titulo": "ION PRO",
+        "categoria": "Camiones",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors",
+        "tipo_vehiculo": "Camión / Vehículo Comercial Eléctrico",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/Ion-Pro.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/Ion-Pro.png"
+        ],
+        "descripcion_corta": "Camión eléctrico de alta capacidad con motor de alto rendimiento, ideal para carga y transporte urbano sin emisiones.",
+        "precio_referencial_usd": 35000,
+        "prestaciones": {
+          "autonomia_maxima_km": 200,
+          "velocidad_maxima_kmh": 90,
+          "capacidad_carga_kg": 2000,
+          "pendiente_maxima": "20°"
+        },
+        "motor": {
+          "potencia_nominal_kw": 60,
+          "traccion": "Trasera",
+          "tipo_caja": "Automática"
+        },
+        "bateria": {
+          "tipo": "LFP",
+          "voltaje_v": 320,
+          "tiempo_carga_horas": "8 - 10"
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Blanco", "Gris"],
+        "garantia": {
+          "vehiculo": "2 años o 100.000 km",
+          "bateria": "3 años",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "ion_plus",
+        "titulo": "ION PLUS",
+        "categoria": "Camiones",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors",
+        "tipo_vehiculo": "Camión Eléctrico de Carga Media",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/Ion-PLus.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/Ion-PLus.png"
+        ],
+        "descripcion_corta": "Camión eléctrico para carga media con excelente autonomía y bajo costo operativo, ideal para distribución urbana.",
+        "precio_referencial_usd": 28000,
+        "prestaciones": {
+          "autonomia_maxima_km": 160,
+          "velocidad_maxima_kmh": 80,
+          "capacidad_carga_kg": 1500,
+          "pendiente_maxima": "18°"
+        },
+        "motor": {
+          "potencia_nominal_kw": 45,
+          "traccion": "Trasera",
+          "tipo_caja": "Automática"
+        },
+        "bateria": {
+          "tipo": "LFP",
+          "voltaje_v": 240,
+          "tiempo_carga_horas": "6 - 8"
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Blanco", "Amarillo"],
+        "garantia": {
+          "vehiculo": "2 años o 80.000 km",
+          "bateria": "3 años",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "ion",
+        "titulo": "ION",
+        "categoria": "Camiones",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors",
+        "tipo_vehiculo": "Camión Eléctrico de Carga Ligera",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/Ion.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/Ion.png"
+        ],
+        "descripcion_corta": "Camión eléctrico ligero para entregas y distribución en ciudad, económico y de cero emisiones.",
+        "precio_referencial_usd": 20000,
+        "prestaciones": {
+          "autonomia_maxima_km": 120,
+          "velocidad_maxima_kmh": 70,
+          "capacidad_carga_kg": 800,
+          "pendiente_maxima": "15°"
+        },
+        "motor": {
+          "potencia_nominal_kw": 30,
+          "traccion": "Trasera",
+          "tipo_caja": "Automática"
+        },
+        "bateria": {
+          "tipo": "LFP",
+          "voltaje_v": 180,
+          "tiempo_carga_horas": "6 - 8"
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Blanco", "Gris"],
+        "garantia": {
+          "vehiculo": "2 años o 60.000 km",
+          "bateria": "2 años",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "colibri",
+        "titulo": "COLIBRÍ",
+        "categoria": "Trimotos",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors Bolivia",
+        "tipo_vehiculo": "Torito / Trimoto Eléctrica",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/colibri.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/colibri.png",
+          "https://tuquantum.com/wp-content/uploads/2021/12/COLIBRI-CARACTERISTICAS.jpeg",
+          "https://tuquantum.com/wp-content/uploads/2021/12/Colibri-1.png",
+          "https://tuquantum.com/wp-content/uploads/2021/12/Colibri-3.png",
+          "https://tuquantum.com/wp-content/uploads/2021/12/Colibri-2.png"
+        ],
+        "descripcion_corta": "Trimoto eléctrica boliviana para 3 personas (conductor + 2 pasajeros), ideal para transporte público. Autonomía de hasta 120 km, certificación de producción nacional.",
+        "precio_referencial_usd": 4500,
+        "datos_generales": {
+          "nro_pasajeros": 3,
+          "certificacion": "Certificación de Producción Nacional Bolivia"
+        },
+        "dimensiones_y_peso": {
+          "largo_mm": 2730,
+          "ancho_mm": 1210,
+          "alto_mm": 1740,
+          "peso_neto_kg": 285,
+          "capacidad_carga_kg": 220
+        },
+        "prestaciones": {
+          "velocidad_maxima_kmh": 55,
+          "autonomia_maxima_km": 120,
+          "consumo_por_carga_kwh": 2.1,
+          "costo_carga_bs": 2.1,
+          "pendiente_maxima": "15° (8.5%)"
+        },
+        "motor": {
+          "potencia_w": 1500,
+          "voltaje_v": 60,
+          "traccion": "Posterior",
+          "tipo_caja": "Automática",
+          "nro_velocidades": "Marcha adelante y marcha reversa"
+        },
+        "bateria": {
+          "tipo": "Ion Litio",
+          "capacidad_ah": 105,
+          "voltaje_v": 60,
+          "tiempo_carga_horas": "6 - 8",
+          "durabilidad_ciclos": 2000,
+          "vida_util_años": "6 - 8",
+          "costo_carga_bs": 5
+        },
+        "suspension": {
+          "delantera": "Telescópica con Amortiguador",
+          "posterior": "Eje Rígido con Muelles y Amortiguador"
+        },
+        "neumaticos": {
+          "delantero": "110/90-12",
+          "posterior": "4.00-12"
+        },
+        "equipamiento": {
+          "pantalla": "LCD con indicadores de velocidad y batería",
+          "luces": "Faros LED de alta luminosidad",
+          "puerto_usb": "Sí",
+          "reversa": "Sí (con cámara de marcha atrás / sensores)",
+          "sistema_audio": "Radio MP3 / Bluetooth",
+          "cinturon_seguridad": "Sí (asiento conductor)",
+          "encendido": "Eléctrico (Control y Botón)",
+          "iluminacion": "100% LED",
+          "velocimetro": "Digital",
+          "camara_retroceso": "Sí",
+          "accesorios_opcionales": "Parrilla (Opcional)"
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Rojo", "Azul", "Blanco", "Negro"],
+        "garantia": {
+          "vehiculo": "1 año o 10.000 km (lo primero que ocurra)",
+          "bateria": "2 años",
+          "servicio_tecnico": "Disponible en 14 talleres autorizados",
+          "contacto": "76978804"
+        },
+        "financiamiento": "Crédito Eco-Sostenible del Banco Ecofuturo",
+        "ahorro_estimado_5_años": {
+          "combustible": "-80%",
+          "mantenimientos": "-43%",
+          "impuestos": "-50%"
+        }
+      },
+
+      {
+        "id": "quantum_ara",
+        "titulo": "ARA",
+        "categoria": "Bicimotos y Bicicletas",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors",
+        "tipo_vehiculo": "Bicicleta Eléctrica con Pedaleo Asistido",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/ara.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/ara.png",
+          "https://drive.google.com/file/d/1MD5RJg0PXXVwKg70OwuMT7fSrAfEpMC6/view?usp=drive_link"
+        ],
+        "descripcion_corta": "Bicicleta 100% eléctrica con pedaleo asistido, iluminación LED, equipamiento Shimano, marco de aluminio y batería de litio 36V/10Ah.",
+        "precio_referencial_usd": 480,
+        "datos_generales": {
+          "nro_pasajeros": 1,
+          "marco": "Aleación de Aluminio",
+          "aros": "N° 26",
+          "neumaticos": "24.5\" x 1.95 KENDA",
+          "equipamiento": "Shimano",
+          "dimensiones": "2500 x 1100 x 1500 mm",
+          "peso_kg": 17.35
+        },
+        "prestaciones": {
+          "velocidad_maxima_kmh": 25,
+          "autonomia_maxima_km": 25,
+          "capacidad_carga_maxima_kg": 80,
+          "pendiente_maxima": "10° (asistido)",
+          "encendido": "Eléctrico (Botón)",
+          "velocidades": "Normal sin velocidades",
+          "iluminacion": "LED 3W",
+          "velocimetro": "LCD Multifunción",
+          "puerto_usb": "Sí"
+        },
+        "motor": {
+          "potencia_w": 250,
+          "tipo": "Motor de Pedaleo Asistido"
+        },
+        "frenos": {
+          "delantero": "Tipo Pinza Caliper",
+          "posterior": "Tipo Pinza Caliper"
+        },
+        "suspension": "Amortiguador / Telescopio Hidráulico",
+        "bateria": {
+          "tipo": "Litio",
+          "voltaje_v": 36,
+          "capacidad_ah": 10,
+          "tiempo_carga_horas": "6 - 8",
+          "durabilidad_ciclos": 800,
+          "vida_util_años": "6 - 8",
+          "costo_carga_bs": 0.80
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Negro", "Blanco"],
+        "garantia": {
+          "general": "1 año",
+          "bateria": "1 año",
+          "servicio_tecnico": "Disponible en 14 talleres autorizados",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado": {
+          "combustible": "-80%",
+          "transporte": "Reducción significativa del gasto diario"
+        },
+        "financiamiento": "Bio Crédito de Bancomunidad",
+        "recomendaciones_bateria": [
+          "No dejar la batería descargada por menos del 20%.",
+          "No mojar o salpicar con agua a una distancia de 20 cm del suelo hacia el eje de la llanta."
+        ]
+      },
+
+      {
+        "id": "quantum_a5",
+        "titulo": "A5",
+        "categoria": "Bicimotos y Bicicletas",
+        "subcategoria": "Quantum",
+        "marca_origen": "Quantum Motors",
+        "tipo_vehiculo": "Bicicleta Eléctrica con Pedaleo Asistido",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/a5.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/a5.png",
+          "https://drive.google.com/file/d/1DAXfe4Rw9-imzipIT_alqldJ5hXxeKAl/view?usp=drive_link"
+        ],
+        "descripcion_corta": "Bicicleta eléctrica A5 con pedaleo asistido, 250 W, 25 km de autonomía, velocimetro LCD, equipamiento Shimano y batería litio 36V/10Ah.",
+        "precio_referencial_usd": 460,
+        "datos_generales": {
+          "nro_pasajeros": 1,
+          "marco": "Aleación de Aluminio",
+          "aros": "N° 26",
+          "neumaticos": "24.5\" x 1.95 KENDA",
+          "equipamiento": "Shimano",
+          "dimensiones": "2500 x 1100 x 1500 mm",
+          "peso_kg": 17.35
+        },
+        "prestaciones": {
+          "velocidad_maxima_kmh": 25,
+          "autonomia_maxima_km": 25,
+          "capacidad_carga_maxima_kg": 80,
+          "pendiente_maxima": "10° (asistido)",
+          "encendido": "Eléctrico (Botón)",
+          "velocidades": "Normal sin velocidades",
+          "tipo_pedaleo": "Asistido",
+          "iluminacion": "100% LED (LED 3W)",
+          "velocimetro": "LCD Multifunción",
+          "puerto_usb": "Sí"
+        },
+        "motor": {
+          "potencia_w": 250,
+          "tipo": "Motor de Pedaleo Asistido"
+        },
+        "frenos": {
+          "delantero": "Tipo Pinza Caliper",
+          "posterior": "Tipo Pinza Caliper"
+        },
+        "suspension": "Amortiguador / Telescopio Hidráulico",
+        "bateria": {
+          "tipo": "Litio",
+          "voltaje_v": 36,
+          "capacidad_ah": 10,
+          "tiempo_carga_horas": "4 - 6",
+          "durabilidad_ciclos": 800,
+          "vida_util_años": "6 - 8",
+          "costo_carga_bs": 0.80
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Negro", "Blanco"],
+        "garantia": {
+          "general": "6 meses o 5.000 km (lo primero que ocurra)",
+          "bateria": "1 año",
+          "servicio_tecnico": "Disponible en 14 talleres autorizados",
+          "contacto": "76978804"
+        },
+        "ahorro_estimado": {
+          "combustible": "-80%",
+          "transporte": "Reducción significativa del gasto diario"
+        },
+        "financiamiento": "Bio Crédito de Bancomunidad"
+      },
+
+      {
+        "id": "starto",
+        "titulo": "STARTO",
+        "categoria": "Bicimotos y Bicicletas",
+        "subcategoria": "Yadea",
+        "marca_origen": "Yadea / Quantum Motors",
+        "tipo_vehiculo": "Bicicleta / Bicimoto Eléctrica",
+        "combustible": "Motor Eléctrico",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2026/01/Starto-Foto-de-perfil.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2026/01/Starto-Foto-de-perfil.png"
+        ],
+        "descripcion_corta": "Bicimoto eléctrica Yadea Starto con diseño moderno, ideal para movilidad urbana eficiente y económica.",
+        "precio_referencial_usd": 550,
+        "datos_generales": {
+          "nro_pasajeros": 1,
+          "iluminacion": "LED"
+        },
+        "prestaciones": {
+          "velocidad_maxima_kmh": 25,
+          "autonomia_maxima_km": 40,
+          "capacidad_carga_maxima_kg": 100,
+          "encendido": "Eléctrico (Botón)"
+        },
+        "motor": {
+          "potencia_w": 350,
+          "tipo": "Motor Eléctrico Asistido"
+        },
+        "bateria": {
+          "tipo": "Litio",
+          "voltaje_v": 36,
+          "tiempo_carga_horas": "4 - 6",
+          "costo_carga_bs": 1.0
+        },
+        "emisiones": "Cero Emisiones (Motor 100% Eléctrico)",
+        "colores_disponibles": ["Blanco", "Negro", "Rojo"],
+        "garantia": {
+          "general": "1 año",
+          "bateria": "1 año",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "enchufe_smart_plug",
+        "titulo": "ENCHUFE SMART PLUG",
+        "categoria": "Accesorios",
+        "subcategoria": "Quantum",
+        "tipo": "Accesorio / Cargador Inteligente",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/enchufe-smart-plug.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/enchufe-smart-plug.png"
+        ],
+        "descripcion_corta": "Enchufe inteligente para monitoreo y control de la carga de vehículos eléctricos Quantum desde tu smartphone.",
+        "precio_referencial_usd": 35,
+        "especificaciones": {
+          "voltaje": "220V",
+          "compatible_con": "Todos los vehículos eléctricos Quantum",
+          "conectividad": "Wi-Fi / App",
+          "funcion": "Control y monitoreo de carga inteligente"
+        },
+        "garantia": {
+          "general": "6 meses",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "mochila_delivery",
+        "titulo": "MOCHILA DELIVERY",
+        "categoria": "Accesorios",
+        "subcategoria": "Quantum",
+        "tipo": "Accesorio",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/Mochila-delivery.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/Mochila-delivery.png"
+        ],
+        "descripcion_corta": "Mochila para delivery diseñada para motocicletas eléctricas Quantum, resistente y de gran capacidad.",
+        "precio_referencial_usd": 45,
+        "especificaciones": {
+          "material": "Poliéster resistente al agua",
+          "capacidad_litros": 30,
+          "compatible_con": "Motocicletas Quantum / Super Soco"
+        },
+        "garantia": {
+          "general": "3 meses",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "cajuela_motocicleta_blanco",
+        "titulo": "CAJUELA DE MOTOCICLETA (BLANCO)",
+        "categoria": "Accesorios",
+        "subcategoria": "Quantum",
+        "tipo": "Accesorio",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/cajuela-de-motocicleta-blanco.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/cajuela-de-motocicleta-blanco.png"
+        ],
+        "descripcion_corta": "Cajuela trasera para motocicleta eléctrica, color blanco. Ideal para transporte de paquetes y objetos de uso diario.",
+        "precio_referencial_usd": 55,
+        "especificaciones": {
+          "color": "Blanco",
+          "material": "ABS resistente",
+          "capacidad_litros": 28,
+          "compatible_con": "Motocicletas Quantum / Super Soco"
+        },
+        "garantia": {
+          "general": "3 meses",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "cajuela_motocicleta_negro",
+        "titulo": "CAJUELA DE MOTOCICLETA (NEGRO)",
+        "categoria": "Accesorios",
+        "subcategoria": "Quantum",
+        "tipo": "Accesorio",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/cajuela-de-motocicleta.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/cajuela-de-motocicleta.png"
+        ],
+        "descripcion_corta": "Cajuela trasera para motocicleta eléctrica, color negro. Amplia capacidad y diseño robusto.",
+        "precio_referencial_usd": 55,
+        "especificaciones": {
+          "color": "Negro",
+          "material": "ABS resistente",
+          "capacidad_litros": 28,
+          "compatible_con": "Motocicletas Quantum / Super Soco"
+        },
+        "garantia": {
+          "general": "3 meses",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "casco_blanco",
+        "titulo": "CASCO BLANCO",
+        "categoria": "Accesorios",
+        "subcategoria": "Quantum",
+        "tipo": "Casco de Seguridad",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/casco-blanco.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/casco-blanco.png"
+        ],
+        "descripcion_corta": "Casco de seguridad color blanco, certificado, para motocicletas y bicimotos eléctricas.",
+        "precio_referencial_usd": 30,
+        "especificaciones": {
+          "color": "Blanco",
+          "tipo": "Integral / Urbano",
+          "certificacion": "DOT / ECE",
+          "tallas_disponibles": ["S", "M", "L", "XL"]
+        },
+        "garantia": {
+          "general": "6 meses",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "casco_urbano",
+        "titulo": "CASCO URBANO",
+        "categoria": "Accesorios",
+        "subcategoria": "Quantum",
+        "tipo": "Casco de Seguridad",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/casco-urbano.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/casco-urbano.png"
+        ],
+        "descripcion_corta": "Casco urbano estilo moderno, liviano y cómodo para uso diario en motocicletas y bicicletas eléctricas.",
+        "precio_referencial_usd": 28,
+        "especificaciones": {
+          "tipo": "Urbano Abierto",
+          "material": "ABS + EPS",
+          "certificacion": "DOT",
+          "tallas_disponibles": ["S", "M", "L", "XL"],
+          "colores": ["Negro", "Blanco", "Gris"]
+        },
+        "garantia": {
+          "general": "6 meses",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "candado_cadena",
+        "titulo": "CANDADO TIPO CADENA",
+        "categoria": "Accesorios",
+        "subcategoria": "Quantum",
+        "tipo": "Seguridad",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/Candado-tipo-cadena.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/Candado-tipo-cadena.png"
+        ],
+        "descripcion_corta": "Candado de cadena de alta seguridad para motocicletas y bicicletas eléctricas Quantum.",
+        "precio_referencial_usd": 20,
+        "especificaciones": {
+          "material": "Acero templado",
+          "longitud_cm": 100,
+          "grosor_mm": 12,
+          "tipo_cierre": "Combinación / Llave"
+        },
+        "garantia": {
+          "general": "3 meses",
+          "contacto": "76978804"
+        }
+      },
+
+      {
+        "id": "casco_visera_rojo",
+        "titulo": "CASCO CON VISERA (ROJO)",
+        "categoria": "Accesorios",
+        "subcategoria": "Quantum",
+        "tipo": "Casco de Seguridad",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/casco-visera-rojo.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/casco-visera-rojo.png"
+        ],
+        "descripcion_corta": "Casco con visera protectora, color rojo. Diseño sport para motociclistas.",
+        "precio_referencial_usd": 38,
+        "especificaciones": {
+          "color": "Rojo",
+          "tipo": "Abierto con Visera",
+          "material": "ABS + EPS",
+          "certificacion": "DOT / ECE",
+          "tallas_disponibles": ["S", "M", "L", "XL"]
+        },
+        "garantia": { "general": "6 meses", "contacto": "76978804" }
+      },
+
+      {
+        "id": "casco_visera_negro",
+        "titulo": "CASCO CON VISERA (NEGRO)",
+        "categoria": "Accesorios",
+        "subcategoria": "Quantum",
+        "tipo": "Casco de Seguridad",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/casco-visera-negro.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/casco-visera-negro.png"
+        ],
+        "descripcion_corta": "Casco con visera protectora, color negro. Diseño sport para motociclistas.",
+        "precio_referencial_usd": 38,
+        "especificaciones": {
+          "color": "Negro",
+          "tipo": "Abierto con Visera",
+          "material": "ABS + EPS",
+          "certificacion": "DOT / ECE",
+          "tallas_disponibles": ["S", "M", "L", "XL"]
+        },
+        "garantia": { "general": "6 meses", "contacto": "76978804" }
+      },
+
+      {
+        "id": "casco_visera_verde",
+        "titulo": "CASCO CON VISERA (VERDE)",
+        "categoria": "Accesorios",
+        "subcategoria": "Quantum",
+        "tipo": "Casco de Seguridad",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/casco-visera-verde.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/casco-visera-verde.png"
+        ],
+        "descripcion_corta": "Casco con visera protectora, color verde. Diseño sport para motociclistas.",
+        "precio_referencial_usd": 38,
+        "especificaciones": {
+          "color": "Verde",
+          "tipo": "Abierto con Visera",
+          "material": "ABS + EPS",
+          "certificacion": "DOT / ECE",
+          "tallas_disponibles": ["S", "M", "L", "XL"]
+        },
+        "garantia": { "general": "6 meses", "contacto": "76978804" }
+      },
+
+      {
+        "id": "casco_visera_rosado",
+        "titulo": "CASCO CON VISERA (ROSADO)",
+        "categoria": "Accesorios",
+        "subcategoria": "Quantum",
+        "tipo": "Casco de Seguridad",
+        "imagen_portada": "https://tuquantum.com/wp-content/uploads/2025/12/Casco-visera-rosado.png",
+        "fotos": [
+          "https://tuquantum.com/wp-content/uploads/2025/12/Casco-visera-rosado.png"
+        ],
+        "descripcion_corta": "Casco con visera protectora, color rosado. Diseño sport para motociclistas.",
+        "precio_referencial_usd": 38,
+        "especificaciones": {
+          "color": "Rosado",
+          "tipo": "Abierto con Visera",
+          "material": "ABS + EPS",
+          "certificacion": "DOT / ECE",
+          "tallas_disponibles": ["S", "M", "L", "XL"]
+        },
+        "garantia": { "general": "6 meses", "contacto": "76978804" }
+      }
+
+    ]
+  }
+}

@@ -77,9 +77,15 @@ export async function resolveIntent(input: string): Promise<IntentResult> {
     t.includes("vehiculo") ||
     t.includes("modelo") ||
     t.includes("auto") ||
+    t.includes("carro") ||
     t.includes("camion") ||
     t.includes("bicicleta") ||
-    t.includes("trimoto")
+    t.includes("trimoto") ||
+    t.includes("nexus") ||
+    t.includes("equte") ||
+    t.includes("e-qute") ||
+    t.includes("e4") ||
+    t.includes("corona")
   ) {
     return {
       intent: "VEHICLE",
@@ -96,7 +102,8 @@ export async function resolveIntent(input: string): Promise<IntentResult> {
     t.includes("casco") ||
     t.includes("mochila") ||
     t.includes("candado") ||
-    t.includes("cajuela")
+    t.includes("cajuela") ||
+    t.includes("enchufe")
   ) {
     const accessory = products.find((p) => p.categoria === "ACCESORIO");
     return {

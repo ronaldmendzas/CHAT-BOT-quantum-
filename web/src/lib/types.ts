@@ -4,11 +4,24 @@ export type Product = {
   id: string;
   nombre: string;
   categoria: "VEHICULO" | "ACCESORIO" | "BATERIA" | "SERVICIO";
+  subcategoria?: string;
+  marca?: string;
+  modelo?: string;
   precio: { monto: number; moneda: string };
   descripcion_corta: string;
-  especificaciones: Record<string, number | string>;
+  especificaciones: Record<string, unknown>;
   colores: string[];
   media: string[];
+  foto_url?: string;
+  garantia?: string;
+  garantia_bateria?: string;
+  servicio_tecnico?: string;
+  contacto?: string;
+  ahorro_combustible?: string;
+  ahorro_mantenimiento?: string;
+  ahorro_impuestos?: string;
+  emisiones_co2?: string;
+  recomendaciones_bateria?: string[];
 };
 
 export type StockEntry = {
@@ -23,6 +36,7 @@ export type StockEntry = {
 export type Sucursal = {
   id: string;
   ciudad: string;
+  region: string;
   direccion: string;
   horario: string;
   telefono: string;

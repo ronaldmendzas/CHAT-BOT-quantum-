@@ -1,10 +1,9 @@
 import { NextResponse } from "next/server";
-import { readJsonFile } from "@/lib/db";
-import type { Sucursal } from "@/lib/types";
+import { getSucursales } from "@/lib/db";
 
 export async function GET() {
   try {
-    const sucursales = await readJsonFile<Sucursal[]>("sucursales.json");
+    const sucursales = await getSucursales();
     return NextResponse.json({ data: sucursales });
   } catch {
     return NextResponse.json({ error: "Failed to load sucursales" }, { status: 500 });

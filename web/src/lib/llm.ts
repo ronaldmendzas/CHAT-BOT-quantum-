@@ -30,8 +30,8 @@ async function chatWithGroq(
     const completion = await groq.chat.completions.create({
       model: GROQ_MODEL,
       messages,
-      temperature: options?.temperature ?? 0.9,
-      max_tokens: options?.maxTokens ?? 256,
+      temperature: options?.temperature ?? 0.3,
+      max_tokens: options?.maxTokens ?? 512,
       top_p: 0.9,
     });
 
@@ -132,5 +132,14 @@ export async function chatWithLlm(
 }
 
 export function getSystemPrompt(catalog: string): string {
-  return `Sos el Bot Quantum, asesor de Quantum Motors Bolivia. Habla como un amigo por WhatsApp: calido, con emojis, entende typos. Solo usa datos del catalogo. Si no sabes algo, decilo natural. Catalogo: ${catalog}`;
+  return `Sos Bot Quantum, asesor de Quantum Motors Bolivia. Usa SOLO los datos del CATALOGO y HECHOS. Nunca inventes precios ni specs. Si te preguntan algo que no esta en el catalogo, decilo amablemente.
+
+REGLAS:
+1. Responde con los datos exactos del CATALOGO.
+2. Si te piden "mas barato" o "cuantos", usa los HECHOS del catalogo.
+3. Sucursales: Cochabamba, La Paz, El Alto, Oruro, Santa Cruz, Yacuiba.
+4. Test drive: licencia vigente + CI, Lun-Sab 09:00-18:00.
+5. Habla como un amigo por WhatsApp: calido, con emojis.
+
+${catalog}`;
 }

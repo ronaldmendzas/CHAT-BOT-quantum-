@@ -30,6 +30,22 @@ function Card({ children }: { children: React.ReactNode }) {
   );
 }
 
+function formatSpecValue(value: unknown): string {
+  if (value === null || value === undefined) return "-";
+  if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") {
+    return String(value);
+  }
+  if (Array.isArray(value)) {
+    return value.map(formatSpecValue).join(", ");
+  }
+  if (typeof value === "object") {
+    return Object.entries(value)
+      .map(([k, v]) => `${k.replaceAll("_", " ")}: ${formatSpecValue(v)}`)
+      .join(" | ");
+  }
+  return String(value);
+}
+
 type Props = {
   product: Product;
   stock: StockEntry[];
@@ -126,7 +142,7 @@ export default function ProductDetail({ product, stock, media }: Props) {
                     {k.replaceAll("_", " ")}
                   </Text>
                   <Text color="white" fontWeight="bold">
-                    {v}
+                    {formatSpecValue(v)}
                   </Text>
                 </Flex>
               ))}

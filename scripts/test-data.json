@@ -1,0 +1,4353 @@
+{
+  "products": [
+    {
+      "id": "c4391267-7019-4594-b597-2f211a512b1a",
+      "nombre": "TS STREET HUNTER PRO",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "VMOTO / Super Soco",
+      "modelo": "TS STREET HUNTER PRO",
+      "descripcion_corta": "La moto eléctrica de alto rendimiento con 4.100 W de potencia, velocidad máxima de 90 km/h y diseño deportivo urbano de primera línea.",
+      "especificaciones": {
+        "MOTOR": {
+          "cambio": "Manual con Botón",
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "ubicacion": "Llanta Trasera",
+          "nro_velocidades": 3,
+          "potencia_nominal_w": 4100
+        },
+        "BATERIA": {
+          "tipo": "Litio Removible",
+          "luces": "100% LED",
+          "conector": "220V",
+          "pantalla": "Digital",
+          "voltaje_v": 60,
+          "capacidad_ah": 32,
+          "costo_carga_bs": 2,
+          "durabilidad_ciclos": 2000,
+          "tiempo_carga_horas": 4,
+          "consumo_por_carga_kwh": 2
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "alarma": "Sí",
+          "encendido": "Eléctrico (Control)",
+          "velocimetro": "Digital",
+          "sensor_bloqueo": "Doble: Llave Manubrio y Control",
+          "autonomia_maxima": "1 batería: 75 km | 2 baterías: 150 km",
+          "pendiente_maxima": "14°",
+          "espejos_retrovisores": "Sí (Regulables)",
+          "velocidad_maxima_kmh": {
+            "vel1": 60,
+            "vel2": 75,
+            "vel3": 90
+          }
+        },
+        "DATOS GENERALES": {
+          "aros": "D: 2.5-17 | T: 3.5-17",
+          "neumaticos": "D: 100/70-17 | T: 120/80-17",
+          "nro_asientos": "1 (Ergonómico)",
+          "sistema_frenos": "CBS Delantero y Trasero",
+          "frenos_delanteros": "Disco Hidráulico (240 mm)",
+          "frenos_posteriores": "Disco Hidráulico (180 mm)",
+          "suspension_trasera": "Mono-Shock Central Regulable",
+          "cantidad_neumaticos": 2,
+          "suspension_delantera": "Horquilla Telescópica Invertida"
+        },
+        "DIMENSIONES Y PESO": {
+          "alto_mm": 1014,
+          "ancho_mm": 788,
+          "largo_mm": 2024,
+          "peso_neto_kg": "89 (sin batería)",
+          "capacidad_carga_kg": 150,
+          "distancia_entre_ejes_mm": 1322
+        }
+      },
+      "colores": [
+        "Rojo",
+        "Negro"
+      ],
+      "precio_monto": 2800,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/ts-street-hunter-pro.png",
+      "garantia": "1 año por desperfectos de fábrica o 10.000 km (lo primero que ocurra)",
+      "garantia_bateria": "1 año",
+      "servicio_tecnico": "Disponible en 14 talleres autorizados",
+      "contacto": "76978804",
+      "ahorro_combustible": "-66.5%",
+      "ahorro_mantenimiento": "-42.3%",
+      "ahorro_impuestos": "-46.6%",
+      "emisiones_co2": "825 kg CO2",
+      "recomendaciones_bateria": [
+        "Asegúrate de que el cargador esté bien conectado para evitar interrupciones y sobrecalentamientos.",
+        "Guarda el cable correctamente para prevenir daños.",
+        "Si detectas desperfectos, contacta a nuestro servicio postventa.",
+        "Primer mantenimiento a los 1500 km, luego a los 5000 km y posteriores.",
+        "Pide tu manual de uso para más detalles."
+      ],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "7942cee3-0084-47df-9b01-329a7dd93129",
+      "nombre": "TS STREET HUNTER",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "VMOTO / Super Soco",
+      "modelo": "TS STREET HUNTER",
+      "descripcion_corta": "Moto eléctrica urbana con potencia de 2.500 W, velocidad máxima de 75 km/h, autonomía de hasta 80 km y diseño naked deportivo agresivo.",
+      "especificaciones": {
+        "MOTOR": {
+          "cambio": "Manual con Botón",
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "ubicacion": "Llanta Trasera",
+          "nro_velocidades": 3,
+          "potencia_maxima_w": 3500,
+          "potencia_nominal_w": 2500
+        },
+        "BATERIA": {
+          "tipo": "Litio Removible ATL",
+          "luces": "100% LED Nueva Generación",
+          "conector": "220V",
+          "pantalla": "Digital",
+          "voltaje_v": 60,
+          "capacidad_ah": 32,
+          "costo_carga_bs": 2,
+          "durabilidad_ciclos": 2000,
+          "tiempo_carga_horas": "3.5 - 4 (Carga Rápida)",
+          "consumo_por_carga_kwh": 2,
+          "capacidad_doble_bateria": "Sí (compatible con segunda batería)"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "alarma": "Sí (Antirrobo con bloqueo de rueda posterior y sensor de movimiento)",
+          "encendido": "Eléctrico (Control / Keyless)",
+          "velocimetro": "Digital LCD Panorámico (velocidad, odómetro, temperatura, reloj, batería)",
+          "sensor_bloqueo": "Doble: Llave Manubrio y Control",
+          "autonomia_maxima": "1 batería: 75-80 km | 2 baterías: 150-160 km",
+          "pendiente_maxima": "19°",
+          "espejos_retrovisores": "Sí (Regulables)",
+          "velocidad_maxima_kmh": {
+            "vel1": 45,
+            "vel2": 60,
+            "vel3": 75
+          }
+        },
+        "DATOS GENERALES": {
+          "aros": "D: 2.5-17 | T: 3.5-17",
+          "neumaticos": "D: 100/80-17 | T: 120/70-17",
+          "nro_asientos": "1 (Ergonómico)",
+          "sistema_frenos": "CBS Hidráulico Delantero y Trasero",
+          "frenos_delanteros": "Disco Hidráulico Doble Pistón (240 mm)",
+          "frenos_posteriores": "Disco Hidráulico (180 mm)",
+          "suspension_trasera": "Monoamortiguador Central Hidráulico Ajustable",
+          "cantidad_neumaticos": 2,
+          "suspension_delantera": "Horquilla Telescópica Invertida de Alto Rendimiento"
+        },
+        "DIMENSIONES Y PESO": {
+          "alto_mm": 1100,
+          "ancho_mm": 780,
+          "largo_mm": 2034,
+          "peso_neto_kg": "89 (sin batería)",
+          "capacidad_carga_kg": 160,
+          "distancia_entre_ejes_mm": 1322
+        },
+        "TECNOLOGIA Y SEGURIDAD": {
+          "aerodinamica": "Aletas laterales deportivas para mayor estabilidad",
+          "sistema_optico": "100% LED de nueva generación con firma lumínica agresiva"
+        }
+      },
+      "colores": [
+        "Rojo",
+        "Negro",
+        "Blanco"
+      ],
+      "precio_monto": 2400,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/ts-street-hunter.png",
+      "garantia": "1 año o 10.000 km (lo primero que ocurra)",
+      "garantia_bateria": "1 año",
+      "servicio_tecnico": "Disponible en 14 talleres autorizados",
+      "contacto": "76978804",
+      "ahorro_combustible": "-66.5%",
+      "ahorro_mantenimiento": "-42.3%",
+      "ahorro_impuestos": "-46.6%",
+      "emisiones_co2": "825 kg CO2",
+      "recomendaciones_bateria": [
+        "Asegúrate de que el cargador esté bien conectado para evitar interrupciones y sobrecalentamientos.",
+        "Guarda el cable correctamente para prevenir daños.",
+        "Si detectas desperfectos, contacta a nuestro servicio postventa.",
+        "Primer mantenimiento a los 1500 km, luego a los 5000 km.",
+        "Pide tu manual de uso para más detalles."
+      ],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "b3481e99-1b1c-4d8d-bc83-28eae487dd09",
+      "nombre": "TC WANDERER PRO",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "VMOTO / Super Soco",
+      "modelo": "TC WANDERER PRO",
+      "descripcion_corta": "Moto eléctrica con 4.100 W, velocidad máxima de 90 km/h, frenos CBS, iluminación 100% LED y batería litio removible de 60V/32Ah.",
+      "especificaciones": {
+        "MOTOR": {
+          "cambio": "Manual con Botón",
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "ubicacion": "Llanta Trasera",
+          "nro_velocidades": 3,
+          "potencia_nominal_w": 4100
+        },
+        "BATERIA": {
+          "tipo": "Litio Removible",
+          "luces": "100% LED",
+          "conector": "220V",
+          "voltaje_v": 60,
+          "capacidad_ah": 32,
+          "costo_carga_bs": 2,
+          "durabilidad_ciclos": 2000,
+          "tiempo_carga_horas": "4 - 6",
+          "consumo_por_carga_kwh": 2
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "alarma": "Sí",
+          "encendido": "Eléctrico (Control)",
+          "velocimetro": "Digital",
+          "sensor_bloqueo": "Doble: Llave Manubrio y Control",
+          "pendiente_maxima": "14°",
+          "autonomia_maxima_km": 60,
+          "espejos_retrovisores": "Sí (Regulables)",
+          "velocidad_maxima_kmh": {
+            "vel1": 60,
+            "vel2": 75,
+            "vel3": 90
+          }
+        },
+        "DATOS GENERALES": {
+          "aros": "D: 2.5-17 | T: 3.5-17",
+          "neumaticos": "D: 100/80-17 | T: 120/70-17",
+          "nro_asientos": "1 (Ergonómico)",
+          "sistema_frenos": "CBS Hidráulico Delantero y Trasero",
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Disco",
+          "suspension_trasera": "Monoamortiguador Central Ajustable",
+          "cantidad_neumaticos": 2,
+          "suspension_delantera": "Amortiguador / Telescopio Hidráulico"
+        },
+        "DIMENSIONES Y PESO": {
+          "alto_mm": 1094,
+          "ancho_mm": 788,
+          "largo_mm": 1978,
+          "peso_neto_kg": "89 (sin batería)",
+          "capacidad_carga_kg": 150,
+          "distancia_entre_ejes_mm": 1325
+        }
+      },
+      "colores": [
+        "Negro",
+        "Blanco",
+        "Rojo"
+      ],
+      "precio_monto": 2650,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/tc-wanderer-pro.png",
+      "garantia": "1 año o 10.000 km (lo primero que ocurra)",
+      "garantia_bateria": "1 año",
+      "servicio_tecnico": "Disponible en 14 talleres autorizados",
+      "contacto": "76978804",
+      "ahorro_combustible": "-66.5%",
+      "ahorro_mantenimiento": "-42.3%",
+      "ahorro_impuestos": "-46.6%",
+      "emisiones_co2": "825 kg CO2",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "d5846a19-abf8-4e18-8a20-9645a88ac4bc",
+      "nombre": "TC",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "VMOTO / Super Soco",
+      "modelo": "TC",
+      "descripcion_corta": "Motocicleta eléctrica deportiva con 2.100 W nominales, 3 velocidades, 60 km de autonomía, frenos de disco y sistema antirrobo con keyless.",
+      "especificaciones": {
+        "MOTOR": {
+          "cambio": "Manual con Botón",
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "ubicacion": "Llanta Trasera",
+          "nro_velocidades": 3,
+          "potencia_maxima_w": 3000,
+          "potencia_nominal_w": 1900
+        },
+        "BATERIA": {
+          "tipo": "Litio Removible",
+          "luces": "100% LED Inteligente con sensor de luz diurna",
+          "conector": "220V",
+          "voltaje_v": 60,
+          "capacidad_ah": 30,
+          "costo_carga_bs": 1.8,
+          "durabilidad_ciclos": 2000,
+          "tiempo_carga_horas": "4 - 6",
+          "consumo_por_carga_kwh": 1.8
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "alarma": "Sí (Sistema antirrobo electrónico integrado)",
+          "encendido": "Eléctrico (Llave y Botón / Keyless)",
+          "velocimetro": "Digital LCD Alta Resolución con ajuste automático de brillo",
+          "sensor_bloqueo": "Doble: Llave Manubrio y Control",
+          "pendiente_maxima": "17°",
+          "autonomia_maxima_km": "65 - 70",
+          "espejos_retrovisores": "Sí (Regulables)",
+          "velocidad_maxima_kmh": {
+            "vel1": 45,
+            "vel2": 55,
+            "vel3": 65
+          }
+        },
+        "DATOS GENERALES": {
+          "aros": "D: 2.15-17 | T: 3-17",
+          "neumaticos": "D: 90/80-17 | T: 110/70-17",
+          "nro_asientos": "1 (Ergonómico)",
+          "sistema_frenos": "Hidráulico",
+          "frenos_delanteros": "Disco Hidráulico Doble Pistón (240 mm)",
+          "frenos_posteriores": "Disco Hidráulico (180 mm)",
+          "suspension_trasera": "Monoamortiguador Central Ajustable",
+          "cantidad_neumaticos": 2,
+          "suspension_delantera": "Horquilla Telescópica Invertida"
+        },
+        "DIMENSIONES Y PESO": {
+          "alto_mm": 1098,
+          "ancho_mm": 710,
+          "largo_mm": 1924,
+          "peso_neto_kg": "72 (sin batería)",
+          "capacidad_carga_kg": 150,
+          "distancia_entre_ejes_mm": 1307
+        }
+      },
+      "colores": [
+        "Negro",
+        "Blanco",
+        "Rojo",
+        "Azul"
+      ],
+      "precio_monto": 2100,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/tc.png",
+      "garantia": "1 año o 10.000 km (lo primero que ocurra)",
+      "garantia_bateria": "1 año",
+      "servicio_tecnico": "Garantía oficial, servicio posventa especializado en baterías LITIO (Quantum Batteries) y repuestos originales",
+      "contacto": "76978804",
+      "ahorro_combustible": "-66.5%",
+      "ahorro_mantenimiento": "-42.3%",
+      "ahorro_impuestos": "-46.6%",
+      "emisiones_co2": "825 kg CO2",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "520b21de-ed13-4c09-bc90-c79e90d2c45b",
+      "nombre": "FLASHRIDE",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "Quantum Motors",
+      "modelo": "FLASHRIDE",
+      "descripcion_corta": "Moto eléctrica con 2.000 W, hasta 120 km de autonomía, velocidad máxima de 75 km/h, batería litio 72V/32Ah y frenos de disco.",
+      "especificaciones": {
+        "MOTOR": {
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "ubicacion": "Llanta Trasera",
+          "nro_velocidades": 3,
+          "potencia_nominal_w": 2000
+        },
+        "BATERIA": {
+          "tipo": "Litio",
+          "conector": "220V",
+          "voltaje_v": 72,
+          "capacidad_ah": 32,
+          "costo_carga_bs": 3.5,
+          "tiempo_carga_horas": "4 - 6",
+          "consumo_por_carga_kwh": 3.5
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "encendido": "Eléctrico Llave",
+          "iluminacion": "100% LED",
+          "velocimetro": "Sí (Digital)",
+          "pendiente_maxima": "25°",
+          "autonomia_maxima_km": 120,
+          "espejos_retrovisores": "Sí",
+          "velocidad_maxima_kmh": "70 - 75"
+        },
+        "DATOS GENERALES": {
+          "aros": "N° 10",
+          "neumaticos": "D/T: 120/70-12",
+          "suspension": "Hidráulica",
+          "nro_asientos": 1,
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Disco",
+          "cantidad_neumaticos": 2
+        },
+        "DIMENSIONES Y PESO": {
+          "alto_mm": 860,
+          "ancho_mm": 560,
+          "largo_mm": 1780,
+          "peso_neto_kg": "97 (sin batería)",
+          "capacidad_carga_kg": 200,
+          "distancia_entre_ejes_mm": 1370
+        }
+      },
+      "colores": [
+        "Negro",
+        "Rojo",
+        "Blanco"
+      ],
+      "precio_monto": 1800,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/flashride.png",
+      "garantia": "1 año o 10.000 km (lo primero que ocurra)",
+      "garantia_bateria": "1 año",
+      "servicio_tecnico": "Disponible en talleres autorizados Quantum",
+      "contacto": "76978804",
+      "ahorro_combustible": "-66.5%",
+      "ahorro_mantenimiento": "-42.3%",
+      "ahorro_impuestos": "-46.6%",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "0cf1fda2-fb26-4c3a-9415-4ee65af02b69",
+      "nombre": "CASCO CON VISERA (ROJO)",
+      "categoria": "ACCESORIO",
+      "subcategoria": "accesorio",
+      "marca": "Quantum Motors",
+      "modelo": "CASCO CON VISERA (ROJO)",
+      "descripcion_corta": "Casco con visera protectora, color rojo. Diseño sport para motociclistas.",
+      "especificaciones": {
+        "ESPECIFICACIONES": {
+          "tipo": "Abierto con Visera",
+          "color": "Rojo",
+          "material": "ABS + EPS",
+          "certificacion": "DOT / ECE",
+          "tallas_disponibles": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      },
+      "colores": [],
+      "precio_monto": 38,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/casco-visera-rojo.png",
+      "garantia": "6 meses",
+      "garantia_bateria": "",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "138e61f8-7494-4a4d-be39-a29c6f90944b",
+      "nombre": "CASCO CON VISERA (NEGRO)",
+      "categoria": "ACCESORIO",
+      "subcategoria": "accesorio",
+      "marca": "Quantum Motors",
+      "modelo": "CASCO CON VISERA (NEGRO)",
+      "descripcion_corta": "Casco con visera protectora, color negro. Diseño sport para motociclistas.",
+      "especificaciones": {
+        "ESPECIFICACIONES": {
+          "tipo": "Abierto con Visera",
+          "color": "Negro",
+          "material": "ABS + EPS",
+          "certificacion": "DOT / ECE",
+          "tallas_disponibles": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      },
+      "colores": [],
+      "precio_monto": 38,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/casco-visera-negro.png",
+      "garantia": "6 meses",
+      "garantia_bateria": "",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "e80d5609-6506-4711-80e7-ec28ea357369",
+      "nombre": "LUNA PRO",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "Yadea",
+      "modelo": "LUNA PRO",
+      "descripcion_corta": "Moto eléctrica Yadea con motor de 1.500 W, hasta 55 km de autonomía, velocidad de 50 km/h, batería de grafeno 72V/20Ah y 3 velocidades.",
+      "especificaciones": {
+        "MOTOR": {
+          "tipo": "D/C Brushless",
+          "traccion": "Posterior",
+          "tipo_caja": "Directa / Single-Speed",
+          "ubicacion": "Llanta Trasera",
+          "nro_velocidades": 3,
+          "potencia_nominal_w": 1500
+        },
+        "BATERIA": {
+          "tipo": "Grafeno (opcional Litio)",
+          "voltaje_v": 72,
+          "capacidad_ah": 20,
+          "vida_util_años": 3,
+          "tiempo_carga_horas": 4
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "alarma": "Sí (Sensor de bloqueo)",
+          "encendido": "Eléctrico Llave",
+          "puerto_usb": "Sí",
+          "iluminacion": "100% LED",
+          "velocimetro": "Digital / LED",
+          "pendiente_maxima": "12°",
+          "autonomia_maxima_km": 55,
+          "espejos_retrovisores": "Sí (Regulables)",
+          "velocidad_maxima_kmh": 50
+        },
+        "DATOS GENERALES": {
+          "aros": "12\"",
+          "neumaticos": "D/T: 90/90-12",
+          "suspension": "Hidráulica delantera / Resorte trasero",
+          "nro_asientos": 2,
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Tambor",
+          "cantidad_neumaticos": 2
+        },
+        "DIMENSIONES Y PESO": {
+          "alto_mm": 1060,
+          "ancho_mm": 735,
+          "largo_mm": 1750,
+          "peso_neto_kg": "90 (sin batería)",
+          "capacidad_carga_kg": 150,
+          "distancia_entre_ejes_mm": 1300
+        }
+      },
+      "colores": [
+        "Negro",
+        "Blanco",
+        "Rojo"
+      ],
+      "precio_monto": 1400,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/luna-pro.png",
+      "garantia": "1 año o 10.000 km (lo primero que ocurra)",
+      "garantia_bateria": "1 año",
+      "servicio_tecnico": "Disponible en instalaciones Quantum",
+      "contacto": "76978804",
+      "ahorro_combustible": "-80%",
+      "ahorro_mantenimiento": "-40%",
+      "ahorro_impuestos": "-46%",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "61660420-3425-4428-a10d-ef80d079d87c",
+      "nombre": "TROOPER",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "Quantum Motors",
+      "modelo": "TROOPER",
+      "descripcion_corta": "Motocicleta eléctrica robusta para uso urbano y periurbano, con diseño estilizado y tecnología de cero emisiones.",
+      "especificaciones": {
+        "MOTOR": {
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "nro_velocidades": 3,
+          "potencia_nominal_w": 2000
+        },
+        "BATERIA": {
+          "tipo": "Litio Removible",
+          "voltaje_v": 60,
+          "durabilidad_ciclos": 2000,
+          "tiempo_carga_horas": "4 - 6"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "pendiente_maxima": "15°",
+          "autonomia_maxima_km": 80,
+          "velocidad_maxima_kmh": 70
+        },
+        "DATOS GENERALES": {
+          "iluminacion": "100% LED",
+          "nro_asientos": 2,
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Disco"
+        }
+      },
+      "colores": [
+        "Negro",
+        "Gris",
+        "Rojo"
+      ],
+      "precio_monto": 1600,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2026/01/foto-de-perfil-Trooper-1.png",
+      "garantia": "1 año o 10.000 km (lo primero que ocurra)",
+      "garantia_bateria": "1 año",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "a3f81855-0cc8-4fc0-ae4b-b2d13d1ce174",
+      "nombre": "URBAN",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "Quantum Motors",
+      "modelo": "URBAN",
+      "descripcion_corta": "Moto eléctrica urbana ligera, ideal para el día a día en ciudad con bajo costo operativo y cero emisiones.",
+      "especificaciones": {
+        "MOTOR": {
+          "traccion": "Posterior",
+          "tipo_caja": "Automática Simple",
+          "nro_velocidades": 3,
+          "potencia_nominal_w": 1500
+        },
+        "BATERIA": {
+          "tipo": "Litio",
+          "voltaje_v": 60,
+          "durabilidad_ciclos": 1500,
+          "tiempo_carga_horas": "4 - 6"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "pendiente_maxima": "12°",
+          "autonomia_maxima_km": 60,
+          "velocidad_maxima_kmh": 60
+        },
+        "DATOS GENERALES": {
+          "iluminacion": "100% LED",
+          "nro_asientos": 2,
+          "frenos_delanteros": "Disco",
+          "frenos_posteriores": "Tambor"
+        }
+      },
+      "colores": [
+        "Blanco",
+        "Negro",
+        "Rojo"
+      ],
+      "precio_monto": 1350,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2026/01/foto-de-perfil-Urban-1.png",
+      "garantia": "1 año o 10.000 km (lo primero que ocurra)",
+      "garantia_bateria": "1 año",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "d0ee561c-9b63-4481-acf9-ea067ac482df",
+      "nombre": "NEXUS PLUS",
+      "categoria": "VEHICULO",
+      "subcategoria": "auto",
+      "marca": "Quantum Motors",
+      "modelo": "NEXUS PLUS",
+      "descripcion_corta": "Auto eléctrico con 25 kW nominales, autonomía de 205 km, velocidad máxima de 110 km/h, 5 puertas, 4 asientos, pantalla flotante de 9\", cámara 360° y frenos CBS.",
+      "especificaciones": {
+        "MOTOR": {
+          "tipo": "Síncrono de Imán Permanente",
+          "freno_motor": "Sí (Regenerativo)",
+          "par_maximo_nm": 200,
+          "refrigeracion": "Aire (Hidráulico para el Altiplano)",
+          "potencia_maxima_kw": 30,
+          "potencia_nominal_kw": 25
+        },
+        "BATERIA": {
+          "tipo": "Fosfato de Hierro-Litio (LFP)",
+          "voltaje_v": 115,
+          "capacidad_ah": 148,
+          "tiempo_carga_horas": "6 - 8"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "radio_giro_m": 4.8,
+          "costo_carga_bs": 18,
+          "pendiente_maxima": "25°",
+          "autonomia_maxima_km": 205,
+          "velocidad_maxima_kmh": 110,
+          "consumo_por_carga_kwh": 18
+        },
+        "DATOS GENERALES": {
+          "nro_puertas": 5,
+          "nro_asientos": 4
+        },
+        "DIMENSIONES Y PESO": {
+          "alto_mm": 1575,
+          "ancho_mm": 1585,
+          "largo_mm": 3475,
+          "peso_neto_kg": 1130,
+          "capacidad_carga_kg": 500,
+          "distancia_entre_ejes_mm": 2240
+        }
+      },
+      "colores": [
+        "Blanco",
+        "Arena",
+        "Plateado"
+      ],
+      "precio_monto": 15500,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/nexus-plus.png",
+      "garantia": "2 años o 100.000 km (lo primero que ocurra)",
+      "garantia_bateria": "5 años o 125.000 km (lo primero que ocurra)",
+      "servicio_tecnico": "Disponible en 14 talleres autorizados",
+      "contacto": "76978804",
+      "ahorro_combustible": "-80.5%",
+      "ahorro_mantenimiento": "-50%",
+      "ahorro_impuestos": "-50%",
+      "emisiones_co2": "1.471 Tn CO2",
+      "recomendaciones_bateria": [
+        "No permitas que la batería baje del 20%. Si ocurre, carga el vehículo de inmediato.",
+        "Evita dejar el auto sin carga por más de dos semanas; si lo harás, asegura una carga completa del 100%.",
+        "No cargues tu vehículo bajo la lluvia.",
+        "No conectes el cargador si el cable está dañado o húmedo.",
+        "Pide tu manual de uso audiovisual para más detalles."
+      ],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "83eed9e0-0ee7-4cd1-9951-0fde01396731",
+      "nombre": "NEXUS",
+      "categoria": "VEHICULO",
+      "subcategoria": "auto",
+      "marca": "Quantum Motors",
+      "modelo": "NEXUS",
+      "descripcion_corta": "Auto eléctrico tipo L7e con 15 kW nominales (30 kW máx), autonomía de hasta 205 km, velocidad de 100 km/h en modo Sport, 5 puertas y 4 asientos.",
+      "especificaciones": {
+        "MOTOR": {
+          "tipo": "Imán Permanente Síncrono",
+          "freno_motor": "Sí (Regenerativo)",
+          "par_maximo_nm": 200,
+          "refrigeracion": "Aire (Hidráulico para el Altiplano)",
+          "potencia_maxima_kw": 30,
+          "potencia_nominal_kw": 15
+        },
+        "BATERIA": {
+          "tipo": "LFP (Litio Fosfato de Hierro)",
+          "voltaje_v": 115,
+          "capacidad_ah": 148,
+          "tiempo_carga_horas": 8
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "radio_giro_m": 4.5,
+          "costo_carga_bs": 15,
+          "pendiente_maxima": "25°",
+          "autonomia_maxima_km": "150 - 205",
+          "velocidad_maxima_kmh": {
+            "eco": 80,
+            "sport": 100
+          },
+          "consumo_por_carga_kwh": 15
+        },
+        "DATOS GENERALES": {
+          "nro_puertas": 5,
+          "nro_asientos": 4,
+          "tipo_vehiculo": "L7e"
+        },
+        "DIMENSIONES Y PESO": {
+          "alto_mm": 1605,
+          "ancho_mm": 1498,
+          "largo_mm": 3532,
+          "peso_neto_kg": 810,
+          "capacidad_carga_kg": 500,
+          "distancia_entre_ejes_mm": 2275
+        }
+      },
+      "colores": [
+        "Blanco",
+        "Gris",
+        "Celeste Claro"
+      ],
+      "precio_monto": 12800,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/nexus.png",
+      "garantia": "2 años o 100.000 km (lo primero que ocurra)",
+      "garantia_bateria": "5 años o 125.000 km (lo primero que ocurra)",
+      "servicio_tecnico": "Disponible en 14 talleres autorizados",
+      "contacto": "76978804",
+      "ahorro_combustible": "-80.5%",
+      "ahorro_mantenimiento": "-50%",
+      "ahorro_impuestos": "-50%",
+      "emisiones_co2": "1.471 Tn CO2",
+      "recomendaciones_bateria": [
+        "No permitas que la batería baje del 20%. Si ocurre, carga el vehículo de inmediato.",
+        "Evita dejar el auto sin carga por más de dos semanas; si lo harás, asegura una carga completa del 100%.",
+        "No cargues tu vehículo bajo la lluvia.",
+        "No conectes el cargador si el cable está dañado o húmedo.",
+        "Pide tu manual de uso audiovisual para más detalles."
+      ],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "c0907006-9b75-446f-8ba6-beb02d21531d",
+      "nombre": "CASCO CON VISERA (VERDE)",
+      "categoria": "ACCESORIO",
+      "subcategoria": "accesorio",
+      "marca": "Quantum Motors",
+      "modelo": "CASCO CON VISERA (VERDE)",
+      "descripcion_corta": "Casco con visera protectora, color verde. Diseño sport para motociclistas.",
+      "especificaciones": {
+        "ESPECIFICACIONES": {
+          "tipo": "Abierto con Visera",
+          "color": "Verde",
+          "material": "ABS + EPS",
+          "certificacion": "DOT / ECE",
+          "tallas_disponibles": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      },
+      "colores": [],
+      "precio_monto": 38,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/casco-visera-verde.png",
+      "garantia": "6 meses",
+      "garantia_bateria": "",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "bbcdf4fc-07dc-4856-a54c-47f6278cf50e",
+      "nombre": "E4 CORONA DE MONTAÑA",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "Quantum Motors",
+      "modelo": "E4 CORONA DE MONTAÑA",
+      "descripcion_corta": "Cuadriciclo eléctrico compacto tipo L6e para 2 personas, con motor de 4 kW, autonomía de 80-100 km, velocidad máxima de 55 km/h y certificación SAE.",
+      "especificaciones": {
+        "MOTOR": {
+          "tipo": "Imán Permanente Síncrono",
+          "par_maximo_nm": 60,
+          "refrigeracion": "Aire",
+          "potencia_maxima_kw": 9,
+          "potencia_nominal_kw": 4
+        },
+        "BATERIA": {
+          "tipo": "LFP (Litio Fosfato de Hierro)",
+          "luces": "LED",
+          "voltaje_v": 60,
+          "capacidad_ah": 105,
+          "vida_util_años": "6 - 8",
+          "tiempo_carga_horas": "6 - 8"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "costo_carga_bs": 6,
+          "pendiente_maxima": "25°",
+          "autonomia_maxima_km": "80 - 100",
+          "velocidad_maxima_kmh": 55,
+          "consumo_por_carga_kwh": 6
+        },
+        "DATOS GENERALES": {
+          "nro_puertas": 2,
+          "nro_asientos": 2,
+          "tipo_vehiculo": "L6e"
+        },
+        "DIMENSIONES Y PESO": {
+          "alto_mm": 1500,
+          "ancho_mm": 1100,
+          "largo_mm": 2500,
+          "peso_neto_kg": 390,
+          "radio_giro_m": 4,
+          "capacidad_carga_kg": 250,
+          "distancia_entre_ejes_cm": 177
+        }
+      },
+      "colores": [
+        "Rojo",
+        "Gris Claro",
+        "Blanco",
+        "Negro"
+      ],
+      "precio_monto": 7200,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/e4-montanero.png",
+      "garantia": "2 años o 20.000 km (lo primero que ocurra)",
+      "garantia_bateria": "2 años",
+      "servicio_tecnico": "Disponible en 14 talleres autorizados",
+      "contacto": "76978804",
+      "ahorro_combustible": "-80.7%",
+      "ahorro_mantenimiento": "-43.2%",
+      "ahorro_impuestos": "-70%",
+      "emisiones_co2": "964 kg CO2",
+      "recomendaciones_bateria": [
+        "Asegúrate de que el cargador esté bien conectado para evitar interrupciones y sobrecalentamientos.",
+        "Guarda el cable correctamente para prevenir daños.",
+        "Si detectas desperfectos, contacta a nuestro servicio postventa.",
+        "Primer mantenimiento a los 1500 km, luego a los 5000 km.",
+        "Pide tu manual de uso audiovisual para más detalles."
+      ],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "8a90054d-19d5-4e1c-a477-6c879b17f872",
+      "nombre": "E-QUTE (KAIYI EQUTE)",
+      "categoria": "VEHICULO",
+      "subcategoria": "auto",
+      "marca": "Kaiyi / Quantum Motors",
+      "modelo": "E-QUTE (KAIYI EQUTE)",
+      "descripcion_corta": "Hatchback eléctrico de 5 asientos con motor de 40 kW, autonomía de 300 km (CLTC), carga rápida en 46 min, tapicería de cuero ecológico, Android Auto y Apple CarPlay.",
+      "especificaciones": {
+        "MOTOR": {
+          "tipo": "Motor Eléctrico Síncrono de Imán Permanente",
+          "par_maximo_nm": 110,
+          "refrigeracion": "Por Líquido",
+          "potencia_maxima_hp": 53,
+          "potencia_maxima_kw": 40
+        },
+        "BATERIA": {
+          "tipo": "CATL",
+          "capacidad_kwh": 28.08,
+          "autonomia_cltc_km": 300,
+          "tiempo_carga_media_horas": 4,
+          "tiempo_carga_normal_horas": 8,
+          "incluye_cargador_domestico": "Sí",
+          "tiempo_carga_rapida_minutos": 46
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "DATOS GENERALES": {
+          "chasis": "Unibody",
+          "nro_puertas": 5,
+          "nro_asientos": 5,
+          "tipo_carroceria": "Hatchback"
+        },
+        "DIMENSIONES Y PESO": {
+          "alto_mm": 1615,
+          "ancho_mm": 1685,
+          "largo_mm": 3695,
+          "peso_en_vacio_kg": 954,
+          "distancia_entre_ejes_mm": 2500
+        }
+      },
+      "colores": [
+        "Blanco Perla",
+        "Gris Plata",
+        "Azul Marino",
+        "Negro"
+      ],
+      "precio_monto": 18500,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/Kaiyi-Equte.png",
+      "garantia": "2 años o 50.000 km (lo primero que ocurra)",
+      "garantia_bateria": "5 años o 150.000 km (lo primero que ocurra)",
+      "servicio_tecnico": "Disponible en talleres autorizados Quantum",
+      "contacto": "76978804",
+      "ahorro_combustible": "-80%",
+      "ahorro_mantenimiento": "-50%",
+      "ahorro_impuestos": "-50%",
+      "emisiones_co2": "1.500 Tn CO2",
+      "recomendaciones_bateria": [
+        "No permitas que la batería baje del 20%.",
+        "Evita dejar el auto sin carga por más de dos semanas.",
+        "No cargues tu vehículo bajo la lluvia.",
+        "No conectes el cargador si el cable está dañado o húmedo.",
+        "Pide tu manual de uso para más detalles."
+      ],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "5a58ebf7-8719-4a10-9a4b-41532fd2209c",
+      "nombre": "ION PRO",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "Quantum Motors",
+      "modelo": "ION PRO",
+      "descripcion_corta": "Camión eléctrico de alta capacidad con motor de alto rendimiento, ideal para carga y transporte urbano sin emisiones.",
+      "especificaciones": {
+        "MOTOR": {
+          "traccion": "Trasera",
+          "tipo_caja": "Automática",
+          "potencia_nominal_kw": 60
+        },
+        "BATERIA": {
+          "tipo": "LFP",
+          "voltaje_v": 320,
+          "tiempo_carga_horas": "8 - 10"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "pendiente_maxima": "20°",
+          "capacidad_carga_kg": 2000,
+          "autonomia_maxima_km": 200,
+          "velocidad_maxima_kmh": 90
+        }
+      },
+      "colores": [
+        "Blanco",
+        "Gris"
+      ],
+      "precio_monto": 35000,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/Ion-Pro.png",
+      "garantia": "2 años o 100.000 km",
+      "garantia_bateria": "3 años",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "6258f602-d000-4d31-a6c1-5609a9f799a8",
+      "nombre": "ION PLUS",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "Quantum Motors",
+      "modelo": "ION PLUS",
+      "descripcion_corta": "Camión eléctrico para carga media con excelente autonomía y bajo costo operativo, ideal para distribución urbana.",
+      "especificaciones": {
+        "MOTOR": {
+          "traccion": "Trasera",
+          "tipo_caja": "Automática",
+          "potencia_nominal_kw": 45
+        },
+        "BATERIA": {
+          "tipo": "LFP",
+          "voltaje_v": 240,
+          "tiempo_carga_horas": "6 - 8"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "pendiente_maxima": "18°",
+          "capacidad_carga_kg": 1500,
+          "autonomia_maxima_km": 160,
+          "velocidad_maxima_kmh": 80
+        }
+      },
+      "colores": [
+        "Blanco",
+        "Amarillo"
+      ],
+      "precio_monto": 28000,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/Ion-PLus.png",
+      "garantia": "2 años o 80.000 km",
+      "garantia_bateria": "3 años",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "d525ee20-d46f-41d2-9c87-40e6634097ee",
+      "nombre": "ION",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "Quantum Motors",
+      "modelo": "ION",
+      "descripcion_corta": "Camión eléctrico ligero para entregas y distribución en ciudad, económico y de cero emisiones.",
+      "especificaciones": {
+        "MOTOR": {
+          "traccion": "Trasera",
+          "tipo_caja": "Automática",
+          "potencia_nominal_kw": 30
+        },
+        "BATERIA": {
+          "tipo": "LFP",
+          "voltaje_v": 180,
+          "tiempo_carga_horas": "6 - 8"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "pendiente_maxima": "15°",
+          "capacidad_carga_kg": 800,
+          "autonomia_maxima_km": 120,
+          "velocidad_maxima_kmh": 70
+        }
+      },
+      "colores": [
+        "Blanco",
+        "Gris"
+      ],
+      "precio_monto": 20000,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/Ion.png",
+      "garantia": "2 años o 60.000 km",
+      "garantia_bateria": "2 años",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "c57cec7f-940f-43eb-a61f-51ee98ff361d",
+      "nombre": "COLIBRÍ",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "Quantum Motors Bolivia",
+      "modelo": "COLIBRÍ",
+      "descripcion_corta": "Trimoto eléctrica boliviana para 3 personas (conductor + 2 pasajeros), ideal para transporte público. Autonomía de hasta 120 km, certificación de producción nacional.",
+      "especificaciones": {
+        "MOTOR": {
+          "traccion": "Posterior",
+          "tipo_caja": "Automática",
+          "voltaje_v": 60,
+          "potencia_w": 1500,
+          "nro_velocidades": "Marcha adelante y marcha reversa"
+        },
+        "BATERIA": {
+          "tipo": "Ion Litio",
+          "voltaje_v": 60,
+          "capacidad_ah": 105,
+          "costo_carga_bs": 5,
+          "vida_util_años": "6 - 8",
+          "durabilidad_ciclos": 2000,
+          "tiempo_carga_horas": "6 - 8"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "costo_carga_bs": 2.1,
+          "pendiente_maxima": "15° (8.5%)",
+          "autonomia_maxima_km": 120,
+          "velocidad_maxima_kmh": 55,
+          "consumo_por_carga_kwh": 2.1
+        },
+        "DATOS GENERALES": {
+          "certificacion": "Certificación de Producción Nacional Bolivia",
+          "nro_pasajeros": 3
+        },
+        "DIMENSIONES Y PESO": {
+          "alto_mm": 1740,
+          "ancho_mm": 1210,
+          "largo_mm": 2730,
+          "peso_neto_kg": 285,
+          "capacidad_carga_kg": 220
+        }
+      },
+      "colores": [
+        "Rojo",
+        "Azul",
+        "Blanco",
+        "Negro"
+      ],
+      "precio_monto": 4500,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/colibri.png",
+      "garantia": "1 año o 10.000 km (lo primero que ocurra)",
+      "garantia_bateria": "2 años",
+      "servicio_tecnico": "Disponible en 14 talleres autorizados",
+      "contacto": "76978804",
+      "ahorro_combustible": "-80%",
+      "ahorro_mantenimiento": "-43%",
+      "ahorro_impuestos": "-50%",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "083aeb81-ec1f-4d9f-b609-dab836ad31cc",
+      "nombre": "ARA",
+      "categoria": "VEHICULO",
+      "subcategoria": "bici",
+      "marca": "Quantum Motors",
+      "modelo": "ARA",
+      "descripcion_corta": "Bicicleta 100% eléctrica con pedaleo asistido, iluminación LED, equipamiento Shimano, marco de aluminio y batería de litio 36V/10Ah.",
+      "especificaciones": {
+        "MOTOR": {
+          "tipo": "Motor de Pedaleo Asistido",
+          "potencia_w": 250
+        },
+        "BATERIA": {
+          "tipo": "Litio",
+          "voltaje_v": 36,
+          "capacidad_ah": 10,
+          "costo_carga_bs": 0.8,
+          "vida_util_años": "6 - 8",
+          "durabilidad_ciclos": 800,
+          "tiempo_carga_horas": "6 - 8"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "encendido": "Eléctrico (Botón)",
+          "puerto_usb": "Sí",
+          "iluminacion": "LED 3W",
+          "velocidades": "Normal sin velocidades",
+          "velocimetro": "LCD Multifunción",
+          "pendiente_maxima": "10° (asistido)",
+          "autonomia_maxima_km": 25,
+          "velocidad_maxima_kmh": 25,
+          "capacidad_carga_maxima_kg": 80
+        },
+        "DATOS GENERALES": {
+          "aros": "N° 26",
+          "marco": "Aleación de Aluminio",
+          "peso_kg": 17.35,
+          "neumaticos": "24.5\" x 1.95 KENDA",
+          "dimensiones": "2500 x 1100 x 1500 mm",
+          "equipamiento": "Shimano",
+          "nro_pasajeros": 1
+        }
+      },
+      "colores": [
+        "Negro",
+        "Blanco"
+      ],
+      "precio_monto": 480,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/ara.png",
+      "garantia": "1 año",
+      "garantia_bateria": "1 año",
+      "servicio_tecnico": "Disponible en 14 talleres autorizados",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [
+        "No dejar la batería descargada por menos del 20%.",
+        "No mojar o salpicar con agua a una distancia de 20 cm del suelo hacia el eje de la llanta."
+      ],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "6eccf805-6aa3-4c1f-99f9-489c6f38ecce",
+      "nombre": "A5",
+      "categoria": "VEHICULO",
+      "subcategoria": "bici",
+      "marca": "Quantum Motors",
+      "modelo": "A5",
+      "descripcion_corta": "Bicicleta eléctrica A5 con pedaleo asistido, 250 W, 25 km de autonomía, velocimetro LCD, equipamiento Shimano y batería litio 36V/10Ah.",
+      "especificaciones": {
+        "MOTOR": {
+          "tipo": "Motor de Pedaleo Asistido",
+          "potencia_w": 250
+        },
+        "BATERIA": {
+          "tipo": "Litio",
+          "voltaje_v": 36,
+          "capacidad_ah": 10,
+          "costo_carga_bs": 0.8,
+          "vida_util_años": "6 - 8",
+          "durabilidad_ciclos": 800,
+          "tiempo_carga_horas": "4 - 6"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "encendido": "Eléctrico (Botón)",
+          "puerto_usb": "Sí",
+          "iluminacion": "100% LED (LED 3W)",
+          "velocidades": "Normal sin velocidades",
+          "velocimetro": "LCD Multifunción",
+          "tipo_pedaleo": "Asistido",
+          "pendiente_maxima": "10° (asistido)",
+          "autonomia_maxima_km": 25,
+          "velocidad_maxima_kmh": 25,
+          "capacidad_carga_maxima_kg": 80
+        },
+        "DATOS GENERALES": {
+          "aros": "N° 26",
+          "marco": "Aleación de Aluminio",
+          "peso_kg": 17.35,
+          "neumaticos": "24.5\" x 1.95 KENDA",
+          "dimensiones": "2500 x 1100 x 1500 mm",
+          "equipamiento": "Shimano",
+          "nro_pasajeros": 1
+        }
+      },
+      "colores": [
+        "Negro",
+        "Blanco"
+      ],
+      "precio_monto": 460,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/a5.png",
+      "garantia": "6 meses o 5.000 km (lo primero que ocurra)",
+      "garantia_bateria": "1 año",
+      "servicio_tecnico": "Disponible en 14 talleres autorizados",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "5ae3781f-65b0-4063-992e-e3b1588019a2",
+      "nombre": "STARTO",
+      "categoria": "VEHICULO",
+      "subcategoria": "moto",
+      "marca": "Yadea / Quantum Motors",
+      "modelo": "STARTO",
+      "descripcion_corta": "Bicimoto eléctrica Yadea Starto con diseño moderno, ideal para movilidad urbana eficiente y económica.",
+      "especificaciones": {
+        "MOTOR": {
+          "tipo": "Motor Eléctrico Asistido",
+          "potencia_w": 350
+        },
+        "BATERIA": {
+          "tipo": "Litio",
+          "voltaje_v": 36,
+          "costo_carga_bs": 1,
+          "tiempo_carga_horas": "4 - 6"
+        },
+        "EMISIONES": {
+          "emisiones": "Cero Emisiones (Motor 100% Eléctrico)"
+        },
+        "COMBUSTIBLE": {
+          "combustible": "Motor Eléctrico"
+        },
+        "PRESTACIONES": {
+          "encendido": "Eléctrico (Botón)",
+          "autonomia_maxima_km": 40,
+          "velocidad_maxima_kmh": 25,
+          "capacidad_carga_maxima_kg": 100
+        },
+        "DATOS GENERALES": {
+          "iluminacion": "LED",
+          "nro_pasajeros": 1
+        }
+      },
+      "colores": [
+        "Blanco",
+        "Negro",
+        "Rojo"
+      ],
+      "precio_monto": 550,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2026/01/Starto-Foto-de-perfil.png",
+      "garantia": "1 año",
+      "garantia_bateria": "1 año",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "27fade2c-eadf-4fdd-a6a3-833533e28f90",
+      "nombre": "ENCHUFE SMART PLUG",
+      "categoria": "ACCESORIO",
+      "subcategoria": "accesorio",
+      "marca": "Quantum Motors",
+      "modelo": "ENCHUFE SMART PLUG",
+      "descripcion_corta": "Enchufe inteligente para monitoreo y control de la carga de vehículos eléctricos Quantum desde tu smartphone.",
+      "especificaciones": {
+        "ESPECIFICACIONES": {
+          "funcion": "Control y monitoreo de carga inteligente",
+          "voltaje": "220V",
+          "conectividad": "Wi-Fi / App",
+          "compatible_con": "Todos los vehículos eléctricos Quantum"
+        }
+      },
+      "colores": [],
+      "precio_monto": 35,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/enchufe-smart-plug.png",
+      "garantia": "6 meses",
+      "garantia_bateria": "",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "2fcc025d-4ce4-4fc0-a3fd-832d5f64c1e8",
+      "nombre": "MOCHILA DELIVERY",
+      "categoria": "ACCESORIO",
+      "subcategoria": "accesorio",
+      "marca": "Quantum Motors",
+      "modelo": "MOCHILA DELIVERY",
+      "descripcion_corta": "Mochila para delivery diseñada para motocicletas eléctricas Quantum, resistente y de gran capacidad.",
+      "especificaciones": {
+        "ESPECIFICACIONES": {
+          "material": "Poliéster resistente al agua",
+          "compatible_con": "Motocicletas Quantum / Super Soco",
+          "capacidad_litros": 30
+        }
+      },
+      "colores": [],
+      "precio_monto": 45,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/Mochila-delivery.png",
+      "garantia": "3 meses",
+      "garantia_bateria": "",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "0b56f05d-dbf8-4ab1-a0d9-a568280bf415",
+      "nombre": "CAJUELA DE MOTOCICLETA (BLANCO)",
+      "categoria": "ACCESORIO",
+      "subcategoria": "moto",
+      "marca": "Quantum Motors",
+      "modelo": "CAJUELA DE MOTOCICLETA (BLANCO)",
+      "descripcion_corta": "Cajuela trasera para motocicleta eléctrica, color blanco. Ideal para transporte de paquetes y objetos de uso diario.",
+      "especificaciones": {
+        "ESPECIFICACIONES": {
+          "color": "Blanco",
+          "material": "ABS resistente",
+          "compatible_con": "Motocicletas Quantum / Super Soco",
+          "capacidad_litros": 28
+        }
+      },
+      "colores": [],
+      "precio_monto": 55,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/cajuela-de-motocicleta-blanco.png",
+      "garantia": "3 meses",
+      "garantia_bateria": "",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "b816889d-4261-440f-97ec-8d076b467c6f",
+      "nombre": "CAJUELA DE MOTOCICLETA (NEGRO)",
+      "categoria": "ACCESORIO",
+      "subcategoria": "moto",
+      "marca": "Quantum Motors",
+      "modelo": "CAJUELA DE MOTOCICLETA (NEGRO)",
+      "descripcion_corta": "Cajuela trasera para motocicleta eléctrica, color negro. Amplia capacidad y diseño robusto.",
+      "especificaciones": {
+        "ESPECIFICACIONES": {
+          "color": "Negro",
+          "material": "ABS resistente",
+          "compatible_con": "Motocicletas Quantum / Super Soco",
+          "capacidad_litros": 28
+        }
+      },
+      "colores": [],
+      "precio_monto": 55,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/cajuela-de-motocicleta.png",
+      "garantia": "3 meses",
+      "garantia_bateria": "",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "921aa1ad-f9a9-49ae-a8ef-e1473f35d1d9",
+      "nombre": "CASCO BLANCO",
+      "categoria": "ACCESORIO",
+      "subcategoria": "accesorio",
+      "marca": "Quantum Motors",
+      "modelo": "CASCO BLANCO",
+      "descripcion_corta": "Casco de seguridad color blanco, certificado, para motocicletas y bicimotos eléctricas.",
+      "especificaciones": {
+        "ESPECIFICACIONES": {
+          "tipo": "Integral / Urbano",
+          "color": "Blanco",
+          "certificacion": "DOT / ECE",
+          "tallas_disponibles": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      },
+      "colores": [],
+      "precio_monto": 30,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/casco-blanco.png",
+      "garantia": "6 meses",
+      "garantia_bateria": "",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "74de71f0-bbe0-4d99-aa51-c6ccbd294115",
+      "nombre": "CASCO URBANO",
+      "categoria": "ACCESORIO",
+      "subcategoria": "accesorio",
+      "marca": "Quantum Motors",
+      "modelo": "CASCO URBANO",
+      "descripcion_corta": "Casco urbano estilo moderno, liviano y cómodo para uso diario en motocicletas y bicicletas eléctricas.",
+      "especificaciones": {
+        "ESPECIFICACIONES": {
+          "tipo": "Urbano Abierto",
+          "colores": [
+            "Negro",
+            "Blanco",
+            "Gris"
+          ],
+          "material": "ABS + EPS",
+          "certificacion": "DOT",
+          "tallas_disponibles": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      },
+      "colores": [],
+      "precio_monto": 28,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/casco-urbano.png",
+      "garantia": "6 meses",
+      "garantia_bateria": "",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "60e67897-81ae-431a-8f3d-6f06db694430",
+      "nombre": "CANDADO TIPO CADENA",
+      "categoria": "ACCESORIO",
+      "subcategoria": "accesorio",
+      "marca": "Quantum Motors",
+      "modelo": "CANDADO TIPO CADENA",
+      "descripcion_corta": "Candado de cadena de alta seguridad para motocicletas y bicicletas eléctricas Quantum.",
+      "especificaciones": {
+        "ESPECIFICACIONES": {
+          "material": "Acero templado",
+          "grosor_mm": 12,
+          "longitud_cm": 100,
+          "tipo_cierre": "Combinación / Llave"
+        }
+      },
+      "colores": [],
+      "precio_monto": 20,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/Candado-tipo-cadena.png",
+      "garantia": "3 meses",
+      "garantia_bateria": "",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    },
+    {
+      "id": "b57b9e7d-3c3c-40e3-9a64-ba73dc0a4b8b",
+      "nombre": "CASCO CON VISERA (ROSADO)",
+      "categoria": "ACCESORIO",
+      "subcategoria": "accesorio",
+      "marca": "Quantum Motors",
+      "modelo": "CASCO CON VISERA (ROSADO)",
+      "descripcion_corta": "Casco con visera protectora, color rosado. Diseño sport para motociclistas.",
+      "especificaciones": {
+        "ESPECIFICACIONES": {
+          "tipo": "Abierto con Visera",
+          "color": "Rosado",
+          "material": "ABS + EPS",
+          "certificacion": "DOT / ECE",
+          "tallas_disponibles": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      },
+      "colores": [],
+      "precio_monto": 38,
+      "precio_moneda": "USD",
+      "foto_url": "https://tuquantum.com/wp-content/uploads/2025/12/Casco-visera-rosado.png",
+      "garantia": "6 meses",
+      "garantia_bateria": "",
+      "servicio_tecnico": "",
+      "contacto": "76978804",
+      "ahorro_combustible": "",
+      "ahorro_mantenimiento": "",
+      "ahorro_impuestos": "",
+      "emisiones_co2": "",
+      "recomendaciones_bateria": [],
+      "created_at": "2026-05-17T10:19:37.702884+00:00",
+      "updated_at": "2026-05-17T10:19:37.702884+00:00"
+    }
+  ],
+  "sucursales": [
+    {
+      "id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "ciudad": "Cochabamba",
+      "region": "CBB",
+      "direccion": "Av. Juan de la Rosa # 1108 esq. Gabriel Rene Moreno",
+      "horario": "Lun - Sáb: 09:00 - 19:00",
+      "telefono": "76964711-77926888",
+      "maps_url": "",
+      "created_at": "2026-05-17T10:19:37.478798+00:00"
+    },
+    {
+      "id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "ciudad": "La Paz",
+      "region": "LPZ",
+      "direccion": "Calle 17 de Obrajes, esq. 14 de Septiembre (Planta Baja Surtidor CARSUR)",
+      "horario": "Lun - Sáb: 09:00 - 19:00",
+      "telefono": "76579330",
+      "maps_url": "",
+      "created_at": "2026-05-17T10:19:37.478798+00:00"
+    },
+    {
+      "id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "ciudad": "El Alto",
+      "region": "EAL",
+      "direccion": "Teleférico Morado Estación Faro Murillo, Piso 1",
+      "horario": "Lun - Sáb: 09:00 - 19:00",
+      "telefono": "77243907",
+      "maps_url": "",
+      "created_at": "2026-05-17T10:19:37.478798+00:00"
+    },
+    {
+      "id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "ciudad": "Oruro",
+      "region": "ORU",
+      "direccion": "Calle 6 de Octubre entre Aldana y San Felipe #6520",
+      "horario": "Lun - Sáb: 09:00 - 19:00",
+      "telefono": "77155000-76131792",
+      "maps_url": "",
+      "created_at": "2026-05-17T10:19:37.478798+00:00"
+    },
+    {
+      "id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "ciudad": "Santa Cruz",
+      "region": "SCZ",
+      "direccion": "4to anillo, Av. Nueva Jerusalén (Entre radial 26 y 27) E.S. Full Energy",
+      "horario": "Lun - Sáb: 09:00 - 19:00",
+      "telefono": "76005521-76423349",
+      "maps_url": "",
+      "created_at": "2026-05-17T10:19:37.478798+00:00"
+    },
+    {
+      "id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "ciudad": "Yacuiba",
+      "region": "YAC",
+      "direccion": "Calle Yatebute entre Avaroa II y Av. Libertadores",
+      "horario": "Lun - Sáb: 09:00 - 19:00",
+      "telefono": "75176956",
+      "maps_url": "",
+      "created_at": "2026-05-17T10:19:37.478798+00:00"
+    }
+  ],
+  "stock": [
+    {
+      "id": "3fd25110-b834-4438-8b18-9a9de13817ff",
+      "product_id": "c4391267-7019-4594-b597-2f211a512b1a",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER PRO"
+      }
+    },
+    {
+      "id": "56158553-aa46-4071-9911-040631aa2451",
+      "product_id": "c4391267-7019-4594-b597-2f211a512b1a",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER PRO"
+      }
+    },
+    {
+      "id": "05ac1b2e-416c-4e50-ae25-57b975f09d40",
+      "product_id": "c4391267-7019-4594-b597-2f211a512b1a",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER PRO"
+      }
+    },
+    {
+      "id": "5305ab96-2e55-4bdd-931c-f1eee712c8c4",
+      "product_id": "c4391267-7019-4594-b597-2f211a512b1a",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER PRO"
+      }
+    },
+    {
+      "id": "75f55478-20bc-4a5d-8b23-567a5d74498e",
+      "product_id": "c4391267-7019-4594-b597-2f211a512b1a",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER PRO"
+      }
+    },
+    {
+      "id": "1088fc8d-9ad4-4811-846f-28451a2a09b8",
+      "product_id": "c4391267-7019-4594-b597-2f211a512b1a",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER PRO"
+      }
+    },
+    {
+      "id": "c33f242b-3e46-4120-a3e7-2ddec3966547",
+      "product_id": "7942cee3-0084-47df-9b01-329a7dd93129",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER"
+      }
+    },
+    {
+      "id": "92ca0811-3f86-4ec7-ac6d-83133503c188",
+      "product_id": "7942cee3-0084-47df-9b01-329a7dd93129",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER"
+      }
+    },
+    {
+      "id": "ebc1c49d-0b35-45ba-a895-2f210f98aa32",
+      "product_id": "7942cee3-0084-47df-9b01-329a7dd93129",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER"
+      }
+    },
+    {
+      "id": "f29fc38c-c1e6-457b-b906-1df24543d656",
+      "product_id": "7942cee3-0084-47df-9b01-329a7dd93129",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER"
+      }
+    },
+    {
+      "id": "4d7e2692-499c-46db-978c-ee41ecf3572f",
+      "product_id": "7942cee3-0084-47df-9b01-329a7dd93129",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER"
+      }
+    },
+    {
+      "id": "32675d50-7536-453c-9e81-1d313af70cb8",
+      "product_id": "7942cee3-0084-47df-9b01-329a7dd93129",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "TS STREET HUNTER"
+      }
+    },
+    {
+      "id": "8dc97caf-48f3-4af2-b6c5-7c60bf9081f1",
+      "product_id": "b3481e99-1b1c-4d8d-bc83-28eae487dd09",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "TC WANDERER PRO"
+      }
+    },
+    {
+      "id": "0667fc7b-a6f7-45da-9d3f-770938658e8a",
+      "product_id": "b3481e99-1b1c-4d8d-bc83-28eae487dd09",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "TC WANDERER PRO"
+      }
+    },
+    {
+      "id": "3b155ee5-1c99-424f-b638-a8e60c05df3b",
+      "product_id": "b3481e99-1b1c-4d8d-bc83-28eae487dd09",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "TC WANDERER PRO"
+      }
+    },
+    {
+      "id": "641a4ac2-a1b8-40c3-b25a-bf097416bfc1",
+      "product_id": "b3481e99-1b1c-4d8d-bc83-28eae487dd09",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "TC WANDERER PRO"
+      }
+    },
+    {
+      "id": "9e742581-f287-4450-9400-979d65a83415",
+      "product_id": "b3481e99-1b1c-4d8d-bc83-28eae487dd09",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "TC WANDERER PRO"
+      }
+    },
+    {
+      "id": "546247ee-434a-47a8-9a6f-d53d8e8ae106",
+      "product_id": "b3481e99-1b1c-4d8d-bc83-28eae487dd09",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "TC WANDERER PRO"
+      }
+    },
+    {
+      "id": "eda807d3-9f05-4b7b-a714-a1cfbe2a3f6b",
+      "product_id": "d5846a19-abf8-4e18-8a20-9645a88ac4bc",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "TC"
+      }
+    },
+    {
+      "id": "1edd339e-6220-4b63-ab24-a969ba4a9cc5",
+      "product_id": "d5846a19-abf8-4e18-8a20-9645a88ac4bc",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "TC"
+      }
+    },
+    {
+      "id": "fc272d72-395b-4a06-8f87-136b2cdb91cf",
+      "product_id": "d5846a19-abf8-4e18-8a20-9645a88ac4bc",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "TC"
+      }
+    },
+    {
+      "id": "79fa76c1-3686-467f-a3ac-ae107c82d394",
+      "product_id": "d5846a19-abf8-4e18-8a20-9645a88ac4bc",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "TC"
+      }
+    },
+    {
+      "id": "a6e3a3c7-1ab8-49a6-b113-865c6e15546a",
+      "product_id": "d5846a19-abf8-4e18-8a20-9645a88ac4bc",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "TC"
+      }
+    },
+    {
+      "id": "bbec1d2c-dc61-4a50-b71e-139f6f7ae4e0",
+      "product_id": "d5846a19-abf8-4e18-8a20-9645a88ac4bc",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "TC"
+      }
+    },
+    {
+      "id": "f621f8f7-9c50-4efe-a132-13c991b4c2b4",
+      "product_id": "520b21de-ed13-4c09-bc90-c79e90d2c45b",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "FLASHRIDE"
+      }
+    },
+    {
+      "id": "8c5ec5c4-0919-4f95-bb60-a54f827ec384",
+      "product_id": "520b21de-ed13-4c09-bc90-c79e90d2c45b",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "FLASHRIDE"
+      }
+    },
+    {
+      "id": "47898367-c6c8-400e-8dda-ed57fc34d345",
+      "product_id": "520b21de-ed13-4c09-bc90-c79e90d2c45b",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "FLASHRIDE"
+      }
+    },
+    {
+      "id": "e1fb72b7-0538-4c93-8e5e-45851289856f",
+      "product_id": "520b21de-ed13-4c09-bc90-c79e90d2c45b",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "FLASHRIDE"
+      }
+    },
+    {
+      "id": "5517168a-1b67-4089-a7bb-953e1973715f",
+      "product_id": "520b21de-ed13-4c09-bc90-c79e90d2c45b",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "FLASHRIDE"
+      }
+    },
+    {
+      "id": "bb6eb309-2bf6-403d-ab12-f062b17639f4",
+      "product_id": "520b21de-ed13-4c09-bc90-c79e90d2c45b",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "FLASHRIDE"
+      }
+    },
+    {
+      "id": "1369bee9-c1dd-40d4-ae3b-e3a8bf80ec02",
+      "product_id": "e80d5609-6506-4711-80e7-ec28ea357369",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "LUNA PRO"
+      }
+    },
+    {
+      "id": "31fe62c9-ce4e-4f35-bd40-d2b45bbcdb01",
+      "product_id": "e80d5609-6506-4711-80e7-ec28ea357369",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "LUNA PRO"
+      }
+    },
+    {
+      "id": "33a0f654-24df-4b1f-a58a-97328fead76e",
+      "product_id": "e80d5609-6506-4711-80e7-ec28ea357369",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "LUNA PRO"
+      }
+    },
+    {
+      "id": "ab88559d-46e6-4ae6-ae58-3821bf2882b4",
+      "product_id": "e80d5609-6506-4711-80e7-ec28ea357369",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "LUNA PRO"
+      }
+    },
+    {
+      "id": "cc633ed8-1cbf-4c02-b441-4a8edac94281",
+      "product_id": "e80d5609-6506-4711-80e7-ec28ea357369",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "LUNA PRO"
+      }
+    },
+    {
+      "id": "49a2d092-fc3a-48c1-8048-f451bdc82306",
+      "product_id": "e80d5609-6506-4711-80e7-ec28ea357369",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "LUNA PRO"
+      }
+    },
+    {
+      "id": "ccef7646-5bb6-42e2-941d-0e38a212f76e",
+      "product_id": "61660420-3425-4428-a10d-ef80d079d87c",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "TROOPER"
+      }
+    },
+    {
+      "id": "7348e6ef-e52c-4d8d-a888-a7ed578b66e9",
+      "product_id": "61660420-3425-4428-a10d-ef80d079d87c",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "TROOPER"
+      }
+    },
+    {
+      "id": "2da75fb5-c087-4423-bb06-a0a55ab31681",
+      "product_id": "61660420-3425-4428-a10d-ef80d079d87c",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "TROOPER"
+      }
+    },
+    {
+      "id": "3cd52a1c-afc6-4895-824e-b1354cc25baa",
+      "product_id": "61660420-3425-4428-a10d-ef80d079d87c",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "TROOPER"
+      }
+    },
+    {
+      "id": "00d4f0a6-dbfa-43d9-a744-a21caf8ad172",
+      "product_id": "61660420-3425-4428-a10d-ef80d079d87c",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "TROOPER"
+      }
+    },
+    {
+      "id": "2efe838d-b0e4-453f-9c28-d6050af7a65d",
+      "product_id": "61660420-3425-4428-a10d-ef80d079d87c",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "TROOPER"
+      }
+    },
+    {
+      "id": "683eada5-6ea8-4212-bbae-c520c719ea6b",
+      "product_id": "a3f81855-0cc8-4fc0-ae4b-b2d13d1ce174",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "URBAN"
+      }
+    },
+    {
+      "id": "e35c71e8-fe04-4cb8-a812-3e92843a7958",
+      "product_id": "a3f81855-0cc8-4fc0-ae4b-b2d13d1ce174",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "URBAN"
+      }
+    },
+    {
+      "id": "8abbdd97-f48d-4c6a-97c8-f9768b267db4",
+      "product_id": "a3f81855-0cc8-4fc0-ae4b-b2d13d1ce174",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "URBAN"
+      }
+    },
+    {
+      "id": "70ea97c5-2b00-427a-bdab-ee57bc72a5d6",
+      "product_id": "a3f81855-0cc8-4fc0-ae4b-b2d13d1ce174",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "URBAN"
+      }
+    },
+    {
+      "id": "1390afeb-babd-472b-aa71-4236d38321e0",
+      "product_id": "a3f81855-0cc8-4fc0-ae4b-b2d13d1ce174",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "URBAN"
+      }
+    },
+    {
+      "id": "aa27023a-ab4a-47c5-b1fd-0a1dc55b689d",
+      "product_id": "a3f81855-0cc8-4fc0-ae4b-b2d13d1ce174",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "URBAN"
+      }
+    },
+    {
+      "id": "d723fed8-22a7-4c44-acdd-d71c66dbc566",
+      "product_id": "d0ee561c-9b63-4481-acf9-ea067ac482df",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "NEXUS PLUS"
+      }
+    },
+    {
+      "id": "f303f963-c553-4cf8-85af-4d0e7e0a0266",
+      "product_id": "d0ee561c-9b63-4481-acf9-ea067ac482df",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "NEXUS PLUS"
+      }
+    },
+    {
+      "id": "eae13b0c-b845-482a-b20c-c355522373b2",
+      "product_id": "d0ee561c-9b63-4481-acf9-ea067ac482df",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "NEXUS PLUS"
+      }
+    },
+    {
+      "id": "968c09c1-dffb-45ec-94c1-46f7211e4def",
+      "product_id": "d0ee561c-9b63-4481-acf9-ea067ac482df",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "NEXUS PLUS"
+      }
+    },
+    {
+      "id": "cfc2b387-92a1-442d-83f2-d704d9c5615d",
+      "product_id": "d0ee561c-9b63-4481-acf9-ea067ac482df",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "NEXUS PLUS"
+      }
+    },
+    {
+      "id": "9653a8b5-c81c-406b-b1f1-2d191e368546",
+      "product_id": "d0ee561c-9b63-4481-acf9-ea067ac482df",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "NEXUS PLUS"
+      }
+    },
+    {
+      "id": "1d30d949-7919-4e9f-9579-d0f20469e808",
+      "product_id": "83eed9e0-0ee7-4cd1-9951-0fde01396731",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "NEXUS"
+      }
+    },
+    {
+      "id": "5dbdbe64-9f03-4e0d-9ffb-86344243a7c1",
+      "product_id": "83eed9e0-0ee7-4cd1-9951-0fde01396731",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "NEXUS"
+      }
+    },
+    {
+      "id": "8e08e737-763b-4379-8693-ea52c0fd5e6f",
+      "product_id": "83eed9e0-0ee7-4cd1-9951-0fde01396731",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "NEXUS"
+      }
+    },
+    {
+      "id": "4d843c26-6cef-4e63-89ef-8edd14e68bf0",
+      "product_id": "83eed9e0-0ee7-4cd1-9951-0fde01396731",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "NEXUS"
+      }
+    },
+    {
+      "id": "ff55b881-097f-4fbf-8a99-657fd95b276a",
+      "product_id": "83eed9e0-0ee7-4cd1-9951-0fde01396731",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "NEXUS"
+      }
+    },
+    {
+      "id": "ecddd9d6-1cc9-42aa-9566-5583a346b5f0",
+      "product_id": "83eed9e0-0ee7-4cd1-9951-0fde01396731",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "NEXUS"
+      }
+    },
+    {
+      "id": "0aeb5398-5436-4424-82fd-32a60d943cf7",
+      "product_id": "bbcdf4fc-07dc-4856-a54c-47f6278cf50e",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "E4 CORONA DE MONTAÑA"
+      }
+    },
+    {
+      "id": "73b7b829-75fb-4ca8-830c-3dc509c7226d",
+      "product_id": "bbcdf4fc-07dc-4856-a54c-47f6278cf50e",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "E4 CORONA DE MONTAÑA"
+      }
+    },
+    {
+      "id": "1210c508-7ba7-44da-92a4-8c53b96f15a5",
+      "product_id": "bbcdf4fc-07dc-4856-a54c-47f6278cf50e",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "E4 CORONA DE MONTAÑA"
+      }
+    },
+    {
+      "id": "208b1ff3-02aa-484e-b952-d81ac831337e",
+      "product_id": "bbcdf4fc-07dc-4856-a54c-47f6278cf50e",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "E4 CORONA DE MONTAÑA"
+      }
+    },
+    {
+      "id": "9f4ae7cd-10fd-4282-a40b-29da58a77644",
+      "product_id": "bbcdf4fc-07dc-4856-a54c-47f6278cf50e",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "E4 CORONA DE MONTAÑA"
+      }
+    },
+    {
+      "id": "29d1e4c5-c4ca-4f0b-87c7-78b658ca7a0f",
+      "product_id": "bbcdf4fc-07dc-4856-a54c-47f6278cf50e",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "E4 CORONA DE MONTAÑA"
+      }
+    },
+    {
+      "id": "d5362921-cfcb-4c7e-8f23-1c06ae130259",
+      "product_id": "8a90054d-19d5-4e1c-a477-6c879b17f872",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "E-QUTE (KAIYI EQUTE)"
+      }
+    },
+    {
+      "id": "b4997502-a490-4e60-b4df-755586d14c82",
+      "product_id": "8a90054d-19d5-4e1c-a477-6c879b17f872",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "E-QUTE (KAIYI EQUTE)"
+      }
+    },
+    {
+      "id": "839cf2ad-5320-4e4d-b7a1-c60fe8fd130d",
+      "product_id": "8a90054d-19d5-4e1c-a477-6c879b17f872",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "E-QUTE (KAIYI EQUTE)"
+      }
+    },
+    {
+      "id": "0e769b93-ccce-437a-b8bf-ce8f44d5a1a7",
+      "product_id": "8a90054d-19d5-4e1c-a477-6c879b17f872",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "E-QUTE (KAIYI EQUTE)"
+      }
+    },
+    {
+      "id": "f7dee2ae-b3ae-4fa5-9d3b-ed896da62ab8",
+      "product_id": "8a90054d-19d5-4e1c-a477-6c879b17f872",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "E-QUTE (KAIYI EQUTE)"
+      }
+    },
+    {
+      "id": "5059dcf0-74ec-4627-be28-857db559e0db",
+      "product_id": "8a90054d-19d5-4e1c-a477-6c879b17f872",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "E-QUTE (KAIYI EQUTE)"
+      }
+    },
+    {
+      "id": "81269ea2-7c65-439d-94ea-8c80a6e79498",
+      "product_id": "5a58ebf7-8719-4a10-9a4b-41532fd2209c",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "ION PRO"
+      }
+    },
+    {
+      "id": "5e3147b9-823a-4000-8b83-64c7e7daf0d2",
+      "product_id": "5a58ebf7-8719-4a10-9a4b-41532fd2209c",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "ION PRO"
+      }
+    },
+    {
+      "id": "9f5e2443-e282-455b-9dc6-5d3cebc7a90b",
+      "product_id": "5a58ebf7-8719-4a10-9a4b-41532fd2209c",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "ION PRO"
+      }
+    },
+    {
+      "id": "b7ab0798-ab46-4a6c-8803-e381dd329dde",
+      "product_id": "5a58ebf7-8719-4a10-9a4b-41532fd2209c",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "ION PRO"
+      }
+    },
+    {
+      "id": "a1b93c2f-9942-40de-99d3-0a36fde5ae5d",
+      "product_id": "5a58ebf7-8719-4a10-9a4b-41532fd2209c",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "ION PRO"
+      }
+    },
+    {
+      "id": "cdbd54c6-0780-4121-b674-f8b8a84f910f",
+      "product_id": "5a58ebf7-8719-4a10-9a4b-41532fd2209c",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "ION PRO"
+      }
+    },
+    {
+      "id": "740bcf13-0075-4495-82c8-ed891e8e7432",
+      "product_id": "6258f602-d000-4d31-a6c1-5609a9f799a8",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "ION PLUS"
+      }
+    },
+    {
+      "id": "00f8e1c6-bfe2-403b-9b17-3e63838c1ff8",
+      "product_id": "6258f602-d000-4d31-a6c1-5609a9f799a8",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "ION PLUS"
+      }
+    },
+    {
+      "id": "d0859e98-7781-4c89-8ac8-147c5edc10a7",
+      "product_id": "6258f602-d000-4d31-a6c1-5609a9f799a8",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "ION PLUS"
+      }
+    },
+    {
+      "id": "1d8e2bec-cfc4-409b-9238-de89cfe435dc",
+      "product_id": "6258f602-d000-4d31-a6c1-5609a9f799a8",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "ION PLUS"
+      }
+    },
+    {
+      "id": "3e7e35d2-4341-4109-aaa4-846f79286f78",
+      "product_id": "6258f602-d000-4d31-a6c1-5609a9f799a8",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "ION PLUS"
+      }
+    },
+    {
+      "id": "bc1cbccc-8bfa-49a5-9b73-33860f91a5ac",
+      "product_id": "6258f602-d000-4d31-a6c1-5609a9f799a8",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "ION PLUS"
+      }
+    },
+    {
+      "id": "a7aaed65-97ca-4a06-bb50-eca278bc6140",
+      "product_id": "d525ee20-d46f-41d2-9c87-40e6634097ee",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "ION"
+      }
+    },
+    {
+      "id": "49e46d53-2875-4524-b9af-498f59986ba4",
+      "product_id": "d525ee20-d46f-41d2-9c87-40e6634097ee",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "ION"
+      }
+    },
+    {
+      "id": "34be793e-fe05-4231-940d-7a1a7be0cd8c",
+      "product_id": "d525ee20-d46f-41d2-9c87-40e6634097ee",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "ION"
+      }
+    },
+    {
+      "id": "de1a1616-19fd-41e5-bc82-183b2177bd0f",
+      "product_id": "d525ee20-d46f-41d2-9c87-40e6634097ee",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "ION"
+      }
+    },
+    {
+      "id": "47722d1b-afba-4400-96f1-353e2e42eec5",
+      "product_id": "d525ee20-d46f-41d2-9c87-40e6634097ee",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "ION"
+      }
+    },
+    {
+      "id": "3e3060ad-dadc-431e-af99-e134fa35d731",
+      "product_id": "d525ee20-d46f-41d2-9c87-40e6634097ee",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "ION"
+      }
+    },
+    {
+      "id": "61a91ed3-b3ef-49d4-81fb-77d0dd89ff59",
+      "product_id": "c57cec7f-940f-43eb-a61f-51ee98ff361d",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "COLIBRÍ"
+      }
+    },
+    {
+      "id": "6e45652a-dcc9-439a-98ae-476d90eb57ad",
+      "product_id": "c57cec7f-940f-43eb-a61f-51ee98ff361d",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "COLIBRÍ"
+      }
+    },
+    {
+      "id": "7d67ec86-1599-4d05-aba2-092baaed7d68",
+      "product_id": "c57cec7f-940f-43eb-a61f-51ee98ff361d",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "COLIBRÍ"
+      }
+    },
+    {
+      "id": "96f04330-4e21-4785-9980-dcf808f1ea9f",
+      "product_id": "c57cec7f-940f-43eb-a61f-51ee98ff361d",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "COLIBRÍ"
+      }
+    },
+    {
+      "id": "fb19a906-9253-4faa-9b43-ba148f915535",
+      "product_id": "c57cec7f-940f-43eb-a61f-51ee98ff361d",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "COLIBRÍ"
+      }
+    },
+    {
+      "id": "8a93c94b-ce11-4fe2-be8e-cc71cbcc0fd1",
+      "product_id": "c57cec7f-940f-43eb-a61f-51ee98ff361d",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "COLIBRÍ"
+      }
+    },
+    {
+      "id": "85974afb-54ee-4109-8db4-0ef49da1e444",
+      "product_id": "083aeb81-ec1f-4d9f-b609-dab836ad31cc",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "ARA"
+      }
+    },
+    {
+      "id": "dd52e625-5770-418c-9d88-4f912c81622a",
+      "product_id": "083aeb81-ec1f-4d9f-b609-dab836ad31cc",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "ARA"
+      }
+    },
+    {
+      "id": "cc310f65-b29b-4cb2-ab9b-766cf9d39a68",
+      "product_id": "083aeb81-ec1f-4d9f-b609-dab836ad31cc",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "ARA"
+      }
+    },
+    {
+      "id": "5ffa43d3-0297-43f6-8375-3965928472f8",
+      "product_id": "083aeb81-ec1f-4d9f-b609-dab836ad31cc",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "ARA"
+      }
+    },
+    {
+      "id": "a423c3ab-9e71-4294-bd73-db57e0c71cc9",
+      "product_id": "083aeb81-ec1f-4d9f-b609-dab836ad31cc",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "ARA"
+      }
+    },
+    {
+      "id": "5263c401-eba6-467a-8a1b-b89eb7e734e7",
+      "product_id": "083aeb81-ec1f-4d9f-b609-dab836ad31cc",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "ARA"
+      }
+    },
+    {
+      "id": "315eee1d-81b3-478c-9f49-f0457a56ea5f",
+      "product_id": "6eccf805-6aa3-4c1f-99f9-489c6f38ecce",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "A5"
+      }
+    },
+    {
+      "id": "695ba1d1-4c97-4202-9737-0b5ee7e7ee39",
+      "product_id": "6eccf805-6aa3-4c1f-99f9-489c6f38ecce",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "A5"
+      }
+    },
+    {
+      "id": "037c864f-ea5a-4678-8821-879a45f7a113",
+      "product_id": "6eccf805-6aa3-4c1f-99f9-489c6f38ecce",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "A5"
+      }
+    },
+    {
+      "id": "fcf1896f-1561-4c3d-a295-0f3de26283b7",
+      "product_id": "6eccf805-6aa3-4c1f-99f9-489c6f38ecce",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "A5"
+      }
+    },
+    {
+      "id": "070db1da-6393-405e-84ac-353967730b2d",
+      "product_id": "6eccf805-6aa3-4c1f-99f9-489c6f38ecce",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "A5"
+      }
+    },
+    {
+      "id": "b0347df4-465f-4f49-8d6a-fbd86b716522",
+      "product_id": "6eccf805-6aa3-4c1f-99f9-489c6f38ecce",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "A5"
+      }
+    },
+    {
+      "id": "9bd424c2-c6ff-4720-a4d6-b7a88833b254",
+      "product_id": "5ae3781f-65b0-4063-992e-e3b1588019a2",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "STARTO"
+      }
+    },
+    {
+      "id": "35b722ea-2efc-4c4c-932c-ae16ce36d2b4",
+      "product_id": "5ae3781f-65b0-4063-992e-e3b1588019a2",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "STARTO"
+      }
+    },
+    {
+      "id": "d464bbec-3b4e-49ca-ab04-511f1f70d43c",
+      "product_id": "5ae3781f-65b0-4063-992e-e3b1588019a2",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "STARTO"
+      }
+    },
+    {
+      "id": "ef717a32-b768-4f8c-a4f4-421042505244",
+      "product_id": "5ae3781f-65b0-4063-992e-e3b1588019a2",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "STARTO"
+      }
+    },
+    {
+      "id": "7506b212-2848-4899-9ff0-8cc368fb3c3e",
+      "product_id": "5ae3781f-65b0-4063-992e-e3b1588019a2",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "STARTO"
+      }
+    },
+    {
+      "id": "82b69912-338a-45e3-a3f8-21c8e72cc66f",
+      "product_id": "5ae3781f-65b0-4063-992e-e3b1588019a2",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "STARTO"
+      }
+    },
+    {
+      "id": "95655fc6-4ead-4d08-98ad-8e37453d55f1",
+      "product_id": "27fade2c-eadf-4fdd-a6a3-833533e28f90",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "ENCHUFE SMART PLUG"
+      }
+    },
+    {
+      "id": "e6d02afb-47f4-4ebb-847a-7d9c35a62db7",
+      "product_id": "27fade2c-eadf-4fdd-a6a3-833533e28f90",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "ENCHUFE SMART PLUG"
+      }
+    },
+    {
+      "id": "3ace468d-7e12-4d7b-8796-957c997d2bec",
+      "product_id": "27fade2c-eadf-4fdd-a6a3-833533e28f90",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "ENCHUFE SMART PLUG"
+      }
+    },
+    {
+      "id": "393a7a43-9406-439b-8d49-edee87d30095",
+      "product_id": "27fade2c-eadf-4fdd-a6a3-833533e28f90",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "ENCHUFE SMART PLUG"
+      }
+    },
+    {
+      "id": "745b451a-a1fe-495d-acb4-b4987846e322",
+      "product_id": "27fade2c-eadf-4fdd-a6a3-833533e28f90",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "ENCHUFE SMART PLUG"
+      }
+    },
+    {
+      "id": "effec65d-c11d-4bce-9e12-fa3247c09f1c",
+      "product_id": "27fade2c-eadf-4fdd-a6a3-833533e28f90",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "ENCHUFE SMART PLUG"
+      }
+    },
+    {
+      "id": "f9208b11-a848-4e5f-83e3-2a3d4008e793",
+      "product_id": "2fcc025d-4ce4-4fc0-a3fd-832d5f64c1e8",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "MOCHILA DELIVERY"
+      }
+    },
+    {
+      "id": "072b4319-1799-4fb9-b850-6572515f9d9c",
+      "product_id": "2fcc025d-4ce4-4fc0-a3fd-832d5f64c1e8",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "MOCHILA DELIVERY"
+      }
+    },
+    {
+      "id": "ea2fb74e-00cd-4661-8fa0-4d9fb4a204ea",
+      "product_id": "2fcc025d-4ce4-4fc0-a3fd-832d5f64c1e8",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "MOCHILA DELIVERY"
+      }
+    },
+    {
+      "id": "8cc8ca96-8722-47e6-876b-dbbf8d26d25d",
+      "product_id": "2fcc025d-4ce4-4fc0-a3fd-832d5f64c1e8",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "MOCHILA DELIVERY"
+      }
+    },
+    {
+      "id": "26eb767a-ec5b-4397-9277-0a6fa365d134",
+      "product_id": "2fcc025d-4ce4-4fc0-a3fd-832d5f64c1e8",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "MOCHILA DELIVERY"
+      }
+    },
+    {
+      "id": "710010a6-150e-48d6-81a8-f12ee1781911",
+      "product_id": "2fcc025d-4ce4-4fc0-a3fd-832d5f64c1e8",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "MOCHILA DELIVERY"
+      }
+    },
+    {
+      "id": "9a9d9fae-3d76-4832-8e9a-4de00117e88a",
+      "product_id": "0b56f05d-dbf8-4ab1-a0d9-a568280bf415",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (BLANCO)"
+      }
+    },
+    {
+      "id": "424c2e2c-e78a-4bfd-9a41-b4c667555205",
+      "product_id": "0b56f05d-dbf8-4ab1-a0d9-a568280bf415",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (BLANCO)"
+      }
+    },
+    {
+      "id": "c9806335-4ac5-4e3f-825b-1a3ea9132bb1",
+      "product_id": "0b56f05d-dbf8-4ab1-a0d9-a568280bf415",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (BLANCO)"
+      }
+    },
+    {
+      "id": "9e68103c-2e01-48b3-bc6b-eb6a4e88b1c9",
+      "product_id": "0b56f05d-dbf8-4ab1-a0d9-a568280bf415",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (BLANCO)"
+      }
+    },
+    {
+      "id": "f937e790-ac50-4617-ad3c-73b94a0bf8b9",
+      "product_id": "0b56f05d-dbf8-4ab1-a0d9-a568280bf415",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (BLANCO)"
+      }
+    },
+    {
+      "id": "0b10bbf8-7f62-4290-8f6a-fca4640d9068",
+      "product_id": "0b56f05d-dbf8-4ab1-a0d9-a568280bf415",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (BLANCO)"
+      }
+    },
+    {
+      "id": "07f357a6-22c7-419e-b7e6-937d19f777c5",
+      "product_id": "b816889d-4261-440f-97ec-8d076b467c6f",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (NEGRO)"
+      }
+    },
+    {
+      "id": "3a6029d4-ec8b-4ef6-9e63-7dc03f0366e5",
+      "product_id": "b816889d-4261-440f-97ec-8d076b467c6f",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (NEGRO)"
+      }
+    },
+    {
+      "id": "7a07debd-6f61-43cb-b220-48e25edf5a89",
+      "product_id": "b816889d-4261-440f-97ec-8d076b467c6f",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (NEGRO)"
+      }
+    },
+    {
+      "id": "8d162bf3-3173-4bf4-94c9-1a336e6ee202",
+      "product_id": "b816889d-4261-440f-97ec-8d076b467c6f",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (NEGRO)"
+      }
+    },
+    {
+      "id": "74493de3-8e52-40ff-8751-daff39d9a58e",
+      "product_id": "b816889d-4261-440f-97ec-8d076b467c6f",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (NEGRO)"
+      }
+    },
+    {
+      "id": "6fece376-ded7-4584-ac8c-6f50cc72457b",
+      "product_id": "b816889d-4261-440f-97ec-8d076b467c6f",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "CAJUELA DE MOTOCICLETA (NEGRO)"
+      }
+    },
+    {
+      "id": "ec04a3b5-13f0-4e87-b787-40bb88d11d38",
+      "product_id": "921aa1ad-f9a9-49ae-a8ef-e1473f35d1d9",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "CASCO BLANCO"
+      }
+    },
+    {
+      "id": "bbcf9f99-1e18-40f2-9032-d27dc6be5eca",
+      "product_id": "921aa1ad-f9a9-49ae-a8ef-e1473f35d1d9",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "CASCO BLANCO"
+      }
+    },
+    {
+      "id": "d25d86e0-5cf3-4820-ac4d-bcc294405dcc",
+      "product_id": "921aa1ad-f9a9-49ae-a8ef-e1473f35d1d9",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "CASCO BLANCO"
+      }
+    },
+    {
+      "id": "9890a137-57d7-4a44-bcd3-8d8c12f5cb26",
+      "product_id": "921aa1ad-f9a9-49ae-a8ef-e1473f35d1d9",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "CASCO BLANCO"
+      }
+    },
+    {
+      "id": "f0d7b811-bb37-4b60-805b-265fd3b89a6e",
+      "product_id": "921aa1ad-f9a9-49ae-a8ef-e1473f35d1d9",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "CASCO BLANCO"
+      }
+    },
+    {
+      "id": "66a0ff95-d1ec-4d4f-9de1-98476861e990",
+      "product_id": "921aa1ad-f9a9-49ae-a8ef-e1473f35d1d9",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "CASCO BLANCO"
+      }
+    },
+    {
+      "id": "f59c283b-2c63-46bc-840e-b33f9e829097",
+      "product_id": "74de71f0-bbe0-4d99-aa51-c6ccbd294115",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "CASCO URBANO"
+      }
+    },
+    {
+      "id": "8ed68217-c951-40ce-ad0b-97b42c105b1b",
+      "product_id": "74de71f0-bbe0-4d99-aa51-c6ccbd294115",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "CASCO URBANO"
+      }
+    },
+    {
+      "id": "654c230e-bc94-4164-8d3d-915613c6d741",
+      "product_id": "74de71f0-bbe0-4d99-aa51-c6ccbd294115",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "CASCO URBANO"
+      }
+    },
+    {
+      "id": "e00a8953-d42e-4c66-bcf6-500c8bca907e",
+      "product_id": "74de71f0-bbe0-4d99-aa51-c6ccbd294115",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "CASCO URBANO"
+      }
+    },
+    {
+      "id": "8c90c9b2-03c8-433b-a540-c4aee5f0746d",
+      "product_id": "74de71f0-bbe0-4d99-aa51-c6ccbd294115",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "CASCO URBANO"
+      }
+    },
+    {
+      "id": "0809865a-6151-4e0e-a04c-bd5d33ecd1f0",
+      "product_id": "74de71f0-bbe0-4d99-aa51-c6ccbd294115",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "CASCO URBANO"
+      }
+    },
+    {
+      "id": "30a316b9-ff32-40f2-8cb1-a83789093bfd",
+      "product_id": "60e67897-81ae-431a-8f3d-6f06db694430",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "CANDADO TIPO CADENA"
+      }
+    },
+    {
+      "id": "f6074dd5-3d51-4c03-a9fc-5dcdbc698309",
+      "product_id": "60e67897-81ae-431a-8f3d-6f06db694430",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "CANDADO TIPO CADENA"
+      }
+    },
+    {
+      "id": "4a7d24c2-2ea1-4f39-9c68-64ae602f7fee",
+      "product_id": "60e67897-81ae-431a-8f3d-6f06db694430",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "CANDADO TIPO CADENA"
+      }
+    },
+    {
+      "id": "9be58fc2-0871-44fa-9122-f70ab3a51ae2",
+      "product_id": "60e67897-81ae-431a-8f3d-6f06db694430",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "CANDADO TIPO CADENA"
+      }
+    },
+    {
+      "id": "968163e2-77b7-408f-8d92-be3e5634fea4",
+      "product_id": "60e67897-81ae-431a-8f3d-6f06db694430",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "CANDADO TIPO CADENA"
+      }
+    },
+    {
+      "id": "9977f903-4133-4980-a43a-d266f4d6fcba",
+      "product_id": "60e67897-81ae-431a-8f3d-6f06db694430",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "CANDADO TIPO CADENA"
+      }
+    },
+    {
+      "id": "d232d3d3-e360-4bdf-a08d-c413c14209bf",
+      "product_id": "0cf1fda2-fb26-4c3a-9415-4ee65af02b69",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROJO)"
+      }
+    },
+    {
+      "id": "a6814961-ed9f-4eca-9243-f47b1a262e62",
+      "product_id": "0cf1fda2-fb26-4c3a-9415-4ee65af02b69",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROJO)"
+      }
+    },
+    {
+      "id": "38a9b33b-121d-49f0-979b-9e4b881afbf9",
+      "product_id": "0cf1fda2-fb26-4c3a-9415-4ee65af02b69",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 7,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROJO)"
+      }
+    },
+    {
+      "id": "e77b5a1f-e971-4c7e-9b60-2a105e30e50c",
+      "product_id": "0cf1fda2-fb26-4c3a-9415-4ee65af02b69",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROJO)"
+      }
+    },
+    {
+      "id": "cf49136d-abb4-4fa1-966c-c190e143a4a8",
+      "product_id": "0cf1fda2-fb26-4c3a-9415-4ee65af02b69",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROJO)"
+      }
+    },
+    {
+      "id": "1e326974-eec0-4ca1-bd2f-09375a97fbbe",
+      "product_id": "0cf1fda2-fb26-4c3a-9415-4ee65af02b69",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROJO)"
+      }
+    },
+    {
+      "id": "92b365fa-4143-493a-8195-671bbc7151e2",
+      "product_id": "138e61f8-7494-4a4d-be39-a29c6f90944b",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (NEGRO)"
+      }
+    },
+    {
+      "id": "66acc85d-f7c8-4a6a-928c-3adfcb633371",
+      "product_id": "138e61f8-7494-4a4d-be39-a29c6f90944b",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 1,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (NEGRO)"
+      }
+    },
+    {
+      "id": "7e71a8ba-86c5-40c7-90e4-0f1599770629",
+      "product_id": "138e61f8-7494-4a4d-be39-a29c6f90944b",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (NEGRO)"
+      }
+    },
+    {
+      "id": "547e830a-4f30-4a90-8624-fceacfbed6cf",
+      "product_id": "138e61f8-7494-4a4d-be39-a29c6f90944b",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (NEGRO)"
+      }
+    },
+    {
+      "id": "d5265003-98c5-42d2-89d8-85d98ecc4465",
+      "product_id": "138e61f8-7494-4a4d-be39-a29c6f90944b",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (NEGRO)"
+      }
+    },
+    {
+      "id": "af3f1fa2-98de-423d-86b6-574ab98cdc2c",
+      "product_id": "138e61f8-7494-4a4d-be39-a29c6f90944b",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (NEGRO)"
+      }
+    },
+    {
+      "id": "6e2756ea-3b7e-4afc-b1d1-eca58bffd1f1",
+      "product_id": "c0907006-9b75-446f-8ba6-beb02d21531d",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (VERDE)"
+      }
+    },
+    {
+      "id": "0b00535e-e25a-463e-ba8f-91346919bacd",
+      "product_id": "c0907006-9b75-446f-8ba6-beb02d21531d",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (VERDE)"
+      }
+    },
+    {
+      "id": "28a6e957-5b2a-4430-8f69-722c76d8cb57",
+      "product_id": "c0907006-9b75-446f-8ba6-beb02d21531d",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (VERDE)"
+      }
+    },
+    {
+      "id": "3d3f5a3f-a1c7-4743-bca6-82a594cf346f",
+      "product_id": "c0907006-9b75-446f-8ba6-beb02d21531d",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 5,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (VERDE)"
+      }
+    },
+    {
+      "id": "d19a56de-629a-4d2b-bef6-a5daa594ba50",
+      "product_id": "c0907006-9b75-446f-8ba6-beb02d21531d",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 8,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (VERDE)"
+      }
+    },
+    {
+      "id": "fd9391fd-ed3a-4c5a-8e62-c591f88b6b58",
+      "product_id": "c0907006-9b75-446f-8ba6-beb02d21531d",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 3,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (VERDE)"
+      }
+    },
+    {
+      "id": "f8a06dd7-d7ac-41cd-89ce-534c825561cd",
+      "product_id": "b57b9e7d-3c3c-40e3-9a64-ba73dc0a4b8b",
+      "sucursal_id": "7cc19caf-5c08-42c8-93d3-46a1007fb931",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Cochabamba"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROSADO)"
+      }
+    },
+    {
+      "id": "8dc1f45a-df78-4ed8-a11f-4582accb9c2d",
+      "product_id": "b57b9e7d-3c3c-40e3-9a64-ba73dc0a4b8b",
+      "sucursal_id": "9b675236-b10f-485a-887a-4b127a67b324",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "La Paz"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROSADO)"
+      }
+    },
+    {
+      "id": "92e0e5c2-2a9a-493a-8c99-b08c25a669b9",
+      "product_id": "b57b9e7d-3c3c-40e3-9a64-ba73dc0a4b8b",
+      "sucursal_id": "539fcbd4-3b2c-41b8-9d4e-c4213340ac2d",
+      "cantidad": 2,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "El Alto"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROSADO)"
+      }
+    },
+    {
+      "id": "f12a407b-b4f0-46d1-9b4d-9b52c01f19e2",
+      "product_id": "b57b9e7d-3c3c-40e3-9a64-ba73dc0a4b8b",
+      "sucursal_id": "45dd63ec-5595-45b9-bc3e-42077363d5ca",
+      "cantidad": 4,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Oruro"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROSADO)"
+      }
+    },
+    {
+      "id": "b8892988-e878-4915-9250-680b885f5842",
+      "product_id": "b57b9e7d-3c3c-40e3-9a64-ba73dc0a4b8b",
+      "sucursal_id": "73afdfe0-6329-49f1-bede-0fc6f57d05d0",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Santa Cruz"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROSADO)"
+      }
+    },
+    {
+      "id": "508cde33-602b-4d53-bedc-0cc074791c54",
+      "product_id": "b57b9e7d-3c3c-40e3-9a64-ba73dc0a4b8b",
+      "sucursal_id": "0877ac1c-8ee9-46fa-a379-a797e7d75908",
+      "cantidad": 6,
+      "estado": "DISPONIBLE",
+      "ultima_actualizacion": "2026-05-17T10:19:38.085102+00:00",
+      "sucursales": {
+        "ciudad": "Yacuiba"
+      },
+      "products": {
+        "nombre": "CASCO CON VISERA (ROSADO)"
+      }
+    }
+  ]
+}

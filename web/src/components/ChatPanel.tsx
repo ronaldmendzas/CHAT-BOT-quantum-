@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import type { ChatMessage } from "@/lib/types";
+import type { Conversation } from "@/hooks/useConversations";
+import type { User } from "@supabase/supabase-js";
 import {
   Box,
   Flex,
@@ -11,6 +13,7 @@ import {
   Button,
   VStack,
   IconButton,
+  Stack,
 } from "@chakra-ui/react";
 
 type Props = {
@@ -20,6 +23,11 @@ type Props = {
   onSend: () => void;
   onClear: () => void;
   isTyping?: boolean;
+  user?: User | null;
+  conversations?: Conversation[];
+  activeConversationId?: string | null;
+  onSelectConversation?: (id: string) => void;
+  onNewConversation?: () => void;
 };
 
 export default function ChatPanel({
@@ -29,6 +37,11 @@ export default function ChatPanel({
   onSend,
   onClear,
   isTyping,
+  user,
+  conversations = [],
+  activeConversationId,
+  onSelectConversation,
+  onNewConversation,
 }: Props) {
   const bottomRef = useRef<HTMLDivElement>(null);
 
@@ -75,17 +88,60 @@ export default function ChatPanel({
             </Text>
           </VStack>
         </Flex>
-        <IconButton
-          aria-label="Limpiar chat"
-          variant="ghost"
-          size="xs"
-          color="#8a9e8a"
-          _hover={{ color: "#ff4d6a" }}
-          borderRadius="md"
-          onClick={onClear}
-        >
-          ✕
-        </IconButton>
+        <Flex gap={1}>
+          {user && (
+            <>
+              <Button
+                size="xs"
+                variant="ghost"
+                color="#8a9e8a"
+                _hover={{ color: "#0e5c48", bg: "rgba(0, 230, 180, 0.04)" }}
+                onClick={onNewConversation}
+                fontSize="12px"
+                px={2}
+                display={{ base: "flex", md: "none" }}
+              >
+                + Nuevo
+              </Button>
+              <Stack
+                gap={0.5}
+                display={{ base: "flex", md: "none" }}
+                maxW="120px"
+                overflowX="auto"
+                direction="row"
+              >
+                {conversations.slice(0, 3).map((conv) => (
+                  <Button
+                    key={conv.id}
+                    size="2xs"
+                    variant="ghost"
+                    color={activeConversationId === conv.id ? "white" : "#5d705d"}
+                    bg={activeConversationId === conv.id ? "rgba(0, 230, 180, 0.06)" : "transparent"}
+                    _hover={{ bg: "rgba(0, 230, 180, 0.04)" }}
+                    px={1.5}
+                    py={0.5}
+                    h="auto"
+                    fontSize="10px"
+                    onClick={() => onSelectConversation?.(conv.id)}
+                  >
+                    {conv.title.length > 12 ? conv.title.slice(0, 12) + "..." : conv.title}
+                  </Button>
+                ))}
+              </Stack>
+            </>
+          )}
+          <IconButton
+            aria-label="Limpiar chat"
+            variant="ghost"
+            size="xs"
+            color="#8a9e8a"
+            _hover={{ color: "#ff4d6a" }}
+            borderRadius="md"
+            onClick={onClear}
+          >
+            ✕
+          </IconButton>
+        </Flex>
       </Flex>
 
       {/* messages */}
