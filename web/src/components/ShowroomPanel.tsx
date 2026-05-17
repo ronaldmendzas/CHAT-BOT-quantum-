@@ -12,6 +12,7 @@ import {
   Heading,
   Badge,
   SimpleGrid,
+  IconButton,
 } from "@chakra-ui/react";
 
 type Props = Readonly<{
@@ -30,27 +31,43 @@ type Props = Readonly<{
     ciudad: string;
     producto: string;
   }) => void;
+  onClose?: () => void;
 }>;
 
-function CatalogHeader() {
+function CatalogHeader({ onClose }: { onClose?: () => void }) {
   return (
     <Flex align="center" justify="space-between" mb={8}>
       <Heading size="md" color="white" fontWeight="bold">
         Catálogo
       </Heading>
-      <Badge
-        bg="rgba(0, 230, 180, 0.04)"
-        color="#0e5c48"
-        border="1px solid rgba(0, 230, 180, 0.06)"
-        borderRadius="full"
-        px={3}
-        py={1}
-        fontSize="xs"
-        fontWeight="bold"
-        textTransform="uppercase"
-      >
-        Demo
-      </Badge>
+      <Flex align="center" gap={2}>
+        <Badge
+          bg="rgba(0, 230, 180, 0.04)"
+          color="#0e5c48"
+          border="1px solid rgba(0, 230, 180, 0.06)"
+          borderRadius="full"
+          px={3}
+          py={1}
+          fontSize="xs"
+          fontWeight="bold"
+          textTransform="uppercase"
+        >
+          Demo
+        </Badge>
+        {onClose && (
+          <IconButton
+            aria-label="Cerrar showroom"
+            size="sm"
+            variant="ghost"
+            color="white"
+            _hover={{ bg: "rgba(255,255,255,0.1)" }}
+            onClick={onClose}
+            display={{ base: "flex", md: "none" }}
+          >
+            ✕
+          </IconButton>
+        )}
+      </Flex>
     </Flex>
   );
 }
@@ -66,6 +83,7 @@ export default function ShowroomPanel({
   productIds,
   onSelectProduct,
   onTestDriveSubmit,
+  onClose,
 }: Props) {
   const selected = products.find((p) => p.id === selectedProductId);
   const gridProducts = productIds
@@ -75,8 +93,8 @@ export default function ShowroomPanel({
   if (intent === "WELCOME") return <WelcomeView />;
 
   return (
-    <Box w="100%" h="100%" overflowY="auto" px={10} py={8}>
-      <CatalogHeader />
+    <Box w="100%" h="100%" overflowY="auto" px={{ base: 4, md: 10 }} py={{ base: 4, md: 8 }}>
+      <CatalogHeader onClose={onClose} />
 
       {intent === "VEHICLE" && selected && (
         <ProductDetail product={selected} stock={stock} media={media} />

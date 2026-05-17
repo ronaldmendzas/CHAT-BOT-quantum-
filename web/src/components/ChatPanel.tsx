@@ -63,7 +63,7 @@ export default function ChatPanel({
       borderRadius="16px"
       boxShadow="0 0 3px rgba(0, 230, 180, 0.06), inset 0 0 40px rgba(0, 0, 0, 0.2)"
       w="100%"
-      maxW="480px"
+      maxW={{ base: "100%", md: "480px" }}
       h={{ base: "100%", md: "75vh" }}
       overflow="hidden"
       gap={0}

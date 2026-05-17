@@ -89,6 +89,7 @@ export default function Home() {
   const [resultProductIds, setResultProductIds] = useState<string[] | undefined>();
   const [isTyping, setIsTyping] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [showShowroom, setShowShowroom] = useState(false);
   const { data: dataset, loading, error } = useDataset();
   const { user, signOut } = useAuth();
   const router = useRouter();
@@ -413,15 +414,27 @@ export default function Home() {
         onDeleteConversation={handleDelete}
       />
 
-      {/* left half — chat */}
+      {/* Mobile drawer overlay */}
+      {showShowroom && (
+        <Box
+          position="fixed"
+          inset={0}
+          bg="rgba(0,0,0,0.6)"
+          zIndex={40}
+          onClick={() => setShowShowroom(false)}
+          display={{ base: "block", md: "none" }}
+        />
+      )}
+
+      {/* left half — chat (full width on mobile) */}
       <Flex
         w={{ base: "100%", md: isLoggedIn ? "calc(45% - 130px)" : "45%" }}
-        h={{ base: "60%", md: "100%" }}
+        h={{ base: "100%", md: "100%" }}
         align="center"
         justify="center"
         position="relative"
         zIndex={1}
-        py={{ base: 2, md: 0 }}
+        py={{ base: 0, md: 0 }}
       >
         <ChatPanel
           messages={messages}
@@ -440,12 +453,18 @@ export default function Home() {
 
       {/* right half — showroom */}
       <Flex
-        w={{ base: "100%", md: isLoggedIn ? "calc(55% - 130px)" : "55%" }}
-        h={{ base: "40%", md: "100%" }}
+        w={{ base: showShowroom ? "100%" : "0%", md: isLoggedIn ? "calc(55% - 130px)" : "55%" }}
+        h={{ base: "100%", md: "100%" }}
         align="center"
         justify="center"
-        position="relative"
-        zIndex={1}
+        position={{ base: "fixed", md: "relative" }}
+        top={0}
+        right={0}
+        zIndex={{ base: 50, md: 1 }}
+        bg="#020302"
+        transform={{ base: showShowroom ? "translateX(0)" : "translateX(100%)", md: "none" }}
+        transition="transform 0.3s ease"
+        overflow="hidden"
       >
         <ShowroomPanel
           intent={intent}
@@ -458,8 +477,31 @@ export default function Home() {
           productIds={resultProductIds}
           onSelectProduct={handleSelectProduct}
           onTestDriveSubmit={handleTestDrive}
+          onClose={() => setShowShowroom(false)}
         />
       </Flex>
+
+      {/* Floating button to toggle showroom on mobile */}
+      <Button
+        position="fixed"
+        bottom="20px"
+        right="20px"
+        zIndex={60}
+        w="56px"
+        h="56px"
+        borderRadius="full"
+        bg="#0e5c48"
+        color="white"
+        boxShadow="0 4px 12px rgba(0,0,0,0.4)"
+        _hover={{ bg: "#0d4a3a" }}
+        onClick={() => setShowShowroom(!showShowroom)}
+        display={{ base: "flex", md: "none" }}
+        alignItems="center"
+        justifyContent="center"
+        p={0}
+      >
+        {showShowroom ? "✕" : "🚗"}
+      </Button>
     </Flex>
   );
 }
