@@ -131,7 +131,6 @@ export async function POST(req: NextRequest) {
 
     const llmResult = await chatWithLlm(messages, {
       temperature: 0.9,
-      maxTokens: 128,
     });
 
     if (!llmResult.error && llmResult.reply) {
