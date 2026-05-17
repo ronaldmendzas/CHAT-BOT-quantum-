@@ -104,7 +104,7 @@ export async function POST(req: NextRequest) {
 
     const messages = [
       { role: "system" as const, content: getSystemPrompt(productsJson) },
-      ...history.slice(-8).map((h) => ({
+      ...history.slice(-12).map((h) => ({
         role: h.role as "user" | "assistant",
         content: h.content,
       })),
@@ -112,8 +112,8 @@ export async function POST(req: NextRequest) {
     ];
 
     const llmResult = await chatWithLlm(messages, {
-      temperature: 0.7,
-      maxTokens: 512,
+      temperature: 0.85,
+      maxTokens: 1024,
     });
 
     const panel = detectPanel(message, products);
