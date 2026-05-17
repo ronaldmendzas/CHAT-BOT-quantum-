@@ -2,7 +2,6 @@
 
 import { useCallback, useState } from "react";
 import type { ChatMessage, ConversationContext, Intent } from "@/lib/types";
-import { processMessage } from "@/lib/conversation";
 import { useDataset } from "@/hooks/useDataset";
 import ChatPanel from "@/components/ChatPanel";
 import ShowroomPanel from "@/components/ShowroomPanel";
@@ -91,7 +90,7 @@ export default function Home() {
     } finally {
       setIsTyping(false);
     }
-  }, [input, dataset, conversation]);
+  }, [input, dataset, conversation, messages]);
 
   const handleClear = useCallback(() => {
     setMessages([WELCOME_MSG]);

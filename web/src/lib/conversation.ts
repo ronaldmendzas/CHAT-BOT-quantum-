@@ -4,8 +4,6 @@ import type {
   Product,
   ConversationContext,
   ConversationResult,
-  ConversationStep,
-  Intent,
   UserFilters,
 } from "./types";
 

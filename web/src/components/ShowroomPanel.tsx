@@ -12,7 +12,6 @@ import {
   Heading,
   Badge,
   SimpleGrid,
-  Text,
 } from "@chakra-ui/react";
 
 type Props = Readonly<{
