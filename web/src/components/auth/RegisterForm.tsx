@@ -79,9 +79,10 @@ export default function RegisterForm({ onSuccess }: { onSuccess?: (needsConfirma
     }
 
     console.log("[RegisterForm] Login success after registration");
+    // Delay to ensure localStorage/cookies are fully written before navigation
     setTimeout(() => {
       onSuccess?.(false);
-    }, 300);
+    }, 800);
   }
 
   return (

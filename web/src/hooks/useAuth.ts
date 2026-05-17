@@ -22,9 +22,9 @@ export function useAuth() {
           setUser(sessionData.session.user);
           setLoading(false);
           setReady(true);
-        } else if (retryCount < 2) {
-          // Retry once after 300ms — localStorage can take a moment
-          setTimeout(() => init(retryCount + 1), 300);
+        } else if (retryCount < 5) {
+          // Retry several times — localStorage can take a moment to write/read
+          setTimeout(() => init(retryCount + 1), 500);
         } else {
           setUser(null);
           setLoading(false);

@@ -44,10 +44,10 @@ export default function LoginForm({ onSuccess }: { onSuccess?: () => void }) {
     console.log("[LoginForm] Login SUCCESS, user:", data.session.user?.email);
     console.log("[LoginForm] Session exists:", !!data.session);
 
-    // Small delay to ensure localStorage is written before navigation
+    // Delay to ensure localStorage/cookies are fully written before navigation
     setTimeout(() => {
       onSuccess?.();
-    }, 300);
+    }, 800);
   }
 
   return (
