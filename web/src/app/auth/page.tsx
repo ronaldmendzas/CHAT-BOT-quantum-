@@ -37,8 +37,8 @@ export default function AuthPage() {
   }
 
   function goToHome() {
-    // Force full reload to ensure auth state is fresh from localStorage
-    window.location.reload();
+    // Navigate to home and let the page load fresh with auth state
+    window.location.href = "/";
   }
 
   return (
