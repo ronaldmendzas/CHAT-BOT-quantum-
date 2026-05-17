@@ -77,11 +77,11 @@ function getSpec(p: Product, keyPath: string[]): string {
 
 function formatProductInfo(p: Product): string {
   const specs = p.especificaciones || {};
-  const prest = specs.PRESTACIONES || {};
-  const motor = specs.MOTOR || {};
-  const bat = specs.BATERIA || {};
-  const datos = specs["DATOS GENERALES"] || {};
-  const dim = specs["DIMENSIONES Y PESO"] || {};
+  const prest = (specs.PRESTACIONES || {}) as Record<string, any>;
+  const motor = (specs.MOTOR || {}) as Record<string, any>;
+  const bat = (specs.BATERIA || {}) as Record<string, any>;
+  const datos = (specs["DATOS GENERALES"] || {}) as Record<string, any>;
+  const dim = (specs["DIMENSIONES Y PESO"] || {}) as Record<string, any>;
   
   const autonomia = prest.autonomia_maxima || "";
   const vel = prest.velocidad_maxima_kmh;
