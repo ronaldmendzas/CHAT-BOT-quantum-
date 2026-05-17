@@ -165,7 +165,7 @@ export default function Home() {
     await new Promise((r) => setTimeout(r, 800));
 
     try {
-      const history = [...messages, userMsg].map((m) => ({
+      const history = [...messages.slice(-10), userMsg].map((m) => ({
         role: m.role as "user" | "assistant",
         content: m.content,
       }));

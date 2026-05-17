@@ -150,6 +150,38 @@ REGLAS:
 ${catalog}`;
 }
 
+export function getCompactCatalogPrompt(
+  products: { nombre: string; categoria: string; subcategoria?: string; precio: { monto: number; moneda: string }; descripcion_corta?: string; especificaciones?: Record<string, unknown>; colores?: string[]; garantia?: string }[],
+  sucursales: { ciudad: string; direccion: string; telefono: string; horario: string }[]
+): string {
+  // Ultra-compact catalog to stay within Groq free-tier TPM limits
+  const lines = products.map((p) => {
+    const specs = p.especificaciones || {};
+    const prest = (specs.PRESTACIONES || {}) as Record<string, any>;
+    const autonomia = prest.autonomia_maxima || "";
+    let line = `${p.nombre} ($${p.precio.monto} ${p.precio.moneda})`;
+    if (p.subcategoria) line += ` [${p.subcategoria}]`;
+    if (autonomia) line += ` — ${autonomia}`;
+    return line;
+  });
+
+  const productList = lines.join(" | ");
+
+  const sucursalList = sucursales.map((s) => `${s.ciudad}: ${s.direccion} (${s.telefono})`).join(" | ");
+
+  return `Sos Bot Quantum, asesor de Quantum Motors Bolivia. Primera empresa boliviana de electromovilidad.
+
+CATÁLOGO (usá exactamente estos datos, nunca inventes):
+${productList}
+
+SUCURSALES:
+${sucursalList}
+
+TEST DRIVE: licencia vigente + CI, lun-sab 09:00-18:00.
+
+Reglas: respondé como un amigo por WhatsApp (cálido, emojis, frases cortas). Si preguntan precios, usá los exactos del catálogo. Si preguntan "más barato", ordená por precio. Si preguntan autonomía, usá la del catálogo. Si no sabés algo, decí "no tengo ese dato".`;
+}
+
 export function getFullCatalogPrompt(
   products: { nombre: string; categoria: string; subcategoria?: string; precio: { monto: number; moneda: string }; descripcion_corta: string; especificaciones: Record<string, unknown>; colores: string[]; garantia?: string }[],
   sucursales: { ciudad: string; direccion: string; telefono: string; horario: string }[]

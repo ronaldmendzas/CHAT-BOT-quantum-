@@ -1,7 +1,7 @@
 /* ===== Chat API — Factual answers computed server-side, Groq only for style ===== */
 
 import { NextRequest, NextResponse } from "next/server";
-import { chatWithLlm, getFullCatalogPrompt } from "@/lib/llm";
+import { chatWithLlm, getCompactCatalogPrompt } from "@/lib/llm";
 import type { ConversationContext, Product, Sucursal } from "@/lib/types";
 import { getProducts, getSucursales } from "@/lib/db";
 
@@ -286,8 +286,8 @@ export async function POST(req: NextRequest) {
     try { products = await getProducts(); } catch { /* ignore */ }
     try { sucursales = await getSucursales(); } catch { /* ignore */ }
 
-    // Always use Groq with full product catalog as primary engine
-    const systemPrompt = getFullCatalogPrompt(products, sucursales);
+    // Use compact catalog to stay within Groq free-tier token limits
+    const systemPrompt = getCompactCatalogPrompt(products, sucursales);
     const messages = [
       { role: "system" as const, content: systemPrompt },
       ...history.slice(-6).map((h) => ({ role: h.role as "user" | "assistant", content: h.content })),
