@@ -6,7 +6,7 @@ const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
 });
 
-const GROQ_MODEL = process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
+const GROQ_MODEL = process.env.GROQ_MODEL || "mixtral-8x7b-32768";
 const HF_MODEL = process.env.HF_MODEL || "mistralai/Mistral-7B-Instruct-v0.2";
 
 export type LlmMessage = {
@@ -197,6 +197,7 @@ REGLAS DE RESPUESTA:
 3. Si pregunta por PRECIOS o PRESUPUESTO, calculá solo con los precios exactos del catálogo. NUNCA inventes descuentos.
 4. Si pregunta "más barato" o "más económico", ordená por precio y mostrá el menor.
 5. Si confirma un TEST DRIVE o CITA, respondé confirmando y dando indicaciones útiles.
-6. HABLÁ COMO UN AMIGO POR WHATSAPP: cálido, con emojis, frases cortas. No repitas el catálogo entero si no te lo piden.
-7. Si el usuario dice algo ambiguo, preguntale amablemente qué necesita.`;
+6. HABLÁ COMO UN AMIGO POR WHATSAPP: cálido, con emojis, frases cortas.
+7. Si el usuario dice algo ambiguo, preguntale amablemente qué necesita.
+8. NUNCA copies ni pegues el formato del catálogo en tus respuestas. NO repitas la data de otros productos que no sean relevantes. Solo mencioná los productos que estás recomendando, con lenguaje natural, como si estuvieras chateando.`;
 }
