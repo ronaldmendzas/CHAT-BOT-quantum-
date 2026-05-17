@@ -1,5 +1,6 @@
 {
   "rootDirectory": "web",
+  "framework": "nextjs",
   "git": {
     "deploymentEnabled": {
       "main": true,
