@@ -143,3 +143,60 @@ REGLAS:
 
 ${catalog}`;
 }
+
+export function getFullCatalogPrompt(
+  products: { nombre: string; categoria: string; subcategoria?: string; precio: { monto: number; moneda: string }; descripcion_corta: string; especificaciones: Record<string, unknown>; colores: string[]; garantia?: string }[],
+  sucursales: { ciudad: string; direccion: string; telefono: string; horario: string }[]
+): string {
+  const productList = products.map((p) => {
+    const specs = p.especificaciones || {};
+    const prest = (specs.PRESTACIONES || {}) as Record<string, any>;
+    const motor = (specs.MOTOR || {}) as Record<string, any>;
+    const bat = (specs.BATERIA || {}) as Record<string, any>;
+    const datos = (specs["DATOS GENERALES"] || {}) as Record<string, any>;
+    const dim = (specs["DIMENSIONES Y PESO"] || {}) as Record<string, any>;
+    const autonomia = prest.autonomia_maxima || "";
+    const vel = prest.velocidad_maxima_kmh || "";
+    const potencia = motor.potencia_nominal_w ? motor.potencia_nominal_w + " W" : "";
+    const bateria = bat.tipo ? bat.tipo + (bat.capacidad_ah ? " " + bat.capacidad_ah + "Ah" : "") : "";
+    const asientos = datos.nro_asientos || "";
+    const peso = dim.peso_neto_kg || "";
+
+    let line = `${p.categoria} | ${p.nombre} | $${p.precio.monto} ${p.precio.moneda}`;
+    if (p.subcategoria) line += ` | Tipo: ${p.subcategoria}`;
+    if (p.descripcion_corta) line += ` | ${p.descripcion_corta}`;
+    if (autonomia) line += ` | Autonomía: ${autonomia}`;
+    if (vel) line += ` | Vel máx: ${vel}`;
+    if (potencia) line += ` | Potencia: ${potencia}`;
+    if (bateria) line += ` | Batería: ${bateria}`;
+    if (asientos) line += ` | Asientos: ${asientos}`;
+    if (peso) line += ` | Peso: ${peso}kg`;
+    if (p.colores?.length) line += ` | Colores: ${p.colores.join(", ")}`;
+    if (p.garantia) line += ` | Garantía: ${p.garantia}`;
+    return line;
+  }).join("\n");
+
+  const sucursalList = sucursales.map((s) =>
+    `• ${s.ciudad}: ${s.direccion} | ${s.telefono} | ${s.horario}`
+  ).join("\n");
+
+  return `Sos Bot Quantum, asesor experto de Quantum Motors Bolivia, primera empresa boliviana de electromovilidad.
+
+CATÁLOGO COMPLETO — USÁ EXACTAMENTE ESTOS DATOS. NUNCA inventes precios, specs, ni porcentajes. Si algo no está acá, decí "no tengo ese dato".
+
+${productList}
+
+SUCURSALES:
+${sucursalList}
+
+TEST DRIVE: Licencia vigente + CI. Lun-Sab 09:00-18:00.
+
+REGLAS DE RESPUESTA:
+1. Si el usuario describe su SITUACIÓN (ej: "soy estudiante, camino 10 km"), RECOMENDALE el producto más adecuado del catálogo, explicando por qué.
+2. Si pregunta por UBICACIONES o SUCURSALES, usá la lista de sucursales.
+3. Si pregunta por PRECIOS o PRESUPUESTO, calculá solo con los precios exactos del catálogo. NUNCA inventes descuentos.
+4. Si pregunta "más barato" o "más económico", ordená por precio y mostrá el menor.
+5. Si confirma un TEST DRIVE o CITA, respondé confirmando y dando indicaciones útiles.
+6. HABLÁ COMO UN AMIGO POR WHATSAPP: cálido, con emojis, frases cortas. No repitas el catálogo entero si no te lo piden.
+7. Si el usuario dice algo ambiguo, preguntale amablemente qué necesita.`;
+}

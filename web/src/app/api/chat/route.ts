@@ -1,7 +1,7 @@
 /* ===== Chat API — Factual answers computed server-side, Groq only for style ===== */
 
 import { NextRequest, NextResponse } from "next/server";
-import { chatWithLlm, getSystemPrompt } from "@/lib/llm";
+import { chatWithLlm, getFullCatalogPrompt } from "@/lib/llm";
 import type { ConversationContext, Product, Sucursal } from "@/lib/types";
 import { getProducts, getSucursales } from "@/lib/db";
 
@@ -288,10 +288,30 @@ export async function POST(req: NextRequest) {
     try { products = await getProducts(); } catch { /* ignore */ }
     try { sucursales = await getSucursales(); } catch { /* ignore */ }
 
-    // Generate factual answer directly from DB
-    const factual = generateAnswer(products, sucursales, message);
+    // Always use Groq with full product catalog as primary engine
+    const systemPrompt = getFullCatalogPrompt(products, sucursales);
+    const messages = [
+      { role: "system" as const, content: systemPrompt },
+      ...history.slice(-6).map((h) => ({ role: h.role as "user" | "assistant", content: h.content })),
+      { role: "user" as const, content: message },
+    ];
 
-    // If we have a factual answer, return it directly
+    const llmResult = await chatWithLlm(messages, { temperature: 0.5, maxTokens: 1024 });
+
+    if (!llmResult.error && llmResult.reply) {
+      const matched = findProductByName(message, products);
+      return NextResponse.json({
+        reply: llmResult.reply,
+        intent: matched ? "VEHICLE" : "WELCOME",
+        productId: matched?.id || null,
+        productIds: null,
+        source: "groq",
+        context: { step: "ASKING_TYPE", filters: context.filters },
+      });
+    }
+
+    // Fallback: server-side factual answer if Groq fails
+    const factual = generateAnswer(products, sucursales, message);
     if (factual.reply) {
       return NextResponse.json({
         reply: factual.reply,
@@ -300,29 +320,6 @@ export async function POST(req: NextRequest) {
         productIds: factual.productIds || null,
         source: "database",
         context: { step: factual.intent === "WELCOME" ? "ASKING_TYPE" : context.step, filters: context.filters },
-      });
-    }
-
-    // Otherwise, use Groq for generic/conversational responses
-    const catalog = `Vehiculos: ${products.filter(p=>p.categoria==="VEHICULO").map(p=>p.nombre).join(", ")}. Accesorios: ${products.filter(p=>p.categoria==="ACCESORIO").map(p=>p.nombre).join(", ")}.`;
-    const systemPrompt = getSystemPrompt(catalog);
-
-    const messages = [
-      { role: "system" as const, content: systemPrompt },
-      ...history.slice(-6).map((h) => ({ role: h.role as "user" | "assistant", content: h.content })),
-      { role: "user" as const, content: message },
-    ];
-
-    const llmResult = await chatWithLlm(messages, { temperature: 0.7, maxTokens: 300 });
-
-    if (!llmResult.error && llmResult.reply) {
-      return NextResponse.json({
-        reply: llmResult.reply,
-        intent: "WELCOME",
-        productId: null,
-        productIds: null,
-        source: "groq",
-        context: { step: "ASKING_TYPE", filters: context.filters },
       });
     }
 
