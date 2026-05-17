@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   Box,
   Flex,
@@ -13,6 +14,7 @@ import LoginForm from "@/components/auth/LoginForm";
 import RegisterForm from "@/components/auth/RegisterForm";
 
 export default function AuthPage() {
+  const router = useRouter();
   const [tab, setTab] = useState<"login" | "register">("login");
   const [loginSuccess, setLoginSuccess] = useState(false);
   const [registrationSuccess, setRegistrationSuccess] = useState<{
@@ -37,8 +39,8 @@ export default function AuthPage() {
   }
 
   function goToHome() {
-    // Navigate to home and let the page load fresh with auth state
-    window.location.href = "/";
+    // Use Next.js router for SPA navigation - preserves Supabase session
+    router.push("/");
   }
 
   return (
