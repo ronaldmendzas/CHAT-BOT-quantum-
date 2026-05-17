@@ -1,4 +1,4 @@
-/* ===== Chat API — Factual answers computed server-side, OpenAI only for style ===== */
+/* ===== Chat API — Factual answers computed server-side, Groq only for style ===== */
 
 import { NextRequest, NextResponse } from "next/server";
 import { chatWithLlm, getFullCatalogPrompt } from "@/lib/llm";
@@ -286,7 +286,7 @@ export async function POST(req: NextRequest) {
     try { products = await getProducts(); } catch { /* ignore */ }
     try { sucursales = await getSucursales(); } catch { /* ignore */ }
 
-    // Always use OpenAI with full product catalog as primary engine
+    // Always use Groq with full product catalog as primary engine
     const systemPrompt = getFullCatalogPrompt(products, sucursales);
     const messages = [
       { role: "system" as const, content: systemPrompt },
@@ -305,17 +305,17 @@ export async function POST(req: NextRequest) {
           intent: matched ? "VEHICLE" : "WELCOME",
           productId: matched?.id || null,
           productIds: null,
-          source: "openai",
+          source: "groq",
           context: { step: "ASKING_TYPE", filters: context.filters },
         }, { headers: noCacheHeaders });
       }
 
-      console.error("[chat] OpenAI failed:", llmResult.error);
-    } catch (openaiErr) {
-      console.error("[chat] OpenAI exception:", openaiErr instanceof Error ? openaiErr.message : String(openaiErr));
+      console.error("[chat] Groq failed:", llmResult.error);
+    } catch (groqErr) {
+      console.error("[chat] Groq exception:", groqErr instanceof Error ? groqErr.message : String(groqErr));
     }
 
-    // OpenAI failed — use server-side generateAnswer as fallback
+    // Groq failed — use server-side generateAnswer as fallback
     const factual = generateAnswer(products, sucursales, message);
 
     // Only return factual reply if it's an actual product match or specific intent
