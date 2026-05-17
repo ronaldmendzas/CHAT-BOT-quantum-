@@ -1,12 +1,12 @@
-/* ===== LLM client: Groq (primary) -> Hugging Face (auto-fallback) ===== */
+/* ===== LLM client: OpenAI (primary) -> Hugging Face (auto-fallback) ===== */
 
-import Groq from "groq-sdk";
+import OpenAI from "openai";
 
-const groq = new Groq({
-  apiKey: process.env.GROQ_API_KEY,
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
-const GROQ_MODEL = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
+const OPENAI_MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini";
 const HF_MODEL = process.env.HF_MODEL || "mistralai/Mistral-7B-Instruct-v0.2";
 
 export type LlmMessage = {
@@ -18,17 +18,17 @@ export type LlmResponse = {
   reply: string;
   error?: string;
   rateLimited?: boolean;
-  source?: "groq" | "huggingface" | "rules";
+  source?: "openai" | "huggingface" | "rules";
 };
 
-/* ---------- Groq ---------- */
-async function chatWithGroq(
+/* ---------- OpenAI ---------- */
+async function chatWithOpenAI(
   messages: LlmMessage[],
   options?: { temperature?: number; maxTokens?: number }
 ): Promise<LlmResponse> {
   try {
-    const completion = await groq.chat.completions.create({
-      model: GROQ_MODEL,
+    const completion = await openai.chat.completions.create({
+      model: OPENAI_MODEL,
       messages,
       temperature: options?.temperature ?? 0.3,
       max_tokens: options?.maxTokens ?? 512,
@@ -36,9 +36,9 @@ async function chatWithGroq(
     });
 
     const reply = completion.choices[0]?.message?.content || "";
-    return { reply, source: "groq" };
+    return { reply, source: "openai" };
   } catch (err) {
-    const msg = err instanceof Error ? err.message : "Groq API error";
+    const msg = err instanceof Error ? err.message : "OpenAI API error";
     const rateLimited = msg.includes("rate_limit") || msg.includes("429");
     return { reply: "", error: msg, rateLimited };
   }
@@ -109,26 +109,26 @@ export async function chatWithLlm(
   messages: LlmMessage[],
   options?: { temperature?: number; maxTokens?: number }
 ): Promise<LlmResponse> {
-  // Try Groq first
-  const groqResult = await chatWithGroq(messages, options);
-  if (!groqResult.error && groqResult.reply) {
-    return groqResult;
+  // Try OpenAI first
+  const openaiResult = await chatWithOpenAI(messages, options);
+  if (!openaiResult.error && openaiResult.reply) {
+    return openaiResult;
   }
 
-  // If Groq rate limited or failed, try Hugging Face automatically
-  if (groqResult.rateLimited || groqResult.error) {
+  // If OpenAI rate limited or failed, try Hugging Face automatically
+  if (openaiResult.rateLimited || openaiResult.error) {
     const hfResult = await chatWithHuggingFace(messages, options);
     if (!hfResult.error && hfResult.reply) {
       return hfResult;
     }
-    // Return Groq error but note we tried HF
+    // Return OpenAI error but note we tried HF
     return {
-      ...groqResult,
-      error: `Groq: ${groqResult.error}. HF: ${hfResult.error}`,
+      ...openaiResult,
+      error: `OpenAI: ${openaiResult.error}. HF: ${hfResult.error}`,
     };
   }
 
-  return groqResult;
+  return openaiResult;
 }
 
 export function getSystemPrompt(catalog: string): string {
