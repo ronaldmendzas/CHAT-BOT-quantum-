@@ -57,24 +57,24 @@ export default function ProductDetail({ product, stock, media }: Props) {
   const mainImage = selectedMedia[0]?.url || "";
 
   return (
-    <SimpleGrid columns={{ base: 1, md: 2 }} gap={6}>
+    <SimpleGrid columns={{ base: 1, sm: 1, md: 2 }} gap={{ base: 4, md: 6 }}>
       <Box
         display="flex"
         alignItems="center"
         justifyContent="center"
-        minH="320px"
+        minH={{ base: "200px", md: "320px" }}
         borderRadius="12px"
         overflow="hidden"
         bg="#060906"
         border="1px solid rgba(0, 230, 180, 0.05)"
         position="relative"
-        p={4}
+        p={{ base: 2, md: 4 }}
       >
         {mainImage && (
           <ImageWithFallback
             src={mainImage}
             alt={product.nombre}
-            maxH="320px"
+            maxH={{ base: "200px", md: "320px" }}
           />
         )}
         <Text
@@ -137,8 +137,8 @@ export default function ProductDetail({ product, stock, media }: Props) {
             </Text>
             <VStack gap={2} align="stretch">
               {Object.entries(product.especificaciones).map(([k, v]) => (
-                <Flex key={k} justify="space-between" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 230, 180, 0.06)">
-                  <Text color="#8a9e8a" textTransform="capitalize">
+                <Flex key={k} direction={{ base: "column", sm: "row" }} justify="space-between" fontSize={{ base: "xs", md: "sm" }} py={1} borderBottom="1px solid rgba(0, 230, 180, 0.06)">
+                  <Text color="#8a9e8a" textTransform="capitalize" mb={{ base: 0.5, md: 0 }}>
                     {k.replaceAll("_", " ")}
                   </Text>
                   <Text color="white" fontWeight="bold">
@@ -177,8 +177,8 @@ export default function ProductDetail({ product, stock, media }: Props) {
             {stock
               .filter((s) => s.product_id === product.id)
               .map((s) => (
-                <Flex key={s.sucursal_id} justify="space-between" align="center" fontSize="sm" py={1} borderBottom="1px solid rgba(0, 230, 180, 0.06)">
-                  <Text color="#8a9e8a">{s.region}</Text>
+                <Flex key={s.sucursal_id} direction={{ base: "column", sm: "row" }} justify="space-between" align={{ base: "flex-start", sm: "center" }} fontSize={{ base: "xs", md: "sm" }} py={1} borderBottom="1px solid rgba(0, 230, 180, 0.06)">
+                  <Text color="#8a9e8a" mb={{ base: 0.5, md: 0 }}>{s.region}</Text>
                   <Badge
                     color="#0e5c48"
                     bg="rgba(0, 230, 180, 0.04)"

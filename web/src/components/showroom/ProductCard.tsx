@@ -17,7 +17,7 @@ export default function ProductCard({ product, media, onSelect }: Props) {
       variant="outline"
       borderColor="rgba(0, 230, 180, 0.05)"
       bg="#0c1610"
-      p={5}
+      p={{ base: 3, md: 5 }}
       justifyContent="flex-start"
       flexDirection="column"
       alignItems="flex-start"
@@ -32,6 +32,7 @@ export default function ProductCard({ product, media, onSelect }: Props) {
       onClick={onSelect}
       h="auto"
       overflow="hidden"
+      minH={{ base: "140px", md: "auto" }}
     >
       {thumb?.url && (
         <ImageWithFallback
