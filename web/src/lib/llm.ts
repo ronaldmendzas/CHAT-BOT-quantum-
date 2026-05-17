@@ -11,7 +11,7 @@ export type LlmResponse = {
   rateLimited?: boolean;
 };
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-1.5-flash-latest";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
 export async function chatWithLlm(
   messages: LlmMessage[],
@@ -22,16 +22,17 @@ export async function chatWithLlm(
     return { reply: "", error: "GEMINI_API_KEY not set" };
   }
 
-  // Convert OpenAI-style messages to Gemini format
-  const contents = messages.map((m) => ({
-    role: m.role === "assistant" ? "model" : "user",
-    parts: [{ text: m.content }],
-  }));
+  // Gemini expects alternating user/model. We combine system + all history + current user into ONE user message
+  const systemMsg = messages.find((m) => m.role === "system");
+  const otherMsgs = messages.filter((m) => m.role !== "system");
 
-  // Gemini doesn't have a system role; first message must be user
-  if (contents.length > 0 && contents[0].role === "model") {
-    contents[0].role = "user" as const;
-  }
+  const conversationText = otherMsgs
+    .map((m) => `${m.role === "assistant" ? "Bot Quantum" : "Usuario"}: ${m.content}`)
+    .join("\n\n");
+
+  const fullPrompt = systemMsg
+    ? `${systemMsg.content}\n\n${conversationText}\n\nBot Quantum:`
+    : `${conversationText}\n\nBot Quantum:`;
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${apiKey}`;
 
@@ -40,10 +41,12 @@ export async function chatWithLlm(
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        contents,
+        contents: [
+          { role: "user", parts: [{ text: fullPrompt }] },
+        ],
         generationConfig: {
           temperature: options?.temperature ?? 0.9,
-          maxOutputTokens: options?.maxTokens ?? 128,
+          maxOutputTokens: options?.maxTokens ?? 1024,
           topP: 0.9,
         },
       }),
@@ -68,5 +71,5 @@ export async function chatWithLlm(
 }
 
 export function getSystemPrompt(catalog: string): string {
-  return `Sos Bot Quantum, asesor de Quantum Motors Bolivia. Habla como un amigo por WhatsApp: calido, con emojis, entende typos. Solo usa datos del catalogo. Si no sabes algo, decilo natural. Catalogo: ${catalog}`;
+  return `Sos el Bot Quantum, asesor de Quantum Motors Bolivia. Habla como un amigo por WhatsApp: calido, con emojis, entende typos. Solo usa datos del catalogo. Si no sabes algo, decilo natural. Catalogo: ${catalog}`;
 }
