@@ -1,4 +1,12 @@
-/* ===== Gemini LLM client ===== */
+/* ===== Groq LLM client ===== */
+
+import Groq from "groq-sdk";
+
+const groq = new Groq({
+  apiKey: process.env.GROQ_API_KEY,
+});
+
+const MODEL = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
 
 export type LlmMessage = {
   role: "system" | "user" | "assistant";
@@ -11,62 +19,25 @@ export type LlmResponse = {
   rateLimited?: boolean;
 };
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
-
 export async function chatWithLlm(
   messages: LlmMessage[],
   options?: { temperature?: number; maxTokens?: number }
 ): Promise<LlmResponse> {
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    return { reply: "", error: "GEMINI_API_KEY not set" };
-  }
-
-  // Gemini expects alternating user/model. We combine system + all history + current user into ONE user message
-  const systemMsg = messages.find((m) => m.role === "system");
-  const otherMsgs = messages.filter((m) => m.role !== "system");
-
-  const conversationText = otherMsgs
-    .map((m) => `${m.role === "assistant" ? "Bot Quantum" : "Usuario"}: ${m.content}`)
-    .join("\n\n");
-
-  const fullPrompt = systemMsg
-    ? `${systemMsg.content}\n\n${conversationText}\n\nBot Quantum:`
-    : `${conversationText}\n\nBot Quantum:`;
-
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${apiKey}`;
-
   try {
-    const res = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [
-          { role: "user", parts: [{ text: fullPrompt }] },
-        ],
-        generationConfig: {
-          temperature: options?.temperature ?? 0.9,
-          maxOutputTokens: options?.maxTokens ?? 1024,
-          topP: 0.9,
-        },
-      }),
+    const completion = await groq.chat.completions.create({
+      model: MODEL,
+      messages,
+      temperature: options?.temperature ?? 0.9,
+      max_tokens: options?.maxTokens ?? 256,
+      top_p: 0.9,
     });
 
-    if (!res.ok) {
-      const text = await res.text();
-      return {
-        reply: "",
-        error: `Gemini ${res.status}: ${text}`,
-        rateLimited: res.status === 429,
-      };
-    }
-
-    const data = await res.json();
-    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+    const reply = completion.choices[0]?.message?.content || "";
     return { reply };
   } catch (err) {
-    const msg = err instanceof Error ? err.message : "Gemini error";
-    return { reply: "", error: msg, rateLimited: msg.includes("429") };
+    const msg = err instanceof Error ? err.message : "Groq API error";
+    const rateLimited = msg.includes("rate_limit") || msg.includes("429");
+    return { reply: "", error: msg, rateLimited };
   }
 }
 

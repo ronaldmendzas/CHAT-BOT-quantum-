@@ -139,7 +139,7 @@ export async function POST(req: NextRequest) {
         intent: panel.intent,
         productId: panel.productId,
         productIds: panel.productIds,
-        source: "gemini",
+        source: "groq",
         context: { step: panel.intent === "WELCOME" ? "ASKING_TYPE" : context.step, filters: context.filters },
       });
     }
