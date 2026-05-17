@@ -274,6 +274,13 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Message required" }, { status: 400 });
     }
 
+    // Force no-cache to prevent CDN/browser caching stale responses
+    const noCacheHeaders = {
+      "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
+      Pragma: "no-cache",
+      Expires: "0",
+    };
+
     let products: Product[] = [];
     let sucursales: Sucursal[] = [];
     try { products = await getProducts(); } catch { /* ignore */ }
@@ -293,13 +300,14 @@ export async function POST(req: NextRequest) {
       if (!llmResult.error && llmResult.reply) {
         const matched = findProductByName(message, products);
         return NextResponse.json({
+          _v: 1,
           reply: llmResult.reply,
           intent: matched ? "VEHICLE" : "WELCOME",
           productId: matched?.id || null,
           productIds: null,
           source: "groq",
           context: { step: "ASKING_TYPE", filters: context.filters },
-        });
+        }, { headers: noCacheHeaders });
       }
 
       console.error("[chat] Groq failed:", llmResult.error);
@@ -314,23 +322,25 @@ export async function POST(req: NextRequest) {
     // Never return random product for WELCOME conversations
     if (factual.reply && factual.intent !== "WELCOME") {
       return NextResponse.json({
+        _v: 1,
         reply: factual.reply,
         intent: factual.intent,
         productId: factual.productId || null,
         productIds: factual.productIds || null,
         source: "database",
         context: { step: factual.intent === "WELCOME" ? "ASKING_TYPE" : context.step, filters: context.filters },
-      });
+      }, { headers: noCacheHeaders });
     }
 
     // Final fallback
     return NextResponse.json({
+      _v: 1,
       reply: "¡Hola! Soy Bot Quantum, tu asesor de electromovilidad. ¿En qué puedo ayudarte? Tenemos autos, motos, bicis, camiones y accesorios eléctricos.",
       intent: "WELCOME",
       productId: null,
       source: "fallback",
       context: { step: "ASKING_TYPE", filters: context.filters },
-    });
+    }, { headers: noCacheHeaders });
   } catch (err) {
     return NextResponse.json(
       { error: err instanceof Error ? err.message : "Internal error" },
