@@ -76,20 +76,20 @@ function getSpec(p: Product, keyPath: string[]): string {
 }
 
 function formatProductInfo(p: Product): string {
-  const specs = p.especificaciones || {};
-  const prest = specs.PRESTACIONES || {};
-  const motor = specs.MOTOR || {};
-  const bat = specs.BATERIA || {};
-  const datos = specs["DATOS GENERALES"] || {};
-  const dim = specs["DIMENSIONES Y PESO"] || {};
-  
-  const autonomia = prest.autonomia_maxima || "";
-  const vel = prest.velocidad_maxima_kmh;
-  const velocidad = vel ? (typeof vel === "object" ? Object.values(vel).join("/") + " km/h" : vel + " km/h") : "";
-  const potencia = motor.potencia_nominal_w ? motor.potencia_nominal_w + " W" : "";
-  const bateria = bat.tipo ? bat.tipo + (bat.capacidad_ah ? ` ${bat.capacidad_ah}Ah` : "") : "";
-  const asientos = datos.nro_asientos || "";
-  const peso = dim.peso_neto_kg || "";
+      const specs = (p.especificaciones || {}) as Record<string, Record<string, unknown>>;
+      const prest = specs.PRESTACIONES || {};
+      const motor = specs.MOTOR || {};
+      const bat = specs.BATERIA || {};
+      const datos = specs["DATOS GENERALES"] || {};
+      const dim = specs["DIMENSIONES Y PESO"] || {};
+      
+      const autonomia = String(prest.autonomia_maxima || "");
+      const vel = prest.velocidad_maxima_kmh;
+      const velocidad = vel ? (typeof vel === "object" && vel !== null ? Object.values(vel as Record<string, unknown>).join("/") + " km/h" : String(vel) + " km/h") : "";
+      const potencia = motor.potencia_nominal_w ? String(motor.potencia_nominal_w) + " W" : "";
+      const bateria = bat.tipo ? String(bat.tipo) + (bat.capacidad_ah ? ` ${String(bat.capacidad_ah)}Ah` : "") : "";
+      const asientos = String(datos.nro_asientos || "");
+      const peso = String(dim.peso_neto_kg || "");
   const colores = p.colores?.length ? p.colores.join(", ") : "";
   
   let info = `${p.nombre} - $${p.precio.monto} ${p.precio.moneda}`;
