@@ -296,23 +296,32 @@ export async function POST(req: NextRequest) {
       { role: "user" as const, content: message },
     ];
 
-    const llmResult = await chatWithLlm(messages, { temperature: 0.5, maxTokens: 1024 });
+    try {
+      const llmResult = await chatWithLlm(messages, { temperature: 0.5, maxTokens: 1024 });
 
-    if (!llmResult.error && llmResult.reply) {
-      const matched = findProductByName(message, products);
-      return NextResponse.json({
-        reply: llmResult.reply,
-        intent: matched ? "VEHICLE" : "WELCOME",
-        productId: matched?.id || null,
-        productIds: null,
-        source: "groq",
-        context: { step: "ASKING_TYPE", filters: context.filters },
-      });
+      if (!llmResult.error && llmResult.reply) {
+        const matched = findProductByName(message, products);
+        return NextResponse.json({
+          reply: llmResult.reply,
+          intent: matched ? "VEHICLE" : "WELCOME",
+          productId: matched?.id || null,
+          productIds: null,
+          source: "groq",
+          context: { step: "ASKING_TYPE", filters: context.filters },
+        });
+      }
+
+      console.error("[chat] Groq failed:", llmResult.error);
+    } catch (groqErr) {
+      console.error("[chat] Groq exception:", groqErr instanceof Error ? groqErr.message : String(groqErr));
     }
 
-    // Fallback: server-side factual answer if Groq fails
+    // Groq failed — use server-side generateAnswer as fallback
     const factual = generateAnswer(products, sucursales, message);
-    if (factual.reply) {
+
+    // Only return factual reply if it's an actual product match or specific intent
+    // Never return random product for WELCOME conversations
+    if (factual.reply && factual.intent !== "WELCOME") {
       return NextResponse.json({
         reply: factual.reply,
         intent: factual.intent,
@@ -323,6 +332,7 @@ export async function POST(req: NextRequest) {
       });
     }
 
+    // Final fallback
     return NextResponse.json({
       reply: "¡Hola! Soy Bot Quantum, tu asesor de electromovilidad. ¿En qué puedo ayudarte? Tenemos autos, motos, bicis, camiones y accesorios eléctricos.",
       intent: "WELCOME",
