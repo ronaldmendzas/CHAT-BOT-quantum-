@@ -260,16 +260,7 @@ function generateAnswer(products: Product[], sucursales: Sucursal[], message: st
     }
   }
 
-  // Producto específico
-  if (matched) {
-    return {
-      reply: `${formatProductInfo(matched)}\n\n¿Querés más info o agendar un Test Drive? 🚗`,
-      intent: "VEHICLE",
-      productId: matched.id
-    };
-  }
-
-  // Fallback a Groq solo para preguntas genéricas
+  // NEVER show matched product as catch-all — only Groq handles conversational matching
   return { reply: "", intent: "WELCOME" };
 }
 
