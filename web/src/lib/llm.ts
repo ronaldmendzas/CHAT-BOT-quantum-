@@ -12,7 +12,7 @@ function getGroqClient(): Groq {
   return _groq;
 }
 
-const GROQ_MODEL = process.env.GROQ_MODEL || "mixtral-8x7b-32768";
+const GROQ_MODEL = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
 const HF_MODEL = process.env.HF_MODEL || "mistralai/Mistral-7B-Instruct-v0.2";
 
 export type LlmMessage = {
