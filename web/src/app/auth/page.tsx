@@ -37,7 +37,7 @@ export default function AuthPage() {
   }
 
   function goToHome() {
-    window.location.href = "http://localhost:3002/";
+    window.location.href = "/";
   }
 
   return (
