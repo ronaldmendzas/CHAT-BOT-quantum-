@@ -1,9 +1,9 @@
-/* ===== Chat API — Groq LLM with panel detection ===== */
+/* ===== Chat API — Groq LLM is the central brain ===== */
 
 import { NextRequest, NextResponse } from "next/server";
 import { chatWithLlm, getSystemPrompt } from "@/lib/llm";
 import { processMessage } from "@/lib/conversation";
-import type { ConversationContext, Product } from "@/lib/types";
+import type { ConversationContext, Product, Intent } from "@/lib/types";
 import { readJsonFile } from "@/lib/db";
 
 function norm(text: string) {
@@ -18,17 +18,14 @@ function norm(text: string) {
 function detectPanel(message: string, products: Product[]) {
   const t = norm(message);
 
-  // Test drive
   if (/\b(test drive|prueba|agendar|probar|cita|testdrive)\b/.test(t)) {
     return { intent: "TEST_DRIVE" as const };
   }
 
-  // Sucursales
   if (/\b(sucursal|tienda|donde|ubicacion|direccion|local)\b/.test(t)) {
     return { intent: "SUCURSALES" as const };
   }
 
-  // Specific product
   const product = products.find((p) => {
     const slug = norm(p.nombre);
     return t.includes(slug) || slug.includes(t);
@@ -37,7 +34,6 @@ function detectPanel(message: string, products: Product[]) {
     return { intent: "VEHICLE" as const, productId: product.id };
   }
 
-  // Type keywords → filter products
   const typeMap: Record<string, string[]> = {
     auto: ["auto", "carro", "sedan", "suv", "camioneta", "equte", "nexus"],
     moto: ["moto", "scooter", "trimoto", "trooper", "urban", "flashride", "street", "hunter", "colibri"],
@@ -87,7 +83,6 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Message required" }, { status: 400 });
     }
 
-    // Load products
     let products: Product[] = [];
     try {
       products = await readJsonFile<Product[]>("products.json");
@@ -107,7 +102,6 @@ export async function POST(req: NextRequest) {
       2
     );
 
-    // Try Groq first
     const messages = [
       { role: "system" as const, content: getSystemPrompt(productsJson) },
       ...history.slice(-8).map((h) => ({
@@ -119,19 +113,25 @@ export async function POST(req: NextRequest) {
 
     const llmResult = await chatWithLlm(messages, {
       temperature: 0.7,
-      maxTokens: 400,
+      maxTokens: 512,
     });
 
     const panel = detectPanel(message, products);
 
     if (!llmResult.error && llmResult.reply) {
+      const meta = llmResult.meta;
+      const intent: Intent = meta?.intent ?? panel.intent;
+      const productId = meta?.productId ?? panel.productId;
+      const productIds = meta?.productIds ?? panel.productIds;
+      const step = meta?.contextStep ?? context.step;
+
       return NextResponse.json({
         reply: llmResult.reply,
-        intent: panel.intent,
-        productId: panel.productId,
-        productIds: panel.productIds,
+        intent,
+        productId,
+        productIds,
         source: "groq",
-        context: { step: "UNKNOWN", filters: context.filters },
+        context: { step: step as ConversationContext["step"], filters: context.filters },
       });
     }
 
