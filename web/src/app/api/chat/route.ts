@@ -38,7 +38,8 @@ function findProductByName(message: string, products: Product[]): Product | unde
   const sorted = [...products].sort((a, b) => b.nombre.length - a.nombre.length);
   return sorted.find((p) => {
     const slug = norm(p.nombre);
-    return t.includes(slug);
+    const escaped = slug.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return new RegExp(`\\b${escaped}\\b`, "i").test(t);
   });
 }
 
@@ -49,7 +50,8 @@ function findTwoProducts(message: string, products: Product[]): [Product | undef
   for (const p of sorted) {
     if (found.length >= 2) break;
     const slug = norm(p.nombre);
-    if (t.includes(slug)) {
+    const escaped = slug.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    if (new RegExp(`\\b${escaped}\\b`, "i").test(t)) {
       found.push(p);
     }
   }
