@@ -2,9 +2,15 @@
 
 import Groq from "groq-sdk";
 
-const groq = new Groq({
-  apiKey: process.env.GROQ_API_KEY,
-});
+let _groq: Groq | null = null;
+function getGroqClient(): Groq {
+  if (!_groq) {
+    _groq = new Groq({
+      apiKey: process.env.GROQ_API_KEY,
+    });
+  }
+  return _groq;
+}
 
 const GROQ_MODEL = process.env.GROQ_MODEL || "mixtral-8x7b-32768";
 const HF_MODEL = process.env.HF_MODEL || "mistralai/Mistral-7B-Instruct-v0.2";
@@ -27,7 +33,7 @@ async function chatWithGroq(
   options?: { temperature?: number; maxTokens?: number }
 ): Promise<LlmResponse> {
   try {
-    const completion = await groq.chat.completions.create({
+    const completion = await getGroqClient().chat.completions.create({
       model: GROQ_MODEL,
       messages,
       temperature: options?.temperature ?? 0.3,
