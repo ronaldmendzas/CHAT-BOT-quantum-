@@ -3,7 +3,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { chatWithLlm, getSystemPrompt } from "@/lib/llm";
 import { processMessage } from "@/lib/conversation";
-import type { ConversationContext, Product, Intent } from "@/lib/types";
+import type { ConversationContext, Product } from "@/lib/types";
 import { readJsonFile } from "@/lib/db";
 
 function norm(text: string) {
@@ -66,6 +66,33 @@ function detectPanel(message: string, products: Product[]) {
   return { intent: "WELCOME" as const };
 }
 
+function buildCompactCatalog(products: Product[], panel: ReturnType<typeof detectPanel>): string {
+  if (panel.intent === "TEST_DRIVE" || panel.intent === "SUCURSALES") {
+    return "Sucursales: La Paz, Santa Cruz, Cochabamba, Sucre, Tarija, Oruro, Potosi, Trinidad. Test Drive requiere licencia vigente y CI.";
+  }
+
+  // For generic greetings, send a tiny summary instead of all 26 products
+  if (panel.intent === "WELCOME" && !panel.productId && !panel.productIds) {
+    return "Autos: Nexus Plus, Equte. Motos: Trooper, Urban, FlashRide, Street, Hunter, Colibri. Bicis: Ara, A5. Camion: Ion. Bus: Quantum Coaster. Accesorios: cascos, candados, mochilas.";
+  }
+
+  let relevant = products;
+  if (panel.productIds) {
+    relevant = products.filter((p) => panel.productIds!.includes(p.id));
+  } else if (panel.productId) {
+    relevant = products.filter((p) => p.id === panel.productId);
+  }
+
+  if (relevant.length === 0) relevant = products;
+
+  return relevant
+    .map((p) => {
+      const auto = p.especificaciones?.["Autonomía"] || p.especificaciones?.["autonomia"] || "";
+      return `${p.nombre} ${p.precio.monto.toLocaleString("es-BO")} ${p.precio.moneda}${auto ? ` ${auto}km` : ""}`;
+    })
+    .join(" | ");
+}
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
@@ -90,21 +117,12 @@ export async function POST(req: NextRequest) {
       // ignore
     }
 
-    const productsJson = JSON.stringify(
-      products.map((p) => ({
-        nombre: p.nombre,
-        categoria: p.categoria,
-        precio: p.precio,
-        descripcion: p.descripcion_corta,
-        autonomia: p.especificaciones?.["Autonomía"] || "",
-      })),
-      null,
-      2
-    );
+    const panel = detectPanel(message, products);
+    const catalog = buildCompactCatalog(products, panel);
 
     const messages = [
-      { role: "system" as const, content: getSystemPrompt(productsJson) },
-      ...history.slice(-12).map((h) => ({
+      { role: "system" as const, content: getSystemPrompt(catalog) },
+      ...history.slice(-8).map((h) => ({
         role: h.role as "user" | "assistant",
         content: h.content,
       })),
@@ -112,26 +130,29 @@ export async function POST(req: NextRequest) {
     ];
 
     const llmResult = await chatWithLlm(messages, {
-      temperature: 0.85,
-      maxTokens: 1024,
+      temperature: 0.9,
+      maxTokens: 128,
     });
 
-    const panel = detectPanel(message, products);
-
     if (!llmResult.error && llmResult.reply) {
-      const meta = llmResult.meta;
-      const intent: Intent = meta?.intent ?? panel.intent;
-      const productId = meta?.productId ?? panel.productId;
-      const productIds = meta?.productIds ?? panel.productIds;
-      const step = meta?.contextStep ?? context.step;
-
       return NextResponse.json({
         reply: llmResult.reply,
-        intent,
-        productId,
-        productIds,
+        intent: panel.intent,
+        productId: panel.productId,
+        productIds: panel.productIds,
         source: "groq",
-        context: { step: step as ConversationContext["step"], filters: context.filters },
+        context: { step: panel.intent === "WELCOME" ? "ASKING_TYPE" : context.step, filters: context.filters },
+      });
+    }
+
+    if (llmResult.rateLimited) {
+      return NextResponse.json({
+        reply: "¡Hola! Estoy un poco congestionado ahora 😅 Pero acá estoy. ¿Querés que te muestre nuestros modelos, sucursales o agendamos un Test Drive?",
+        intent: panel.intent,
+        productId: panel.productId,
+        productIds: panel.productIds,
+        source: "fallback",
+        context: { step: "WELCOME", filters: context.filters },
       });
     }
 
